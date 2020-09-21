@@ -1,0 +1,44 @@
+\begin{tiny}(Emm20)\end{tiny} Pour une matrice $A\in \mathcal{M}_2(\K)$ fixée, on définit l'application
+\begin{displaymath}
+  \Phi:
+\left\lbrace 
+\begin{aligned}
+\mathcal{M}_2(\K) &\rightarrow \mathcal{M}_2(\K) \\
+M &\mapsto AM -MA
+\end{aligned}
+\right. 
+\end{displaymath}
+On note
+\begin{multline*}
+  A =
+\begin{pmatrix}
+a & b \\ c & d  
+\end{pmatrix},\;
+\Delta =
+\begin{pmatrix}
+0 & b \\ -c & 0  
+\end{pmatrix},\\
+T_s =
+\begin{pmatrix}
+-c & a-d \\ 0 & c  
+\end{pmatrix},\;
+T_i =
+\begin{pmatrix}
+b & 0 \\ d-a & -b  
+\end{pmatrix} 
+\end{multline*}
+\begin{enumerate}
+  \item Montrer que $\Vect(I_2,A)\subset \ker \Phi$.
+  \item Montrer que $\Im \Phi = \Vect(\Delta, T_s, T_i)$.
+  \item Montrer que $A\notin \Vect(I)$ entraîne $(\Delta, T_s, T_i)$ liée et préciser une relation linéaire.
+  \item Montrer que
+\begin{displaymath}
+\rg(\Phi) = 
+\left\lbrace 
+\begin{aligned}
+0 &\text{ si } A\in \Vect(I_2) \\ 2 &\text{ si } A\notin \Vect(I_2)  
+\end{aligned}
+\right. 
+\end{displaymath}
+En déduire que $B$ commute avec $A$ si et seulement si $(I_2,A,B)$ liée.
+\end{enumerate}

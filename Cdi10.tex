@@ -1,0 +1,38 @@
+\begin{tiny}(Cdi10)\end{tiny} On considère, dans $\R_3[X]$, les trois polynômes de Lagrange 
+\begin{multline*}
+ L_a = \frac{(X-b)(X-c)}{(a-b)(a-c)},\;
+ L_b = \frac{(X-a)(X-c)}{(b-a)(b-c)}, \\
+ L_c = \frac{(X-a)(X-b)}{(c-a)(c-B)} 
+\end{multline*}
+et une combinaison nulle des trois formes linéaires.
+\begin{displaymath}
+ \lambda_1\phi_1 + \lambda_2 \phi_2 + \lambda_3 \phi_3
+\end{displaymath}
+En prenant la valeur de cette fonction en $L_a$, $L_b$, $L_c$, on obtient
+$\lambda_1 = \lambda_2 = \lambda_3$.\newline
+Notons $M=(X-a)(X-b)(X-c)$. La famille $(L_a,L_b,L_c)$ est libre (prendre les valeurs en $a$, $b$, $c$). Le polynôme $M$ n'est pas combinaison des $L_a, L_b, L_c$ (considérer le degré). La famille $(L_a,L_b,L_c,M)$ est donc libre dans un espace de dimension $4$, c'est une base.\newline
+Comme $(\phi_1,\phi_2,\phi_3)$ est libre:
+\begin{displaymath}
+  (\phi_1,\phi_2,\phi_3,\phi)\text{ liée } \Leftrightarrow \phi\in \Vect(\phi_1,\phi_2,\phi_3)
+\end{displaymath}
+Définissons une forme $\varphi$:
+\begin{displaymath}
+ \varphi = \phi(L_a)\phi_1 + \phi(L_b)\phi_2 + \phi(L_c)\phi_3 
+\end{displaymath}
+Par construction: $L_a$, $L_b$, $L_c$ sont dans $\ker(\phi - \varphi)$. On en déduit (prolongement linéaire) :
+\begin{displaymath}
+ \varphi = \phi \Leftrightarrow \varphi(M)=\phi(M) \Leftrightarrow \phi(M) = 0
+\end{displaymath}
+Avec les notations préconisées par l'énoncé,
+\begin{displaymath}
+ a=m-l,\hspace{0.5cm} b=m+l,\hspace{0.5cm} c = m + (c-m)
+\end{displaymath}
+d'où, après développement,
+\begin{displaymath}
+ M = (X-m)^3 -l^2(X-m) + l^2(c-m)
+\end{displaymath}
+Les puissances impaires disparaissent par symétrie
+\begin{displaymath}
+ \psi(M) = l^2(c-m)(b-a)
+\end{displaymath}
+

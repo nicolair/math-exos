@@ -1,0 +1,21 @@
+\begin{tiny}(Eal16)\end{tiny} Dérivations dans un anneau.\newline
+Soit $A$ un anneau (pas forcément commutatif). On dira qu'une application $D$ de $A$ dans $A$ est une \emph{dérivation} lorsqu'elle vérifie :
+\begin{displaymath}
+\forall (a,b)\in A^2:
+\left\lbrace
+\begin{aligned}
+ D(a+b) &= D(a)+D(b)\\
+ D(ab) &= D(a)b+aD(b)
+\end{aligned}
+\right. 
+\end{displaymath}
+\begin{enumerate}
+ \item Montrer que $D(1_A)=0_A$ et $D(0_A)=0_A$.
+ \item Soit $D_1$ et $D_2$ deux dérivations, montrer que $$D_1\circ D_2 - D_2\circ D_1$$ est une dérivation.
+ \item On suppose $A$ commutatif. Montrer que pour tout $a\in A$ et $n\in \N^*$
+\begin{displaymath}
+ D(a^n)=nD(a)a^{n-1}
+\end{displaymath}
+Si $a$ est inversible, montrer que la formule est valable pour $n\in \Z$.
+\end{enumerate}
+

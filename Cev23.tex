@@ -1,0 +1,42 @@
+\begin{tiny}(Cev23)\end{tiny} Montrons d'abord que l'intersection se réduit au vecteur nul. Soit $x\in A\cap B$.
+\begin{multline*}
+  x \in B \Rightarrow \exists (\lambda,\mu)\in \K^2 \text{ tq } x = \lambda b_1 + \mu b_2\\
+  = (\lambda + \mu, 2\lambda, -\lambda,-\mu)
+\end{multline*}
+alors $x\in A$ entraine
+\begin{displaymath}
+\left\lbrace 
+\begin{aligned}
+  \lambda + \mu + 2\lambda -\mu -\lambda &= 0_K \\
+  \lambda + \mu - 2\lambda -\lambda + \mu &= 0_K
+\end{aligned}
+\right. 
+\Rightarrow
+\left\lbrace 
+\begin{aligned}
+  2\lambda &= 0_K \\ -2\lambda + 2\mu &= 0_K
+\end{aligned}
+\right. 
+\end{displaymath}
+d'où $\lambda=\mu=0_K$ et $x=0_E$.\newline
+Montrons ensuite que tout vecteur de $E$ est la somme d'un vecteur de $A$ et d'un vecteur de $B$.
+Considérons un vecteur quelconque de $E$:
+\begin{displaymath}
+  x = (x_1,x_2,x_3,x_4)
+\end{displaymath}
+et des scalaires $\lambda$ et $\mu$. On va les choisir pour que 
+\begin{displaymath}
+  y = x -\lambda b_1 - \mu b_2 \in A 
+\end{displaymath}
+Par définition de $A$ et par un calcul analogue à celui mené pour l'intersection:
+\begin{displaymath}
+  y \in A \Leftrightarrow
+\left\lbrace 
+\begin{aligned}
+  2\lambda &= x_1+x_2+x_3+x_4 \\
+  -2\lambda - 2\mu &= x_1-x_2+x_3-x_4
+\end{aligned}
+\right. 
+\end{displaymath}
+Ce système aux inconnues $\lambda$ et $\mu$ admet clairement des solutions. On peut donc décomposer $x$.\newline
+Voir l'exercice \ref{inthyp2} (ev33).

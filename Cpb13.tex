@@ -1,0 +1,32 @@
+\begin{tiny}(Cpb13)\end{tiny} 
+\begin{enumerate}
+  \item On modélise par l'ensemble des parties à 5 éléments dans l'ensemble des 52 cartes.\newline
+Pour compter les mains contenant 3 carreaux, on classe par les ensembles de 3 carreaux puis par les ensembles de 2 cartes dans les autres couleurs.\newline
+Pour l'évènement \og au moins une paire\fg, on considère l'événement contraire \og aucune paire\fg. On classe les mains par l'ensemble des 5 hauteurs puis on identifie aux fonctions de l'ensemble des 5 hauteurs dans l'ensemble des 4 couleurs. On présente les résultats dans un tableau
+\begin{center}
+\renewcommand{\arraystretch}{2.5}
+\begin{tabular}{l|l|l}
+événement   & 3 carreaux                                        & au moins une paire\\ \hline 
+probabilité & $\dfrac{\binom{13}{3}\binom{39}{2}}{\binom{52}{5}}$ & $1 - \dfrac{\binom{13}{3}\, 4^5}{\binom{52}{5}}$
+\end{tabular}
+\end{center}
+  \item On numérote les joueurs de 1 à 4. L'univers est formé par les quadruplets de parties  de 13 cartes formant partition. Pour compter, on classe par la main du joueur 1 puis 2, .. donc
+\[
+  \binom{52}{13}\, \binom{39}{13}\,\binom{26}{13} \text{ distributions de mains}
+\]
+Pour compter les distributions dans lesquelles chaque joueur a un as. On classe selon les distributions des cartes hors as puis par la distribution des as; soit 
+\[
+  \binom{48}{12}\, \binom{36}{12}\,\binom{24}{12}\, 4!
+\]
+La probabilité que chacun ait un as est donc
+\[
+  \frac{13\times 39 \times 38 \times 37}{52\times 51 \times 50 \times 49}
+  \times
+  \frac{13\times 26 \times 25}{39\times 38 \times 37}
+  \times
+  \frac{13\times 13}{26\times 25} \times 4!
+  = \frac{13^4 \times 4!}{52\times 51 \times 50 \times 49}.
+\]
+
+\end{enumerate}
+

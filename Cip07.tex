@@ -1,0 +1,23 @@
+\begin{tiny}(Cip07)\end{tiny} Notons $I_n$ l'intégrale à étudier.\newline
+Comme $n^2+x^3 \geq n^2$,
+\begin{displaymath}
+  0\leq I_n \leq \frac{1}{n^2}
+\end{displaymath}
+Ce qui assure la convergence vers $0$.\newline
+Le changement de variable indiqué conduit à
+\begin{displaymath}
+I_n = n^{-\frac{4}{3}}\int_0^{n^{-\frac{2}{3}}}\frac{dy}{1+y^3} = n^{-\frac{4}{3}} F(n^{-\frac{2}{3}})
+\end{displaymath}
+où $F$ est la primitive nulle en $0$ de
+\begin{displaymath}
+  y \mapsto \frac{1}{1+y^3}
+\end{displaymath}
+On peut intégrer en $0$ un développement de la dérivée: 
+\begin{displaymath}
+  F(y) = y - \frac{1}{4}y^{4} + o(y^4)
+\end{displaymath}
+On en tire
+\begin{multline*}
+I_n = n^{-\frac{4}{3}}\left( n^{-\frac{2}{3}} -\frac{1}{4}n^{-\frac{8}{3}}\right) \\
+= n^{-2} - \frac{1}{4}n^{-4} + o(n^{-4})
+\end{multline*}

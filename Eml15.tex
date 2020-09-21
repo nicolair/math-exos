@@ -1,0 +1,28 @@
+\begin{tiny}(Eml15)\end{tiny} Représentation linéaire d'un groupe fini.\newline
+Soit $G$ un groupe fini et $\K$ un corps. On note $E$ le $\K$-espace vectoriel de toutes les fonctions de $G$ dans $\K$. Pour tout $g\in G$, on note $\overline{g} \in E$ définie par:
+\begin{displaymath}
+\forall h \in G,\;\overline{g}(h) =
+\left\lbrace 
+\begin{aligned}
+  0&\text{ si } h\neq g \\ 1 &\text{ si } h= g
+\end{aligned}
+\right. 
+\end{displaymath}
+Pour tout $g\in G$, on définit une fonction $A_g$ de $E$ dans $E$ par:
+\begin{displaymath}
+\forall \varphi \in E, \;
+A_g(\varphi) =
+\left(  
+\begin{aligned}
+& G \rightarrow \K \\ &x \mapsto \varphi(hg)   
+\end{aligned}
+\right) 
+\end{displaymath}
+\begin{enumerate}
+  \item Montrer que l'ensemble des $\overline{g}$ pour $g\in G$ forme une base de $E$.
+  \item Montrer que $A_g\in \mathcal{L}(E)$. Vérifier que
+\begin{displaymath}
+\forall(g,h)\in G^2,\;A_g\circ A_h = A_{gh}  
+\end{displaymath}
+  \item Montrer que, pour $g$ et $h$ dans $G$, $A_g(\overline{h})$ est un $\overline{k}$ pour un $k\in G$ à préciser.
+\end{enumerate}

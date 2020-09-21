@@ -1,0 +1,37 @@
+\input{exopdf.tex}
+\begin{document}
+\begin{enumerate}
+\item    Sous la dynastie des Tang, au $7^{e}$ siècle en Chine, l'empereur    voulut connaitre le nombre exact des ses soldats. Bien qu'il en e\^ut    un nombre presque innombrable, il savait qu'il en avait moins d'un    demi-million. Il fit alors ranger ses soldats en carrés de trente    personnes de coté. Il en resta $156$. Il les fit alors se ranger en    carrés de trente et une personnes de coté. Il en resta alors $448$.    \par    Combien de soldats avait l'armée de l'empereur ?
+\item    Déterminer la plus grande puissance de $10$ divisant    $100!$. (Considérer $\sum_{k\geq 1}    E(\frac{n}{p^k})$.)
+
+\itemSimplifier les sommes suivantes: $$\sum_{k \in \Z, \: k \;\mathrm{pair}} \begin{pmatrix}  n\\  k\end{pmatrix} \qquad\sum_{k \in \Z}(-1)^k \begin{pmatrix}  n \\  2k\end{pmatrix} \qquad\begin{pmatrix}  n \\  0\end{pmatrix} - 3 \begin{pmatrix}  n \\  2\end{pmatrix}+ 3^2 \begin{pmatrix}  n \\  4\end{pmatrix}- ... $$$$\sum_{k \in \Z} k\begin{pmatrix}  n \\  k\end{pmatrix} \qquad \sum_{k \in \Z} (-1)^k k \begin{pmatrix}  n \\  k\end{pmatrix} \qquad\sum_{k \in \Z} (-1)^k \begin{pmatrix}    n \\    k \  \end{pmatrix}  \begin{pmatrix}    k \\    p  \  \end{pmatrix}$$
+
+\item {\sf [Comatrice]} \parSoit $A \in \mathcal{M}_n(\K)$.\begin{enumerate}    \item On suppose $A$ inversible. Calculer $\Com \Com A$. (rep.    $\det A)^{n-2} A$.)    \item On suppose $\rg A \leq n-2$. Calculer $\Com A$. (rep.    $0$)    \item On suppose $\rg A = n-1$. Calculer $\rg \Com A$. (rep.    $1$.)\end{enumerate}
+
+\itemSoit $E$ un espace vectoriel et $u$ un endomorphisme de $E$.Calculer $\det u$ dans chacun des cas suivants :
+\begin{enumerate}
+ \item $E = \K_n [X]$ et $u = \Delta : P \mapsto P(X+1) -    P(X)$.
+ \item $E = \K_n [X]$ et $u = \tau : P \mapsto P(X+1)$.
+  \item $E = \mathcal{M}_n(\K)$ et $u(M) = {}^t M$.
+  \item $E = \mathcal{M}_n(\K)$ et $u(X) = AX$ où $A \in    \mathcal{M}_n(\K)$ est une matrice fixée. (Tuyau : se    ramener à une matrice triangulaire par blocs.)\end{enumerate}
+
+  \itemSoit $f(x) = \cosh x - \frac{12+5x^2}{12-x^2}$. Calculer la limitede $\frac{f(2x)}{f(x)}$ lorsque $x$ tend vers 0.
+
+  \itemCalculer les 5 premières dérivées en 0 de la fonction $\frac{\logx}{1+x}$.
+
+  \item {\sf [Polynômes interpolateurs de Lagrange]} \parOn considère $n \in \N$, $E = \C_n[X]$ et $a_0,\ldots,a_n$ desnombres complexes distincts. Pour tout $i$ tel que $0\leq i \leqn$, on définit le \emph{polynôme interpolateur de Lagrange} par$$P_i = \prod_{0\leq k \leq n, k\neq i} \frac{X-a_k}{a_i-a_k}.$$On rappelle que $(P_i)_{0\leq i \leq n}$ est une base de $E$.\parPréciser les coordonnées du vecteur $P = \sum_{0\leq k \leq n} c_kX^k$ dans cette base.
+
+  \itemLes bijections d\'erivables de $\mathbf R$ dans $\mathbf R$forment-elles un    groupe ?
+
+  \item \label{exo1}\begin{enumerate}
+     \item En utilisant les sommes de Riemann, calculer les limites dessuites suivantes:$$\sum_{k=0}^{n-1} \frac{n}{n^2+k^2} \qquad\frac{1}{n^3}\sum_{k=0}^{n-1} k^2 \sin \frac{k\pi}{n} \qquad\sum_{k=0}^{n-1} \frac{1}{k} \sin \frac{k\pi}{n} \qquad\prod_{k=1}^{n} \left( 1+\frac{k^2}{n^2} \right)^{\frac{1}{n}}.$$
+        \item Calculer les limites des suites suivantes    $$\sum_{k=0}^{n-1} \frac{1}{\sqrt{n^2-k^2}} \qquad    \sin \left( \frac{\pi}{n} \right) \sum_{k=1}^{n-1}    \frac{1}{2+ \cos \frac{k\pi}{n}}.$$    \item Calculer de trois manières différentes la limite de la    suite    $$\left( \frac{(2n)!}{n! n^n} \right)^{\frac{1}{n}}.$$\end{enumerate}
+
+\itemSoit $a,b,c \in \R$ et $A= \left(\begin{array}{ccc}  a^2 & ab & ac \\  ba & b^2 & bc \\  ca & cb & c^2 \\\end{array}\right)$. Déterminer $\Ker A$, $\im A$ et calculer $A^k$ pour$k\in \N$.
+
+\item {\textsf [Calcul rusé du reste]} \parSoit $n \in \N$ et $\vartheta \in \R$. \begin{enumerate}    \item Déterminer le reste de la division euclidienne du    polynôme $(\c
+ \end{enumerate}
+\end{enumerate}
+
+\end{enumerate}
+\end{document}

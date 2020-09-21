@@ -1,0 +1,47 @@
+\begin{tiny}(Cee13)\end{tiny} Notons $u$ et $v$ les deux vecteurs donnés et $P$ le plan qu'ils engendrent. Orthogonalisons la famille en $(u,w)$ avec
+\begin{displaymath}
+ w = v-\frac{(u/v)}{\Vert u \Vert^2}u = v-\frac{3}{2}u
+\end{displaymath}
+Les coordonnées de $w$ sont
+\begin{displaymath}
+ \frac{1}{2}(-2,4,3,-1)
+\end{displaymath}
+La symétrie demandée s'écrit
+\begin{displaymath}
+ s_P = p_P - p_{P^{\perp}} = 2p_P -Id_E
+\end{displaymath}
+avec
+\begin{displaymath}
+ p_P(x) = \frac{(x/u)}{\Vert u\Vert^2} u + \frac{(x/v)}{\Vert v\Vert^2} v
+\end{displaymath}
+La colonne des coordonnées de $p_P(x)$ s'écrit
+\begin{multline*}
+ \frac{1}{10}(2x_1 + 2x_2 -x_3 + x_4)
+\begin{pmatrix}
+ 2 \\ 2 \\ -1 \\1
+\end{pmatrix} \\
++ \frac{1}{30}(-2x_1 + 4x_2 +3x_3 - x_4)
+\begin{pmatrix}
+ -2 \\ 4 \\ 3 \\ -1
+\end{pmatrix}
+\end{multline*}
+La matrice de $p_P$ est donc
+\begin{displaymath}
+\frac{1}{30}
+ \begin{pmatrix}
+  16 & 4 & -12 & 8 \\
+  4 & 28 & 6   & 2 \\
+ -12 & 6  & 12 & -6 \\
+  8 & 2  & -6  & 4 
+ \end{pmatrix}
+\end{displaymath}
+celle de $s_P$ :
+\begin{displaymath}
+\frac{1}{15}
+ \begin{pmatrix}
+  1 & 4  & 12 & 8 \\
+  4 & 13 & 6  & 2 \\
+ -12 & 6 & -3 & -6 \\
+  8 & 2  & -6 & -11 
+ \end{pmatrix}
+\end{displaymath}

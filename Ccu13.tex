@@ -1,0 +1,16 @@
+\begin{tiny}(Ecu13)\end{tiny} Les indices des sommes proposées recouvrent $\llbracket 0,n\rrbracket$, ils sont regroupés modulo $3$. Deux puissances de $j$ sont égales lorsque les exposants sont congrus modulo $3$. On peut combiner les sommes proposées pour faire apparaitre des formules du binôme.
+\begin{displaymath}
+\left\lbrace  
+\begin{aligned}
+  &A + B + C     &= (1+1)^n  &= 2^n\\
+  &A + jB + j^2C &= (1+j)^n  &= (-j^2)^n\\
+  &A + j^2B + jC &= (1+j^2)^n &= (-j)^n
+\end{aligned}
+\right. 
+\end{displaymath}
+En combinant linéairement, on déduit
+\begin{align*}
+&3A = 2^n +(-1)^n2\cos\frac{2n\pi}{3} \\
+&3B = 2^n +(-1)^n2\cos\frac{2(n+1)\pi}{3} \\
+&3C = 2^n +(-1)^n2\cos\frac{2(n-1)\pi}{3}
+\end{align*}

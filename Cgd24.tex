@@ -1,0 +1,19 @@
+\begin{tiny}(Cgd24)\end{tiny} Pour chaque $k$ entre $1$ et $n$, écrivons le théorème des accroissements finis entre $0$ et $\frac{k}{n^2}$. Il existe $\theta_k\in ]0,\frac{k}{n^2}[$ tel que $f(\frac{k}{n^2})=\frac{k}{n^2}f'(\theta_k \frac{k}{n^2})$. On en déduit
+\begin{displaymath}
+ u_n = \sum_{k=1}^n\frac{k}{n^2}f'(0)+\sum_{k=1}^n\frac{k}{n^2}\left(f'(\theta_k \frac{k}{n^2})- f'(0)\right) 
+\end{displaymath}
+avec
+\begin{displaymath}
+ \sum_{k=1}^n\frac{k}{n^2}f'(0) = \frac{n(n+1)}{2n^2}f'(0)
+\end{displaymath}
+qui converge vers $\frac{1}{2}f'(0)$ et
+\begin{multline*}
+ \left|\sum_{k=1}^n\frac{k}{n^2}\left(f'(\theta_k \frac{k}{n^2})- f'(0)\right)\right|\\
+ \leq
+\frac{n(n+1)}{2n^2} \sup\left\lbrace |f'(x)-f'(0)|, x\in [0,\frac{1}{n}]\right\rbrace 
+\end{multline*}
+La continuité de $f'$ en $0$ entraine que cette suite converge vers $0$. La limite de la suite des $u_n$ est donc
+\begin{displaymath}
+ \frac{1}{2}f'(0).
+\end{displaymath}
+En prenant le $\ln$ du produit, on est ramené à la somme précédente avec la fonction $f(x) = \ln(1+x)$ dont la dérivée en $0$ est égale à $1$. On en déduit que la limite de ce produit est $\sqrt{e}$.

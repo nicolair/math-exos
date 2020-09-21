@@ -1,0 +1,33 @@
+\begin{tiny}(Cdt24)\end{tiny}
+\begin{enumerate}
+ \item Si $T$ est de rang 1, toutes ses colonnes sont engendrées par une seule colonne non nulle. Notons la $C$. Il existe alors $l_1, \cdots, l_n$ non tous nuls tels que
+ \begin{multline*}
+  \left( \forall j \in \llbracket 1,n \rrbracket, \; C_j(T) = l_iC\right) \\ 
+  \Rightarrow
+  T = C \,L\text{ avec } 
+  L =
+  \begin{pmatrix}
+   l_1 & \cdots & l_n
+  \end{pmatrix}.
+ \end{multline*}
+
+ \item Notons $\delta$ le déterminant cherché et $X_1, \cdots, X_n$ les colonnes de $I_n$. Ce sont aussi les vecteurs de la base canonique des matrices colonnes. Alors:
+ \[
+  C_j(I_n + CL) = X_j + l_j\,C
+ \]
+Dans le développement du déterminant obtenu par multilinéarité, il ne subsiste plus que les termes contenant au plus une fois la colonne $C$
+\begin{multline*}
+ \delta = \underset{=1}{\underbrace{\det(X_1,\cdots,X_n)}} \\
+ + \sum_{j=1}^{n}\underset{ = l_j c_j}{\underbrace{\det(X_1,\cdots,X_{j-1},l_jC,X_{j+1},\cdots,X_n)}}\\
+ = 1 + L\,C.
+\end{multline*}
+
+ \item Dans le cas où $A$ est inversible, on se ramène à la question précédente en factorisant pas $A$
+\begin{multline*}
+ \det(A + CL) = \det(A)\det(I_n + (A^{-1}C)\,L)\\
+ = \det(A) + \det(A)LA^{-1}C\\
+ = \det(A) + L\, \trans{\,\mathop{\mathrm{Com }}}(A) C
+\end{multline*}
+à cause de l'expression de la matrice inverse avec la transposée de la comatrice.\newline
+Lorsque $A$ n'est pas inversible, on obtient la formule en l'approchant par des matrices inversibles par exemple de la forme $A + \lambda I_n$ avec $\lambda$ non nul mais assez petit pour n'être pas une valeur propre.
+\end{enumerate}

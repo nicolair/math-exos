@@ -1,0 +1,75 @@
+\begin{tiny}(Cpb18)\end{tiny} On utilise l'événement contraire:
+\[
+  y = 1 - \p(A \cup B)
+  = 1 -\p(A) - \p(B) + \underset{=x}{\underbrace{\p(A\cap B)}}
+\]
+On décompose $A$ et $B$:
+\begin{multline*}
+\left.
+  \begin{aligned}
+    A &= (A\cap B) \cup (A \cap \overline{B}) &\Rightarrow \p(A) = x + a\\
+    B &= (A\cap B) \cup (B \cap \overline{A}) &\Rightarrow \p(B) = x + b
+  \end{aligned}
+\right\rbrace \\ \Rightarrow
+y = 1 - x -a -b.
+\end{multline*}
+Avec les mêmes relations
+\begin{multline*}
+  \p(A \cap B) -\p(A) \p(B)
+  = x -(x+a)(x+b) \\
+  = -x^2 + \underset{=x+y}{\underbrace{(1-a-b)}} x -ab
+  = xy - ab.
+\end{multline*}
+La première relation conduit à des inégalités
+\[
+  a + b + x + y = 1
+  \Rightarrow
+  \left\lbrace
+  \begin{aligned}
+    a + b &\leq 1 \\ x + y &\leq 1
+  \end{aligned}
+  \right.
+\]
+car $a$, $b$, $x$, $y$ positifs. On en déduit
+\[
+\p(A \cap B) -\p(A) \p(B)
+\left\lbrace
+\begin{aligned}
+   &\leq& xy  \leq x(1-x)  &\leq& \frac{1}{4} \\
+   &\geq& -ab \geq -a(1-4) &\geq& -\frac{1}{4}
+\end{aligned}
+\right. .
+\]
+Pour l'étude des cas d'égalité, on suppose que la probabilité d'un singleton est toujours non nulle.\newline
+Cas d'égalité à $\frac{1}{4}$ si et seulement si $ab =0$ et $x = y = \frac{1}{2}$.
+\[
+\begin{aligned}
+  a= 0 &\Leftrightarrow \p(A \cap \overline{B}) = 0 \Leftrightarrow A \subset B\\
+  b= 0 &\Leftrightarrow \p(B \cap \overline{A}) = 0 \Leftrightarrow B \subset A
+\end{aligned}
+\]
+Examinons l'autre condition dans un des deux cas
+\begin{multline*}
+  A \subset B \Rightarrow
+  \left\lbrace
+  \begin{aligned}
+    A\cap B &= A \\ \overline{A} \cap \overline{B} &= \overline{B}
+  \end{aligned}
+\right. \\
+\Rightarrow \p(A) = \p(B) = \frac{1}{2} \text{ et } A = B.
+\end{multline*}
+Le raisonnement est analogue si $B\subset A$.\newline
+Cas d'égalité à $-\frac{1}{4} \Leftrightarrow xy =0$ et $a = b = \frac{1}{2}$.
+\begin{multline*}
+  x = 0
+  \Rightarrow A \cap B = \emptyset 
+  \Rightarrow 
+  \left\lbrace
+  \begin{aligned}
+    A \subset \overline{B} \\
+    B \subset \overline{A}
+  \end{aligned}
+  \right. \\
+  \Rightarrow a = \p(A)=  b = \p(B)=\frac{1}{2}  \text{ et } B = \overline{A}.
+\end{multline*}
+

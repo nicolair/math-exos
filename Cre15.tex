@@ -1,0 +1,34 @@
+\begin{tiny}(Cre15)\end{tiny} Soit $V = \left\lbrace \frac{u_{n}}{n},\; n\in \N^*\right\rbrace$ et $l = \inf V$.\newline
+Il s'agit de la borne inférieure d'une partie non vide minorée par $0$. Par définition c'est un minorant de $V$ donc
+\[
+  \forall n \in \N^*, \; l \leq \frac{u_n}{n}.
+\]
+Soit $\varepsilon >0$. Alors $l + \frac{\varepsilon}{2} \leq l$ est faux donc $l+ \frac{\varepsilon}{2}$ n'est pas un minorant de $V$ (la borne inférieure est le plus grand des minorants). Donc:
+\[
+  \exists s \in \N^* \text{ tq } \frac{u_s}{s} < l + \frac{\varepsilon}{2}.
+\]
+\'Ecrivons la division euclidienne de $n\in \N$ par $s$:
+\[
+  \exists (q,s) \in \N\times \llbracket 0,s-1 \rrbracket \text{ tq } n = q\,s + r.
+\]
+La condition de sous-additivité entraine
+\[
+  u_n \leq q\,u_s + u_r.
+\]
+Notons $M = \max(u_1,u_2,\cdots ,u_{s-1}$ et divisons par $n$:
+\[
+  \frac{u_n}{n} \leq \frac{q}{n}u_s + \frac{u_r}{n}
+  \leq \underset{ \leq 1}{\underbrace{\frac{qs}{n}}}\, \frac{u_s}{s} + \frac{M}{n} 
+  \leq \frac{u_s}{s} + \frac{M}{n} .
+\]
+Comme la suite $(\frac{M}{n})_{n\in \N^*}$ converge vers $0$, 
+\[
+  \exists t\in \N \text{ tq }n \geq t \Rightarrow \frac{M}{n} \leq \frac{\varepsilon}{2}.
+\]
+Soit $N = \max(s,t)$.
+\[
+  \forall n \geq N, \; l \leq \frac{u_n}{n} \leq \underset{\leq l + \frac{\varepsilon}{2}}{\underbrace{\frac{u_s}{s}}} + \underset{\leq \frac{\varepsilon}{2}}{\underbrace{\frac{M}{n}}} 
+  \leq l + \varepsilon.
+\]
+
+Voir le corrigé du problème  \href{http://back.maquisdoc.net/v-1/index.php?act=chelt&id_elt=8876}{Et si j'en achète plusieurs? Combien pour chaque ?} sur les suites sous-additives

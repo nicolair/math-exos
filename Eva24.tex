@@ -1,0 +1,32 @@
+\begin{tiny}(Eva24)\end{tiny} Approximation uniforme d'une fonction continue par les polynômes de Bernstein.\newline
+Soit $f\in \mathcal{C}(\left[ 0,1\right],\R)$. Pour $n\in \N^*$ et $x\in \left[ 0,1\right]$, on considère une variable aléatoire $X_{n,x}$ binomiale de paramètres $n,x$ dans un espace probabilisé fini. On pose
+\[
+ Y_{n,x} = f(\frac{1}{n}X_{n,x}).
+\]
+\begin{enumerate}
+ \item Montrer que,
+\begin{multline*}
+\forall n\in \N^*, \exists B_n(f) \in \R[X], \text{ tel que }\\ \forall x \in \left[ 0,1\right] , E(Y_{n,x}) = B_n(f)(x).
+\end{multline*}
+ \item On fixe $\varepsilon >0$ et $n \in \N^*$. On note $M_f = \max_{\left[ 0,1\right] }|f|$.
+\begin{enumerate}
+ \item Montrer que $\forall x \in \left[ 0,1\right]$ ,
+\begin{multline*}
+ \left| B_n(f)(x) -f(x)\right| \\ \leq \varepsilon 
+ + 2 M_f\, \p(\left| Y_{n,x} - f(x)\right| \geq \varepsilon).
+\end{multline*}
+\item Montrer qu'il existe $\delta >0$ tel que $\forall x \in \left[ 0,1\right]$ ,
+\begin{multline*}
+ \left| B_n(f)(x) -f(x)\right| \\ \leq \varepsilon 
+ + 2 M_f\, \p(\left| X_{n,x} - nx\right| \geq n \delta).
+\end{multline*}
+\end{enumerate}
+\item Montrer que
+\begin{multline*}
+ \forall \varepsilon >0, \exists N \in \N^* \text{ tq }
+ n \geq N \\
+ \Rightarrow \forall x \in \left[ 0,1 \right] ,\;
+ \left|B_{n}(f)(x) - f(x)\right| \leq \varepsilon.
+\end{multline*}
+(convergence uniforme)
+\end{enumerate}

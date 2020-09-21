@@ -1,0 +1,26 @@
+\begin{tiny}(Cmf16)\end{tiny} Soit $s=\sum_{g\in G}g$. Comme chaque $g$ est bijectif, chaque application
+\begin{displaymath}
+ \left\lbrace 
+\begin{aligned}
+ G &\rightarrow G \\ h &\mapsto g\circ h
+\end{aligned}
+\right. 
+\end{displaymath}
+ est injective donc bijective (car $G$ est fini). On en déduit que $g\circ s = s$ puis que $s\circ s = n s$ et donc que $p=\frac{1}{n}s$ est un projecteur. On en tire
+\begin{displaymath}
+ \rg p = \tr p = \frac{1}{n}\sum_{g\in G}\tr g
+\end{displaymath}
+Notons
+\begin{displaymath}
+ I = \bigcap_{g\in G}\ker(g-\Id_E)
+\end{displaymath}
+de sorte que
+\begin{displaymath}
+ x\in I \Leftrightarrow \forall g\in G,\; g(x)=x
+\end{displaymath}
+On en déduit que $x\in I$  entraîne $s(x)=nx$ d'où $p(x)=x$ ce qui montre $I\subset \Im p$.\newline
+Réciproquement, on va exploiter $p\circ g = p =g \circ p$ qui a déjà été montré.
+\begin{displaymath}
+ x\in \Im p \Rightarrow \forall g \in G,\; g(x)=g(p(x))=p(x)=x 
+\end{displaymath}
+Donc $ x \in I$ d'où $I=\Im p$ et l'égalité des dimensions.

@@ -1,0 +1,35 @@
+\begin{tiny}(Cva19)\end{tiny}
+\begin{enumerate}
+  \item La variable $X_2$ suit une loi de Bernoulli de paramètre $\frac{1}{2}$. La loi de $X_3$ est donnée par le tableau
+\begin{center}
+\renewcommand{\arraystretch}{1.5}
+\begin{tabular}{|l|c|c|c|} \hline
+$k\in X_3(\Omega)$ & 0             & 1 & 2\\ \hline
+$\p(X_3=k)$   & $\frac{1}{4}$ & $\frac{1}{2}$ & $\frac{1}{4}$ \\ \hline
+\end{tabular}
+\end{center}\smallskip
+En effet, PPP et FFF conduisent à 0, les suites PFP et FPF à 2 et les 4 autres à 1. On en déduit 
+\begin{displaymath}
+E(X_2)=\frac{1}{2}, \hspace{0.5cm} E(X_3)=1.
+\end{displaymath}
+
+
+  \item Il est clair que $X_n(\Omega) = \llbracket 0,n-1 \rrbracket$ et que 
+\begin{displaymath}
+\p(X_n=0)=\p(X_n=n-1) = \frac{2}{2^{n}} =2^{1-n} 
+\end{displaymath}
+car les événements réalisant ces valeurs sont fixés par le premier lancer: PPP... ou FFF... pour 0, PFPFPF... ou FPFP... pour $n-1$.
+  \item Pour une pièce équilibrée,
+\begin{displaymath}
+\p(X_{n+1}=k) = \frac{1}{2}\left( \p(X_{n}=k) + \p(X_{n}=k-1)\right)   
+\end{displaymath}
+car cela revient à fixer le résultat du lancer $n+1$. Si $X_n=k$ avec F au lancer $n$ le lancer $n+1$ doit donner F etc.
+
+\item La fonction génératrice $G_n$ est polynomiale car la somme est finie (entre $0$ et $n-1$). La relation est une conséquence de c. En dérivant, on obtient
+\begin{multline*}
+G_{n+1}'(s) = \frac{1}{2}G_n(s) + \frac{1+s}{2}G_n'(s)\\
+\Rightarrow E(X_{n+1}) = \frac{1}{2} \underset{=1}{\underbrace{G_n(1)}} + E(X_n)
+\Rightarrow E(X_n) = \frac{n}{2}.
+\end{multline*}
+
+\end{enumerate}

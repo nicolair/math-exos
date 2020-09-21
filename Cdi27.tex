@@ -1,0 +1,20 @@
+\begin{tiny}(Cdi27)\end{tiny} 
+\begin{enumerate}
+  \item L'application de $\mathcal{A}$ dans $\mathcal{L}(E,A)$ qui à une fonction $f$ associe sa \emph{corestriction} à $A$ est bien définie car $f$ prend ses valeurs dans $A$. Il est évident que c'est un isomorphisme.
+  \item Le noyau de $\gamma$ est la partie $\mathcal{A}$ de la question précédente avec $A = \ker a$. Il est isomorphe à $\mathcal{L}(E,A)$ donc de dimension 
+\[
+  \dim( \ker(a)) \dim(E).
+\]
+Son image est clairement incluse dans un sous-espace $\mathcal{A}'$ définie comme à la première question mais avec $A= \Im a$ cette fois. On a
+\[
+  \dim \mathcal{A}' = \rg(a) \dim E.
+\]
+D'après le théorème du rang appliqué à $\gamma$:
+\begin{multline*}
+  \rg(\gamma) = (\dim(E))^2 - \dim(\ker(\gamma))\\
+  = \dim(E) \left( \dim(E) - \dim(\ker(a)) \right)\\
+  = \dim(E) \rg(a) = \dim(\mathcal{A}').
+\end{multline*}
+On en déduit $\Im(\gamma) = \mathcal{A}'$.
+\end{enumerate}
+

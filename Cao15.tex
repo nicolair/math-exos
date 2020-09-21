@@ -1,0 +1,32 @@
+\begin{tiny}(Cao15)\end{tiny}
+\begin{enumerate}
+ \item Notons $C_j$ la colonne $j$ du produit matriciel, soit 
+\begin{displaymath}
+ C_j = \mathop{\mathrm{Mat}}_{\mathcal E}\mathcal{B}\mathop{\mathrm{Mat}}_{\mathcal B}a_j
+\end{displaymath}
+Notons $\lambda_1,\cdots \lambda_p$ les coordonnées de $a_j$ dans $\mathcal{B}$, alors :
+\begin{multline*}
+ C_j = \mathop{\mathrm{Mat}}_{\mathcal E}\mathcal{B}
+\begin{pmatrix}
+ \lambda_1 \\ \vdots \\ \lambda_p
+\end{pmatrix}
+=\mathop{\mathrm{Mat}}_{\mathcal E}\left(\lambda_1 b_1 + \cdots + \lambda_p b_p \right) \\
+= \mathop{\mathrm{Mat}}_{\mathcal E}(a_j)
+\Rightarrow 
+\mathop{\mathrm{Mat}}_{\mathcal E}\mathcal{B}\mathop{\mathrm{Mat}}_{\mathcal B}\mathcal{A}
+=\mathop{\mathrm{Mat}}_{\mathcal E}\mathcal{A}
+\end{multline*}
+
+ \item On considère un espace euclidien $E$ avec une base orthonormée $\mathcal{E}$. On \emph{définit} une famille de vecteurs $\mathcal{A}$ par $\mathop{\mathrm{Mat}}_{\mathcal E}\mathcal{A} = A$. Comme $A$ est inversible, $\mathcal{A}$ est une base. Soit $\mathcal{B}$ la famille orthonormale obtenue à partir de $\mathcal{A}$ par la méthode de Gram-Schmidt.\newline
+Notons $U$ la matrice de passage $\mathop{\mathrm{Mat}}_{\mathcal B}\mathcal{A}$, elle est triangulaire supérieure par construction.\newline
+Notons $P=\mathop{\mathrm{Mat}}_{\mathcal E}\mathcal{B}$, elle est orthogonale car les deux bases $\mathcal{E}$ et $\mathcal{A}$ sont orthonormées. De plus, d'après b.
+\begin{displaymath}
+\mathop{\mathrm{Mat}}_{\mathcal E}\mathcal{B}\mathop{\mathrm{Mat}}_{\mathcal B}\mathcal{A}
+=\mathop{\mathrm{Mat}}_{\mathcal E}\mathcal{A}
+\Rightarrow PU=A
+\end{displaymath}
+
+
+ \item On applique la question précédente à $\trans M$. Il existe $P_1$ orthogonale et $U_1$ triangulaire supérieure telles que $\trans M = P_1 U_1$. Alors $P=\trans P_1$ et $L=\trans U_1$ satisfont aux conditions.
+\end{enumerate}
+

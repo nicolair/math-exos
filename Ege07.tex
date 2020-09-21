@@ -1,0 +1,93 @@
+\begin{tiny}(Ege07)\end{tiny}
+\textbf{El{\'e}ments de trigonom{\'e}trie sph{\'e}rique}.\\
+\begin{figure}[ht]
+	\centering
+	\input{Ege07_1.pdf_t}
+	\caption{Exercice \arabic{enumi} : triangle sphérique.}
+	\label{fig:Ege07_1}
+\end{figure}
+\begin{figure}[ht]
+	\centering
+	\input{Ege07_2.pdf_t}
+	\caption{Exercice \arabic{enumi} : théorème de Girard (1595-1622).}
+	\label{fig:Ege07_2}
+\end{figure}
+On consid{\`e}re la sph{\`e}re unit{\'e} $\mathcal{S}$ dans un espace $E$ euclidien orient{\'e}. Un point $M$ de $\mathcal{S}$ est donc un vecteur unitaire. On notera $M$ ou $\overrightarrow M$ suivant que l'on veut mettre en avant le caractère vectoriel\newline
+ Si $A$ et $B$ sont deux points de $\mathcal{S}$ :
+\begin{itemize}
+\item  $\widehat{AB}$ d{\'e}signe l'{\'e}cart angulaire entre les deux vecteurs; c'est un nombre entre $0$ et $\pi $.
+
+\item  $\overbrace{AB}$ d{\'e}signe l'arc de grand cercle passant par $A$ et $B.$ Sur un cercle, deux points d{\'e}finissent deux arcs, $\overbrace{AB}$ est celui qui est vu depuis l'origine avec l'angle $\widehat{AB}$. On pourrait aussi dire le plus petit des deux arcs.
+
+\item  $\overrightarrow{T}_{AB}$ d{\'e}signe un vecteur tangent en $A$ {\`a} l'arc $\overbrace{AB}$ et dirigé de $A$ vers $B$.
+\end{itemize}
+
+Trois points $I,J,K$ d{\'e}finissent un triangle sph{\'e}rique lorsque la famille $(\overrightarrow I, \overrightarrow J,  \overrightarrow K)$ est libre. Les c{\^o}t{\'e}s sont les arcs $\overbrace{IJ},\overbrace{JK},\overbrace{KI}$. L'angle au sommet $\widehat{I}$
+est l'{\'e}cart angulaire entre $\overrightarrow{T}_{IJ}$ et $\overrightarrow{T}_{IK}$.\\
+On se propose de montrer que
+\[
+\widehat{I}+\widehat{J}+\widehat{K}>\pi
+\]
+On adopte les notations suivantes :
+\begin{align*}
+\overrightarrow I' = \frac{\overrightarrow J\wedge \overrightarrow K}{\Vert \overrightarrow J\wedge \overrightarrow K \Vert } & &
+\overrightarrow J' = \frac{\overrightarrow K\wedge \overrightarrow I}{\Vert \overrightarrow K\wedge \overrightarrow I\Vert }  & &
+\overrightarrow K' = \frac{\overrightarrow I\wedge \overrightarrow J}{\Vert \overrightarrow I\wedge \overrightarrow J\Vert } \\
+\overrightarrow I'' = \frac{J'\wedge K'}{\Vert J'\wedge K'\Vert }& &
+\overrightarrow J'' = \frac{\overrightarrow K'\wedge \overrightarrow I'}{\Vert \overrightarrow K'\wedge \overrightarrow I'\Vert }& &0
+\overrightarrow K'' = \frac{\overrightarrow I'\wedge \overrightarrow J'}{\Vert \overrightarrow I'\wedge \overrightarrow J'\Vert }
+\end{align*}
+\begin{align*}
+&a =\widehat{KJ} & & b=\widehat{IK} & & c=\widehat{JI} \\
+&a'' =\widehat{K''J''} & & b''=\widehat{I''K''} & & c'=\widehat{J'I'} \\
+&a'' =\widehat{K''J''} & & b''=\widehat{I''K''} & & c''=\widehat{J''I''}
+\end{align*}
+
+\begin{enumerate}
+\item
+  \begin{enumerate}
+\item  D{\'e}finissons un nombre $\varepsilon \in\{-1,+1\}$ en posant
+\begin{displaymath}
+ \varepsilon =
+\left\lbrace 
+\begin{aligned}
+ 1 &\text{ si } \det(\overrightarrow I,\overrightarrow J,\overrightarrow K) >0 \\
+-1 &\text{ si } \det(\overrightarrow I,\overrightarrow J,\overrightarrow K) >0 
+\end{aligned}
+\right. 
+\end{displaymath}
+Montrer que $I''=\varepsilon I$,
+$J^{\prime \prime
+}=\varepsilon J$, $K''=\varepsilon K$. En d{\'e}duire $%
+a''=a$, $b''=b$, $c^{\prime \prime
+}=c$.
+
+\item  Montrer que
+\begin{eqnarray*}
+\cos a' &=&\frac{\cos b\cos c-\cos a}{\sin b\sin c} \\
+\cos a' &=&\cos b'\cos c'-\sin
+b'\sin c'\cos a
+\end{eqnarray*}
+    \end{enumerate}
+
+\item
+  \begin{enumerate}
+\item  On peut prendre pour $\overrightarrow{T}_{IJ}$ n'importe quel vecteur non nul de $\Vect(\overrightarrow I)^{\perp }\cap \Vect(\overrightarrow I,\overrightarrow J)$ dirig{\'e} de $I$ vers $J$. \\
+V{\'e}rifier que $(\overrightarrow I\wedge \overrightarrow J)\wedge \overrightarrow I$ convient.
+
+\item  Montrer que 
+\begin{displaymath}
+ \widehat{I}=\widehat{(I\wedge J)(I\wedge K)}=\pi-a'
+\end{displaymath}
+
+\item  Montrer que
+\[
+\cos \widehat{I}=-\cos \widehat{J}\cos \widehat{K}+\sin
+\widehat{J}\sin \widehat{K}\cos a
+\]
+  \end{enumerate}
+
+\item  Montrer que $\widehat{I}+\widehat{J}+\widehat{K}>\pi $.
+\item (théorème de Girard \footnote{\href{http://fr.wikipedia.org/wiki/Albert_Girard}{Albert Girard}, dit le « Samielois », également appelé Albertus Gerardus Metensis, parfois Albert Gérard, né vraisemblablement le 11 octobre 1595 à Saint-Mihiel et mort à 37 ans, le 8 ou 9 décembre 1632 en Hollande ...})\newline
+Montrer que $S=R^2(\widehat{A}+\widehat{B}+\widehat{C}-\pi) $ lorsque $S$ est l'aire d'un triangle sphérique en considérant $S+S_1$, $S+S_2$, $S+S_3$ comme dans la figure 4. On admettra que l'aire de la portion de demi-sphère entre deux grands cercles dépend linéairement de l'angle.
+\end{enumerate}

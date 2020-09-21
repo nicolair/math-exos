@@ -1,0 +1,43 @@
+\begin{tiny}(Egc14)\end{tiny}\label{exo:Egc14}
+Soit $I$ un intervalle de $\R$ et $f$ une application \emph{injective et continue} définie dans $I$. On se propose de montrer que $f$ est strictement monotone.\newline
+Pour $u$, $v$, $w$ dans $I$ tels que $u<v<w$, on nomme $I_1(u,v,w)$, $I_2(u,v,w)$, $I_3(u,v,w)$ les trois implications suivantes.
+\begin{align*}
+ I_1(u,v,w):  &\left( f(v)<f(w) \Rightarrow f(u)<f(v) \right) \\
+ I_2(u,v,w):  &\left( f(u)<f(w) \Rightarrow f(u)<f(v)<f(w)\right)  \\
+ I_3(u,v,w):  &\left( f(u)<f(v) \Rightarrow f(v)<f(w) \right) 
+\end{align*}
+
+\begin{enumerate}
+ \item On veut prouver ces trois implications.\newline
+On considère $u<v<w$ fixés dans $I$. On va exploiter l'injectivité de $f$ et le théorème des valeurs intermédiaires pour tirer des conséquences de certaines inégalités entre des images.\newline
+Dans le tableau suivant, ces inégalités figurent dans la colonne de gauche et leurs conséquences dans celle de droite.
+\begin{center}
+\renewcommand{\arraystretch}{1.3}
+\begin{tabular}{c|c|c}
+ inégalité & intervalle & conséquence\\ \hline
+ $f(v)<f(w)$ &  & $f(u)\not\in [f(v),f(w)]$\\ \hline
+ $f(v)<f(w)$ &  & $f(u)\geq f(w)$ faux\\ \hline
+ $f(u)<f(w)$ &  & $f(v)\leq f(u)$ faux\\ \hline
+ $f(u)<f(w)$ &  & $f(v)\geq f(w)$ faux\\ \hline
+ $f(u)<f(v)$ &  & $f(w)\not\in[f(u),f(v)]$\\ \hline
+ $f(u)<f(v)$ &  & $f(w)\leq f(u)$ faux
+\end{tabular}
+\end{center}
+Compléter ce tableau en indiquant dans la colonne du milieu un intervalle dans lequel l'application du théorème des valeurs intermédiaires (associé à l'injectivité de $f$) prouve la conséquence à droite. 
+\item On suppose qu'il existe $a<b$ dans $I$ tel que $f(a)<f(b)$.\newline
+On veut montrer que $f$ est strictement croissante en considérant dans le tableau suivant les différents cas possibles pour $x<y$ quelconques dans $I$. 
+\begin{center}
+\renewcommand{\arraystretch}{1.2}
+\begin{tabular}{c|c}
+cas & arguments\\ \hline
+$x<y<a<b$ & \phantom{$I_1(a,b,c)$} puis \phantom{$I_1(a,b,c)$}\\ \hline
+$x<a<y<b$ & \phantom{$I_1(a,b,c)$} puis \phantom{$I_1(a,b,c)$}\\ \hline
+$x<a<b<y$ & \phantom{$I_1(a,b,c)$} puis \phantom{$I_1(a,b,c)$}\\ \hline
+$a<x<y<b$ & \phantom{$I_1(a,b,c)$} puis \phantom{$I_1(a,b,c)$}\\ \hline
+$a<x<b<y$ & \phantom{$I_1(a,b,c)$} puis \phantom{$I_1(a,b,c)$}\\ \hline
+$a<b<x<y$ & \phantom{$I_1(a,b,c)$} puis \phantom{$I_1(a,b,c)$}
+\end{tabular}
+\end{center}
+Compléter ce tableau en justifiant que $f(x)<f(y)$. Cet argumentation sera constituée par deux implications successives de la forme  ($I$) indiquée au début pour un bon choix des lettres et de l'indice. (plusieurs réponses sont possibles)
+\item Montrer le résultat annoncé.
+\end{enumerate}

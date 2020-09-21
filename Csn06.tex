@@ -1,0 +1,24 @@
+\begin{tiny}(Csn06)\end{tiny} Il s'agit d'un raisonnement \og à la Césaro\fg.\newline 
+Fixons un entier $m$ et considérons des entiers $n >m$. Comme la suite est décroissante,
+\begin{displaymath}
+ \sum_{k=m+1}^nx_k \geq (n-m)x_n 
+ \Rightarrow 
+ nx_n \leq \left( \sum_{k=m+1}^nx_k \right) + mx_n
+\end{displaymath}
+Comme la série $\left( \sum x_k\right)$ est convergente, on peut majorer par le reste de la série:
+\begin{displaymath}
+ nx_n \leq \sum_{k=m+1}^{+\infty}x_k + mx_n
+\end{displaymath}
+La suite des restes tend vers $0$ donc
+\begin{displaymath}
+ \forall \varepsilon >0, \; \exists m\in \N \text{ tq }
+ \sum_{k=m+1}^{+\infty}x_k \leq \frac{\varepsilon}{2}
+\end{displaymath}
+Pour ce $m$ fixé, la suite $\left( m x_n \right)_{n \in \N}$ converge vers $0$ donc il existe $N\in \N$ tel que
+\begin{displaymath}
+ n \geq N \Rightarrow mx_n \leq \frac{\varepsilon}{2}
+\end{displaymath}
+On en déduit
+\begin{displaymath}
+ n \geq N \Rightarrow nx_n \leq \varepsilon
+\end{displaymath}

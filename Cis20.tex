@@ -1,0 +1,20 @@
+On note $M_f= \sup_{[0,1]}|f|$.
+\begin{enumerate}
+ \item Vérification facile. L'intégrale se calcule, la suite géométrique est négligeable devant la suite en $\frac{1}{n}$.
+ \item La convergence vers $0$ se déduit de la majoration 
+\begin{displaymath}
+ |K_n(f)|\leq M_f \int_{[0,1]}k_n
+\end{displaymath}
+ \item On décompose arbitrairement l'intégrale avec un $a<1$ par relation de Chasles et on la majore par des inégalités de la moyenne en tenant compte de la croissance de $k_n$. On obtient
+\begin{displaymath}
+ |K_n(f)|\leq M_f\, a\, k_n(a) + \sup_{[a,1]}|f|\int_{[0,1]}k_n
+\end{displaymath}
+Pour tout $\varepsilon >0$, comme $f\rightarrow 0$ en $1$, on choisit un $a$ assez proche de $1$  pour que $\sup_{[a,1]}|f|<\frac{\varepsilon}{2}$. Ce $a$ étant fixé, comme la suite $\left( k_n(a)\right) _{n\in \N}$ est négligeable devant $\left( \int_{[0,1]}k_n\right)_{n\in \N}$, il existe un $N$ tel que $M_fak_n(a)<\frac{\varepsilon}{2}\int_{[0,1]}k_n$ dès que $n\geq N$.\newline
+On en déduit la convergence vers $0$ du quotient ce qui traduit la négligeabilité demandée.
+ \item Si $f(1)\neq 0$, la suite des $K_n(f)$ est équivalente à celle des $f(1)\int_{[0,1]}k_n$.\newline
+En effet, par linéarité:
+\begin{multline*}
+  K_n(f) = f(1)\int_{[0,1]}k_n + K_n(f-f(1))\\ \sim f(1)\int_{[0,1]}k_n
+\end{multline*}
+ car la suite des $K_n(f-f(1))$ est négligeable devant celle des $f(1)\int_{[0,1]}k_n$.
+\end{enumerate}

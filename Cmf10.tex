@@ -1,0 +1,23 @@
+\begin{tiny}(Cmf10)\end{tiny} Soit $E$ de dimension $2$ avec une base $\mathcal{U}$. Soit $F$ de dimension $3$ avec une base $\mathcal{V}$. Soit $a\in \mathcal{L}(E,F)$ et $b\in \mathcal{L}(F,E)$ telles que
+\begin{displaymath}
+  \Mat_{\mathcal{U},\mathcal{V}}(a) = A,\hspace{0.5cm}   \Mat_{\mathcal{V},\mathcal{U}}(b) = B 
+\end{displaymath}
+Pour montrer que $AB$ est la matrice d'un projecteur, on calcule $(AB)^2$. On trouve $I_3$; ce qui prouve bien que $AB$ est la matrice d'un projecteur. Avec les bases données
+\begin{displaymath}
+  AB =\Mat_{\mathcal{U}}a\circ b
+\end{displaymath}
+donc $a\circ b$ est un projecteur de $E$. Il est de rang $2$ car son rang est égal à la trace de $AB$. De plus,
+\begin{displaymath}
+\left. 
+\begin{aligned}
+  &\dim E = 2 \\ &\dim F = 3 \\ &a\in \mathcal{L}(E,F) \\ &b\in \mathcal{L}(F,E) \\ &\rg(a\circ b) = 2
+\end{aligned}
+\right\rbrace 
+\Rightarrow a\text{ injective et } b \text{ surjective}
+\end{displaymath}
+On en déduit
+\begin{multline*}
+a\circ b \circ a \circ b = a\circ b \Rightarrow a\circ \left( b\circ a - \Id_E \right)\circ b = 0_{\mathcal{L}(F)} \\
+\Rightarrow \left( b\circ a - \Id_E \right)\circ b = 0_{\mathcal{L}(F,E)}\; \text{ (car $a$ injective) } \\
+\Rightarrow b\circ a - \Id_E = 0_{\mathcal{L}(E)}\; \text{ (car $a$ surjective) } 
+\end{multline*}

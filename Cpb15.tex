@@ -1,0 +1,33 @@
+\begin{tiny}(Cpb15)\end{tiny} On considère deux événements
+\[
+  \begin{aligned}
+    &A: \text{ \og le candidat connait la bonne réponse\fg}\\
+    &C: \text{ \og le candidat coche la bonne case\fg}
+  \end{aligned}
+\]
+On cherche
+\[
+  \p_C(A) = \frac{\p(A\cap C)}{\p(C)}
+  =\frac{\p(A)}{\p(C)}
+  = \frac{p}{\p(C)}
+\]
+car $A \subset C$ d'après l'énoncé. Utilisons $(A, \overline{A})$ comme système complet d'événements:
+\begin{multline*}
+  \p(C) = \p(A)\p_A(C) + \p(\overline{A})\p_{\overline{A}}(C)\\
+  = p \times 1 + (1 - p)\frac{1}{m}
+  = \frac{(m-1)p+1}{m} \\
+\Rightarrow 
+\p_C(A) = \frac{mp}{(m-1)p+1}
+\end{multline*}
+Fiabilité du test.
+\begin{multline*}
+  \frac{mp}{(m-1)p+1} \geq 0.9 \\
+  \Leftrightarrow
+  m p\geq 0.9((m-1)p + 1)\\
+  \Leftrightarrow
+  (0.1 m +1)p \geq 0.9
+  \Leftrightarrow
+  m \geq \frac{\frac{0.9}{p} -1}{0.1}
+  = \frac{9}{p} -10.
+\end{multline*}
+Par exemple si $p=0.3$, il est nécessaire de proposer 20 cases. (c'est beaucoup!)

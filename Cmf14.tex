@@ -1,0 +1,58 @@
+\begin{tiny}(Cmf14)\end{tiny} Comme $\mathcal{U}$ est formé de 3 vecteurs et que l'on a besoin des matrices de passage, le plus économique est de montrer que la famille est génératrice en exprimant les $e$ en fonction des $u$. On tire des relations
+\[
+\left\lbrace
+  \begin{aligned}
+    e_1 &= \frac{1}{3}\left(u_1 + u_2\right)\\
+    e_2 &= \frac{1}{2}\left(e_1 -u_1 + u_3\right) = \frac{1}{6}\left(-2u_1 + u_2 + 3u_3\right)\\
+    e_3 &= \frac{1}{2}\left(e_1 -u_1 - u_3\right) =\frac{1}{6}\left(-2u_1 + u_2 - 3u_3\right)
+  \end{aligned}
+\right.
+\]
+On en déduit
+\begin{multline*}
+  P = P_{\mathcal{E}\mathcal{U}}=
+  \begin{pmatrix}
+    1 & 2 & 0 \\ -1 & 1 & 1 \\ -1 & 1 & -1
+  \end{pmatrix},\\
+P^{-1} = P_{\mathcal{U}\mathcal{E}}= \frac{1}{6}
+  \begin{pmatrix}
+    2 & -2 & -2 \\ 2 & 1 & 1 \\ 0 & 3 & -3
+  \end{pmatrix}.
+\end{multline*}
+De plus,
+\begin{multline*}
+  A\begin{pmatrix}
+     1 \\ -1 \\-1
+   \end{pmatrix}
+= \begin{pmatrix}
+     -1 \\ 1 \\1
+   \end{pmatrix} = -\begin{pmatrix}
+     1 \\ -1 \\-1
+   \end{pmatrix},\\
+   A\begin{pmatrix}
+     2 \\ 1 \\1
+   \end{pmatrix}
+= \begin{pmatrix}
+     4 \\ 2 \\ 2
+   \end{pmatrix} = 2\begin{pmatrix}
+     2 \\ 1 \\ 1
+   \end{pmatrix},\\  
+   A\begin{pmatrix}
+     0 \\ 1 \\ -1
+   \end{pmatrix}
+= \begin{pmatrix}
+     0 \\ 0 \\ 0
+   \end{pmatrix}
+\end{multline*}
+On en déduit 
+\[
+  \MatB{U}{f}=
+  \begin{pmatrix}
+    -1 & 0 & 0 \\ 0 & 2 & 0 \\ 0 & 0 & 0
+  \end{pmatrix} = D.
+\]
+La formule de changement de base donne
+\[
+  A = P D P^{-1}\Rightarrow A^n = P D^n P^{-1}.
+\]
+

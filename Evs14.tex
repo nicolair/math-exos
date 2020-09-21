@@ -1,0 +1,26 @@
+\begin{tiny}(Evs14)\end{tiny} Système et opérateur de fermeture.\newline \index{système de fermeture} \index{opérateur de fermeture}
+Un \emph{système de fermeture} sur un ensemble $E$ est une partie $\mathcal{C}$ de $\mathcal{P}(E)$ vérifiant:
+\[
+  \forall \mathcal{D} \subset \mathcal{C},\hspace{0.5cm} \bigcap_{D \in \mathcal{D}} D \in \mathcal{C}
+\]
+Un \emph{opérateur de fermeture} sur $E$ est une application $J:\mathcal{P}(E)\rightarrow \mathcal{P}(E)$ vérifiant $J \circ J  = J$ et
+\begin{align*}
+  &\forall(X,X')\in \mathcal{P}(E):\; X\subset X' \Rightarrow J(X) \subset J(X'),\\
+  &\forall X \in \mathcal{P}(E):\; X\subset J(X).
+\end{align*}
+\begin{enumerate}
+  \item Soit $\mathcal{C}$ un système de fermeture sur $E$.\newline
+  On définit une fonction $J$ de $\mathcal{P}(E)$ dans $\mathcal{P}(E)$ par:
+\[
+  \forall X \subset E, \;J(X)
+  = \bigcap_{Y \in \mathcal{C} \text{ et } X \subset Y} Y.
+\]
+Montrer que $J$ est un opérateur de fermeture.
+  \item Soit $J$ un opérateur de fermeture.\newline
+  On définit une partie $\mathcal{C}$ de $\mathcal{P}(E)$ par :
+\[
+  \mathcal{C} = \left\lbrace X \subset E \text{ tq } J(X) = X \right\rbrace.
+\]
+Montrer que $\mathcal{C}$ est un système de fermeture.
+\end{enumerate}
+

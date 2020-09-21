@@ -1,0 +1,8 @@
+\begin{tiny}(Cap10)\end{tiny} Comme tous les facteurs sont plus grands que $n+1$, la suite est minorée par $n+1$. Elle diverge donc vers $+\infty$. En factorisant $n$ dans chaque facteur, on exprime le terme d'indice $n$ comme
+\begin{displaymath}
+ n\left( (1+\frac{1}{n})(1+\frac{2}{n})+\cdots +(1+\frac{n}{n})\right) ^{\frac{1}{n}}
+\end{displaymath}
+ Le logarithme du terme entre parenthèse est une somme de Riemann de $\ln(1+x)$ entre $0$ et $1$. Il y a donc convergence vers la valeur de l'intégrale. Par changement de variable, on se ramène à $\ln$ dans $[1,2]$. On connait une primitive $x\ln x -x$, on calcule donc facilement l'intégrale. Après composition par l'exponentielle, on obtient la limite puis l'équivalent
+\begin{displaymath}
+ \frac{4n}{e}
+\end{displaymath}

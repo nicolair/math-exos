@@ -1,0 +1,28 @@
+\begin{tiny}(Cpo08)\end{tiny} Notons $a_1$, $a_2$, $a_3$ les racines:
+\[
+  P = X^3 + 2 X^2 + 3X + 4 = (X-a_1)(X-a_2)(X-a_3).
+\]
+Avec les notations usuelles des polynômes symétriques élémentaires:
+\[
+  S_2 = \sum_i a_i^2 = \sigma_1^2 - 2 \sigma_2.
+\]
+D'après les relations entre coefficients et racines:
+\[
+  \sigma_1 = -2, \; \sigma_2 = 3 \Rightarrow  S_2 = -2.
+\]
+Pour calculer $S_7 = \sum_i a_i^7$, on divise $X^7$ par $P$. Après calculs,
+\[
+  X^7 = Q\,P + R \text{ avec }
+\left\lbrace
+\begin{aligned}
+  Q &= X^4 - 2X^3 + X^2 + 5\\
+  R &= -14X^2 + 15X +20
+\end{aligned}
+\right.
+\]
+Comme $\widetilde{P}(a_i) = 0$,
+\begin{multline*}
+  a_i^7 = -14 a_i^2 + 15 a_1 + 20 \\
+  \Rightarrow
+  S_7 = -14 S_2 + 15 \sigma_1 + 30 = -2.
+\end{multline*}

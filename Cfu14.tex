@@ -1,0 +1,54 @@
+\begin{tiny}Cfu14\end{tiny}
+\begin{multline*}
+  \left.
+  \begin{aligned}
+    e^a &= \ch a + \sh a \\ e^b &= \ch b + \sh b
+  \end{aligned}
+\right\rbrace 
+\Rightarrow
+e^{a + b}
+= (\ch a \ch b + \sh a \sh b) \\ + (\ch a \sh b + \sh a \ch b) 
+\end{multline*}
+En multipliant $a$ et $b$ par $-1$, la première parenthèse est conservée et la deuxième multipliée par -1. On en déduit
+\[
+\begin{aligned}
+\ch (a+b) &= \ch a \ch b + \sh a \sh b\\
+\sh (a+b) &= \ch a \sh b + \sh a \ch b
+\end{aligned}
+\]
+\begin{multline*}
+\left.
+  \begin{aligned}
+  e^a + e^b &= e^{\frac{a+b}{2}}\,2\ch \frac{a-b}{2} \\
+  e^{-a} + e^{-b} &= e^{-\frac{a+b}{2}}\,2\ch \frac{a-b}{2} 
+  \end{aligned}
+\right\rbrace \\
+  \Rightarrow
+\left\lbrace
+\begin{aligned}
+  \ch a + \ch b &= 2\ch \frac{a-b}{2} \ch \frac{a+b}{2} \\ \sh a + \sh b &= 2\ch \frac{a-b}{2} \sh \frac{a+b}{2}
+\end{aligned}
+\right.
+\end{multline*}
+\begin{multline*}
+\left.
+  \begin{aligned}
+  e^a - e^b &= e^{\frac{a+b}{2}} \,2\sh \frac{a-b}{2} \\
+  e^{-a} - e^{-b} &= e^{-\frac{a+b}{2}} \,2\sh \frac{a-b}{2} 
+  \end{aligned}
+\right\rbrace \\
+  \Rightarrow
+  \ch a - \ch b = 2\sh \frac{a-b}{2} \sh \frac{a+b}{2} .
+\end{multline*}
+On utilise la formule du binôme et on sépare les parties paires et impaires
+\begin{multline*}
+  e^{3x} = (\ch x + \sh x)^3\\
+  = {\ch}^3x + 3 {\ch}^2x \sh x  + 3 \ch x {\sh}^2 x + {\sh}^3 x \\
+  \Rightarrow
+  \left\lbrace
+  \begin{aligned}
+    \ch(3x) &= {\ch}^3x  + 3 \ch x {\sh}^2 x \\
+    \sh(3x) &= 3 {\ch}^2 x \sh x  + {\sh}^3 x
+  \end{aligned}
+\right. .
+\end{multline*}

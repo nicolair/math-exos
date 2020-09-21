@@ -1,0 +1,33 @@
+\begin{tiny}(Csl06)\end{tiny} En combinant les définitions, on montre qu'il suffit que $K$ et $K'$ vérifient
+\[
+  \left\lbrace 
+  \begin{aligned}
+    \gamma K + \gamma \lambda K' &= \alpha \\
+    \delta K + \delta\mu K' &= \beta
+  \end{aligned}
+\right. .
+\]
+Il s'agit d'un système de Cramer de déterminant
+\[
+  D = \begin{vmatrix}
+    \gamma & \gamma \lambda \\ \delta & \delta \mu
+  \end{vmatrix}
+= \gamma \delta(\mu - \lambda).
+\]
+D'après les formules de Cramer,
+\begin{multline*}
+  K = 
+  \frac{
+  \begin{vmatrix}
+    \alpha & \gamma \lambda \\ \beta & \delta \mu
+  \end{vmatrix}  
+  }{D}
+  = \frac{\alpha \delta \mu - \beta \gamma \lambda}{\gamma \delta(\mu - \lambda)}, \\
+K' = 
+  \frac{
+  \begin{vmatrix}
+   \gamma  & \alpha \\ \delta & \beta
+  \end{vmatrix}  
+  }{D}
+  = \frac{\gamma \beta  - \delta \alpha}{\gamma \delta(\mu - \lambda)}.
+\end{multline*}

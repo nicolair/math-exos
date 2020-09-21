@@ -1,0 +1,109 @@
+ \input{exopdf.tex}
+\begin{document}
+\section*{Notations}
+Soit $p$ et $q$ des naturels non nuls et $n = p + q$.\newline
+On note $\mathfrak{S}_m$ le groupe des permutations de $\llbracket 1, m \rrbracket$ pour un $m\in \N^*$ quelconque. Comme $\mathfrak{S}_n$ revient très souvent, on le note seulement $\mathfrak{S}$.\newline
+Soit $E$ et $F$ des $\R$-espaces vectoriels et $\mathcal{M}$ l'espace des applications multilinéaires de $E^n$ dans $F$.\newline
+Pour tout $\sigma \in \mathfrak{S}_n$ et tout $\omega\in \mathcal{M}$, on définit $\sigma^* \omega$ par
+\begin{multline*}
+ \forall (x_1,\cdots,x_n)\in E^n, \\
+ \sigma^*\omega(x_1,\cdots,x_n) = \omega(x_{\sigma(1)},\cdots,x_{\sigma(n)}).
+\end{multline*}
+On vérifie facilement:
+
+\begin{multline} \label{sigma*}
+ \forall (\sigma, \theta) \in \mathfrak{S}_{n}^2, \forall(\omega, \omega')\in \mathcal{M}^2, \forall \lambda \in \R,\\
+ \sigma^*(\omega + \omega') = \sigma^*\omega + \sigma^*\omega', \;
+ \sigma^*(\lambda \omega) = \lambda \sigma^* \omega, \\
+ \theta^* \sigma^* \omega = (\theta \circ \sigma)^* \omega.
+\end{multline} 
+
+Une application multilinéaire $\omega \in \mathcal{M}$ est dite \emph{antisymétrique} si et seulement si
+\[
+ \forall \sigma \in \mathfrak{S}_n, \;
+ \sigma^* \omega = \varepsilon(\sigma) \,\omega
+\]
+où $\varepsilon(\sigma)$ est la signature de $\sigma$.
+
+\section*{Antisymétrisation}
+Soit $\omega \in \mathcal{M}$, on définit $\omega^a$ par:
+\[
+ \omega^a = \sum_{\sigma \in \mathfrak{S}} \varepsilon(\sigma)\,\sigma^* \omega.
+\]
+On vérifie facilement que $\omega^a$ est antisymétrique avec les relations \ref{sigma*}.
+
+\section*{Sous-groupe $G_p$}
+On note $G_p$ le sous-groupe de $\mathfrak{S}$ stabilisant $\llbracket 1,p \rrbracket$.
+\[
+ \sigma \in G_p \Leftrightarrow \forall k \in \llbracket 1,p \rrbracket, \sigma(k) \in \llbracket 1,p \rrbracket.
+\]
+Comme il s'agit de bijections, les élements de $G_p$ stabilisent aussi $\llbracket p+1,n\rrbracket$ et $G_p$ est isomorphe à $\mathfrak{S}_p\times \mathfrak{S}_q$.  Le cardinal de $G_p$ est $p!\, q!$.\newline
+Pour tout $\theta \in G_p$, on peut écrire la décomposition
+\begin{equation}\label{theta1-2}
+ \theta = \theta_1 \circ \theta_2 = \theta_2 \circ \theta_1 
+\end{equation}
+où $\theta_1$ fixe les éléments de$\llbracket p+1, n\rrbracket$ et permute ceux de $\llbracket 1,p\rrbracket$ et $\theta_2$ fixe les éléments de$\llbracket 1, p\rrbracket$ et permute ceux de $\llbracket p+1,n\rrbracket$.  
+Considérons \emph{les classes à droite} modulo $G_p$:
+\begin{multline*}
+ \sigma' \sim \sigma \Leftrightarrow \sigma^{-1} \circ \sigma' \in G_p \\
+ \Leftrightarrow \exists \theta \in G_p \text{ tq } \sigma' = \sigma \circ \theta \\
+ \Leftrightarrow \sigma'(\llbracket 1,p \rrbracket) = \sigma(\llbracket 1,p \rrbracket).
+\end{multline*}
+Comme chaque classe contient $p!\,q!$ éléments, il existe $\binom{n}{p}$ classes distinctes. Elles sont clairement en relation avec les parties à $p$ éléments de $\llbracket 1,n \rrbracket$.\newline
+Précisons cette relation. Pour chaque partie $A$ à $p$ éléments, on peut écrire de manière unique
+\[
+ \left\lbrace 
+ \begin{aligned}
+  A &= \left\lbrace i_1, \cdots, i_p\right\rbrace &\text{ avec } i_1 < \cdots < i_p \\
+  \llbracket 1,n \rrbracket \setminus A &= \left\lbrace j_1, \cdots, j_q\right\rbrace &\text{ avec } j_1 < \cdots < j_q 
+ \end{aligned}
+ \right. .
+\]
+On définit une unique permutation $\sigma_A$ attachée à $A$ par:
+\[
+ \left\lbrace 
+ \begin{aligned}
+  \sigma_A(k) &= i_k \text{ pour } k\in \llbracket 1,p \rrbracket \\
+  \sigma_A(p+k) &= j_k \text{ pour } k\in \llbracket 1,q \rrbracket \\
+ \end{aligned}
+\right. 
+\]
+on peut alors écrire une unique décomposition.\newline
+Pour tout $\sigma \in \mathfrak{S}$, il existe une unique partie $A$ à $p$ éléments et une unique permutation $\theta \in G_p$ tels que
+\[
+ \sigma = \sigma_A \circ \theta.
+\]
+
+\section*{Antisymétrisations particulières.}
+\subsection*{Applications $p,q$ antisymétriques}
+On considère ici une application multilinéaire $\omega$ qui est antisymétrique partiellement par rapport aux $p$ premières places et aux $q$ dernières. Cela se traduit par:
+\[
+ \forall \theta \in G_p,\; \theta^* \omega = \varepsilon(\theta_1) \varepsilon(\theta_2)\,\omega = \varepsilon(\theta)\, \omega
+\]
+avec la décomposition \ref{theta1-2}.\newline
+Que donne l'antisymétrisation d'une telle application ?\newline
+Notons $\mathcal{P}_p$ l'ensemble des parties à $p$ éléments de $\llbracket 1,n\rrbracket$ et regroupons par classes:
+\begin{multline*}
+ \omega^a = \sum_{A \in \mathcal{P}_p} \varepsilon(\sigma_A)\,{\sigma_A}^*\left( \sum_{\theta \in G_p}\varepsilon(\theta)\,\underset{=\varepsilon(\theta)\,\omega}{\underbrace{\theta^* \omega}}\right) \\
+ = p!\,q!\,\sum_{A \in \mathcal{P}_p} \varepsilon(\sigma_A)\,{\sigma_A}^*\omega.
+\end{multline*}
+On en déduit que 
+\[
+ \sum_{A \in \mathcal{P}_p} \varepsilon(\sigma_A)\,{\sigma_A}^*\omega
+\]
+est antisymétrique.
+
+\subsection*{Application $p$-symétrique et $q$-antisymétrique}
+On considère ici une application multilinéaire $\omega$ qui est symétrique partiellement par rapport aux $p$ premières places et antisymétrique par rapport aux $q$ dernières. Cela se traduit par:
+\[
+ \forall \theta \in G_p,\; \theta^* \omega = \varepsilon(\theta_2)\,\omega
+\]
+avec la décomposition \ref{theta1-2}.\newline
+Que donne l'antisymétrisation d'une telle application ?
+\begin{multline*}
+ \omega^a = \sum_{A \in \mathcal{P}_p} \varepsilon(\sigma_A)\,{\sigma_A}^*\left( \sum_{\theta \in G_p}\varepsilon(\theta)\,\underset{=\varepsilon(\theta_2)\,\omega}{\underbrace{\theta^* \omega}}\right) \\
+ = \underset{ = 0}{\underbrace{\left( \sum_{\theta_1 \in \mathfrak{S}_p} \varepsilon(\theta_1)\right)}}q!\,\sum_{A \in \mathcal{P}_p} \varepsilon(\sigma_A)\,{\sigma_A}^* \omega
+ = 0.
+\end{multline*}
+La somme étant nulle car il existe autant de permutations indirectes que directes.
+\end{document}

@@ -1,0 +1,19 @@
+\begin{tiny}(Cen10)\end{tiny} Cet exercice devrait plutôt être placé avec les suites définies par récurrence.\newline
+La suite de Fibonacci est définie par une récurrence linéaire d'ordre $2$ de polynôme caractéristique 
+\begin{displaymath}
+  X^2 - X - 1
+\end{displaymath}
+Les racines sont
+\begin{displaymath}
+  r = \frac{1}{2}\left(1+\sqrt{5}\right) \text{(nb d'or) et } r' = \frac{1}{2}\left(1-\sqrt{5}\right) = -\frac{1}{r} 
+\end{displaymath}
+Elle s'exprime donc comme combinaison linéaire des suites géométriques de raison $r$ et $r'$. On trouve
+\begin{displaymath}
+\forall n\in \N,\; \phi_n = \frac{1}{\sqrt{5}}\left( r^n - r'^n\right)   
+\end{displaymath}
+(formules de Binet) On en déduit, avec la formule du binôme, 
+\begin{multline*}
+\sum_{k=0}^n\binom{n}{k}\phi_{m+k} = \frac{r^m}{\sqrt{5}}(1+r)^n - \frac{r'^m}{\sqrt{5}}(1+r')^n \\
+= \frac{r^{m+2n}}{\sqrt{5}} - \frac{r'^{m+2n}}{\sqrt{5}} = \phi_{m+2n}\\
+\end{multline*}
+car $r^2 = 1+r$ et $r'^2 = 1 + r'$.

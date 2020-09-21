@@ -1,0 +1,35 @@
+\begin{tiny}(Cfu17)\end{tiny} Notons $A(x)$, $B(x)$, $C(x)$ les trois expressions à exprimer et utilisons
+\begin{displaymath}
+ \ch x + 1 = \frac{1}{2}\left(e^x + e^{-x} +2\right)
+= \frac{1}{2}\left(e^{\frac{x}{2}}+e^{\frac{x}{2}} \right)^2  
+\end{displaymath}
+et la formule analogue pour $\ch x -1$ :
+\begin{displaymath}
+  \ch x + 1 = 2 \left( \ch\frac{x}{2}\right)^2 \hspace{0.5cm}\ch x - 1 = 2 \left( \sh\frac{x}{2}\right)^2 
+\end{displaymath}
+On en déduit
+\begin{displaymath}
+  A(x) =\ch\frac{x}{2},\hspace{0.5cm}
+  B(x) = \left| \sh(\frac{x}{2})\right|
+\end{displaymath}
+Comme $B(x)$ est définie pour $x$ en dehors de $[-1,1[$, on peut considérer
+\begin{displaymath}
+x =
+\left\lbrace 
+\begin{aligned}
+\ch t   &\text{ si } x\geq 1 \\
+ -\ch t &\text{ si } x< -1   
+\end{aligned}
+\right. 
+\end{displaymath}
+
+On en tire, pour $x\geq 0$,
+\begin{displaymath}
+  C(x) = 
+\left\lbrace  
+\begin{aligned}
+  \th\frac{t}{2} &\text{ si } x\geq 1 \\
+  \frac{\ch \frac{t}{2}}{\sh \frac{t}{2}} &\text{ si } x < -1 
+\end{aligned}
+\right. 
+\end{displaymath}

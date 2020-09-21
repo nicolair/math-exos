@@ -1,0 +1,32 @@
+\begin{tiny}(Car13)\end{tiny} Supposons qu'un tel polynôme $P$ existe. Il est de degré $3$ et unitaire donc $P(X+1)-P$ est de degré $2$ et de coefficient dominant $3$. De plus il est divisible par $X-2$ et $X-3$. On en déduit
+\begin{displaymath}
+ P(X+1)-P = 3(X-2)(X-3)=3X^2-15X+18
+\end{displaymath}
+On utilise alors des coefficients indéterminés. Si
+\begin{displaymath}
+ P = X^3 +aX^2+bX+c
+\end{displaymath}
+En identifiant les coefficients, l'expression de $P(X+1)-P$ conduit à:
+\begin{displaymath}
+ \left\lbrace 
+\begin{aligned}
+ 3+2a=-15\\a+b+1=18
+\end{aligned}
+\right. 
+\Leftrightarrow
+ \left\lbrace 
+\begin{aligned}
+ a=-9\\a+b+1=26
+\end{aligned}
+\right. 
+\end{displaymath}
+Donc $P$ est de la forme
+\begin{displaymath}
+ P=X^3-9X^2+26X+c
+\end{displaymath}
+Le $c$ est déterminé par $P(1)=0$. On trouve $c=-18$.
+Le seul polynôme possible est donc
+\begin{displaymath}
+ P=X^3-9X^2+26X+-18
+\end{displaymath}
+Il est effectivement divible par $X-1$ et prend la valeur $24$ en $2$, $3$, $4$.

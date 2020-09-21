@@ -1,0 +1,13 @@
+\begin{tiny}(Efr11)\end{tiny} Soit $x_1,\cdots,x_n$ complexes non nuls deux à deux distincts et $r\in \llbracket 0,n\rrbracket$. Montrer que\footnote{d'après Knuth \emph{Art of Computer Programming} Vol I p36.}
+\begin{displaymath}
+  \sum_{j=1}^n \frac{x_j^r}{\prod_{k\neq j}(x_j-x_k)}
+  =
+\left\lbrace 
+\begin{aligned}
+  &0           &\text{ si } &r < n-1 \\
+  &1           &\text{ si } &r = n-1 \\
+  &\sum_j x_j  &\text{ si } &r = n \\
+\end{aligned}
+\right. 
+\end{displaymath}
+

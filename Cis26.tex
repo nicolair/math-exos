@@ -1,0 +1,20 @@
+\begin{tiny}(Cis26)\end{tiny} Ici $f \in \mathcal{C}(\left[0, +\infty\right[)$ et $f \xrightarrow{+\infty} l\in \R$.
+Soit $\varepsilon > 0$.
+Comme $f \xrightarrow{+\infty} l$, il existe $A > 0$ tel que $x \geq A$ entraine $\left| f(x) - l \right| \leq \frac{\varepsilon}{4}$.\newline
+Comme $f$ restreinte à $\left[0, A \right]$ est uniformément continue (thm de Heine), il existe $\alpha > 0$ tel, dans $\left[ 0, A\right]$, $
+  |y-x| \leq \alpha$ entraine $\left| f(y) - f(x) \right| \leq \frac{\varepsilon}{2}$.\newline
+Montrons que dans $\left[ 0, +\infty \right[$,
+ \[
+|y-x| \leq \alpha \Rightarrow \left| f(y) - f(x) \right| \leq \varepsilon .
+\]
+
+Si $x$ et $y$ sont dans $\left[ 0, A\right]$, cela résulte directement de la définition de $\alpha$.\newline 
+Si $x$ et $y$ sont dans $\left[ A, +\infty\right[$,
+\[
+  \left| f(y) - f(x) \right| \leq \left| f(y) - l \right| + \left| l - f(x) \right| \leq \frac{\varepsilon}{2}
+\]
+  Si $A$ est entre les deux. Par exemple $x \leq A \leq y$ alors $A - x \leq y -x \leq \alpha$ donc
+\begin{multline*}
+  \left| f(y) - f(x) \right| \leq \left| f(y) - f(A) \right| + \left| f(A) - l \right| \\
+  + \left| l - f(y)\right| \leq \frac{\varepsilon}{2} + \frac{\varepsilon}{4} + \frac{\varepsilon}{4}.
+\end{multline*}

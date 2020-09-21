@@ -1,0 +1,15 @@
+\begin{tiny}(Cgs07)\end{tiny} On raisonne par récurrence descendante. Considérons la proposition $\mathcal{P}_k$ : toute permutation avec au moins $k$ points fixes est la composée de $m$ permutations avec $m\leq n-k$.\newline
+La convention précisée au début de l'énoncé signifie que $\mathcal{P}_n$ est vraie. Soit $k\in \llbracket 1,n \rrbracket$. Montrons que $\mathcal{P}_k$ entraîne $\mathcal{P}_{k-1}$.\newline
+Soit $\sigma$ avec au moins $k-1$ points fixes.\newline
+Si $\sigma$ a plus de $k$ points fixes, l'hypothèse de récurrence montre que $\sigma$ est la composée de $m$ transpositions avec $m\leq n-k \leq n-k+1 = n-(k-1)$.\newline
+Si $\sigma$ admet exactement $k-1$ points fixes. Soit $x$ entre $1$ et $n$ qui n'est pas un point fixe de $\sigma$. On note $y=\sigma(x)$, alors $x\neq y$ et on considère $\sigma' = (x\;y)\circ \sigma$.\newline
+Remarquons que $y$ n'est pas un point fixe. S'il l'était, on aurait $y=\sigma(y)$ et donc $x=y$ à cause de l'injectivité de $\sigma$. On en déduit que tous les points fixes de $\sigma$ sont aussi des points fixes de $\sigma'$. De plus 
+\begin{displaymath}
+ \sigma'(x)=(x\;y)(\sigma(x))=(x\;y)(y)=x
+\end{displaymath}
+Donc $\sigma'$ admet au moins $k$ points fixes. Il existe des transpositions $\tau_1,\cdots,\tau_m'$ avec $m'\leq n-k$ et 
+\begin{displaymath}
+ \sigma' = \tau_1\circ\cdots \circ \tau_m'
+\Rightarrow \sigma = (x\;y) \circ \tau_1\circ\cdots \circ \tau_m'
+\end{displaymath}
+avec $m'+1\leq n-k +1 = n-(k-1)$.

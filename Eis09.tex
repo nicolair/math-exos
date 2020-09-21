@@ -1,0 +1,22 @@
+\begin{tiny}(Eis09)\end{tiny} On adopte les notations du texte \href{http://maquisdoc.net/data/cours_nicolair/C2189.pdf}{Intégration sur un segment}.\newline
+Soit $f$ une fonction bornée à valeurs réelles définie sur un segment $[a,b]$. On note $\mathcal{E}^-(f)$ l'ensemble des fonctions en escalier inférieures à $f$ et $\mathcal{E}^+(f)$ l'ensemble des fonctions en escalier supérieures à $f$. On note $I_+(f)$ la borne inférieure de l'ensemble des $\int_{[a,b]}\varphi$ pour $\varphi\in \mathcal{E}^+(f)$ et $I_-(f)$ la borne supérieure de l'ensemble des $\int_{[a,b]}\varphi$ pour $\varphi\in \mathcal{E}^-(f)$.\newline
+Le \emph{pas} d'une subdivision $\mathcal{S} = (x_0,x_1,\cdots,x_n)$ est le plus grand des $x_{i+1}-x_i$ pour $i\in \llbracket0 , n-1\rrbracket$. Il est noté $\delta(\mathcal{S})$.\newline
+On suppose $f$ \emph{croissante} sur $[a,b]$.\newline
+Soit $\mathcal{S} = (x_0,x_1,\cdots,x_n)$ une subdivision de $[a,b]$. On définit des fonctions en escalier $\varphi$ et $\psi$:
+\begin{align*}
+ &\forall i \in \llbracket0 , n\rrbracket, &\varphi(x_i)=\psi(x_i)=f(x_i)\\
+ &\forall i \in \llbracket0 , n-1\rrbracket, 
+&\left\lbrace 
+\begin{aligned}
+ \text{v. de }\varphi \text{ sur }]x_i,x_{i+1}[&=f(x_i)\\
+ \text{v. de }\psi \text{ sur }]x_i,x_{i+1}[&=f(x_{i+1})
+\end{aligned}
+\right. 
+\end{align*}
+\begin{enumerate}
+ \item Montrer que $\varphi\in \mathcal{E}^-(f)$ et $\psi\in \mathcal{E}^+(f)$. Montrer que
+\begin{displaymath}
+ 0\leq \int_{[a,b]}\psi -\int_{[a,b]}\varphi \leq \delta(\mathcal{S})(f(b)-f(a))  
+\end{displaymath}
+\item Montrer que $I_-(f)=I_+(f)$.
+\end{enumerate}

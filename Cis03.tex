@@ -1,0 +1,51 @@
+\begin{tiny}(Cis03)\end{tiny}
+On va démontrer la limite demandée en utilisant la définition d'une limite.\newline
+Soit $\varepsilon > 0$.\newline
+En intégrant l'inégalité définissant $M$, on obtient
+\[
+ u_n \leq \left( \int_{\left[ a,b\right] } M^n\right)^{\frac{1}{n}}
+ = (b-a)^{\frac{1}{n}}M.
+\]
+Comme $((b-a)^{\frac{1}{n}})_{n \in \N^*}\rightarrow 1$ et $\frac{M + \varepsilon}{M} > 1$, il existe $N_1$ tel que
+\[
+ n \geq N_1 \Rightarrow (b-a)^{\frac{1}{n}} \leq \frac{M + \varepsilon}{M}.
+\]
+La fonction $f$ est continue sur le segement $\left[ a,b \right]$. Elle atteint sa borne supérieure $M$. Il existe donc $u$ et $v$ tels que
+$a\leq u < v \leq b$ et
+\[
+ \forall x \in \left[ u,v \right], \; M - \frac{\varepsilon}{2} \leq f(x). 
+\]
+De plus $f$ est à valeur positive donc 
+\begin{multline*}
+ \int_{\left[ a,b\right] }f^n \geq \int_{\left[ u,v\right] }f^n
+ \geq \int_{\left[ u,v\right] }(M-\frac{\varepsilon}{2})^n \\
+ \Rightarrow u_n \geq (v-u)^{\frac{1}{n}}(M-\frac{\varepsilon}{2})
+\end{multline*}
+Comme $((v-u)^{\frac{1}{n}})_{n \in \N^*}\rightarrow 1$ et $\frac{M - \varepsilon}{M-\frac{\varepsilon}{2}} < 1$, il existe $N_2$ tel que
+\[
+ n \geq N_2 \Rightarrow (b-a)^{\frac{1}{n}} \geq \frac{M - \varepsilon}{M-\frac{\varepsilon}{2}}.
+\]
+On obtient alors,
+\begin{multline*}
+ n \geq \max(N_1,N_2) 
+ \Rightarrow \\
+ M - \varepsilon = \frac{M - \varepsilon}{M-\frac{\varepsilon}{2}} M-\frac{\varepsilon}{2}
+ \leq u_n \leq 
+ \frac{M + \varepsilon}{M} M = M + \varepsilon.
+\end{multline*}
+Pour l'autre limite, on pose $g = f^{-1}$, alors
+\[
+ \min f = \frac{1}{\max g}.
+\]
+De plus
+\[
+ \left( \int_{\left[ a,b\right] }g^n\right)^{\frac{1}{n}} 
+ = \left( \int_{\left[ a,b\right] }f^{-n}\right)^{\frac{1}{n}}
+ = \frac{1}{v_n}.
+\]
+En utilisant le premier résultat:
+\[
+ (\frac{1}{v_n})\rightarrow \max g \Rightarrow (v_n)\rightarrow \frac{1}{\max g} = \min f.
+\]
+
+

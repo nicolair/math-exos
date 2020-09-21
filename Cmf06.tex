@@ -1,0 +1,149 @@
+\begin{tiny}(Cmf06)\end{tiny}
+\begin{enumerate}
+ \item On cherche les solutions sous la forme
+\[
+ X =
+\begin{pmatrix}
+ x & y \\ z &t
+\end{pmatrix} \; \Rightarrow \;
+ X^2 =
+\begin{pmatrix}
+ x^2 + yz & xy + yt \\ zx + tz & zy + t^2
+\end{pmatrix}.
+\]
+\[
+ X ^2 = \begin{bmatrix}
+ 9 & 0 \\
+ 4 & 9
+\end{bmatrix}
+\Leftrightarrow
+\left\lbrace 
+\begin{aligned}
+x^2 + yz &= 9 \\
+y(x+t) &= 0\\
+(x+t)z &= 4 \\
+zy + t^2 &= 9
+\end{aligned}
+\right. 
+\Leftrightarrow
+\left\lbrace 
+\begin{aligned}
+x^2  &= 9 \\
+y &= 0\\
+(x+t)z &= 4 \\
+t^2 &= 9
+\end{aligned}
+\right. 
+\]
+Comme $x+t \neq 0$, il y a seulement deux solutions
+\[
+ \begin{pmatrix}
+  3 & 0 \\ 3 & \frac{2}{3}
+ \end{pmatrix}, \hspace{0.5cm}
+ - \begin{pmatrix}
+  3 & 0 \\ 3 & \frac{2}{3}
+ \end{pmatrix}.
+\]
+\[
+ X ^2 = \begin{bmatrix}
+ \frac{1}{4} & 0 \\
+ 1 & \frac{9}{4}
+\end{bmatrix}
+\Leftrightarrow
+\left\lbrace 
+\begin{aligned}
+x^2 + yz &= \frac{1}{4} \\
+y(x+t) &= 0\\
+(x+t)z &= 1 \\
+zy + t^2 &= \frac{9}{4}
+\end{aligned}
+\right. 
+\Leftrightarrow
+\left\lbrace 
+\begin{aligned}
+x^2  &= \frac{1}{4} \\
+y &= 0\\
+(x+t)z &= 1 \\
+t^2 &= \frac{9}{4}
+\end{aligned}
+\right. 
+\]
+Cette fois il y a 4 solutions car $|x| \neq |t|$, 
+\[
+X_1 = \frac{1}{2}\begin{pmatrix}
+  1 & 0 \\ 1 & 3
+ \end{pmatrix}, 
+X_2 = \frac{1}{2}\begin{pmatrix}
+  1 & 0 \\ -2 & -3
+ \end{pmatrix}, 
+- X_1,  -X_2.
+\]
+
+ \item Inversons les expressions
+\begin{multline*}
+ \left\lbrace 
+ \begin{aligned}
+  v_1 &= e_1 \\ v_2 &= e_1 + e_2
+ \end{aligned}
+ \right. 
+\Leftrightarrow
+ \left\lbrace 
+ \begin{aligned}
+  e_1 &= v_1 \\ e_2 &= - v_1 + v_2
+ \end{aligned}
+ \right. \\
+ \Leftrightarrow P_{\mathcal{E} \mathcal{V}} = \begin{pmatrix}
+                                                1 & 1 \\ 0 & 1
+                                               \end{pmatrix} 
+\Leftrightarrow
+P_{\mathcal{V} \mathcal{E} } = \begin{pmatrix}
+                                                1 & -1 \\ 0 & 1
+                                               \end{pmatrix}.
+\end{multline*}
+N'utilisons pas la formule de changement de base mais exprimons les images des vecteurs de $\mathcal{V}$ qui se lisent sur la matrice de $f$ dans $\mathcal{E}$:
+\begin{multline*}
+ f(e_1) = f(e_2)= e_1 + e_2 = v_2 \\
+ \Rightarrow
+ \left\lbrace 
+ \begin{aligned}
+  f(v_1) &= f(e_1) = v_2\\ f(v_2) &= f(e_1) + f(e_2) = 2v_2
+ \end{aligned}
+\right. \\
+\Rightarrow
+\MatB{V}{f}=
+\begin{pmatrix}
+ 0 & 0 \\ 1 & 2
+\end{pmatrix}.
+\end{multline*}
+
+ \item Suivons l'indication de l'énoncé en ajoutant $\frac{1}{4}I_2$:
+\begin{multline*}
+  X^2 + X = \begin{pmatrix} 1 & 1 \\ 1 & 1 \end{pmatrix}
+  \Leftrightarrow
+  X^2 + X + \frac{1}{4}I_2 = \begin{pmatrix} \frac{5}{4} & 1 \\ 1 & \frac{5}{4} \end{pmatrix}\\
+  \Leftrightarrow
+  (X - \frac{1}{2}I_2)^2 = \begin{pmatrix} \frac{5}{4} & 1 \\ 1 & \frac{5}{4} \end{pmatrix}
+\end{multline*}
+Avec la formule de changement de base, le résultat de la question b. s'écrit
+\[
+\MatB{V}{f}=
+\begin{pmatrix} 0 & 0 \\ 1 & 2 \end{pmatrix}
+ = P_{\mathcal{V}\mathcal{E}} \underset{= \MatB{E}{f}}{\underbrace{\begin{pmatrix} 1 & 1 \\ 1 & 1 \end{pmatrix}}}P_{\mathcal{E}\mathcal{V}} 
+\]
+Multiplions à gauche par $P_{\mathcal{V}\mathcal{E}}$ et à droite par $P_{\mathcal{E}\mathcal{V}}$. La relation devient
+\[
+  Y^2 = \begin{pmatrix} 0 & 0 \\ 1 & 2 \end{pmatrix} + \frac{1}{4} I_2 = \frac{1}{4}\begin{pmatrix} 1 & 0 \\ 4 & 9 \end{pmatrix}  
+\]
+avec $Y = P_{\mathcal{V}\mathcal{E}} X P_{\mathcal{E}\mathcal{V}} - \frac{1}{4}I_2$.
+\end{enumerate}
+On retombe sur la deuxième matrice de a. L'équation proposée ici admet donc 4 matrices solutions
+\[
+  \forall i \in \llbracket 1,4 \rrbracket, \hspace{0.2cm} P_{\mathcal{E}\mathcal{V}}\, X_i\, P_{\mathcal{V}\mathcal{E}} + \frac{1}{4} I_2
+\]
+Après calculs ces solutions sont
+\[
+  \frac{1}{2}\begin{pmatrix} 1 & 1 \\ 1 & 1 \end{pmatrix},\hspace{0.2cm}
+  -\begin{pmatrix} 1 & 1 \\ 1 & 1 \end{pmatrix},\hspace{0.2cm}
+  \begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix},\hspace{0.2cm}
+  -\frac{1}{2}\begin{pmatrix} 3 & 1 \\ 1 & 3 \end{pmatrix}.
+\]

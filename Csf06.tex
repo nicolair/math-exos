@@ -1,0 +1,43 @@
+\begin{tiny}(Csf06)\end{tiny}
+\begin{enumerate}
+  \item La variable $S_n$ suit une loi binomiale de paramètres $n$ et $x$. Avec le cours:
+\begin{multline*}
+E(S_n)=nx,\; V(S_n)=nx(1-x),\; E(Z_n)=x,\\ V(Z_n) = \frac{x(1-x)}{n}  
+\end{multline*}
+
+  \item On applique l'inégalité de Bienaymé-Chebychev à la variable $Z_n$:
+\begin{displaymath}
+\p\left( \left|Z_n -x\right|\right)\leq \frac{x(1-x)}{n\alpha^2}\leq \frac{1}{4n\alpha^2} 
+\end{displaymath}
+car il est bien connu que $x(1-x)\leq\frac{1}{4}$ pour $x$ entre $0$ et $1$. En interprétant $S_n$ comme le nombre d'éléments d'une partie aléatoire d'un ensemble à $n$ éléments, l'événement $(\left|Z_n -x\right|)$ est réalisé pour les tirages de parties à $k$ éléments avec $\left|\frac{k}{n}-x\right|\geq \alpha$. On en déduit
+\begin{displaymath}
+\p\left( \left|Z_n -x\right|\right)
+= \sum_{\left|\frac{k}{n}-x\right|\geq \alpha} \binom{k}{n}x^k (1-x)^{n-k}
+\end{displaymath}
+
+  \item La formule de transfert montre que
+\begin{displaymath}
+B_n(f)(x) 
+= \sum_{k=0}^{n} \binom{k}{n}x^k (1-x)^{n-k}f(\frac{k}{n})    
+\end{displaymath}
+On obtient la formule demandée en soustrayant à cette relation le développement du binôme de
+\begin{displaymath}
+  f(x) = \left( x+(1-x)\right)^n f(x) 
+\end{displaymath}
+
+  \item D'après le théorème de Heine appliqué à la fonction continue $f$ dans le segment $[0,1]$, pour tout $\varepsilon >0$, il existe $\alpha >0$ tel que
+\begin{displaymath}
+  \forall (u,v)\in[0,1]^,\;
+|u-v| \leq \alpha \Rightarrow |f(u)-f(v)|\leq \frac{\varepsilon}{2}
+\end{displaymath}
+On en déduit pour chaque $x\in [0,1]$,
+\begin{displaymath}
+\left|B_n(f)(x) -f(x)\right| \leq \frac{\varepsilon}{2}+ \frac{1}{4n\alpha^2} 
+\end{displaymath}
+en séparant les $k$ selon que $\frac{k}{n}$ est proche ou loin de $x$ et en majorant avec les inégalités déjà introduites.\newline
+Comme la majoration est valable pour tous les $x$:
+\begin{displaymath}
+  N_{\infty}\left( B_n(f) -f\right) \leq \frac{\varepsilon}{2}+ \frac{1}{4n\alpha^2} 
+\end{displaymath}
+On termine avec le raisonnement usuels en deux étapes successives.
+\end{enumerate}

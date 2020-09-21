@@ -1,0 +1,81 @@
+\documentclass{article}
+\usepackage[x11names, rgb]{xcolor}
+\usepackage[utf8]{inputenc}
+\usepackage{tikz}
+\usetikzlibrary{snakes,arrows,shapes}
+\usepackage{amsmath}
+%
+%
+
+%
+
+%
+
+\begin{document}
+\pagestyle{empty}
+%
+%
+%
+
+\enlargethispage{10cm}
+% Start of code
+% \begin{tikzpicture}[anchor=mid,>=latex',line join=bevel,]
+\begin{tikzpicture}[>=latex',line join=bevel,]
+  \pgfsetlinewidth{1bp}
+%%
+\pgfsetcolor{black}
+  % Edge: II -> P
+  \draw [->] (188.09bp,29.984bp) .. controls (200.26bp,37.205bp) and (215.96bp,46.526bp)  .. (238.44bp,59.862bp);
+  % Edge: Tirage -> II
+  \draw [->] (70.389bp,59.476bp) .. controls (89.902bp,51.175bp) and (115.51bp,40.284bp)  .. (144.94bp,27.763bp);
+  % Edge: Tirage -> PP
+  \draw [->] (70.389bp,84.524bp) .. controls (89.902bp,92.825bp) and (115.51bp,103.72bp)  .. (144.94bp,116.24bp);
+  \definecolor{strokecol}{rgb}{0.0,0.0,0.0};
+  \pgfsetstrokecolor{strokecol}
+  \draw (111.39bp,112.5bp) node {1/6};
+  % Edge: PI -> P
+  \draw [->] (195.2bp,72.0bp) .. controls (203.47bp,72.0bp) and (212.71bp,72.0bp)  .. (231.61bp,72.0bp);
+  % Edge: Tirage -> PI
+  \draw [->] (82.162bp,72.0bp) .. controls (97.809bp,72.0bp) and (115.52bp,72.0bp)  .. (140.87bp,72.0bp);
+  % Edge: PP -> P
+  \draw [->] (188.09bp,114.02bp) .. controls (200.26bp,106.8bp) and (215.96bp,97.474bp)  .. (238.44bp,84.138bp);
+  % Node: II
+\begin{scope}
+  \definecolor{strokecol}{rgb}{0.0,0.0,0.0};
+  \pgfsetstrokecolor{strokecol}
+  \draw (167.89bp,18.0bp) node {II};
+\end{scope}
+  % Node: P
+\begin{scope}
+  \definecolor{strokecol}{rgb}{0.0,0.0,0.0};
+  \pgfsetstrokecolor{strokecol}
+  \draw (258.89bp,72.0bp) node {P};
+\end{scope}
+  % Node: PP
+\begin{scope}
+  \definecolor{strokecol}{rgb}{0.0,0.0,0.0};
+  \pgfsetstrokecolor{strokecol}
+  \draw (167.89bp,126.0bp) node {PP};
+\end{scope}
+  % Node: PI
+\begin{scope}
+  \definecolor{strokecol}{rgb}{0.0,0.0,0.0};
+  \pgfsetstrokecolor{strokecol}
+  \draw (167.89bp,72.0bp) node {PI};
+\end{scope}
+  % Node: Tirage
+\begin{scope}
+  \definecolor{strokecol}{rgb}{0.0,0.0,0.0};
+  \pgfsetstrokecolor{strokecol}
+  \draw (40.946bp,72.0bp) node {Tirage};
+\end{scope}
+%
+\end{tikzpicture}
+% End of code
+
+%
+\end{document}
+%
+
+
+

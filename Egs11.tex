@@ -1,0 +1,23 @@
+\begin{tiny}(Egs11)\end{tiny} Matrices irréductibles.\newline
+Une matrice $A \in \mathcal{M}_p(\R)$ est dite \emph{réductible} si et seulement si il existe une matrice de permutation $P_{\sigma}$ telle que 
+$\trans P_{\sigma} M P_{\sigma}$ sont triangulaire supérieure par blocs c'est à dire de la forme
+\[
+ \begin{pmatrix}
+  U & V \\ 0 & W
+ \end{pmatrix}
+\text{ avec } U \text{ carrée}.
+\]
+Une matrice qui n'est pas réductible est dite \emph{irréductible}.
+\begin{enumerate}
+ \item Soit $(I,J)$ une partition de $\llbracket 1,p \rrbracket$ telle que
+\[
+ \forall (i,j) \in I\times J, \; a_{i j} = 0.
+\]
+Montrer que $A$ est réductible.
+ \item Montrer la réciproque de l'implication du a. Caractériser les matrices irréductibles.
+ \item Soit $A \in \mathcal{M}_p(\R)$. On suppose que pour tout $(i,j) \in \llbracket 1,p \rrbracket^2$, il existe une suite
+\[
+ a_{i k_1}, a_{k_1 k_2}, \cdots, a_{k_{m-1} k_m}, a_{k_m j}
+\]
+non nuls. Montrer que la matrice est irréductible.\footnote{je ne sais pas si la réciproque est vraie}
+\end{enumerate}

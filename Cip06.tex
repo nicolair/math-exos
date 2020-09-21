@@ -1,0 +1,10 @@
+\begin{tiny}(Cip06)\end{tiny}
+\begin{multline*}
+ \cos(nx)\cos^nx = \Re\left(\frac{e^{ix}+e^{-ix}}{2}e^{ix} \right)^n\\
+=\frac{1}{2^n}\Re(e^{2ix}+1)^n 
+=\frac{1}{2^n}\sum_{k=0}^n \binom{n}{k}\cos(2kx)
+\end{multline*}
+Lors de l'intégration, des $\sin(2kx)$ apparaissent. Leur contribution est nulle entre $0$ et $\frac{\pi}{2}$ sauf pour $k=0$. La valeur de l'intégrale proposée est donc
+\begin{displaymath}
+ \frac{\pi}{2^{n+1}}
+\end{displaymath}

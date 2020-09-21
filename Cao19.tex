@@ -1,0 +1,21 @@
+\begin{tiny}(Cao19)\end{tiny}
+\begin{enumerate}
+ \item Si $f$ est orthogonale et vérifie $f\circ f =-\Id_E$. Pour tout $x\in E$,
+\begin{multline*}
+ (x/f(x))=(f(x)/f^2(x))=-(f(x)/x) \\ \Rightarrow (x/f(x))=0
+\end{multline*}
+Réciproquement, considérons $\mathcal{B}=(b_1,\cdots,b_n)$ une base orthonormée. Alors
+\begin{displaymath}
+ (f(b_i+b_j)/b_i+b_j)=0\Rightarrow (f(b_i)/b_j)+(f(b_j)/b_i)=0
+\end{displaymath}
+On en déduit que la matrice de $f$ dans $\mathcal{B}$ est antisymétrique. Or la transposée de cette matrice est la matrice de $f^{-1}$ car $f$ est orhogonale. On en déduit que $f^{-1}=-f$ ce qui revient à $f\circ f =-\Id_E$.
+\item La dimension de l'espace est impaire car $(\det f)^2=(-1)^{\dim E}$. Supposons l'existence d'une combinaison linéaire puis composons par $f$
+\begin{multline*}
+ f(x_{p+1})=\lambda_1x_1+\mu_1f(x_1)+\cdots +\\ \lambda_px_p+\mu_pf(x_p)+\lambda x_{p+1}\\
+\Rightarrow
+-x_{p+1}= \lambda_1f(x_1)-\mu_1 x_1+\cdots + \\\lambda_pf(x_p)-\mu_p x_p +\lambda f(x_{p+1})
+\end{multline*}
+En reportant l'expression de $f(x_{p+1})$, on obtient une relation linéaire entre les vecteurs de $\mathcal{S}$ dont le coefficient de $x_{p+1}$ est $1+\lambda^2$ ce qui est impossible.\newline
+Le raisonnement est facile par récurrence en partant d'un sous-espace $\Vect(x_1,f(x_1))$ et en prenant chaque fois un vecteur qui n'est pas dans le sous-espace déjà formé.
+\end{enumerate}
+ 

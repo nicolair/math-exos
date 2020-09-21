@@ -1,0 +1,16 @@
+\begin{tiny}(Cao14)\end{tiny} 
+\begin{enumerate}
+ \item On suppose que $f$ est une rotation d'angle $\theta$ autour de $w$ unitaire. Soit $a,b,c$ les coordonnées d'un vecteur $x$ dans une base orthonormée directe $(u,v,w)$. Alors:
+\begin{displaymath}
+ (f(x)/x)=(a^2+b^2)\cos \theta + c^2 .
+\end{displaymath}
+On en déduit qu'il existe $x$ orthogonal à son image si et seulement si $\cos \theta <0$. On remarque que cette condition est indépendante de l'orientation de l'axe. Orientons l'axe de manière à ce que $\theta\in]0,\pi[$. La condition devient alors $\theta>\frac{\pi}{2}$. Comme l'angle de $f^k$ autour de $w$ est $k\theta$, il existe évidemment un entier $k$ tel que $k\theta>\frac{\pi}{2}$.
+ \item Comme $x$ est orthogonal à $f(x)$ et que, comme $f$, la bijection réciproque  $f^{-1}$ conserve l'orthogonalité, $x$ est aussi orthogonal à $f^{-1}(x)$. On peut alors calculer les images de $x$ et de $f(x)$ par $g=t_x\circ f \circ t_x \circ f^{-1}$
+\begin{align*}
+ &x    \rightarrow f^{-1}(x) \rightarrow -f^{-1}(x) \rightarrow -x   \rightarrow -x\\
+ &f(x) \rightarrow x   \rightarrow x   \rightarrow f(x) \rightarrow -f(x)&
+\end{align*}
+On en déduit que $g$ est soit $-\Id_E$ soit le retournement d'axe la droite perpendiculaire au plan $\Vect(x,f(x))$. La première éventualité est impossible car $\det g =1$.
+ \item Soit $g=f\circ r \circ f^{-1}$ alors $g^2=\Id_E$ et $\det(g)=\det(r)=1$ donc $g$ est un retournement. On vérifie immédiatement que son axe est $\Vect(f(x))$ si $\Vect(x)$ est l'axe du retournement $r$.
+ \item Si $H$ est un sous-groupe distingué de $SO(E)$ qui n'est pas réduit à l'identité. Soit $g\neq \Id_E$ une rotation dans $H$. Alors $H$ contient aussi une rotation $f=g^k$ pour laquelle $x$ est orthogonal à $f(x)$. D'après b., $H$ contient alors un retournement de la forme $t_x\circ f \circ t_x \circ f^{-1}$. D'après c., il contient \emph{tous} les retournements. Comme toute rotation est la composée de deux retournements $H=SO(E)$. Les seuls sous-groupes distingués de $SO(E)$ sont donc $SO(E)$ lui même est le singleton réduit à l'identité.  
+\end{enumerate}

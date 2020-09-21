@@ -1,0 +1,15 @@
+\begin{tiny}(Cip21)\end{tiny} On utilise
+\begin{displaymath}
+ f(x)=\int_0^xf'\; \text{ et } F(x)= \int_0^x |f'|
+\end{displaymath}
+pour majorer:
+\begin{multline*}
+\int_0^a\left|f(x)f'(x)\right|\,dx
+= \int_0^a\left|\int_0^xf'(t)\,dt\right|\left|f'(x)\right|\,dx\\
+\leq \int_0^a \underset{=F(x)}{\underbrace{\left( \int_0^x\left|f'(t)\right|\,dt\right)}}  \underset{=F'(x)}{\underbrace{\left|f'(x)\right|}}\,dx \\
+\leq \left[ \frac{1}{2}F^2\right]_0^a
+\leq \frac{1}{2}\left( \int_0^a|f'(t)|\,dt\right)^2
+\leq \frac{a}{2}\, \int_0^a(f'(t))^2\,dt
+\end{multline*}
+en utilisant l'inégalité de Cauchy-Schwarz.\newline
+Dans un cs d'égalité, toutes les inégalités de la chaînes doivent être des égalité, en particulier la dernière (de Cauchy-Schwarz). On en déduit que $|f'|$ doit être constante. Comme $f'$ est supposée continue, elle doit être constante donc $f$ doit être polynomiale de degré $1$.

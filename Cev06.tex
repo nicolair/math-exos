@@ -1,0 +1,11 @@
+\begin{tiny}(Cev06)\end{tiny} Si $f$ est une fonction de signe constant, pour tout $\lambda$ réel, $\lambda f$ est encore une fonction de signe constant. Le sous-espace $\Vect(f)$ engendré par une telle fonction est constitué uniquement de fonctions de signe constant (suivant le signe de $\lambda$).\newline
+On se propose de montrer que ces droites vectorielles sont les seuls sous-espaces constitués uniquement de fonctions de signe constant.\newline
+Considérons un couple $(f,g)$ de fonctions non nulles et de signe constant. En multipliant au besoin par $-1$, on peut supposer qu'elles sont à valeurs dans $\R_+$. Supposons que $\Vect(f,g)$ soit constitué uniquement de fonctions de signe constant.\newline
+Pour tout $\lambda \in \R$, la fonction $f - \lambda g$ est de signe constant, on peut donc classer les $\lambda$ suivant le signe de cette fonction. Notons $I_+$ l'ensemble des $\lambda$ pour lesquels la fonction est positive et $I_-$ celui pour lesquels $f-\lambda g$ est négative.\newline
+Comme $f \geq 0$, $0 \in I_+$. Comme $g$ est non nulle, il existe $t$ tel que $g(t)>0$. Quel que soit la valeur de $f(t)$ il existe des $\lambda$ assez grands pour que $f(t) - \lambda g(t) < 0$ donc $f - \lambda g \leq 0$ car la fonction est de signe constant. Un tel $\lambda$ est dans $I_-$ qui est donc non vide.
+\begin{multline*}
+ \forall(\lambda_+, \lambda_-)\in I_+\times I_-,\;
+ f - \lambda_-g \leq 0 \leq f - \lambda_+ g \\
+ \Rightarrow \lambda_+ \leq \lambda_- \hspace{0.5cm} (\text{ car } g\geq 0 \text{ et } g \neq 0)
+\end{multline*}
+On en déduit que $I_+$ admet une borne sup et $I_-$ une borne inf et qu'elles sont égales. Notons $\mu$ la valeur commune. Il reste à montrer que $f - \mu g$ est la fonction nulle.

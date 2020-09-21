@@ -1,0 +1,25 @@
+\begin{tiny}(Evs20)\end{tiny} \label{intunin} Extension de l'exercice \ref{intuni3}. Soit $n$ naturel non nul et $A_1,A_2, \cdots, A_n$ des parties d'un ensemble $E$. Pour toute partie $I$ de $\llbracket 1,n \rrbracket$, on définit
+\[
+\begin{aligned}
+  \widehat{A}_I &= \bigcap_{i \in I} A_i &,   \overset{\vee}{A}_I &= \bigcup_{i \in I} A_i \\
+  \widehat{\overline{A}}_I &= \bigcap_{i \in I} \overline{A_i} &,   \overset{\vee}{\overline{A}}_I &= \bigcup_{i \in I} \overline{A_i}
+\end{aligned}  
+\]
+où $\overline{X}$ désigne le complémentaire de $X$ dans $E$.\newline
+Pour $p\in \llbracket 1,n \rrbracket$, on désigne par $\mathcal{P}_p$ l'ensemble des parties de $\llbracket 1,n \rrbracket$ à $p$ éléments. On définit
+\[
+  U_p = \bigcup_{I \in \mathcal{P}_p}\widehat{A}_I, \hspace{0.3cm}
+  N_p = \bigcap_{I \in \mathcal{P}_p}\overset{\vee}{A}_I.
+\]
+Pour $x\in E$, on note $n(x)$ le nombre de parties $A_i$ contenant $x$ et $\overline{n}(x)$ le nombre de parties $A_i$ ne contenant pas $x$ de sorte que
+$n(x) + \overline{n}(x) = n$.
+\begin{enumerate}
+  \item Exprimer avec des quantificateurs qu'un élément $x\in E$ appartient ou non aux parties de $E$ définies par l'énoncé.
+  \item Montrer que, pour tout $x\in E$, 
+\[
+x \in U_p \Leftrightarrow n(x) \geq p , \hspace{0.5cm}
+x \in N_p \Leftrightarrow \overline{n}(x) < p  .
+\]
+  \item En remarquant que $\overline{n}(x) < p \Leftrightarrow \overline{n}(x) \leq  p - 1$, montrer que $N_p = U_{n-p+1}$.
+\end{enumerate}
+

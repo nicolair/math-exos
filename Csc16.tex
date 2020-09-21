@@ -1,0 +1,12 @@
+\begin{tiny}(Csc16)\end{tiny} Formons l'encadrement de définition de la partie entière
+\[
+  kx - 1 < \lfloor kx \rfloor \leq kx
+\]
+et sommons de $1$ à $n$.
+\begin{multline*}
+  \left( \sum_{k=1}^{n} k\right) x - n < \sum_{k=1}^{n} \lfloor kx \rfloor 
+  \leq \left( \sum_{k=1}^{n} k\right) x \\
+  \Rightarrow
+  \frac{n+1}{n} \frac{x}{2} - \frac{1}{n} < \frac{1}{n^2}\,\sum_{k=1}^{n} \lfloor kx \rfloor \leq \frac{n+1}{n} \frac{x}{2}
+\end{multline*}
+car $\sum_{k=1}^{n} k = \frac{n(n+1)}{2}$. On conclut par le théorème d'encadrement car $\left( \frac{n+1}{n}\right)_{n\in \N}\rightarrow 1$.

@@ -1,0 +1,57 @@
+\begin{tiny}(Ced06)\end{tiny} 
+\begin{enumerate}
+  \item Comme la partie réelle de $ 1 + ix$ est strictement positive, $\arctan x$ est un argument de ce nombre complexe. On en déduit l'expression trigonométrique:
+\begin{displaymath}
+  1 + ix = \sqrt{1+x^2} \, e^{i\arctan x}
+\end{displaymath}
+
+  \item On rappelle que pour un nombre complexe $z=a+ib$ avec $b\neq 0$, d'après le formulaire du cours, une primitive de 
+\begin{displaymath}
+  x\mapsto \frac{1}{x + z}
+\end{displaymath}
+est
+\begin{displaymath}
+  x\mapsto \ln |x+z| - i \arctan \frac{x + a}{b}
+\end{displaymath}
+
+On en déduit qu'une primitive de
+\begin{displaymath}
+  x\mapsto \frac{1}{x + i}
+\end{displaymath}
+est
+\begin{multline*}
+  x\mapsto F(x) = \ln |x+i| - i \arctan x \\
+  = \frac{1}{2}\ln(x^2+1) -i\arctan x
+\end{multline*}
+D'après le cours, une solution fondamentale de l'équation homogène (1) est 
+\begin{displaymath}
+e^{-F(x)}=  \frac{1}{\sqrt{x^2+1}}\,e^{i\arctan x} = \frac{1}{x + i}
+\end{displaymath}
+
+  \item Définissons $z_0$ par 
+\begin{displaymath}
+  z_0(x) = \frac{1}{x + i}
+\end{displaymath}
+Comme
+\begin{displaymath}
+  z'_0(x) = -\frac{1}{(x + i)^2} = -\frac{1}{x+i}z_0(x)
+\end{displaymath}
+On retrouve le résultat de la question précédente c'est à dire que $z_0$ est solution de l'équation homogène (1).
+  \item Méthode de variation de la constante. Une fonction $z=\lambda z_0$ est solution de (2) si et seulement si
+\begin{multline*}
+(x+i)\lambda'(x)z_0(x) = 1 + 2x\arctan x \\
+\Leftrightarrow
+\lambda'(x) = 1 + 2x\arctan x
+\end{multline*}
+Pour calculer une primitive, on utilise une expression intégrale et une intégration par parties:
+\begin{multline*}
+\int_0^x 2t\arctan t\, dt \\
+= \left[ t^2 \arctan t\right]_{0}^{x} - \int_0^x t^2\,\frac{1}{1+t^2}\, dt  \\
+= x^2 \arctan x - x + \arctan x
+\end{multline*}
+On en déduit 
+\begin{displaymath}
+z(x) = \frac{(x^2+1)\arctan x}{x+i} = (x-i)\arctan x   
+\end{displaymath}
+
+\end{enumerate}

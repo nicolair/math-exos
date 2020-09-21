@@ -1,0 +1,59 @@
+\begin{tiny}(Cfr04)\end{tiny} 
+\begin{enumerate}
+ \item La séparation entre les puissances paires et impaires dans la formule du binôme permet d'écrire
+\begin{multline*}
+ e^{i n x} = \left( \cos x + i \sin x \right)^n \\
+ = (\cos x )^n \left( \widetilde{B_n}(\tan x) + i\widetilde{A_n}(\tan x)  \right). 
+\end{multline*}
+On en déduit
+\begin{align}
+  \sin(nx) = (\cos(x))^n\widetilde{A_n}(\tan(x)) \label{sin} \\
+  \cos(nx) = (\cos(x))^n\widetilde{B_n}(\tan(x)) \label{cos} \\
+  \tan(nx) = \widetilde{F_n}(\tan(x)) \label{tan}.
+\end{align}
+D'après \ref{cos}, tous les $t_k$ avec $k\in I_n$ sont des racines de $B_n$. On obtient donc autant de racines que le degré de $B_n$, ce sont donc \emph{toutes} les racines de $B_n$ ou les pôles de $F_n$. D'après \ref{sin},
+\[
+\widetilde{A_n}(t_k) = \frac{\sin\frac{(2k+1)\pi}{2}}{\cos^n\theta_k}
+= \frac{(-1)^k}{\cos^n\theta_k}.
+\]
+
+ \item Si $n=2p$ est pair, 
+\[
+\deg(A_n) = 2p-1, \; \deg(B_n) = 2p, \; \deg(F_n) = -1.  
+\] 
+Si $n=2p+1$ est impair, 
+\[
+\deg(A_n) = 2p+1, \; \deg(B_n) = 2p, \; \deg(F_n) = +1.  
+\] 
+ \item Dans le cas impair $n=2p+1$, la décomposition contient une partie entière qui est le quotient de la division de 
+\begin{multline*}
+A_n = (-1)^pX^n + 0X^{n-1} + \cdots \\
+\text{ par }
+B_n = (-1)^pnX^{n-1} + 0X^{n-2} + \cdots 
+\end{multline*}
+Or 
+\[
+ A_n = \frac{X}{n}B_n + \text{pol de degré $n-2$}
+\]
+donc ce quotient est $\frac{X}{n}$.\newline
+Dans le cas pair, la décomposition en éléments simples ne comporte pas de partie entière.\newline
+La partie polaire relative au pôle $t_k$ est $\frac{\lambda_k}{X-t_k}$ avec
+\[
+ \lambda_k = 
+\frac{\widetilde{A_n}(t_k)}{\widetilde{B'_n}(t_k)}.
+\]
+Dérivons la relation \ref{cos}.
+\begin{multline*}
+ -n \sin(nx) = -n(\sin x)(\cos^{n-1}x) \widetilde{B_n}(x) \\
+ + \cos^nx(1+\tan^2x)\widetilde{B_n'}(\tan x).
+\end{multline*}
+Comme $\sin \theta_k = 0$,
+\begin{multline*}
+\widetilde{B_n'}(t_k) = -\frac{n\sin(n\theta_k)}{\cos^{n-2}\theta_k}
+= \frac{n(-1)^{n+1}}{\cos^{n-2}\theta_k}\\
+\Rightarrow
+\lambda_k = \frac{-1}{n\cos^2 \theta_k}
+= - \frac{1+t_k^2}{n}.
+\end{multline*}
+
+\end{enumerate}

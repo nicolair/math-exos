@@ -1,0 +1,16 @@
+\begin{tiny}Cen18\end{tiny} Notons $S_1$, $S_2$, $S_3$ les sommes à calculer.\newline
+Dans la première somme, on classe selon le nombre d'éléments.
+\[
+ S_1 = \sum_{k=0}^n\binom{n}{k}k
+ = n \sum_{k=1}^{n-1}\binom{n-1}{k-1} = n\,2^{n-1}. 
+\]
+Dans $S_2$, on classe selon l'intersection. Pour une partie $A$ fixée (avec $k$ éléments), quel sont les $(X,Y)$ tels que $X\cap Y = A$? Ce sont les $(A\cup M, A\cup T)$ avec 
+$M \subset E \setminus A$ et $T\subset E \setminus X$.\newline
+Pour un $M$ fixé à $m$ éléments, il existe $2^{n-(k+m)}$ parties $T$. Le nombre de $(X,Y)$ tels que $X \cap Y = A$ est donc
+\[
+ \sum_{m=0}^{n-k}\binom{n-k}{m}2^{n-k-m} = 3^{n-k}.
+\]
+En considérant tous les $A$, il vient
+\[
+ S_2 = \sum_{k=0}^{n}\binom{n}{k}3^{n-k} = 4^n.
+\]

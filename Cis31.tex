@@ -1,0 +1,45 @@
+\begin{tiny}(Cis31)\end{tiny}
+\begin{enumerate}
+ \item Notons $g$ et $h$ les fonctions considérées
+\[
+ g(x) = f(x) - kx, \; h(x) = f(x) + kx. 
+\]
+Montrons que $g$ est décroissante et $h$ croissante. Pour $x < y$:
+\begin{multline*}
+ g(y) - g(x) = f(y) - f(x) - k(y-x)\\
+ = f(y) - f(x) - k|y-x| \\
+ \leq |f(y) - f(x)| - k|y-x| 
+ \leq 0 .
+\end{multline*}
+\begin{multline*}
+ h(y) - h(x) = f(y) - f(x) + k(y-x)\\
+ = f(y) - f(x) + k|y-x| \\
+ \geq f(y) - f(x) + |f(y) - f(x)|  
+ \geq 0 .
+\end{multline*}
+
+ \item Une fonction lipschitzienne est uniformément continue donc elle est bornée et converge au extrémités de l'intervalle voir l'exercice \ref{limunifcont} (Eis23). La fonction prolongée reste lipschitzienne de même rapport par passage à la limite dans les inégalités.
+ 
+ \item La question a. permet de déterminer les variations
+{%
+\newcommand{\mc}[3]{\multicolumn{#1}{#2}{#3}}
+\begin{center}
+Cas $a < y < b$.
+\begin{tabular}{|c|ccccc|}\hline
+               & $a$ &            & $y$ &           & $b$\\ \hline
+$\varphi_y(x)$ &     & $g(x)+ky$  &   $|$  & $h(x)-ky$ & \\ \hline
+               &     & $\searrow$ &     & $\nearrow$   & \\ 
+               &     & \mc{3}{c}{$f(y)$}           & \\ \hline
+\end{tabular}
+\vspace{0.2cm}
+
+Cas $y < a$. $\varphi_y(x) = h(x) - ky$, $\varphi_y$ est croissante.
+\vspace{0.2cm}
+
+Cas $b < y$. $\varphi_y(x) = g(x) + ky$, $\varphi_y$ est décroissante.
+\vspace{0.2cm}
+\end{center}
+}%
+
+à compléter
+\end{enumerate}

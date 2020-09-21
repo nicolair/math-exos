@@ -1,0 +1,40 @@
+\begin{tiny}(Ecu11)\end{tiny} Ces sommes se calculent de deux manières. En utilisant la relation entre coefficients du binôme
+\begin{displaymath}
+  k\geq1,\hspace{0.5cm} k\binom{n}{k} = n\binom{n-1}{k-1} 
+\end{displaymath}
+ou bien en dérivant des fonctions. Détaillons cette deuxième idée.\newline
+Définissons une fonction $\varphi$ dans $\R$ par:
+\begin{displaymath}
+  \varphi(t) = \sum_{k=0}^n\binom{n}{k}t^k = (1+t)^n
+\end{displaymath}
+On en déduit, avec les règles de dérivation,
+\begin{displaymath}
+  \varphi'(t)= \sum_{k=1}^n\binom{n}{k}t^{k-1} = n(1+t)^{n-1}
+\end{displaymath}
+(le premier terme disparait en dérivant) On en déduit
+\begin{displaymath}
+  \sum_{k=1}^n k\binom{n}{k} = \varphi'(1)= n2^{n-1}
+\end{displaymath}
+\begin{displaymath}
+  \sum_{k=1}^n (-1)^kk\binom{n}{k} = -\varphi'(-1)= 0
+\end{displaymath}
+Notons
+\begin{displaymath}
+A = \sum_{k \,\mathrm{ pair }\,\in \{ 0,\cdots ,n \}} k\binom{n}{k} ,\hspace{0.3cm}
+B = \sum _{k \,\mathrm{ impair }\,\in \{ 1,\cdots,n \}}k\binom{n}{k}  
+\end{displaymath}
+alors
+\begin{multline*}
+\left. 
+\begin{aligned}
+  &-A + B = \varphi'(-1)=0 \\ &A+B = \varphi'(1) = n\,2^{n-1}
+\end{aligned}
+\right\rbrace  \Rightarrow A = B = n\,2^{n-2}
+\end{multline*}
+Calcul de $\sum_{k=2}^{n}k(k-1) \binom{n}{k}$ : à compléter.\newline
+Calcul de $\sum_{k=0}^{n}\frac{1}{k+1} \binom{n}{k}$: à compléter. \newline
+Calcul de $\sum_{k=0}^{p} \binom{n}{k} \binom{n-k}{p-k}$. On exprime les coefficients du binôme avec des factorielles que l'on redistribue. On obtient
+\begin{displaymath}
+ 2^p\binom{p}{n}
+\end{displaymath}
+

@@ -1,0 +1,73 @@
+\begin{tiny}(Cml18)\end{tiny}
+\begin{enumerate}
+  \item On note
+\begin{displaymath}
+  D =\alpha(u)\beta(v) - \beta(u)\alpha(v)
+\end{displaymath}
+Supposons $D\neq 0$  et montrons que les sous-espaces sont supplémentaires .\newline
+Analyse-unicité. Soit $x$ un vecteur quelconque, supposons qu'il se décompose. Il existe alors $h\in \ker \alpha \cap \ker \beta$ et des scalaires $\lambda$ et $\mu$ tels que 
+\begin{displaymath}
+  x = h + \lambda u + \mu v
+\end{displaymath}
+En calculant $\alpha(x)$ et $\beta(x)$, on forme un système
+\begin{displaymath}
+\left\lbrace  
+  \begin{aligned}
+    \alpha(u)\lambda + \alpha(v) \mu &= \alpha(x) \\
+    \beta(u) \lambda + \beta(v) \mu &= \beta(x)
+  \end{aligned}
+\right. 
+\end{displaymath}
+Comme $D\neq0$, le système est de Cramer. Les seules valeurs possibles pour $\lambda$ et $\mu$ sont données par les formules de Cramer, le $h$ est alors déterminé par décomposition idiote. Ceci assure l'unicité d'une éventuelle décomposition.\newline
+Synthèse-existence. Pour tout vecteur $x$, définissons des scalaires $\lambda$ et $\mu$ par:
+\begin{align*}
+  \lambda &= \frac{1}{D}(\alpha(x)\beta(v)-\beta(x)\alpha(v)) \\
+  \mu &= \frac{1}{D}(\alpha(u)\beta(x)-\beta(u)\alpha(x)) 
+\end{align*}
+On peut écrire
+\begin{displaymath}
+  x = (x-\lambda u - \mu v) + \lambda u + \mu v
+\end{displaymath}
+et vérifier que $(x-\lambda u - \mu v)$ est dans l'intersection des deux noyaux.\newline
+Réciproquement, on va montrer la contraposée.
+\begin{multline*}
+  D=0 \Rightarrow \alpha(u)\beta(v) - \beta(u)\alpha(v) = 0 \\
+\Rightarrow \alpha\left( \beta(v)u-\beta(u)v\right) = 0\\
+\Rightarrow \beta(v)u-\beta(u)v \in \ker \alpha
+\end{multline*}
+Or
+\begin{displaymath}
+  \beta\left( \beta(v)u-\beta(u)v\right) = \beta(v)\beta(u)-\beta(u)\beta(v)=0 
+\end{displaymath}
+donc $w=\beta(v)u-\beta(u)v$ est un vecteur dans l'intersection des deux sous-espaces.
+\begin{itemize}
+  \item Si $w\neq 0$, ils ne sont pas supplémentaires car leur intersection ne se réduit pas au vecteur nul.
+  \item Si $w=0$, comme $(u,v)$ est libre, $\beta(u)=\beta(v)=0$ donc $\Vect(u,v)\subset \ker \beta$ et la somme est incluse dans $\ker \beta$. Ils ne sont donc pas supplémentaires. 
+\end{itemize}
+
+  \item Dans les conditions de cette question, l'analyse d'une décomposition montre que 
+\begin{displaymath}
+  p(x) = x -\alpha(x)a - \beta(x)b
+\end{displaymath}
+
+  \item Chacun des vecteurs $a$ et $b$ doit être une combinaison de $u$ et $v$. Les conditions se traduisent par un système de Cramer pour les coefficients. On trouve
+\begin{align*}
+  a &= \frac{\beta(v)}{D}u -\frac{\beta(u)}{D} v\\
+  b &= -\frac{\alpha(v)}{D}u +\frac{\alpha(u)}{D} v
+\end{align*}
+On en déduit
+\begin{displaymath}
+p(x) = x -
+\frac{
+\begin{vmatrix}
+  \alpha(x) & \alpha(v) \\ \beta(x) & \beta(v)
+\end{vmatrix}
+}{D}u -
+\frac{
+\begin{vmatrix}
+  \alpha(u) & \alpha(x) \\ \beta(u) & \beta(x)
+\end{vmatrix}
+}{D}v
+\end{displaymath}
+\end{enumerate}
+Voir l'exercice \ref{inthyp1} (ev26) pour une approche plus concrète.

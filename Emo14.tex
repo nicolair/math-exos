@@ -1,0 +1,50 @@
+\begin{tiny}(Emo14)\end{tiny}
+\emph{Familles de formes lin{\'e}aires}\newline
+Soit $E$ un $\K$-espace vectoriel de dimension $q$ muni d'une base $\mathcal{B}=(b_1,\cdots,b_q)$, soit $\mathcal B^* =(\beta_1,\cdots,\beta_q)$ la base de $E^*$ constituée des fonctions coordonnées dans $\mathcal B$ (base duale).\newline
+Soit $(\varphi _{1},\varphi _{2},\cdots \varphi_{p})$ une famille de formes lin{\'e}aires sur $E$ et $\mathcal{C}$ la base canonique de $\mathbf{K}^{p}$. On note
+\begin{displaymath}
+A=\underset{\mathcal{B}}{Mat}(\varphi_{1},\varphi _{2},\cdots \varphi _{p}) 
+\end{displaymath}
+Il s'agit de la matrice d'une famille de formes linéaires dans une base de $E$.\newline
+On d{\'e}finit $\phi \in \mathcal{L}(E,\mathbf{K}^{p})$ par :
+\begin{displaymath}
+ \phi (x)=(\varphi _{1}(x),\varphi _{2}(x),\cdots, \varphi _{p}(x))
+\end{displaymath}
+
+\begin{enumerate}
+\item  Exprimer 
+\begin{displaymath}
+ \Mat_{\mathcal{B},\mathcal{C}}\phi ,\hspace{0.5cm}\Mat_{\mathcal{B}^*}(\varphi_1,\cdots,\varphi_p)
+\end{displaymath}
+en fonction de $A$.
+Pour la deuxième, il s'agit de la matrice d'une famille de \emph{vecteurs} de $E^*$ dans une base de $E^*$. 
+
+\item  Montrer que $\mathrm{rg}\phi = \mathrm{rg}(\varphi _{1},\cdots \varphi _{p})$. En déduire
+\begin{displaymath}
+ \dim (\ker \varphi _{1}\cap \cdots \cap \ker \varphi_{p})=q-\mathrm{rg}(\varphi _{1},\cdots \varphi _{p})
+\end{displaymath}
+
+\item Montrer que $(\varphi _{1},\cdots \varphi _{p})$ est libre si et seulement si $\phi $ est surjective. Lorsque $\phi$ est surjective, montrer l'existence d'une famille $(u_{1},\cdots ,u_{p})$ de vecteurs de $E$ tels que $\varphi _{i}(u_{j})=\delta _{ij}$. Montrer que $(u_{1},\cdots ,u_{p})$ est libre et que
+\[
+\ker \varphi _{1}\cap \cdots \cap \ker \varphi _{p}\oplus \text{Vect}%
+(u_{1},\cdots ,u_{p})=E
+\]
+
+\item  Soit $(\varphi _{1},\cdots \varphi _{p})$ libre et $\varphi \in E^{*}$ tel que 
+\begin{displaymath}
+\ker \varphi _{1}\cap \cdots \cap \ker \varphi _{p}\subset \ker \varphi  
+\end{displaymath}
+ Montrer que
+\begin{displaymath}
+ \varphi =\varphi (u_{1})\varphi _{1}+\cdots +\varphi (u_{p})\varphi _{p}
+\end{displaymath}
+En déduire que $\varphi \in $Vect$(\varphi _{1},\cdots \varphi _{p})$.\newline
+Les nombres $\lambda _{1}$,$\cdots ,\lambda _{p}$ tels que 
+$\varphi=\lambda _{1}\varphi _{1}+\cdots +\lambda _{p}\varphi _{p}$ sont appel{\'e}s les \emph{multiplicateurs de Lagrange}.
+
+\item  Base ant{\'e}duale.\newline
+Soit $(\varphi _{1},\cdots \varphi _{q})$ une
+base de $E^{*}$, montrer l'existence d'une base $(f_{1},\cdots ,f_{q})$ de $E$ telle que $(\varphi _{1},\cdots \varphi _{q})$ soit la base duale de $(f_{1},\cdots ,f_{q})$.
+
+
+\end{enumerate}

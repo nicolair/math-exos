@@ -1,0 +1,40 @@
+\begin{tiny}(Epb05)\end{tiny} \label{fPoinc} Fonctions caractéristiques et formule de Poincaré.\newline
+Soit $\Omega$ un ensemble quelconque fixé. On désigne par $\mathcal{F}$ l'ensemble des fonctions définies dans $\Omega$ et à valeurs dans $\{0,1\}$. C'est une partie de l'espace noté $\mathcal{F}_\R$ des fonctions définies dans $\Omega$ et à valeurs dans $\Z$. La somme et le produit (fonctionnels) sont bien définis dans $\mathcal{F}_\R$ et lui confèrent une structure d'anneau. Le neutre multiplicatif est la fonction (notée $U$) constante de valeur $1$.\newline
+On associe à chaque partie $A$ de $\Omega$ une fonction notée $\varphi_A$ définie dans $\Omega$ qui prend les valeurs $0$ ou $1$:
+\begin{align*}
+\Omega &\rightarrow \{0,1\}\\
+\omega &\mapsto
+\left\lbrace 
+\begin{aligned}
+ 1 &\text{ si } \omega\in A\\
+ 0 &\text{ si } \omega \notin A 
+\end{aligned}
+\right. 
+\end{align*}
+Cette fonction est appelée la fonction \emph{caractéristique} de la partie $A$.  
+\begin{enumerate}
+ \item Montrer, pour toutes parties $A$ et $B$ de $\Omega$, les égalités (entre fonctions) suivantes
+\begin{displaymath}
+ \varphi_{\overline{A}} = U - \varphi_A,\hspace{0.5cm}
+\varphi_{A\cap B} = \varphi_A \varphi_B
+\end{displaymath}
+ \item  Comment s'exprime $\varphi_{A\cup B}$ ?\newline
+Dans la suite de l'exercice, $A_1, \cdots, A_n$ est une famille de parties de $\Omega$. Pour toute partie $I$ de $\{1,\cdots,n\}$, on définit $A_I$ par:
+\begin{displaymath}
+ A_I = \cap_{i\in I}A_i
+\end{displaymath}
+Exprimer $\varphi_{A_1\cup A_2\cup \cdots \cup A_n}$ avec des $\varphi_{A_I}$ (on regroupera les parties $I$ de $\{1,\cdots,n\}$ qui ont le même nombre d'éléments).
+\item Dans la suite de l'exercice, l'ensemble $\Omega$ est \emph{fini}. On considère une fonction $C$ définie dans $\mathcal{F}_\R$ et à valeurs dans $\R$ par 
+\begin{displaymath}
+ C(f) = \sum_{\omega \in \Omega} f(\omega)
+\end{displaymath}
+Que valent $C(\lambda f)$ et $C(f+g)$?\newline
+Montrer les formules de Poincaré
+\begin{align*}
+ \sharp(A_1\cup \cdots \cup A_n) &=
+\sum_{k=1}^{n}(-1)^{k+1}\sum_{I\text{ tq }\sharp I = k}\sharp(A_I) \\
+ \p(A_1\cup \cdots \cup A_n) &=
+\sum_{k=1}^{n}(-1)^{k+1}\sum_{I\text{ tq }\sharp I = k} \p(A_I)
+\end{align*}
+pour une probabilité quelconque sur l'univers $\Omega$.
+\end{enumerate}

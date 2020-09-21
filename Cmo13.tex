@@ -1,0 +1,20 @@
+\begin{tiny}(Cmo13)\end{tiny} La matrice est inversible car elle est triangulaire inférieure avec des termes non nuls sur la diagonale. Cela entraine que les colonnes forment une famille libre.\newline
+On note $Y_i$ les colonnes de $A$ et $X_i$ les colonnes de $I_n$ (base canonique des matrices colonnes). Il s'agit d'exprimer les $X$ en fonction des $Y$. On tire de l'écriture des colonnes de $A$:
+\begin{multline*}
+ X_n=\frac{1}{n} Y_n\\
+Y_{n-1}=(n-1)X_{n-1}+X_n\\
+\Rightarrow X_{n-1}=\frac{1}{n-1}Y_{n-1}-\frac{1}{n(n-1)}Y_{n}\\
+Y_{n-2}=(n-2)X_{n-2}+X_{n-1}+X_n\\
+\Rightarrow X_{n-2}=\frac{1}{n-2}Y_{n-1}-\frac{1}{(n-1)(n-2)}Y_{n-1}\\-\frac{1}{n(n-1)}Y_{n}
+\end{multline*}
+ On en déduit que la matrice inverse est la matrice $B$ telle que
+\begin{displaymath}
+ b_{i,j}=
+\left\lbrace 
+\begin{aligned}
+ \frac{1}{j} &\text{ si }i=j\\
+ -\frac{1}{i(i-1)} &\text{ si }i>j\\
+ 0 &\text{ si }i<j\\
+\end{aligned}
+\right. 
+\end{displaymath}

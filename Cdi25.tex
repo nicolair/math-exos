@@ -1,0 +1,45 @@
+\begin{tiny}(Cdi25)\end{tiny} Un sens est facile :
+\begin{displaymath}
+ h \circ g = f \circ k
+\end{displaymath}
+avec $h$ bijectif entraine
+\begin{displaymath}
+ \rg(g) = \rg(h \circ g) = \rg(f \circ k) \leq \rg(f).
+\end{displaymath}
+Réciproquement, supposons $\rg(g) \leq \rg(f)$.\newline
+Soit $(g_1,\cdots, g_p)$ une base de $\Im(g)$ que l'on complète en une base $(g_1,\cdots, g_n)$ de $F$ et $(f_1, \cdots , f_q)$ une base de $\Im(f)$ que l'on complète en une base $(f_1, \cdots , f_n)$ de $F$. On définit $h\in GL(F)$ par:
+\begin{displaymath}
+ \forall i \in \llbracket 1,n \rrbracket, \; h(g_i) = f_i.
+\end{displaymath}
+C'est une bijection car l'image d'une base particulière est une base. Il existe aussi des familles libres de $E$ 
+\begin{displaymath}
+ (e_1,\cdots,e_p) \text{ et } (e'_1,\cdots,e'_q)
+\end{displaymath}
+telles que 
+\begin{align*}
+ \forall i \in \llbracket 1,p \rrbracket,& &g(e_i) = g_i\\
+ \forall i \in \llbracket 1,q \rrbracket,& &f(e'_i) = f_i
+\end{align*}
+Considérons une base $(e_{p+1},\cdots,e_m)$ de $\ker g$. D'après le lemme noyau-image, $(e_1,\cdots,e_m)$ est une base de $E$. On définit $k$ en posant
+\begin{multline*}
+ k(e_1) = e'_1, \cdots, k(e_p) = e'_p, \\ k(e_{p+1})= \cdots = k(e_m) = 0
+\end{multline*}
+Alors, par $h\circ g$:
+\begin{align*}
+ e_1 &\rightarrow g_1 \rightarrow f_1 \\
+ \vdots &\rightarrow \vdots \rightarrow \vdots \\
+ e_p &\rightarrow g_p \rightarrow f_p \\
+ e_{p+1} &\rightarrow 0_F \rightarrow 0_F \\
+ \vdots &\rightarrow \vdots \rightarrow \vdots \\
+ e_{m} &\rightarrow 0_F \rightarrow 0_F
+\end{align*}
+et, par $f\circ k$:
+\begin{align*}
+ e_1 &\rightarrow e'_1 \rightarrow f_1 \\
+ \vdots &\rightarrow \vdots \rightarrow \vdots \\
+ e_p &\rightarrow e'_p \rightarrow f_p \\
+ e_{p+1} &\rightarrow 0_F \rightarrow 0_F \\
+ \vdots &\rightarrow \vdots \rightarrow \vdots \\
+ e_{m} &\rightarrow 0_F \rightarrow 0_F
+\end{align*}
+

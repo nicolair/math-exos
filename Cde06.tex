@@ -1,0 +1,34 @@
+\begin{tiny}(Cde06)\end{tiny} D'après la formule de Taylor-Young, si le coefficient de $x^6$ dans un dl en $0$ d'une fonction $f \in \mathcal{C}^6$ est $c$,
+$f^{(6)}(0) = c \, 6!$.\newline
+Calculons ces développements pour $(1+x\sin x) ^{x\, \tan x}$.
+\[
+  1 + x \sin x = 1 + x^2 - \frac{1}{6}x^4 + o(x^5).
+\]
+Utilisons $\ln(1+u) = u - \frac{1}{2}u^2 + O(u^3)$ avec
+\begin{multline*}
+  u = x^2 - \frac{1}{6}x^4 + o(x^5) \sim x^2 \\
+  \Rightarrow O(u^3) = O(x^6) \subset o(x^5).
+\end{multline*}
+On en tire
+\begin{multline*}
+\left.
+\begin{aligned}
+  \ln(1 + x\sin x) &= x^2 - \frac{2}{3}x^4 + o(x^5) \\
+  x\,\tan x &= x^2 + \frac{1}{3}x^4 + o(x^5)
+\end{aligned} \right\rbrace 
+\Rightarrow \\
+x\,\tan x\, \ln(1 + x\sin x)
+= x^4 - \frac{1}{3}x^6 + o(x^7).
+\end{multline*}
+On termine en utilisant $e^u = 1 + u + O(u^2)$ avec 
+\[
+  u = x^4 - \frac{1}{3}x^6 + o(x^7) \sim x^4 
+  \Rightarrow O(u^2) = O(x^8) \subset o(x^6).
+\]
+Donc $f^{(6)}(0) = -\frac{6!}{3} = -240$.\newline
+De même pour $(\cos x) ^{x\, \tan x}$.
+\begin{multline*}
+  \cos x = 1 - \frac{1}{2}x^2 + \frac{1}{24}x^4 + o(x^4) \Rightarrow \\
+  \ln(\cos x) = - \frac{1}{2}x^2 - \frac{1}{12}x^4 + o(x^4).
+\end{multline*}
+Donc $f^{(6)}(0) = -\frac{6!}{12} = -80$.

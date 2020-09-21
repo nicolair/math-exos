@@ -1,0 +1,23 @@
+\begin{tiny}(Csc12)\end{tiny} Soit $\left( x_n\right)_{n\in \N}$ une suite  non majorée.\newline
+Notons $i_0=0$. Comme la suite n'est pas majorée, il existe un entier naturel $i_1 > i_0$ tel que 
+\begin{displaymath}
+x_{i_1} > \max(x_{i_0},1)  
+\end{displaymath}
+On construit ainsi par récurrence une suite d'entiers naturels $i_0 < i_1 < \cdots $. La construction de l'entier suivant $i_p$ étant justifiée par le raisonnement suivant.\newline
+Comme la suite n'est pas majorée, l'ensemble des valeurs 
+\begin{displaymath}
+  \left\lbrace x_k \; k > i_p\right\rbrace 
+\end{displaymath}
+n'est pas majoré non plus donc 
+\begin{displaymath}
+  \max(x_{i_p}, p+1)
+\end{displaymath}
+n'est pas un majorant de cet ensemble. Il existe donc $i_{p+1}$ tel que
+\begin{displaymath}
+  i_p < i_{p+1} \text{ et } x_{i_{p+1}} \geq \max(x_{i_p},p)
+\end{displaymath}
+Ceci assure que la suite extraite 
+\begin{displaymath}
+  \left( x_{i_p}\right)_{p\in \N}
+\end{displaymath}
+est croissante et diverge vers $+\infty$.

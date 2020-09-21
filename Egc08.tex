@@ -1,0 +1,47 @@
+\begin{tiny}(Egc08)\end{tiny} Autour du théorème de la corde universelle\footnote{Paul Lévy. \emph{Sur une généralisation du théorème de Rolle}  \href{https://gallica.bnf.fr/ark:/12148/bpt6k31506/f424/}{C. R. Acad. Sci., Paris, 198 (1934) 424–425}}.\newline
+Soit $a<b$ et $v$ fixés et $\mathcal{C}$ l'ensemble des fonctions $f$ continues sur $[a,b]$ telles que $f(a)=f(b) = v$.\newline
+On définit $\mathcal{T}_f \subset \left]0,b-a\right]$ par:
+\begin{displaymath}
+T\in \mathcal{T}_f \Leftrightarrow \exists x \in [a,b-T] \\ \text{ tq } f(x+T) = f(x).
+\end{displaymath}
+\begin{enumerate}
+  \item Soit $f\in \mathcal{C}$ tel que $\min_{[a,b]}f < l$ avec $x_{min}\in \left]a,b\right[$ tel que $\min_{[a,b]}f = f(x_{min})$. On note
+\begin{displaymath}
+  \alpha = \min(x_{min}-a, b-x_{min}).
+\end{displaymath}
+Montrer que $\left] 0, \alpha \right] \subset \mathcal{T}_f$.
+
+\item Montrer que
+\[
+ \forall f\in \mathcal{C},\, \exists \alpha >0 \text{ tq } ]0,\alpha]\subset \mathcal{T}_f.
+\]
+
+\item Montrer que 
+\[
+  \forall n \in \N^*,\; \frac{b-a}{n} \in \bigcap_{f \in \mathcal{C}} \mathcal{T}_f .
+\]
+On pourra considérer
+\begin{multline*}
+\left( f(a+\frac{b-a}{n})-f(a)\right) +\\
+\left( f(a+2\frac{b-a}{n})-f(a+\frac{b-a}{n})\right) +\cdots 
+\end{multline*}
+
+  \item Ici $a=0$, $b=1$. Soit $T >0$. Soit $\varphi$ une fonction continue sur $\R$, périodique de plus petite période strictement positive $T$ et vérifiant
+\[
+  \varphi(0) = 0, \, \forall t \in \left] 0,1 \right[, \, \varphi(t) >0.
+\]
+Donner un exemple de fonction $\varphi$. 
+On définit $f$ par 
+\[
+  \forall x \in \left[0,1\right],\; f(x) = \varphi(x) - x\varphi(1).
+\]
+Montrer que $f \in \mathcal{C}$. 
+Montrer que
+\[
+T \in \bigcap_{f \in \mathcal{C}} \mathcal{T}_f \Rightarrow \exists n \in \N^* \text{ tq } T = \frac{b-a}{n}.
+\]
+
+  \item Préciser $\mathcal{T}_f$ pour $f$ la restriction notée $f$ de $\sin$ sur $[0,3\pi]$.
+
+\end{enumerate}
+

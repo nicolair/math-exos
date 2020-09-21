@@ -1,0 +1,19 @@
+\begin{tiny}(Cis27)\end{tiny} D'après la définition de la continuité uniforme, il existe $\alpha >0$ tel que $|x-y|\leq \alpha$ entraine $|f(x)-f(y)|\leq 1$ pour $x$ et $y$ dans $I$. Soit $m=\lfloor\frac{b-a}{\alpha}\rfloor$. Il existe des points $x_1, x_2,\cdots,x_m$ régulièrement $\alpha$-espacés dans $I$. Tout élément de $I$ est alors $\alpha$-proche de l'un de ces $x_i$. On en déduit que $|f|$ est majoré par
+\begin{displaymath}
+ \max(|f(x_1)|,|f(x_2)|,\cdots,|f(x_m)|) + 1
+\end{displaymath}
+Considérons une suite $\left( a_n\right) _{n\in \N}$ d'éléments de $I$ qui converge vers $a$. Comme la fonction est bornée, la suite $\left( f(a_n)\right) _{n\in \N}$ est bornée. D'après le théorème de Bolzano-Weierstrass, on peut en extraire une suite convergente
+\begin{displaymath}
+ \left( f(a_n)\right) _{n\in \mathcal I} \rightarrow l
+\end{displaymath}
+Montrons maintenant que $f$ converge en $a$ vers $l$.\newline
+Pour tout $\varepsilon >0$, l'uniforme continuité montre l'existence d'un $\alpha >0$ tel que
+\begin{displaymath}
+ |u -v|\leq \alpha \Rightarrow |f(u)-f(v)|\leq \frac{\varepsilon}{2}
+\end{displaymath}
+Comme $\left(a_n\right) _{n\in \mathcal I} \rightarrow a$ et $\left( f(a_n)\right) _{n\in \mathcal I} \rightarrow l$, il existe un $p\in \mathcal I$ tel que $a_p - a < \alpha$ et $|f(a_p)-l| < \frac{\varepsilon}{2}$. On peut alors écrire que, pour tout $x\in ]a,a+\alpha[$,
+\begin{multline*}
+|f(x)-l|\leq |f(x)-f(a_p)| + |f(a_p)-l| \\
+\leq \frac{\varepsilon}{2} + \frac{\varepsilon}{2} = \varepsilon
+\end{multline*}
+car $x$ et $a_p$ dans $]a,a+\alpha[$ entraine $|x-a_p|<\alpha$.

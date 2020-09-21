@@ -1,0 +1,18 @@
+\begin{tiny}(Cal20)\end{tiny} 
+\begin{enumerate}
+ \item Si $a$ est inversible on vérifie facilement que $\delta_{a^{-1}}$ est la bijection réciproque de $\delta_a$.
+\item $\delta_a \circ \delta_b = \delta_{b*a}$.
+\item Supposons $\delta_a$ bijective et notons $b$ l'antécédent de $e$. On a donc $b * a=e$. Mais a-t-on $a*b=e$ ?\newline
+En fait
+\begin{displaymath}
+ \delta_a \circ \delta_b = \delta_{b*a} = \delta_e = \Id_E
+\end{displaymath}
+Comme $\delta_a$ est bijective, on peut composer à gauche par la bijection réciproque et obtenir :
+\begin{displaymath}
+ \delta_b = \left( \delta_a\right)^{-1} 
+\end{displaymath}
+De plus $a=e*a=\delta_a(e)$ donc
+\begin{displaymath}
+ a*b = \delta_b(a)=\delta_b \circ \delta_a (e) = e
+\end{displaymath}
+\end{enumerate}

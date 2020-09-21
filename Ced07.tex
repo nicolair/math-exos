@@ -1,0 +1,37 @@
+\begin{tiny}(Ced07)\end{tiny} Analyse. Soit $f$ une fonction vérifiant la relation 
+\[
+  f'(x) + f(-x) = e^x
+\]
+de l'énoncé. \'Ecrivons la relation en $-x$ et la dérivée de la relation puis sommons:
+\[
+  \begin{aligned}
+    f'(-x) + f(x) &= e^{-x} \\
+    f''(x) - f'(-x) &= e^x \\ \hline
+    f''(x) + f(x) &= e^{-x} + e^x
+  \end{aligned}
+\]
+On en déduit que $f$ est solution de l'équation
+\[
+  (1)\; y'' + ' = 2\ch.
+\]
+Une fonction $z$ est solution de $(1)$ si et seulement si
+\[
+  \exists(\lambda, \mu)\in \R^2 \text{ tq }
+  z = \ch + \lambda \cos + \mu \sin.
+\]
+Il existe donc $\lambda$ et $\mu$ réels tels que
+\[
+\begin{aligned}
+f(x) &= \ch(x) + \lambda \cos(x) + \mu\sin(x) \\
+f(-x) &= \ch(x) + \lambda \cos(x) - \mu\sin(x) \\
+f'(x) &= \sh(x) + \mu\cos(x) - \lambda \sin(x)  \\ \hline 
+e^x &= e^x + (\lambda + \mu)(\cos(x) - \sin(x))
+\end{aligned}
+\]
+Comme ceci est vrai pour tous les $x$, on en déduit $\lambda + \mu = 0$.\newline
+Synthèse.\newline
+On peut vérifier que les fonctions
+\[
+  \ch + \lambda(\cos - \sin)
+\]
+sont solutions.

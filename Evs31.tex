@@ -1,0 +1,78 @@
+\begin{tiny}(Evs31)\end{tiny} Pour s'entrainer à raisonner: des démonstrations en exercices en partant d'un jeu d'axiomes.\newline
+On admet les propriétés suivantes.\newline
+$\N$ est un ensemble non vide, muni d'une relation d'ordre (notée $\leq$) et non majoré.\\
+Toute partie non vide de $\N$ admet un plus petit élément.\\
+On note $0=\min \N$ et $\llbracket 0, n\rrbracket$ l'ensemble des entiers plus petits que $n$.\\
+Comme $\N$ est non majoré, aucun naturel $n$ n'est un majorant de $\N$. Le complémentaire $\N\setminus \llbracket 0, n\rrbracket$ est donc non vide pour tout $n\in \N$.
+On définit une application $S$ de $\N$ dans $\N^*=\N \setminus\{0\}$ avec
+\begin{displaymath}
+ S(n) = \min (\N\setminus \llbracket 0, n\rrbracket)
+\end{displaymath}
+L'application $S$  est surjective.\newline
+On convient de noter $1=S(0)$.\newline
+On admet que pour tout $n\neq 0$, il existe $m\in \N$ tel que $S(m)=n$.\\
+La notation usuelle $a<b$ signifie $a\leq b$ et $a\neq b$.\\
+Vous devez prouver les propositions numérotées en utilisant uniquement les propriétés admises et les propriétes avec un numéro plus petit.
+\begin{enumerate}
+\item $\N$ est totalement ordonné.
+
+\item Pour tous naturels $a$ et $b$,
+\begin{displaymath}
+ b < a \Leftrightarrow \left( a\leq b \text{ faux } \right) 
+\end{displaymath}
+
+\item Pour tout $n$ naturel, $n < S(n)$ et 
+\begin{displaymath}
+ \llbracket 0 , S(n) \rrbracket = \llbracket 0 , n \rrbracket \cup \{S(n)\}
+\end{displaymath}
+
+\item  $S$ est strictement croissante et injective.
+
+\item  Principe de récurrence. Soit $A$ une partie de $\N$ telle que
+\begin{displaymath}
+ \exists a \in A \text{ et } \forall n \in \N :\; n\in A \Rightarrow S(n) \in A
+\end{displaymath}
+alors $A= \llbracket a , +\infty\llbracket =\left\lbrace k\in \N \text{ tq } a\leq k\right\rbrace$ .
+
+\item  Récurrence descendante. Soit $n\in \N$ et $A\subset \llbracket 0,n \rrbracket$ vérifiant $n\in A$ et, pour $x\in \llbracket 0,n-1 \rrbracket$, 
+\begin{displaymath}
+ S(x) \in A \Rightarrow x \in A
+\end{displaymath}
+alors $\llbracket 0,n \rrbracket \subset A$.
+
+\item  Pour tous éléments $x$ et $n$ de $\N$:
+\begin{align*}
+ n \leq x < S(n) \Rightarrow x=n & & n < x \leq S(n) \Rightarrow x = S(n)
+\end{align*}
+
+\item  Toute partie de $\N$ non vide et majorée admet un plus grand élément.
+
+\item Définitions. Un ensemble $\Omega$ est \emph{fini} si et seulement si toute application injective de $\Omega$ dans lui même est surjective. Un ensemble est \emph{infini} si et seulement si il n'est pas fini. Un ensemble est \emph{infini dénombrable} si et seulement si il est en bijection avec $\N$.
+ 
+\item $\N$ n'est pas fini.
+
+\item  S'il existe une bijection entre deux ensembles $A$ et $B$, alors $A$ est fini si et seulement si $B$ est fini.
+
+\item Toute partie d'un ensemble fini est finie.
+
+\item  Soit $n\in \N$ et $\varphi$ une application strictement croissante de $\llbracket 0, n\rrbracket$ dans $\N$. Alors $x\leq \varphi(x)$ pour tous les $x\in \llbracket 0, n\rrbracket$.
+
+\item  Soit $n\in\N$ et $\varphi$ strictement croissante de $\llbracket 0,n \rrbracket$ dans $\llbracket 0,n \rrbracket$, alors $\varphi$ est l'identité de $\llbracket 0,n \rrbracket$.
+
+\item  Soit $n\in\N$ et $\varphi$ une application de $\llbracket 0,n \rrbracket$ dans $\N$, alors $\varphi(\llbracket 0,n \rrbracket)$ est une partie majorée de $\N$.
+
+\item  La partie $\llbracket 0, n\rrbracket$ de $\N$ est finie pour tout entier naturel $n$.
+
+\item   Soit $p$ et $q$ deux entiers naturels tels qu'il existe une application injective de $\llbracket 0,p \rrbracket$ dans $\llbracket 0,q \rrbracket$, alors $p\leq q$.
+
+\item  Soit $A$ une partie de $\N$ pour laquelle, pour tout $n\in \N$, il existe une application injective de $\llbracket 0,n \rrbracket$ dans $A$, alors $A$ est infinie.
+
+\item  Soit $A$ un ensemble. S'il existe une application injective de $\N$ dans $A$, alors $A$ n'est pas fini.
+
+\item  Soit $A$ un ensemble fini non vide. Il existe un unique entier naturel $n$ pour lequel il existe une bijection entre $\llbracket 0, n\rrbracket$ et $A$.
+
+\item Toute partie finie non vide de $\N$ admet un plus grand élément. 
+
+\item Toute partie d'un ensemble fini est finie et son cardinal est inférieur ou égal au cardinal de l'ensemble qui le contient. 
+
+\end{enumerate}

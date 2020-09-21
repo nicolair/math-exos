@@ -1,0 +1,49 @@
+\begin{tiny}(Cev14)\end{tiny} On veut montrer (par double inclusion) 
+\[ 
+A+\left( B\cap(A+C)\right) = (A+B)\cap(A+C) . 
+\]
+Pour tout $x \in A+\left( B\cap(A+C)\right)$,
+\[
+ \exists a \in A \text{ et } b \in B\cap(A + C) \text{ tq } x = a + b.
+\]
+Donc $x \in A + B$. D'autre part, comme $b \in B + C$,
+\begin{multline*}
+  \exists a' \in A\text{ et } c \in C \text{ tq } b = a' + c \\
+  \Rightarrow x = \underset{\in A }{\underbrace{(a + a')}} + c \in A + C . 
+\end{multline*}
+Réciproquement, pour tout $x \in (A+B) \cap (A+C)$,
+\begin{multline*}
+  \left\lbrace
+  \begin{aligned}
+    &\exists (a,b) \in A\times B \\
+    &\exists (a',c) \in A\times C 
+  \end{aligned}
+\right.
+\text{ tq } x = a+b = a' + c\\
+\Rightarrow b = (a' - a) + c \in (A + C)\cap B \\
+\Rightarrow x = a + b \in A + B\cap (A + C).
+\end{multline*}
+On veut montrer (par double inclusion) 
+\[ 
+A\cap \left( B+(A\cap C)\right) = (A\cap B)+(A\cap C). 
+\]
+Pour tout $x \in A\cap \left( B+(A\cap C)\right)$,
+\[
+  \exists b \in B \text{ et } c_A \in A\cap C \text{ tq } x = b + c_A.
+\]
+Comme $b = x - c_A$ avec $x$ et $c_A$ dans $A$, 
+\[
+  x = b + c_A \Rightarrow x \in (A\cap B) + (A \cap C).
+\]
+Réciproquement, pour tout $x \in (A\cap B)+(A\cap C)$,
+\begin{multline*}
+  \exists b_A \in A\cap B \text{ et } c_A \in A\cap C \text{ tq }
+  x = b_A + c_A.\\
+\left.
+\begin{aligned}
+  b_A \in A, c_A \in A &\Rightarrow x \in A \\
+  b_A \in B, c_A \in A \cap C &\Rightarrow x \in B + (A \cap C)
+\end{aligned} 
+\right\rbrace\\
+\Rightarrow x \in A \cap ( B + (A \cap C)).
+\end{multline*}

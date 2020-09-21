@@ -1,0 +1,34 @@
+\begin{tiny}(Cmf08)\end{tiny} On distingue 6 cas en discutant sur $\rg(f)$.
+
+\textbf{Cas 1.} $\rg(f)=0$. La matrice est nulle dans n'importe quelle base.\newline
+\textbf{Cas 2.} $\rg(f)=1$ et la droite $\Im(f)$ est incluse dans le plan $\ker(f)$.\newline
+\textbf{Cas 3.} $\rg(f) = 1$ et $\Im(f) \oplus \ker(f) = E$. \newline
+\textbf{Cas 4.} $\rg(f) = 2$ et la droite $\ker(f)$ est incluse dans le plan $\Im(f)$.\newline
+\textbf{Cas 5.} $\rg(f) = 2$ et $\Im(f) \oplus \ker(f) = E$. \newline
+\textbf{Cas 6.} $\rg(f) = 3$. Alors $f$ est bijective, en composant par $f^{-1}$:
+\[
+  f^2 = f^3 \Rightarrow \Id_E = f.
+\]
+La matrice de $f$ dans n'importe quelle base est $I_3$.
+
+\textbf{Cas 2.} $\rg(f)=1$ et la droite $\Im(f)$ est incluse dans le plan $\ker(f)$.\newline
+Soit $(u)$ une base de $\Im(f)$. Il existe un vecteur non nul $w$ tel que $f(w) = u$. Comme $\Im(f) \subset \ker(f)$, il existe $v$ tel que $(u,v)$ base de $\ker(f)$.
+Vérifiez que $\mathcal{U} = (u,v,w)$ est une base de $E$. Dans ce cas
+\[
+  \MatB{\mathcal{U}}{f} = D.
+\]
+
+\textbf{Cas 4.} $\rg(f) = 2$ et la droite $\ker(f)$ est incluse dans le plan $\Im(f)$.
+Soit $(u)$ une base de $\ker(f)$, il existe $v$ non nul tel que $u = f(v)$. L'existence d'un $w$ tel que la matrice de $f$ dans $(u,v,w)$ soit $C$ est plus délicate.\newline
+Remarquons que 
+\[
+  f^2 = f^3 \Rightarrow  (f - \Id_E) \circ f^2 = 0_{\mathcal{L}(E)}.
+\]
+Si on montre qu'il existe $w_0$ tel que $f^2(w_0) \neq 0_E$, on pourra poser $w = f^2(w_0)$ et on aura $f(w) = w$ ce qui permettra de conclure (en vérifiant que c'est bien une base).
+En fait $f^2 = 0_{\mathcal{L}(E)} \Leftrightarrow \Im(f) \subset \ker(f)$ ce qui est faux dans ce cas 4 à cause des dimensions. Il existe donc bien un $w = f^2(w_0)$ non nul.
+
+\textbf{Cas 3 et 5}. $\Im(f)$ est toujours stable par $f$, notons $g$ la restriction de $f$ à l'image. Le noyau et l'image sont supplémentaires donc (théorème noyau-image), $g$ est bijective et on peut raisonner comme en 6:
+\[
+  f^2 = f^3 \Rightarrow g^2 = g^3 \Rightarrow g = \Id_{\Im(f)}.
+\]
+En concaténant une base de l'image et une base du noyau, on obtient $A$ dans le cas 3 et $B$ dans le cas 5. 

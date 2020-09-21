@@ -1,0 +1,20 @@
+\begin{tiny}(Cdi03)\end{tiny} Notons $r_A$ l'application \og restriction à $A$\fg.
+\begin{enumerate}
+  \item La linéarité de $r_A$ vient des propriétés des opérations fonctionnelles. Montrons qu'elle est surjective.\newline
+  Soit $g \in \mathcal{L}(A,E)$ et $(a_1,\cdots,a_\alpha)$ une base de $A$. On complète en une base $(a_1,\cdots,a_n)$ de $E$ et on définit $f$ par prolongement linéaire avec
+\[
+  f(a_i) = 
+  \left\lbrace
+  \begin{aligned}
+    g(a_i) &\text{ si } i\in \llbracket 1, \alpha \rrbracket \\
+    0  &\text{ si } i\in \llbracket \alpha +1, n\rrbracket
+  \end{aligned}
+  \right. .
+\]
+Alors $r_A(f) = g$.
+  \item Avec  $L = \left\lbrace f\in \mathcal{L}(E) \text{ tq } A \subset \ker f\right\rbrace = \ker r_A$ et les dimensions des espaces d'applications linéaires, le théorème du rang appliqué à $r_A$ conduit à
+\[
+  \dim L = (\dim E - \dim A) \dim E.
+\]
+
+\end{enumerate}

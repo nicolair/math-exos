@@ -1,0 +1,26 @@
+\begin{tiny}(Cpo05)\end{tiny} On suppose que $P'$ divise $P$. Il existe donc $Q\in \C[X]$ tel que $P=P'Q$. Par définition de la dérivée, le degré de $Q$ est $1$.\newline
+Soit $a\in \C$ une racine de $P$ de multiplicité $\alpha$. Il existe donc $P_1\in \C[X]$ tel que 
+\begin{displaymath}
+ P=(X-a)^\alpha P_1\text{ avec }\widetilde{P_1}(a)\neq 0
+\end{displaymath}
+On dérive :
+\begin{displaymath}
+ P' = \alpha(X-a)^{\alpha -1}P_1 +(X-a)^\alpha P_1'
+\end{displaymath}
+puis on multiplie par $Q$ pour reformer $P$
+\begin{displaymath}
+ (X-a)^\alpha P_1= (X-a)^{\alpha -1}\left(\alpha P_1 +(X-a)P_1'\right) Q 
+\end{displaymath}
+On simplifie par $(X-a)^{\alpha-1}$ puis on substitue $a$ à $X$. On en déduit
+\begin{multline*}
+ (*)\hspace{0.5cm} (X-a) P_1=\left(\alpha P_1 +(X-a)P_1'\right) Q \\
+\Rightarrow \alpha \widetilde{P_1}(a)\widetilde{Q}(a)=0 \Rightarrow \widetilde{Q}(a)=0
+\end{multline*}
+Donc $a$ est racine de $Q$. Comme $\deg(Q)=1$, il existe $\lambda\in \C$ tel que $Q=\lambda(X-a)$. L'examen du coefficient dominant dans la relation $P=P'Q$ montre que $\lambda = \frac{1}{n}$ où $n=\deg(P)$. On remplace dans $(*)$ et on simplifie encore. On en tire
+\begin{displaymath}
+ P_1 = \left( \alpha P_1 +(X-a)P_1'\right)\lambda
+\end{displaymath}
+En substituant encore $a$ à $X$, on obtient $\alpha \lambda=1$ soit $m=\deg(P)$. Les polynômes divisibles par leur dérivée sont donc ceux de la forme
+\begin{displaymath}
+ c(X-a)^n
+\end{displaymath}

@@ -1,0 +1,24 @@
+\begin{tiny}(Eal25)\end{tiny} Une présentation de l'anneau $\Z/n\Z$.\newline
+Soit $(G,*)$ un groupe commutatif. On note $\mathcal{M}$ l'ensemble des morphismes de $(G,*)$. Un \emph{morphisme} de $(G,*)$ est une application $p$ de $G$ dans $G$ telle que 
+\[
+ \forall (g,g')\in G^2, \; p(g*g') = p(g)*p(g').
+\]
+\begin{enumerate}
+ \item Exemple. Soit $m\in \Z$, on définit $p_m$ de $G$ dans $G$ par:
+ \[
+  \forall g\in G,\; p_m(g) = g^m.
+ \]
+Montrer que $p_m \in \mathcal{M}$.
+
+ \item Opérations.\newline
+ Pour tout $(p,p')\in \mathcal{M}^2$, on définit $p+p'$ par:
+\[
+ \forall g \in G, \; (p+p')(g) = p(g)*p'(g).
+\]
+Montrer que $p+p'\in \mathcal{M}$. Montrer que $(\mathcal{M}, +, \circ)$ est un anneau. Préciser les deux éléments neutres.
+
+ \item Cas particulier.\newline
+ Ici, $n$ est un entier naturel non nul, $(G,*)$ est le groupe multiplicatif des racines $n$-ièmes de l'unité $(\U_n,.)$ avec la multiplication complexe.\newline
+ Montrer que, pour tout $p\in \mathcal{M}$, il existe un unique $r\in \llbracket 0, n-1\rrbracket$ tel que $p=p_r$.\newline
+ Que dire de $p_r + p_{r'}$ et $p_r \circ p_{r'}$ pour $r$ et $r'$ dans $\llbracket 0, n-1\rrbracket$ ?
+\end{enumerate}

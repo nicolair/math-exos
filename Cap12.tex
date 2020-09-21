@@ -1,0 +1,53 @@
+\begin{tiny}(Cap12)\end{tiny}
+\begin{enumerate}
+ \item Il s'agit d'un résultat du cours de deuxième année qui peut se traiter à l'aide du concept de \emph{suite de Cauchy} ou de la manière suivante.\newline
+Notons 
+\begin{align*}
+a_n &=w_n^+=\max(w_n,0) \\ b_n &=w_n^-=\max(-w_n,0) 
+\end{align*}
+Il est important de remarquer que $w_n^+$ et $w_n^-$ sont à valeurs positives. On vérifie de plus, en considérant tous les cas possibles, que 
+\begin{displaymath}
+ w_n = a_n - b_n,\hspace{0.5cm} |w_n| = a_n + b_n
+\end{displaymath}
+Formons les sommes de termes consécutifs
+\begin{multline*}
+ W_n = \sum_{k=0}^nw_k, \; N_n = \sum_{k=0}^n|w_k|, \\ A_n = \sum_{k=0}^na_k, \;B_n = \sum_{k=0}^nb_k
+\end{multline*}
+Les trois dernières suites sont croissantes car elles sont formées avec des sommes de termes positifs. De plus, par linéarité,
+\begin{displaymath}
+ A_n + B_n = N_n \Rightarrow \left\lbrace 
+\begin{aligned}
+ A_n \leq N_n \\ B_n\leq N_n
+\end{aligned}
+\right. 
+\end{displaymath}
+Si la suite $\left( N_n\right) _{n\in \N}$ converge, elle est majorée donc $\left( A_n\right) _{n\in \N}$ et $\left( B_n\right) _{n\in \N}$ le sont aussi. Elles convergent car elles sont croissantes ce qui assure la convergence de $\left( W_n\right) _{n\in \N}$ car $W_n =A_n - B_n$.
+ \item Par hypothèse, il existe $K>0$ tel que 
+\begin{displaymath}
+ 0\leq |w_n| \leq \frac{K}{n^{1+\beta}}
+\end{displaymath}
+On somme les inégalités et on compare avec une intégrale
+\begin{multline*}
+ \sum_{k=2}^n|w_k|\leq K \sum_{k=2}^n\frac{1}{k^{1+\beta}}\leq K\int_{1}^{n}\frac{dx}{x^{1+\beta}} \\
+= \left[-\frac{K}{\beta}x^{-\beta} \right]_{1}^{n} \leq  \frac{K}{\beta}
+\end{multline*}
+Ceci montre la convergence de $\left( \sum_{k=0}^n|w_k|\right) _{n\in \N}$. On en déduit, d'après la question a., la convergence demandée.
+ \item En faisant le produit des deux développements limité
+\begin{align*}
+ \frac{u_{n+1}}{u_n} &= 1 -\frac{\alpha}{n} +O(\frac{1}{n^{1+\beta}}) \\
+ \left(\frac{n+1}{n} \right)^\alpha &= 1 +\frac{\alpha}{n} +O(\frac{1}{n^{2}})
+\end{align*}
+on obtient
+\begin{displaymath}
+ \frac{v_{n+1}}{v_n} = 1 + O(\frac{1}{n^{1+\beta'}})
+\end{displaymath}
+avec $\beta'=\min(\beta,1)$ puis
+\begin{displaymath}
+ \ln\left( \frac{v_{n+1}}{v_n}\right)  = O(\frac{1}{n^{1+\beta'}})
+\end{displaymath}
+La question b. montre alors que $\ln(v_n)$ converge. Notons $u$ sa limite et $A=e^u$, on a alors
+\begin{displaymath}
+ v_n \rightarrow A \Rightarrow u_n \sim \frac{A}{n^\alpha}
+\end{displaymath}
+
+\end{enumerate}

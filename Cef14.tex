@@ -1,0 +1,29 @@
+\begin{tiny}(Cef14)\end{tiny} Il existe $x_1$ et $x_2$ tels que $(f_{x_1},f_{x_2})$ base de $V$.\newline
+Comme la famille est génératrice, il existe des fonctions à valeurs complexes $\lambda_1$ et $\lambda_2$ telles que
+\[
+ \forall x \in \R, \; f_x = \lambda_1(x)f_{x_1} + \lambda_2(x)f_{x_2}.
+\]
+On va montrer que $\lambda_1$ et $\lambda_2$ sont dérivables. Pour cela on les exprime comme solutions d'un système de Cramer. Pour tout $(x,t) \in \R^2$,
+\[
+ (*)\hspace{0.5cm} f(x+t) = \lambda_1(x)f(x_1 + t) + \lambda_2(x)f(x_2 + t).
+\]
+En particulier, pour tout $t\in \R$
+\[
+ \left\lbrace 
+ \begin{aligned}
+  f(x_1)\lambda_1(x) + f(x_2)\lambda_2(x) &= f(x) \\
+  f(x_1+t)\lambda_1(x) + f(x_2+t)\lambda_2(x) &= f(x+t)
+ \end{aligned}
+\right. 
+\]
+Le déterminant de ce système est
+\[
+ \Delta_t = f(x_1)f_{x_2}(t) - f(x_2)f_{x_1}(t).
+\]
+Comme $(f_{x_1},f_{x_2})$ est libre, il existe $t_0$ tel que $\Delta_{t_0}\neq 0$. Les expressions de $\lambda_1$ et $\lambda_2$  par les formules de Cramer montrent qu'elles sont dans $V$.\newline
+En dérivant $(*)$ une fois par rapport à $x$ puis en prenant $x=0$, on montre que $f'\in V$. On en déduit que $f'$ est dérivable. De plus, il existe des fonctions $\mu_1$ et $\mu_2$ vérifiant 
+\[
+ (**)\hspace{0.5cm} f'(x+t) = \mu_1(x)f(x_1 + t) + \mu_2(x)f(x_2 + t).
+\]
+On montre de la même manière que $\mu_1, \mu_2 \in V$ donc $f''\in V$.\newline
+La famille de trois vecteurs $(f,f',f'')$ d'un espace de dimension $2$ est liée (condition suffisante de dépendance) donc $f$ est solution d'une équation différentielle linéaire d'ordre 2 à coefficients constants.

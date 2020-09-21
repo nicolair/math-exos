@@ -1,0 +1,37 @@
+\begin{tiny}(Cfc06)\end{tiny} La fonction en escalier $f$ est bornée et atteint ses bornes qui sont donc dans $I$. L'intégrale est la valeur moyenne de $f$. Elle est comprise entre les bornes et donc dans $I$ car $I$ est un intervalle.\newline
+Soit $\mathcal{S}=(x_0,\cdots,x_n)$ une subdivision de $[0,1]$ adaptée à $f$. Les nombres $x_{i+1}-x_i$ sont positifs et de somme $1$. On peut donc écrire une inégalité de convexité pour $g$:
+\begin{multline*}
+ g\left( \int_{[0,1]}f\right) =g\left(\sum_{i=0}^{n-1}(x_{i+1}-x_i)v_i \right)\\
+\leq  \sum_{i=0}^{n-1}(x_{i+1}-x_i)g(v_i)
+= \int_{[0,1]}g\circ f
+\end{multline*}
+ où $g\circ f$ est encore en escalier.\newline
+L'extension au cas où $f$ est continu repose sur le théorème d'approximation d'une fonction continue par une fonction en escalier et sur le théorème de Heine.\newline
+Soit $\varepsilon>0$ arbitraire. D'après le théorème de Heine (appliqué à $g$), il existe un $\alpha>0$ tel que 
+\begin{displaymath}
+ \forall (u,v)\in I^2,\; |u-v|\leq\alpha \Rightarrow
+|g(u)-g(v)|<\frac{\varepsilon}{2}
+\end{displaymath}
+D'après le théorème d'approximation d'une fonction continue par une fonction en escalier (appliqué à $f$), il existe $\varphi$ en escalier tel que
+\begin{displaymath}
+ \forall x\in [0,1],\;|f(x)-\varphi(x)|<\alpha
+\end{displaymath}
+Comme les deux intégrales sont dans $I$ (intervalle), on peut en déduire
+\begin{multline*}
+ \left|\int_{[0,1]}f - \int_{[0,1]}\varphi \right|\leq \alpha \\
+\Rightarrow g\left( \int_{[0,1]}f\right) \leq  g\left( \int_{[0,1]}\varphi\right) + \frac{\varepsilon}{2}
+\end{multline*}
+On applique alors la propriété dans le cas des fonctions en escalier qui donne
+\begin{displaymath}
+ g\left( \int_{[0,1]}f\right) \leq \int_{[0,1]}g\circ \varphi + \frac{\varepsilon}{2}
+\end{displaymath}
+Puis, pour tout $x$ dans $[0,1]$
+\begin{displaymath}
+ |f(x)-\varphi(x)|<\alpha \Rightarrow
+|g(f(x))-g(\varphi(x))|<\frac{\varepsilon}{2}
+\end{displaymath}
+ce qui entraine
+\begin{displaymath}
+ \int_{[0,1]}g\circ \varphi \leq \int_{[0,1]}g\circ f + \frac{\varepsilon}{2}
+\end{displaymath}
+On termine par un raisonnement à la Cauchy car $\varepsilon$ est arbitraire.

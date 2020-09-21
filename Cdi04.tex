@@ -1,0 +1,33 @@
+\begin{tiny}(Cdi04)\end{tiny} La linéarité de $f$ découle de celle de la dérivation et de la prise de valeur en $a$. Comme $\deg f(P) \leq \deg P$, la fonction est bien un endomorphisme. par un calcul immédiat:
+\begin{displaymath}
+  \forall k\in \llbracket 2,n\rrbracket,\;
+  f((X-a)^k) = (k-2)(X-a)^{k}
+\end{displaymath}
+car $a$ est racine au moins double. De plus
+\begin{displaymath}
+  f(1) = 0\hspace{0.5cm} f(X-a) = 0
+\end{displaymath}
+On en déduit que $1, X-a$ et $(X-a)^2$ sont dans le noyau donc
+\begin{displaymath}
+  \Vect(1,X-a, (X-a)^2)\subset \ker f
+\end{displaymath}
+et les $(X-a)^k$ pour $k\geq 3$ sont dans l'image:
+\begin{displaymath}
+\Vect\left( (X-a)^3,\cdots,(X-a)^n\right)
+\subset \Im f
+\end{displaymath}
+Comme les familles de vecteurs sont libres:
+\begin{displaymath}
+\dim \ker f \geq 3, \hspace{0.5cm}
+\dim \Im f \geq n-2
+\end{displaymath}
+\`A cause du théorème du rang
+\begin{multline*}
+\dim \ker f + \dim \Im f = n +1 \\
+\Rightarrow \dim \ker f \geq n+1-(n-2) = 3 \\
+\Rightarrow \ker f = \Vect(1,X-a, (X-a)^2)
+\end{multline*}
+De même pour l'image.
+\begin{displaymath}
+\Vect\left( (X-a)^3,\cdots,(X-a)^n\right) = \Im f  
+\end{displaymath}

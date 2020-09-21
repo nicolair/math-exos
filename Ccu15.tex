@@ -1,0 +1,23 @@
+\begin{tiny}(Ccu15)\end{tiny} En regroupant deux par deux les termes consécutifs,
+\begin{displaymath}
+  a_n = \frac{1}{1\times 2} + \frac{1}{3\times 4} +\cdots + \frac{1}{(2n-1)\times (2n)}
+\end{displaymath}
+On en tire que la suite est croissante avec
+\begin{displaymath}
+  a_n - a_{n-1} = \frac{1}{(2n-1)\times (2n)}
+\end{displaymath}
+On reconnait une suite qui s'exprime comme une différence de termes consécutifs:
+\begin{displaymath}
+  \frac{1}{(k-1)k} = \frac{1}{k-1} - \frac{1}{k}
+\end{displaymath}
+On ajoute les termes en 
+\begin{displaymath}
+\frac{1}{2\times 3}, \frac{1}{4\times 5} \cdots  
+\end{displaymath}
+qui manquent pour pouvoir sommer en domino. On en déduit
+\begin{multline*}
+  a_n \leq \frac{1}{1\times 2} + \frac{1}{2\times 3}+ \frac{1}{3\times 4} +\cdots \\
+  + \frac{1}{(2n-2)\times (2n-1)}+ \frac{1}{(2n-1)\times (2n)}\\
+  = 1 - \frac{1}{2n} \leq 1
+\end{multline*}
+On en tire la convergence de la suite comme suite croissante majorée.

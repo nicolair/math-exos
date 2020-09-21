@@ -1,0 +1,12 @@
+On trouve $ \delta_{n}=a\delta_{n-1}-\delta_{n-2}$ pour $n\geq4$ en développant suivant la première ligne ou la première colonne.\newline
+La forme de la matrice rend indiscutable les valeurs de $\delta_2$ et $\delta_3$. On utilise la formule pour calculer $\delta_1$ puis $\delta_0$. On obtient $\delta_1=a$ et $\delta_0=1$.
+
+D'après l'étude des suites vérifiant une relation de récurrence linéaire, la suite $\delta_n$ est une combinaison de suites géométriques de raison 
+\begin{displaymath}
+e^{\theta}, e^{-\theta} \;\text{ ou }\; e^{i\theta},e^{-i\theta} 
+\end{displaymath}
+On calcule les coefficients par les formules de Cramer en utilisant les conditions initiales $\delta_0$ et $\delta_1$. On en tire finalement
+\begin{displaymath}
+ \delta_n=\frac{\sin(n+1)\theta}{\sin \theta}\;\text{ ou }\;
+\delta_n=\frac{\sh(n+1)\theta}{\sh \theta}
+\end{displaymath}

@@ -1,0 +1,24 @@
+\begin{tiny}(Cev19)\end{tiny} Notons $U$ le sous-espace vectoriel union de tous les $A_j$.
+Par hypothèse, il existe $a_i\in A_i$ tel que $a_i\notin A_j$.\newline
+Soit $x$ quelconque dans $A_j$, on veut montrer qu'il est dans un $A_k$ avec $k\neq j$.\newline
+Considérons, 
+\begin{displaymath}
+\forall \lambda\in \K, \;  u_\lambda = a_i + \lambda x \in U
+\end{displaymath}
+car $a_i$ et $x$ appartiennent à $U$.\newline
+Remarquons que $u_\lambda \notin A_j$ sinon $a_i$ serait dans $A_j$. 
+\begin{displaymath}
+\forall \lambda \in \K,\;  \exists k_\lambda \neq j \text{ tq } u_\lambda \in A_{k_\lambda}
+\end{displaymath}
+Comme $\K$ est infini, d'après le principe des tiroirs, il existe un indice $k$ et des scalaires distincts $\lambda$, $\mu$ tels que
+\begin{displaymath}
+  \left. 
+  \begin{aligned}
+    u_\lambda = a_i + \lambda x \in& A_k \\ u_\mu = a_i + \mu x \in& A_k
+  \end{aligned}
+\right\rbrace 
+\Rightarrow 
+(\lambda - \mu)x \in A_k \Rightarrow x\in A_k
+\end{displaymath}
+
+

@@ -1,0 +1,22 @@
+\begin{tiny}(Cpo33)\end{tiny}
+\begin{enumerate}
+ \item Formules faciles en considérant le coefficient du terme de plus bas degré.
+ \item Pour l'unicité, on raisonne comme pour la division euclidienne en faisant jouer à la valuation le rôle du degré. Pour l'existence, on raisonne par récurrence sur $n$. Notons
+\begin{displaymath}
+ a= c_0(A)\neq 0,\hspace{0.5cm} b = c_0(B)\neq 0
+\end{displaymath}
+Pour $n=0$, $Q_0=\frac{b}{a}$ convient.\newline
+S'il existe $Q_n$ et $R_n$ vérifiant les conditions, on peut écrire 
+\begin{displaymath}
+ R_n=X^{n+1}R\text{ avec } r=c_0(R)
+\end{displaymath}
+ On vérifie alors que l'on peut prendre
+\begin{displaymath}
+ Q_{n+1}= Q_n+\frac{r}{a}X^{n+1}
+\end{displaymath}
+\item On trouve
+\begin{align*}
+ Q_3 &= 1+X+X^2-X^3\\
+ R_3 &= X^4(1+X-X^2)
+\end{align*}
+\end{enumerate}

@@ -1,0 +1,137 @@
+\begin{tiny}(Cfr01)\end{tiny} On décompose d'abord en éléments simples de première espèce puis de deuxième espèce.
+\begin{itemize}
+ \item Calcul facile car tous les pôles sont simples, puis on regroupe les conjugués 
+\begin{multline*}
+\frac{(X+2)}{(X+1)(X^{2}+1)}\\
+=\frac{1}{2(X+1)} +\frac{-1+3i}{4(X+i)} +\frac{-1-3i}{4(X-i)} \\
+=\frac{1}{2(X+1)} + {\frac {-X+3}{2(X^{2}+1)}}
+\end{multline*}
+
+ \item Dans $\C(X)$: deux pôles doubles conjugués (ou opposés).
+\begin{multline*}
+\frac{X^2}{(X^2+1)^2}= \frac{a}{(X-i)^2} + \frac{b}{X-i} \\
++ \frac{c}{(X+i)^2} + \frac{d}{X+i}
+\end{multline*}
+Par conjugaison (ou parité): $c=a$, $d=-b$. Par supertildation en $i$ :$a=\frac{-1}{(2i)^2}=\frac{1}{4}$.\newline
+Valeur en $0$:
+\begin{displaymath}
+ 0= -(a+c)+i(b-d) \Rightarrow b=-\frac{i}{4}
+\end{displaymath}
+\begin{multline*}
+\frac{X^2}{(X^2+1)^2}= \frac{1}{4(X-i)^2} - \frac{i}{4(X-i)} \\
++ \frac{1}{4(X+i)^2} + \frac{i}{4(X+i)}
+\end{multline*}
+Dans $\R[X]$, évident par développement idiot
+\begin{displaymath}
+ \frac{X^2}{(X^2+1)^2}=\frac{X^2+1-1}{(X^2+1)^2}=\frac{1}{X^2+1}-\frac{1}{(X^2+1)^2}
+\end{displaymath}
+
+ \item Deux pôles simples. Calculs faciles.
+\begin{displaymath}
+ \frac{1}{1-X^{2}}=\frac{1}{2(1-X)}+\frac{1}{2(1+X)}
+\end{displaymath}
+
+ \item Tous les pôles sont simples. Calculs par supertildation en faisant apparaitre un coefficient du binôme.
+\begin{multline*}
+\frac{1}{(X-1)(X-2)\cdots (X-n)}\\
+=\frac{1}{(n-1)!}\sum_{i=0}^{n-1}\binom{n-1}{i-1}\frac{(-1)^{n-i}}{X-i}
+\end{multline*}
+
+ \item 
+\begin{multline*}
+ \frac{1}{(X-1)^{2}(X-2)}
+=\frac{-1}{(X-1)^2}+\frac{-1}{X-1}+\frac{1}{X-2}
+\end{multline*}
+
+ \item 
+\begin{multline*}
+\frac{X^{5}}{(X^{4}-1)^{2}} 
+= \frac{1}{16(X-1)^2} + \frac{1}{8(X-1)}\\
+-\frac{1}{16(X+1)^2} + \frac{1}{8(X+1)} + R
+\end{multline*}
+avec
+\begin{multline*}
+ R = -\frac{i}{16(X-i)^2}-\frac{1}{8(X-i)} \\
+ +\frac{i}{16(X+i)^2}-\frac{1}{8(X+i)}
+\end{multline*}
+ou
+\begin{displaymath}
+ R=-\frac{1}{4(x^2+1)^2} + \frac{1}{4(x^2+1)}
+\end{displaymath}
+
+ \item Les pôles sont les racines carrées de $j$ et $j^2$ soit $j$, $-j$, $j^2$, $-j^2$. On note $a$, $b$, $c$, $d$ les coefficients correspondants. Comme la fraction est réelle, $c=\overline{a}$ et $d=\overline{b}$. Comme la fraction est impaire $b=-a$. On calcule $a$ avec la dérivée du dénominateur:
+\begin{displaymath}
+ a = \frac{j}{4j^3+2j}=\frac{j}{4+2j}
+\end{displaymath}
+\begin{multline*}
+ \frac{X}{X^{4}+X^{2}+1}= \frac{\frac{j}{4+2j}}{X-j}-\frac{\frac{j}{4+2j}}{X+j}\\
+ +\frac{\frac{j^2}{4+2j^2}}{X-j^2}-\frac{\frac{j^2}{4+2j^2}}{X+j^2}
+\end{multline*}
+On cherche des coefficients réel tels que
+\begin{displaymath}
+ \frac{X}{X^{4}+X^{2}+1}=
+\frac{aX+b}{X^2+X+1} + \frac{cX+d}{X^2-X+1}
+\end{displaymath}
+Par imparité, $a=c$ et $d=-b$. En multipliant par $X$ et en allant à l'infini, on obtient $a=b=0$. En prenant la valeur en $1$, on obtient la valeur de $b$. Finalement:
+\begin{displaymath}
+ \frac{X}{X^{4}+X^{2}+1}=\\
+\frac{\frac{1}{2}}{X^2-X+1} - \frac{\frac{1}{2}}{X^2+X+1}
+\end{displaymath}
+
+ \item On peut commencer par factoriser le numérateur et simplifier par $(X-1)^2$. On divise pour obtenir la partie entière et on utilise la formule de Taylor en $1$ pour la partie polaire
+\begin{multline*}
+ \frac{X^{7}-X^{6}-X+1}{(X-1)^{5}}
+= X^2+4X+10 \\
++\frac{6}{(X-1)^3}+\frac{15}{(X-1)^2}+\frac{20}{X-1}
+\end{multline*}
+
+ \item Les pôles sont $e^{i\frac{\alpha}{2}}$, $e^{-i\frac{\alpha}{2}}$, $-e^{i\frac{\alpha}{2}}$, $e^{-\frac{\alpha}{2}}$. Ils sont simples. Notons $a$, $b$, $c$, $d$ les coefficients des parties polaires correspondantes. Par conjugaison : $b=\overline{a}$,  $d=\overline{c}$. Par parité $c=-a$, $d=-b$. Tout s'exprime donc en fonction de $a$
+\begin{align*}
+ b=\overline{a} & & c=-a & &d= -\overline{a}
+\end{align*}
+Le calcul de $a$ se fait en supertildant à l'aide de la factorisation
+\begin{multline*}
+ a=\frac{e^{i\alpha}}{
+  \left(e^{i\frac{\alpha}{2}}- e^{-i\frac{\alpha}{2}}\right)
+  \left(e^{i\frac{\alpha}{2}}+ e^{i\frac{\alpha}{2}}\right)
+  \left(e^{i\frac{\alpha}{2}}+ e^{-i\frac{\alpha}{2}}\right)
+ }\\
+=\frac{e^{i\alpha}}{
+\left(2i\sin\frac{\alpha}{2}\right)
+\left( 2e^{i\frac{\alpha}{2}}\right) 
+\left(2\cos\frac{\alpha}{2}\right) 
+}
+=-\frac{i}{4\sin \alpha}e^{i\frac{\alpha}{2}}
+\end{multline*}
+Finalement
+\begin{multline*}
+\frac{X^{2}}{X^{4}-2X^{2}\cos \alpha +1}=\\
+\frac{-ie^{i\frac{\alpha}{2}}}{4\sin \alpha(X-e^{i\frac{\alpha}{2}})}
++\frac{ie^{-i\frac{\alpha}{2}}}{4\sin \alpha(X-e^{-i\frac{\alpha}{2}})} \\
++\frac{ie^{i\frac{\alpha}{2}}}{4\sin \alpha(X+e^{i\frac{\alpha}{2}})}
++\frac{-ie^{-i\frac{\alpha}{2}}}{4\sin \alpha(X+e^{-i\frac{\alpha}{2}})}
+\end{multline*}
+
+ \item Coefficients indéterminés.
+\begin{multline*}
+ \frac{1}{(X^{2}-1)^{2}}=
+\frac{a}{(X-1)^2}+\frac{b}{X-1}\\+\frac{c}{(X+1)^2}+\frac{d}{X+1}
+\end{multline*}
+Par parité: $c=a$, $d=-b$. Le $a$ est facile à calculer par supertildation $a=\frac{1}{4}$. On peut calculer le $b$ par la méthode servant à prouver l'existence et l'unicité de la partie polaire
+\begin{displaymath}
+ \frac{1}{(X^{2}-1)^{2}} - \frac{1}{4(X-1)^2}=-\frac{X+3}{(X-1)(X+1)^2}
+\end{displaymath}
+On déduit $b=-\frac{1}{4}$. Finalement:
+\begin{multline*}
+ \frac{1}{(X^{2}-1)^{2}}=\frac{1}{4(X-1)^2}-\frac{1}{4(X-1)}\\+\frac{1}{4(X+1)^2}+\frac{1}{4(X-1)}
+\end{multline*}
+
+\item Ne pas oublier la partie entière à calculer par division sans préciser le reste. Le résidu en $1$ se calcule par développement limité.
+\begin{multline*}
+  \frac{X^4}{(X-1)^2(X+1)}
+  = X + 1 + \frac{1}{2(X-1)^2} \\
+  + \frac{7}{4(X-1)} + \frac{1}{4(X+1)} 
+\end{multline*}
+
+\end{itemize}
+

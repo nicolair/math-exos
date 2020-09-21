@@ -1,0 +1,21 @@
+\begin{tiny}(Cmm18)\end{tiny} Pour toute $A \in \mathcal{M}_p(\K)$, considérerons
+\[
+\varphi_A : \;
+ \left\lbrace 
+ \begin{aligned}
+  \mathcal{M}_p(\K) &\rightarrow \K \\
+  M &\mapsto \tr(AM)
+ \end{aligned}
+\right. .
+\]
+Il est clair que $\varphi_A$ est une forme linéaire. Il s'agit de montrer que toute forme linéaire sur les matrices est de la forme $\varphi_A$ pour une unique matrice $A$. Introduisons
+\[ \Phi:\;
+ \left\lbrace 
+ \begin{aligned}
+  \mathcal{M}_p(\K) &\rightarrow \mathcal{M}_p(\K)^{*} \\
+  A &\mapsto \varphi_A
+ \end{aligned}
+\right. .
+\]
+Il s'agit de montrer que $\Phi$ est bijective. Comme elle est clairement linéaire entre deux espaces de même dimension $p^2$, il suffit de montrer qu'elle est injective.\newline
+Tout $A \in \ker \Phi$ est nul car $0 = \tr(AE_{i j}) = a_{j i } = 0$ pour toutes les matrices élémentaires.

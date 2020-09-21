@@ -1,0 +1,28 @@
+\begin{tiny}(Cgd04)\end{tiny} Soit $f$ définie par
+\[
+  f(x) = \cos x - 1 + \frac{1}{2}x^2 - \lambda x^4.
+\]
+Dérivons 4 fois pour trouver une dérivée dont on controle le signe.
+\[
+   f^{(4)}(x) = \cos x - 4!\, \lambda \Rightarrow f^{(4)}(0) > 0 \text{ car } 4! \lambda < 1.
+\]
+Par continuité, il existe $\alpha >0$ tel que $f^{(4)}>0$ dans $\left[ - \alpha, +\alpha\right]$. De plus,
+\[
+  f(0) = f'(0) = f''(0) = f^{(3)}(0) = 0.
+\]
+On forme des tableaux de variations
+\begin{center}
+\renewcommand{\arraystretch}{1.5}
+\begin{tabular}{l|lllll}
+          & $-\alpha$ &            & $0$ &            & $\alpha$ \\ \hline
+$f^{(4)}$ &           & $+$        & $>0$& $+$        &          \\ \hline
+$f^{(3)}$ &  $<0$     & $\nearrow$ & $0$ & $\nearrow$ & $>0$     \\ \hline
+$f^{(2)}$ &  $>0$     & $\searrow$ & $0$ & $\nearrow$ & $>0$     \\ \hline
+$f^{(1)}$ &  $>0$     & $\nearrow$ & $0$ & $\nearrow$ & $>0$     \\ \hline
+$f$      &  $>0$     & $\searrow$ & $0$ & $\nearrow$ & $>0$     \\ \hline
+\end{tabular}
+\end{center}
+La dernière ligne entraine
+\[
+  \forall x \in \left[-\alpha, \alpha \right], \; f(x)\geq 0.
+\]

@@ -1,0 +1,29 @@
+\begin{tiny}(Esn26)\end{tiny} Soit $a>0$ et $\left( x_n \right)_{n \in \N^*}$ définie par
+\[
+ x_1 = a, \; x_{n+1} = x_n + \frac{1}{S_n}\; \text{ avec }
+ S_n = \sum_{k=1}^n x_k.
+\]
+\begin{enumerate}
+ \item Montrer que, pour tout $n \geq 1$,
+\begin{align}
+x_{n+1} &\geq x_n + \frac{1}{nx_n} \\
+x_{n}^2 &\geq a^2 + 2 \ln n \\
+S_n &\geq a + \int_1^n \sqrt{2 \ln x}\,dx
+\end{align}
+ \item Former un équivalent en $+\infty$ d'une primitive de $\sqrt{2 \ln x}$. 
+ \item On admet le résultat suivant
+\[
+\left. 
+\begin{aligned}
+ (v_n), (w_n) > 0\\
+ v_n \sim w_n\\
+ (\sum v_n) \text{ diverge}
+\end{aligned}
+\right\rbrace \Rightarrow 
+\sum_{k=1}^n w_k \sim \sum_{k=1}^n v_k.
+\]
+En déduire
+ \[
+ x_n \sim \sqrt{2 \ln n}.
+\]
+\end{enumerate}

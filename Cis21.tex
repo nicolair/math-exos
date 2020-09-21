@@ -1,0 +1,26 @@
+\begin{tiny}(Cis21)\end{tiny} Considérons la différence $T$:
+\begin{displaymath}
+ T = \sum_{k=a+1}^bf(k) - \int_a^bf(t)\,dt
+\end{displaymath}
+et exprimons la avec des intégrales:
+\begin{multline*}
+ T = \sum_{k=a+1}^b\left( f(k)-\int_{k-1}^kf(t)\right) \,dt\\
+= \sum_{k=a+1}^b \int_{k-1}^k \left( f(k) - f(t)\right) \,dt
+\end{multline*}
+Comme $f$ est croissante et $t$ entre $k-1$ et $k$:
+\begin{displaymath}
+ 0\leq \int_{k-1}^k \left( f(k) - f(t)\right) \,dt
+\leq f(k)-f(k-1)
+\end{displaymath}
+d'où
+\begin{multline*}
+ 0\leq T\leq f(b)-f(a)\\
+ \Rightarrow \exists \theta \in \left[0,1 \right] \text{ tq }
+ T = \left|f(b) - f(a)\right| \theta. 
+\end{multline*}
+On applique le résultat précédent avec $a=1$, $b=n$ et $f(t)=\ln t$. Il existe $\theta_n$ entre $0$ et $1$ tel que
+\begin{multline*}
+ \ln(n!)=\int_1^n\ln t\,dt + \theta_n \ln n
+=\left[t\ln t-t \right]_1^n + \theta_n \ln n \\
+= n\ln n -n +1 + \theta_n \ln n
+\end{multline*}

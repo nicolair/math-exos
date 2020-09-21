@@ -1,0 +1,19 @@
+\begin{tiny}(Cml09)\end{tiny} Après diverses simplifications résultant des relations $p\circ q =0$, $p\circ p=p$ et $q\circ q=q$, on obtient
+\begin{displaymath}
+ r\circ r = r
+\end{displaymath}
+On en déduit que $r$ est un projecteur. Il est clair que $\ker p \cap \ker q\subset \ker r$. Montrons l'inclusion réciproque.\newline
+Soit $x\in \ker r$. En composant prenant l'image par $p$ de $r(x)=0$, on obtient $p(x)=0$, on en déduit $q(x)=0$. On a donc
+\begin{displaymath}
+ \ker r = \ker p \cap \ker q
+\end{displaymath}
+D'après l'expression de $r$, il est clair que $\Im r\subset \Im p + \Im q$. Montrons l'inclusion réciproque.\newline
+Soit $x\in \Im p + \Im q$, il existe $a$ et $b$ tels que $x=p(a)+q(b)$. Comme on sait que $r$ est un projecteur, pour montrer que $x$ est dans l'image de $r$, il est naturel de chercher à montrer qu'il est sa propre image. Calculons donc:
+\begin{multline*}
+ r(x) = p(p(a))+p(q(b))+q(p(a))+q(q(b))\\-q\circ p(p(a))-q\circ p(q(b))\\
+= p(a) +q\circ p(a) +q(b)-q\circ p(a)\\ = p(a)+q(b)=x
+\end{multline*}
+On a donc bien
+\begin{displaymath}
+ \Im r = \Im p + \Im q
+\end{displaymath}

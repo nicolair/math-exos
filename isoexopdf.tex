@@ -1,0 +1,109 @@
+\documentclass[a4paper,twocolumn]{article}
+\usepackage[hmargin={1.1cm,1.1cm},vmargin={2.2cm,2cm}]{geometry}
+%       includehead,     scale=0.85,centering,hoffset=-0.1cm,voffset=-0.5cm]{geometry} headheight=13.1pt ,portrait
+
+%\usepackage[a4paper,portrait,twocolumn,includeheadfoot,
+%            scale=0.85,centering,hoffset=-1cm]{geometry}
+\usepackage[pdftex]{graphicx,color}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{stmaryrd}
+\usepackage[french]{babel}
+\selectlanguage{french}
+\usepackage{fancyhdr}
+\usepackage{floatflt}
+%\usepackage{ucs}
+\usepackage[T1]{fontenc}
+\usepackage[latin1]{inputenc}
+\usepackage[pdftex,colorlinks={true},urlcolor={blue},pdfauthor={remy Nicolai}]{hyperref}
+\usepackage{makeidx}
+
+
+%Options de hyperref pour les fichiers pdf g{\'e}n{\'e}r{\'e}s
+%\hypersetup{pdfpagemode=None,colorlinks=true,pdffitwindow=true}
+%\hypersetup{pdfpagemode=None,colorlinks=true}
+
+
+%                 Chargement des symboles de l'AMS
+%\input amssym
+%pour que la compilation aille au bout
+%\nofiles\scrollmode
+
+%pr{\'e}sentation du compteur de niveau 2 dans les listes
+\makeatletter
+\renewcommand{\labelenumii}{\theenumii.}
+\makeatother
+
+%dimension des pages, en-t{\^e}te et bas de page
+  %utilisation avec vmargin
+   %\setpapersize{custom}{21cm}{29.7cm}
+   %\setmarginsrb{1.5cm}{0cm}{3.5cm}{1cm}{15mm}{10mm}{0mm}{0mm}
+%\setlength{\voffset}{-2cm}
+%\setlength{\oddsidemargin}{-1cm}
+%\setlength{\textheight}{25cm}
+%\setlength{\textwidth}{17.3cm}
+%\columnsep=5pt
+% \columnseprule=0.5pt
+%\columnseprule=0.5pt
+%En tete et pied de page
+\pagestyle{fancy}
+\lhead{Lycée Hoche MPSI B}
+%\rhead{}
+%\rhead{25/11/05}
+\lfoot{\tiny{Cette création est mise à disposition selon le Contrat\\ Paternité-Partage des Conditions Initiales à l'Identique 2.0 France\\ disponible en ligne http://creativecommons.org/licenses/by-sa/2.0/fr/
+} }
+\rfoot{\tiny{Rémy Nicolai \jobname pdf du \today}}
+
+%\pagestyle{fancy}
+%\lhead{MPSI B}
+%\rhead{\today}
+%\rfoot{\small{\jobname}}
+\newcommand{\baseurl}{http://back.maquisdoc.net/data/}
+\newcommand{\textesurl}{http://back.maquisdoc.net/data/devoirs_nicolair/}
+\newcommand{\exosurl}{http://back.maquisdoc.net/data/exos_nicolair/}
+\newcommand{\coursurl}{http://back.maquisdoc.net/data/cours_nicolair/}
+
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\K}{\mathbf{K}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\F}{\mathbf{F}}
+\newcommand{\U}{\mathbb{U}}
+\newcommand{\p}{\mathbb{P}}
+
+
+\newcommand{\card}{\mathop{\mathrm{Card}}}
+\newcommand{\Id}{\mathop{\mathrm{Id}}}
+\newcommand{\Ker}{\mathop{\mathrm{Ker}}}
+\newcommand{\Vect}{\mathop{\mathrm{Vect}}}
+\newcommand{\cotg}{\mathop{\mathrm{cotan}}}
+\newcommand{\cotan}{\mathop{\mathrm{cotan}}}
+\newcommand{\sh}{\mathop{\mathrm{sh}}}
+\newcommand{\ch}{\mathop{\mathrm{ch}}}
+\newcommand{\argch}{\mathop{\mathrm{argch}}}
+\newcommand{\argsh}{\mathop{\mathrm{argsh}}}
+\newcommand{\tr}{\mathop{\mathrm{tr}}}
+\newcommand{\rg}{\mathop{\mathrm{rg}}}
+\newcommand{\rang}{\mathop{\mathrm{rg}}}
+\newcommand{\val}{\mathop{\mathrm{val}}}
+\newcommand{\Mat}{\mathop{\mathrm{Mat}}}
+\renewcommand{\Re}{\mathop{\mathrm{Re}}}
+\newcommand{\Ima}{\mathop{\mathrm{Im}}}
+\renewcommand{\Im}{\mathop{\mathrm{Im}}}
+\renewcommand{\th}{\mathop{\mathrm{th}}}
+\newcommand{\repere}{$(O,\overrightarrow{i},\overrightarrow{j},\overrightarrow{k})$ }
+\newcommand{\trans}{\mathstrut^t\!}
+\newcommand{\cov}{\mathop{\mathrm{Cov}}}
+\newcommand{\orth}[1]{#1^{\perp}}
+
+\newcommand{\absolue}[1]{\left| #1 \right|}
+\newcommand{\fonc}[5]{#1 : \begin{cases}#2 &\rightarrow #3 \\ #4 &\mapsto #5 \end{cases}}
+\newcommand{\depar}[2]{\dfrac{\partial #1}{\partial #2}}
+\newcommand{\norme}[1]{\left\| #1 \right\|}
+\newcommand{\se}{\geq}
+\newcommand{\ie}{\leq}
+\newcommand{\serie}[1]{\left( \sum {#1}_n \right)_{n\in\N}}
+
+\batchmode

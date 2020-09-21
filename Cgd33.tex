@@ -1,0 +1,21 @@
+\begin{tiny}(Cgd33)\end{tiny} La fonction $f$ est définie dans $\R \setminus\left\lbrace -1, 0, 1\right\rbrace$. 
+\[
+ \forall x \in \R \setminus\left\lbrace -1, 0, 1\right\rbrace,\;
+f(x) = \frac{e^{x-\frac{1}{x}}-1}{x-\frac{1}{x}}.
+\]
+En $0$, on ne peut la prolonger par continuité car
+\begin{displaymath}
+ f(x) = \frac{x}{x^2 - 1}\left( e^{x} e^{-\frac{1}{x}} - 1 \right)
+ \rightarrow
+ \left\lbrace 
+ \begin{aligned}
+  0 &\text{ si } x > 0 \\
+  +\infty &\text{ si } x < 0
+ \end{aligned}
+\right.  
+\end{displaymath}
+En revanche, en $a\in\left\lbrace -1,+1\right\rbrace$ on peut la prolonger par continuité en posant $f(a) = 1$ car $1$ est le nombre dérivé de la fonction exponentielle en $0$ et 
+\[
+ x - \frac{1}{x} \rightarrow 0.
+\]
+Reprendre cet exercice dans le cadre de la feuille sur les développements pour étudier la dérivabilité en $-$ ou $+1$.

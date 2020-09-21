@@ -1,0 +1,28 @@
+\begin{tiny}(Cli12)\end{tiny} 
+\begin{enumerate}
+  \item Par définition, $g(0)=0$. Comme $g$ est croissante, elle est à valeurs positives ce qui entraîne que 
+\begin{displaymath}
+\forall x > 0,\; f(x)\geq 0  
+\end{displaymath}
+Comme $f$ est décroissante, on en déduit $f(0)\geq 0$.\newline
+Comme $g$ est croissante dans $[0,\alpha]$ avec $g(0)=g(\alpha)=0$, elle est identiquement nulle dans cet intervalle. Ceci prouve que
+$f(x)=0$ pour $x\in]0,\alpha]$. Comme $f$ est décroissante et à valeurs positives, elle est aussi nulle au delà de $\alpha$.
+
+  \item On exploite les monotonies de chaque côté de $a > 0$.
+\begin{multline*}
+\left. 
+\begin{aligned}
+  &x \leq a \\ &f \text{ décroissante} \\ &g \text{ croissante}
+\end{aligned}
+\right\rbrace \Rightarrow
+\left. 
+\begin{aligned}
+  f(a) &\leq f(x) \\ g(x) &\leq g(a)
+\end{aligned}
+\right\rbrace\\
+\Rightarrow
+f(a) \leq f(x) = \frac{g(x)}{x} \leq \frac{g(a)}{x} = \frac{a}{x} f(a)
+\end{multline*}
+On en conclut par encadrement que $f\xrightarrow{a} f(a)$. La continuité de $g$ résulte des opérations usuelles. 
+\end{enumerate}
+

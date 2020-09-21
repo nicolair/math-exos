@@ -1,0 +1,47 @@
+\begin{tiny}(Cef12)\end{tiny}
+\begin{enumerate}
+ \item Supposons $E = U \cup V$ et $U \neq E$. Montrons que $U \subset V$.\newline
+ Il existe un élement de $E$ qui n'est pas dans $U$, il est donc forcément dans $V$, notons le $v$ : $v\in V$ et $v\notin U$.\newline
+ Pour tout $u\in \U$, considérons $u+v$. Il appartient à $U \cup V$ mais il ne peut pas appartenir à $U$ sinon $v$ appartiendrait à $U$. On conclut
+\[
+ u + v \in V \Rightarrow u \in V.
+\]
+
+ \item Comme $A$ et $B$ sont différents de $E$ (degré strictement plus petit), $A \cup B \neq E$. Il existe donc un vecteur $x$ qui n'est ni dans $A$ ni dans $B$. Il est donc non nul. La famille $(x)$ à un seul élément est libre et vérifie la condition imposée.
+ 
+ \item Parmi les familles vérifiant les conditions de b, considérons en une maximale : $(x_1,\cdots,x_q)$. Une telle famille existe car les familles libres ont moins de $\dim E$ éléments. Notons $C = \Vect(x_1,\cdots,x_q)$.\newline
+ Pour tout $x\notin C$, la famille $(x_1,\cdots,x_q,x)$ est libre. \`A cause de la maximalité,
+ \begin{multline*}
+\Vect(x_1,\cdots,x_q,x) \cap A \neq \left\lbrace 0_E \right\rbrace  \\
+\text{ ou }
+  \Vect(x_1,\cdots,x_q,x) \cap B \neq \left\lbrace 0_E \right\rbrace.  
+ \end{multline*}
+Remarquons que
+\[
+\left. 
+\begin{aligned}
+ \Vect(x_1,\cdots,x_q,x) \cap A &\neq \left\lbrace 0_E \right\rbrace\\ \Vect(x_1,\cdots,x_q) \cap A &= \left\lbrace 0_E \right\rbrace
+\end{aligned}
+\right\rbrace 
+\Rightarrow
+x \in C + A.
+\]
+En effet, si 
+\[ 
+\lambda_1 x_1 + \cdots + \lambda_q x_q + \lambda x = a\neq 0_E
+\]
+alors $\lambda \neq 0$ d'où $x \in A + C$.
+On en déduit
+\[
+ E = (C+A) \cup (C+B).
+\]
+car lorsque $x\notin C$ l'une ou l'autre alternative se réalise (les deux si $x\in C$.\newline
+On en déduit d'après a. que l'un des deux espaces est $E$ : par exemple $E = C + A$. La somme est alors directe car $A\cap C = \left\lbrace 0_E\right\rbrace$. Utilisons la dimension:
+\begin{multline*}
+ E = C \oplus A \Rightarrow \dim E = \dim C + \dim A \\
+ = \dim C + \dim B \text{ car } \dim A = \dim B \\
+ \Rightarrow E = C \oplus B \text{ car } C \cap B = \left\lbrace 0_E\right\rbrace.
+\end{multline*}
+
+
+\end{enumerate}

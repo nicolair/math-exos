@@ -1,0 +1,38 @@
+\begin{tiny}(Cli01)\end{tiny} On se ramène au cas $l=0$ en considérant $f-l$. On suppose donc $l=0$.\newline
+On forme une inégalité \og à la Césaro\fg~ en introduisant un $y$ arbitraire. Pour tout $x >y$,
+\begin{multline*}
+f(x) = 
+\left( f(x)-f(x-1)\right) 
++ \left( f(x-1)-f(x-2)\right)\\
++ \cdots 
++ \left( f(x-(n-1))-f(x-n)\right)
++ f(x-n)
+\end{multline*}
+avec 
+\begin{displaymath}
+  x-n-1< y \leq x - n \Rightarrow n = \lfloor x-y \rfloor
+\end{displaymath}
+On en déduit
+\begin{displaymath}
+|f(x)|\leq  n\sup_{[y,+\infty[}|g| + |f(x-n)|  
+\end{displaymath}
+De plus, $n\leq x$ et 
+\begin{multline*}
+  y \leq x-n < y+1 \Rightarrow x - n \in [y,y+1] \\
+  \Rightarrow |f(x-n)|\leq M_y = \sup_{[y,y+1]}|f| \\
+  \Rightarrow 0 \leq |\phi(x)| \leq \sup_{[y,+\infty[}|g| + \frac{M_y}{x}
+\end{multline*}
+On peut alors traiter un $\varepsilon>0$ quelconque exactement comme dans l'exercice sur la convergence de Cesaro en fixant d'abord un bon $y$ pour que $\sup_{[y,+\infty[}|g|\leq \frac{\varepsilon}{2}$.\newline
+Considérons la fonction $1$-périodique $f$ définie par
+\begin{displaymath}
+  \forall x\in [0,1[,\; \;f(x) = \frac{1}{1-x}
+\end{displaymath}
+Comme $f$ est $1$-périodique, $g$ est identiquement nulle donc converge vers $0$ en $+\infty$. Mais en posant 
+\begin{displaymath}
+\forall n\in \N^*,\; x_n = n + 1 - \frac{1}{n}  
+\end{displaymath}
+on forme une suite qui diverge vers $+\infty$ et telle que 
+\begin{displaymath}
+  f(x_n) = n \Rightarrow \phi(x_n) = \frac{n}{x_n}\Rightarrow \left( \phi(x_n)\right)_{n\in \N^*} \rightarrow 1
+\end{displaymath}
+

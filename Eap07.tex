@@ -1,0 +1,23 @@
+\begin{tiny}(\hyperdef{exo}{Eap07}{Eap07})\end{tiny} Vers la formule de Cauchy.\\
+L'objet de cet exercice est de calculer
+\begin{displaymath}
+ I(z) = \frac{1}{2\pi}\int_0^{2\pi}\frac{dt}{z-e^{it}}
+\end{displaymath}
+pour $z$ complexe avec $|z|\neq1$. Pour cela on utilisera l'approximation tirée de 
+\begin{displaymath}
+ \frac{1}{1-u}=1+u+\cdots+u^n+\frac{u^{n+1}}{1-u}
+\end{displaymath}
+lorsque $|u|<1$.
+\begin{enumerate}
+ \item Soit $z$ tel que $|z|>1$. Montrer que
+\begin{displaymath}
+ \forall n\in\N^*,\;
+|I(z)-\frac{1}{z}|\leq \frac{1}{|z|^{n+1}(|z|-1)}
+\end{displaymath}
+ \item Soit $z$ tel que $|z|<1$. Montrer que
+\begin{displaymath}
+ \forall n\in\N^*,\;
+|I(z)-\frac{1}{z}|\leq \frac{|z|^{n+1}}{(|z|-1)}
+\end{displaymath}
+\item Conclure.
+\end{enumerate}

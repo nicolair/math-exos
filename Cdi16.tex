@@ -1,0 +1,34 @@
+\begin{tiny}(Cdi16)\end{tiny} Supposons $\rg(f) = p$.\newline
+Il existe une base $(a_1,\cdots,a_p)$ de $\Im(f)$. On la complète en une base $(a_1,\cdots, a_n)$ de $E$. Soit $(\alpha_1,\cdots,\alpha_n)$ la base duale des formes coordonnées. Pour tout $x\in E$, $f(x)$ se décompose mais seulement sur les premiers vecteurs
+\begin{multline*}
+ \forall x \in E, \; f(x) 
+ = \alpha_1(x)a_1 + \cdots + \alpha_p(x)a_p + 0_E. 
+\end{multline*}
+La famille $(\alpha_1,\cdots,\alpha_p)$ extraite d'une base est libre.\newline
+Réciproquement, supposons que
+\begin{multline*}
+  \forall x \in E, \; f(x) 
+ = \alpha_1(x)a_1 + \cdots + \alpha_p(x)a_p + 0_E \\
+ \text{ avec }
+ \left\lbrace 
+ \begin{aligned}
+  (a_1,\cdots,a_p) &\text{ libre dans } E\\
+  (\alpha_1,\cdots,\alpha_p) &\text{ libre dans } E^*
+ \end{aligned}
+\right. .
+\end{multline*}
+Alors $\ker \alpha_1 \cap \cdots \cap \ker \alpha_p \subset \ker(f)$.\newline
+Comme $(a_1,\cdots,a_p)$ est libre; pour tout $x\in E$:
+\begin{multline*}
+ x\in \ker(f) 
+ \Rightarrow \alpha_1(a)a_1 + \cdots + \alpha_p(x)a_p = 0_E\\
+ \Rightarrow \alpha_1(x) = \cdots = \alpha_p(x) = 0_K\\
+ \Rightarrow x \in \ker \alpha_1 \cap \cdots \cap \ker \alpha_p.
+\end{multline*}
+Donc $\ker \alpha_1 \cap \cdots \cap \ker \alpha_p = \ker(f)$.\newline
+D'après le résultat hors programme (ex. \ref{exo: di06}) sur la dimension de l'intersection d'une famille d'hyperplans et le théorème du rang,
+\begin{multline*}
+(\alpha_1,\cdots,\alpha_p)\text{ libre }
+\Rightarrow \dim \ker(f) = n-p \\
+\Rightarrow \rg(f) = p .
+\end{multline*}

@@ -1,0 +1,12 @@
+\begin{tiny}(Cev10)\end{tiny} Soit $\lambda \in \R$ et $\left( x_n \right)_{n \in \N}$, $\left( y_n \right)_{n \in \N}$ telles que $\left( |x_n|^{\frac{1}{n}} \right)_{n \in \N}$, $\left( |y_n|^{\frac{1}{n}} \right)_{n \in \N}$ soient bornées. On doit montrer que $\left( |\lambda x_n|^{\frac{1}{n}} \right)_{n \in \N}$ et $\left( |x_n + y_n|^{\frac{1}{n}} \right)_{n \in \N}$ sont bornées.
+\[
+ |\lambda x_n|^{\frac{1}{n}} = |\lambda|^{\frac{1}{n}} |x_n|^{\frac{1}{n}}
+\]
+La suite à droite est bornée comme produit d'une suite qui converge vers 1 et d'une suite bornée. Pour la stabilité par addition, on ne garde que les termes extrèmes dans la formule du binôme:
+\begin{multline*}
+|x_n| + |y_n| \leq \left(|x_n|^{\frac{1}{n}} + |y_n|^{\frac{1}{n}}\right)^{n} \\
+\Rightarrow
+\left( |x_n| + |y_n|\right)^{\frac{1}{n}} \leq |x_n|^{\frac{1}{n}} + |y_n|^{\frac{1}{n}}. 
+\end{multline*}
+On en déduit que $\left( |x_n + y_n|^{\frac{1}{n}} \right)_{n \in \N}$ est bornée.\newline
+Autre solution. Avec $X$ et $Y$ réels tels que , $|x_n|^{\frac{1}{n}} \leq X$ et idem pour $y_n$, étudier la limite de $(X^n + Y^n)^{\frac{1}{n}}$ pour majorer.

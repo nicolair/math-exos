@@ -1,0 +1,38 @@
+\begin{tiny}(Cmf12)\end{tiny} Le projeté de $x\in \R^3$ sur $\ker \varphi$ parallélement à $\Vect(u)$ est
+\begin{multline*}
+ x-\frac{\varphi(x)}{\varphi(u)}\,u \text{ avec } \varphi((x,y,z))= x - 2y + z,\\
+ u =(1,0,1), \; \varphi(u) = 2.
+\end{multline*}
+Utilisons les matrices colonnes dans la base canonique pour former les images : $(1,0,0)$ se projete en
+\[
+  \begin{pmatrix}
+    1 \\ 0 \\ 0
+  \end{pmatrix}
+- \frac{1}{2}\,\begin{pmatrix}
+    1 \\ 0 \\ 1
+  \end{pmatrix}
+  = \begin{pmatrix}
+    \frac{1}{2} \\ 0 \\ -\frac{1}{2}
+  \end{pmatrix}.
+\]
+Avec des calculs analogues pour les autres vecteurs, on en déduit la matrice
+\begin{displaymath}
+ \begin{pmatrix}
+  \frac{1}{2}& 1 & -\frac{1}{2} \\0 & 1 & 0\\ -\frac{1}{2} & 1 & \frac{1}{2}.
+ \end{pmatrix}
+\end{displaymath}
+On peut aussi utiliser des coefficients indéterminés.\newline
+Notons $A$ la matrice demandée. D'après la formule vectorielle :
+\begin{multline*}
+  \forall(x,y,z) \in \R^3,\; 
+  A \begin{pmatrix} x \\ y \\ z \end{pmatrix}
+  = \begin{pmatrix} x \\ y \\ z \end{pmatrix} - \frac{x - 2y +z}{2}\,\begin{pmatrix} 1 \\ 0 \\ 1 \end{pmatrix} \\
+  = \frac{1}{2}\,
+  \begin{pmatrix} x + 2y -z \\ 2y \\ -x + 2y +  z \end{pmatrix} \\
+  \Rightarrow 
+  A = \frac{1}{2}\,
+  \begin{pmatrix}
+    1 & 2 & -1 \\ 0 & 2 & 0 \\ -1 & 2 & 1
+  \end{pmatrix}.
+\end{multline*}
+On peut vérifier que $A^2 = A$.

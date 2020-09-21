@@ -1,0 +1,19 @@
+\begin{tiny}(Cmo18)\end{tiny} Notons $p$ le nombre de colonnes de $A$ et $q$ celui de $B$ (et de $C$). Notons  $\alpha = \rg(A)$ et $\gamma = \rg(C)$.\newline
+Considérons une base $C_1(A), \cdots, C_\alpha(A)$ de l'espace engendré par les colonnes de $A$ et $C_1(C), \cdots, C_\gamma(C)$ une base de l'espace engendré par les colonnes de $C$.\newline Considérons une famille de \og grandes\fg~ colonnes de $M$
+\[
+  \begin{pmatrix} 
+    C_1(A) \\ 0
+  \end{pmatrix}, \cdots,
+    \begin{pmatrix} 
+    C_{\alpha}(A) \\ 0
+  \end{pmatrix},
+  \begin{pmatrix} 
+    C_1(B) \\ C_1(C)
+  \end{pmatrix}, \cdots,
+    \begin{pmatrix} 
+    C_{\gamma}(B) \\ C_{\gamma}(C)
+  \end{pmatrix}
+\]
+On montre facilement que cette famille est libre à cause du bloc de $0$. On considère une combinaison linéaire nulle de ces colonnes.
+On regarde d'abord les dernières lignes. On en déduit que les derniers coefficients sont nuls  car les colonnes sélectionnées dans $C$ forment une famille libre.
+On termine avec les premières lignes et la famille libre de colonnes extraites de $A$. 

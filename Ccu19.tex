@@ -1,0 +1,17 @@
+\begin{tiny}(Ccu19)\end{tiny}
+\begin{enumerate}
+  \item Utilisons une décomposition idiote dans l'expression proposée
+\begin{multline*}
+  -n = \sum_{k=1}^nx^2_k -2\sum_{k=1}^nx_k 
+  = \sum_{k=1}^n({x_k}^2 - 2x_k) \\
+  = \sum_{k=1}^n\left( (x_k - 1)^2 - 1\right)
+  = \left( \sum_{k=1}^n(x_k - 1)^2\right)  - n.
+\end{multline*}
+Ceci ne peut se produire que si $x_k = 1$ pour tous les $k$.
+  \item L'inégalité de Cauchy-Schwarz appliquée aux $n$-uplets $(x_1,\cdots,x_n)$ et $(1,\cdots,1)$ conduit à
+\begin{displaymath}
+\left| x_1+\cdots+x_n\right|\leq 
+\sqrt{x^2_1+\cdots+x^2_n} \sqrt{n} = n 
+\end{displaymath}
+On est donc dans le cas d'égalité et tous les $x_i$ sont égaux entre eux. La seule valeur possible est $1$. 
+\end{enumerate}

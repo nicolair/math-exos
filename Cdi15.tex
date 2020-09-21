@@ -1,0 +1,21 @@
+\begin{tiny}(Cdi15)\end{tiny} La linéarité est facile:
+\begin{multline*}
+ \forall(z,z')\in \C^2, \forall \lambda \in \R,\\
+ f(z+z') = z+z' + a\,(\overline{z + z'}) 
+ = z+a\,\overline{z} + z'+a\,\overline{z'} \\
+ = f(z) + f(z') \\
+ f(\lambda z) = \lambda z + a\, \overline{\lambda z} 
+ = \lambda (z + a\, \overline{z})
+ = \lambda f(z).
+\end{multline*}
+Si $\ker f \neq \left\lbrace 0_\C\right\rbrace$, il existe $z\neq 0$ tel que
+\[
+ z+a\overline{z}= 0 \Rightarrow a = -\frac{z}{\overline{z}}
+ \Rightarrow |a| = 1.
+\]
+On en déduit que si $a$ n'est pas de module $1$, $f$ est un automorphisme du $\R$-espace vectoriel $\C$.\newline
+Si $a = e^{i \alpha}$, son image et son noyau sont des droites:
+\[
+ \ker f = \Vect(e^{i\frac{\alpha + \pi}{2}}), \hspace{0.5cm}
+ \Im f = \Vect(e^{i\frac{\alpha}{2}}).
+\]

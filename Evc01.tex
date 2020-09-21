@@ -1,0 +1,54 @@
+\begin{tiny}(Evc01)\end{tiny}
+\textbf{Définition de l'exponentielle complexe}
+\footnote{Voir le cours  \href{http://back.maquisdoc.net/data/cours_nicolair/C2002.pdf}{Nombres complexes}}
+\newline
+On rappelle que, si $a$ est un nombre r{\'e}el, on note $$a^{+}=\max (a,0), a^{-}=\max (-a,0)$$ On a alors $a=a^{+}-a^{-}$.
+
+\begin{enumerate}
+  \item Montrer, pour tout $r$ r{\'e}el positif la convergence de la suite r{\'e}elle $(1+\frac{1}{1!}r+\frac{1}{2!}r^{2}+\cdots +\frac{1}{n!} r^{n})_{n\in \N}$.
+
+  \item Soit $(u_{n})_{n\in \N}$ une suite de nombres complexes, on pose
+\begin{align*}
+s_{n} &= u_{0}+u_{1}+\cdots +u_{n}\\
+S_{n} &= | u_{0}|+| u_{1}| +\cdots + |u_{n}|.
+\end{align*}
+Montrer que la convergence de la suite à valeurs r{\'e}elles $(S_{n})_{n\in \N}$ entra{\^\i}ne celle de la suite complexe $(s_{n})_{n\in \N}$. Dans toute la suite et pour tout $z \in \C$, on note
+\begin{align*}
+s_n(z) &= 1+\frac 1{1!}z+\frac 1{2!}z^2+\cdots +\frac 1{n!}z^n, \\
+S_n(z) &= 1+\frac 1{1!}| z| +\frac 1{2!}| z| ^2+\cdots+\frac 1{n!}| z| ^n\\
+&= s_n(| z| )
+\end{align*}
+
+  \item Montrer que $(s_{n}(z))_{n\in \N}$ converge. On note $s(z)$ sa limite.
+
+  \item Montrer que $s(\overline{z})=\overline{s(z)}$.
+  \item 
+  \begin{enumerate}
+    \item Montrer que, pour tout complexes $z$ et $z^{\prime }$,
+
+  \begin{multline*}
+\lefteqn{s_{n}(z)s_{n}(z^{\prime })-s_{n}(z+z^{\prime })}\\
+= \sum_{(i,j)\in \{0,\ldots ,n \}^{2},\, i+j>n } \frac{z^{i}z^{\prime j}}{i!j!}
+\end{multline*}
+    \item Montrer que pour tout complexes $z$ et $z^{\prime }$,
+\begin{eqnarray*}
+\lefteqn{\left| \sum_{(i,j)\in \left\{ 0,\ldots ,n\right\} ^{2},\, i+j>n} \frac{z^{i}z^{\prime j}}{i!j!}\right|}\\
+&\leq& s_{2n}(| z| +|z^{\prime }| )-s_{n}(| z| +| z^{\prime }| )
+\end{eqnarray*}
+
+    \item En d{\'e}duire
+\[
+\forall (z,z^{\prime })\in \C^{2},\quad s(z+z^{\prime})=s(z)s(z^{\prime })
+\]
+  \end{enumerate}
+
+  \item Soit $z$ un nombre complexe fix{\'e}, montrer que la d{\'e}riv{\'e}e de
+$t\rightarrow s(tz)$ est $zs(tz)$.
+\end{enumerate}
+
+
+En fait on \emph{d{\'e}finit} la fonction exponentielle complexe
+en posant $\exp (z)=s(z)$ pour tout nombre complexe $z$. On vient
+de d{\'e}montrer certaines des propri{\'e}t{\'e}s admises en
+d{\'e}but d'ann{\'e}e lors de la pr{\'e}sentation des fonctions
+usuelles.

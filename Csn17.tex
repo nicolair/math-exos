@@ -1,0 +1,47 @@
+\begin{tiny}(Csn17)\end{tiny} Considérons un $N$ arbitraire et coupons la somme partielle en $N$:
+\[
+ \forall n >N, \;
+ B_n = B_N + \sum_{k = N +1}^{n} b_k .
+\]
+Choisissons le $N$ en utilisant l'équivalence des termes généraux:
+\begin{multline*}
+ \forall \varepsilon >0, \; \exists N\in \N \text{ tq }
+ k\geq N \\
+ \Rightarrow 
+ (1-\frac{\varepsilon}{2})a_k \leq b_k \leq (1+\frac{\varepsilon}{2})a_k.
+\end{multline*}
+On en déduit
+\begin{multline*}
+ B_N + (1-\frac{\varepsilon}{2})\sum_{k=N+1}^{n}a_k
+ \leq B_n \leq  \\
+ B_N + (1+\frac{\varepsilon}{2})\sum_{k=N+1}^{n}a_k.
+\end{multline*}
+On exprime les sommes avec des $A_i$:
+\[
+ \sum_{k=N+1}^{n}a_k = A_n - A_N.
+\]
+On en déduit
+\begin{multline*}
+ B_N - (1-\frac{\varepsilon}{2})A_N + (1-\frac{\varepsilon}{2})A_n 
+ \leq B_n \leq  \\
+ B_N - (1+\frac{\varepsilon}{2})A_N + (1+\frac{\varepsilon}{2})A_n.
+\end{multline*}
+Comme les séries sont à termes positifs, on conclut avec
+\begin{align*}
+ -A_N \leq &B_N - (1-\frac{\varepsilon}{2})A_N \\
+ &B_N - (1+\frac{\varepsilon}{2})A_N \leq B_N .
+\end{align*}
+Divisons cet l'encadrement par $A_n$:
+\[
+ (1-\frac{\varepsilon}{2}) - \frac{A_N}{A_n}
+ \leq \frac{B_n}{A_n} \leq
+ (1+\frac{\varepsilon}{2}) + \frac{B_N}{A_n}
+\]
+Comme $A_n$ diverge vers $+\infty$, pour $n$ assez grand,
+\[
+ \frac{A_N}{A_n} \text{ et } \frac{B_N}{A_n}\leq \frac{\varepsilon}{2} 
+\]
+Ce qui montre (définition de la convergence) que
+\[
+ \frac{B_n}{A_n}\rightarrow 1 \Leftrightarrow B_n \sim A_n.
+\]

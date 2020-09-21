@@ -1,0 +1,16 @@
+\begin{tiny}(Cee02)\end{tiny} On part de la formule (pour 3 vecteurs unitaires)
+\begin{displaymath}
+  \|a+b+c\|^2 = 3 + 2 (a/b) + (a/c) + (b/c)
+\end{displaymath}
+Comme $\cos$ est décroissante dans $[0,\pi]$: 
+\begin{displaymath}
+  \text{écart ang. } \delta > \frac{2\pi}{3} \Rightarrow \cos \delta <  -\frac{1}{2} 
+\end{displaymath}
+Si les trois écarts angulaires étaient plus grand que $\frac{2\pi}{3}$, le carré scalaire serait négatif.\newline
+De même avec $p$ vecteurs:
+\begin{multline*}
+  0\leq \left\| \sum_{i=1}^{p} a_i\right\|^2 
+ = p + 2 \sum_{i < j}(a_i/a_j) \\
+ \leq p + p(p-1)\max\left\lbrace (a_i/a_j) ,\,i\neq j\right\rbrace \\
+ \Rightarrow \max\left\lbrace (a_i/a_j) ,\,i\neq j\right\rbrace \geq -\frac{1}{p-1}
+\end{multline*}

@@ -1,0 +1,23 @@
+\begin{tiny}(Cis10)\end{tiny} La fonction de $t$ que l'on intègre est continue sur $[0,1]$.
+\begin{enumerate}
+ \item Les $e^{it_k}$ et $e^{-it_k}$ sont des racines $2n$-ièmes de l'unité mais la racine $1$ figure deux fois alors que la racine $-1$ manque. On en déduit que le produit cherché est
+\begin{displaymath}
+ \frac{x-1}{x+1}(x^{2n}-1)
+\end{displaymath}
+\item Notons $R_n$ la somme de Riemann habituelle attachée à la subdivision régulière de $[0,\pi]$. Comme
+\begin{displaymath}
+ x^2-2\cos x t+ 1 = (x-e^{it})(x-e^{-it})
+\end{displaymath}
+elle vaut
+\begin{multline*}
+ R_n = \frac{\pi}{n}\ln \left(\prod_{k=0}^{n-1}(x-e^{it_k})(x-e^{-it_k}) \right) \\
+= \frac{\pi}{n}\ln \left(\frac{x-1}{x+1}(x^{2n}-1)\right) 
+\end{multline*}
+Si $|x|<1$, l'expression tend le $\ln$ converge donc $R_n$ tend vers $0$ et $I(x)=0$.\newline
+Si $|x|>1$, on peut réécrire sous une forme plus commode
+\begin{displaymath}
+ R_n = \frac{\pi}{n}\ln \left(\frac{x-1}{x+1}\right) + \pi\ln(x^2) +\frac{\pi}{n}\ln(1-x^{-2n})
+\end{displaymath}
+On en déduit $I(x)=2\pi \ln|x|$.
+\end{enumerate}
+

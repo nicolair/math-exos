@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Worksheet><Version major="6" minor="0"/><View-Properties><Zoom percentage="100"/></View-Properties><Styles><Layout alignment="left" bullet="none" name="Warning"/><Layout alignment="left" bullet="none" name="Normal"/><Font background="[0,0,0]" family="Monospaced" foreground="[0,0,255]" name="Warning" readonly="true" size="12"/><Font background="[0,0,0]" bold="false" family="Times New Roman" foreground="[0,0,0]" italic="false" name="Text" opaque="false" size="12" underline="false"/><Font background="[0,0,0]" bold="true" executable="true" family="Monospaced" foreground="[255,0,0]" name="Maple Input" size="12"/></Styles><Group><Input><Text-field layout="Normal" style="Text"><Font encoding="ISO8859-1">Paquetages de proc\351dures (en projet) pour le dessin d'objets vectoriels en dimension 3. Il s'agit de dessiner des figures destin\351es \340 illustrer des \351nonc\351s (aucune ambition p\351dagogique).</Font></Text-field><Text-field/><Text-field/></Input></Group><Text-field/><Text-field/><Group><Input><Text-field layout="Normal" prompt="&gt; " style="Maple Input">restart;
+with(LinearAlgebra):
+with(geom3d):
+with(plots):
+
+#base canonique
+i0:=&lt;[1,0,0]&gt;:
+j0:=&lt;[0,1,0]&gt;:
+k0:=&lt;[0,0,1]&gt;:
+fV0:=array(1..3,[i0,j0,k0]):
+point(O,0,0,0):
+point(I0,1,0,0):
+point(J0,0,1,0):
+point(K0,0,0,1):
+<Font encoding="ISO8859-1">
+#le type de donn\351es FamV designe une tableau de 3 vecteurs</Font>
+Matrix2FamV:=M-&gt; [Column(M,1),Column(M,2),Column(M,3)]:
+FamV2Matrix:=fV-&gt;Matrix([[fV[1][1],fV[2][1],fV[3][1]],[fV[1][2],fV[2][2],fV[3][2]],[fV[1][3],fV[2][3],fV[3][3]]]):
+
+#tracer le segment associe a un vecteur
+tracV:=proc(x,couleur,ch,e1,e2,e3)
+  local X,O,des;
+  point(O,0,0,0);
+  point(X,x[1],x[2],x[3]);
+  segment(OX,O,X);
+  des:=textplot3d([e1+x[1],e2+x[2],e3+x[3],ch],color=black);
+  des:=des,draw(OX,color=couleur);
+  des
+end proc:
+
+#rotation de x d'angle t autour de v unitaire
+rotV:=proc(x,v,t)
+  cos(t)*CrossProduct(CrossProduct(v,x),v)+sin(t)*CrossProduct(v,x)+DotProduct(v,x)*v;
+end proc:
+<Font encoding="ISO8859-1">
+#tracer et nommer un petit arc symbolisant un angle entre deux vecteurs de norme 1. ch :texte \340 afficher</Font>
+angleV:=proc(u,v,ch)
+  local C,w,U,V,des,tmax;
+  global O;
+  tmax:=arccos(DotProduct(u,v));
+  point(U,u[1],u[2],u[3]);point(V,v[1],v[2],v[3]);
+  w:=CrossProduct(u,v);
+  w:=(1/VectorNorm(w))*w;
+  C:=rotV(0.2*u,w,t);
+  des:=spacecurve([C[1],C[2],C[3]],t=0..tmax);
+  C:=rotV(0.3*u,w,tmax/2);
+  des:=des,textplot3d([C[1],C[2],C[3],ch],color=black);
+end proc:
+
+#matrice de rotation d'angle phi autour de k
+r:=phi-&gt;Matrix([[cos(phi),-sin(phi),0],[sin(phi),cos(phi),0],[0,0,1]]):
+
+#matrice de rotation d'angle phi autour de i
+R:=phi-&gt;Matrix([[1,0,0],[0,cos(phi),-sin(phi)],[0,sin(phi),cos(phi)]]):
+
+#rotation composee des matrices d'Euler
+rotE:=proc(x,phi,theta,psi)
+  local M;
+  M:=MatrixMatrixMultiply(r(phi),R(theta));
+  M:=MatrixMatrixMultiply(M,r(psi));
+  MatrixVectorMultiply(M,x)
+end proc:
+
+#matrice composee des matrices d'Euler
+matE:=proc(phi,theta,psi)
+  local M;
+  M:=MatrixMatrixMultiply(r(phi),R(theta));
+  MatrixMatrixMultiply(M,r(psi));
+end proc:
+
+</Text-field></Input><Output><Text-field layout="Warning" style="Warning">Warning, the name polar has been redefined
+</Text-field></Output><Output><Text-field layout="Warning" style="Warning">Warning, the name changecoords has been redefined
+</Text-field></Output></Group><Text-field/><Group><Input><Text-field layout="Normal" prompt="&gt; " style="Maple Input">#figures pour les 5 polyedres
+u:=&lt;[0.3,0,1]&gt;:
+v:=k0:
+des:=tracV(u,red,"",0,0,0):
+u:=VectorScalarMultiply(u,1/VectorNorm(u,2)):
+des:=des,tracV(v,blue,"",0,0,0):
+for i from 1 to 5 do
+  v:=rotV(v,u,evalf(0.4*Pi)):
+  des:=des,tracV(v,blue,"",0,0,0):
+od:
+display([des]);
+<Font opaque="false">
+#sortie des dessin ps
+plotsetup(ps,
+          plotoutput=`/home/nicolair/mesdoc/MP/site/Exercices/NExo/nexo21_1.ps`,
+          plotoptions=`portrait,noborder,colour,width=21cm,height=29.5cm`):
+display([des]);</Font>
+</Text-field></Input></Group><Text-field/><Group><Input><Text-field layout="Normal" prompt="&gt; " style="Maple Input"><Font opaque="false">tetrahedron(t,point(o,0,0,0),1):
+#sortie des dessin ps
+plotsetup(ps,
+          plotoutput=`/home/nicolair/mesdoc/MP/site/Exercices/NExo/nexo21_2.ps`,
+          plotoptions=`portrait,noborder,colour,width=21cm,height=29.5cm`):</Font>
+draw([t]);
+<Font opaque="false">
+octahedron(t,point(o,0,0,0),1):
+#sortie des dessin ps
+plotsetup(ps,
+          plotoutput=`/home/nicolair/mesdoc/MP/site/Exercices/NExo/nexo21_3.ps`,
+          plotoptions=`portrait,noborder,colour,width=21cm,height=29.5cm`):
+draw([t]);</Font>
+<Font opaque="false">
+icosahedron(t,point(o,0,0,0),1):
+#sortie des dessin ps
+plotsetup(ps,
+          plotoutput=`/home/nicolair/mesdoc/MP/site/Exercices/NExo/nexo21_4.ps`,
+          plotoptions=`portrait,noborder,colour,width=21cm,height=29.5cm`):
+draw([t]);</Font>
+<Font opaque="false">
+dodecahedron(t,point(o,0,0,0),1):
+#sortie des dessin ps
+plotsetup(ps,
+          plotoutput=`/home/nicolair/mesdoc/MP/site/Exercices/NExo/nexo21_5.ps`,
+          plotoptions=`portrait,noborder,colour,width=21cm,height=29.5cm`):
+draw([t]);</Font>
+<Font opaque="false">
+cube(t,point(o,0,0,0),1):
+#sortie des dessin ps
+plotsetup(ps,
+          plotoutput=`/home/nicolair/mesdoc/MP/site/Exercices/NExo/nexo21_6.ps`,
+          plotoptions=`portrait,noborder,colour,width=21cm,height=29.5cm`):
+draw([t]);</Font></Text-field></Input></Group><Text-field/><Group><Input><Text-field layout="Normal" prompt="&gt; " style="Maple Input"/></Input></Group><Text-field/></Worksheet>

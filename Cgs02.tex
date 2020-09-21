@@ -1,0 +1,66 @@
+\begin{enumerate}
+ \item Toute permutation paire se décompose en un nombre pair de transpositions. Elle se décompose donc en produits de deux transpositions. Montrons que toute composée de deux transpositions se décompose en cycles de longueur $3$. Deux cas sont possibles.
+\begin{itemize}
+ \item Premier cas: transposition contigues
+\begin{displaymath}
+ \begin{pmatrix}
+  a&b
+ \end{pmatrix}
+\circ
+ \begin{pmatrix}
+  b&c
+ \end{pmatrix}
+=
+ \begin{pmatrix}
+  a&b&c
+ \end{pmatrix}
+\end{displaymath}
+\item Deuxième cas: transpositions disjointes
+\begin{multline*}
+ \begin{pmatrix}
+  a&b
+ \end{pmatrix}
+\circ
+ \begin{pmatrix}
+  c&d
+ \end{pmatrix}
+=
+ \begin{pmatrix}
+  a&b
+ \end{pmatrix}
+\circ
+ \begin{pmatrix}
+  b&c
+ \end{pmatrix} \\
+\circ
+ \begin{pmatrix}
+  b&c
+ \end{pmatrix}
+\circ
+ \begin{pmatrix}
+  c&d
+ \end{pmatrix}
+=
+ \begin{pmatrix}
+  a&b&c
+ \end{pmatrix} 
+\circ
+ \begin{pmatrix}
+  b&c&d
+  \end{pmatrix}
+\end{multline*}
+\end{itemize}
+\item On trouve respectivement
+\begin{displaymath}
+ \begin{pmatrix}
+  a&b&c
+ \end{pmatrix} 
+\text{ et }
+ \begin{pmatrix}
+  1&b&c
+ \end{pmatrix} 
+\end{displaymath}
+
+\item On examine tous les 3-cycles en discutant suivant l'intersection du support avec $\{1,2\}$. On peut toujours les décomposer en utilisant la question précédente.
+
+\end{enumerate}

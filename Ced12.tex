@@ -1,0 +1,55 @@
+\begin{tiny}(Ced12)\end{tiny} Changement de variable.
+\begin{enumerate}
+  \item Calculons les dérivées de $z = u\circ f$
+\begin{align*}
+  z &= u \circ f \\
+  z' &= f' u'\circ f \\
+  z'' &= f''u'\circ f + f'^2 u''\circ f
+\end{align*}
+On en déduit que $z$ est solution de $(E)$ si et seulement si 
+\begin{displaymath}
+  (1)\hspace{0.5cm} Lu''\circ f + Mu'\circ f + c u\circ f = 0
+\end{displaymath}
+avec
+\begin{displaymath}
+  L = A f'^2 \hspace{0.5cm}
+  M = A f'' + Bf'
+\end{displaymath}
+L'équation $(1)$ est à coefficients constants si et seulement si $L$  et $M$ sont des constantes. $L$ doit être positive donc (à une constante multiplicative près)
+\begin{displaymath}
+  f' = \frac{1}{\sqrt{A}} \Rightarrow
+  f'' = -\frac{1}{2}\frac{A'}{A^{\frac{3}{2}}}
+\end{displaymath}
+En remplaçant dans l'expression de $M$, on trouve que $M$ est constante si et seulement si 
+\begin{displaymath}
+  -A' + 2B = 0
+\end{displaymath}
+La fonction $f$ étant alors donnée comme primitive de $\frac{1}{\sqrt{A}}$.
+\item Dans cet exemple 
+\begin{displaymath}
+A(x) = 1-x^2 \hspace{0.5cm} B(x)=-x = \frac{1}{2}A'(x)  
+\end{displaymath}
+donc la condition de la question précédente est vérifiée.\newline
+Pour $f=\arcsin$, l'équation $(1)$ s'écrit alors
+\begin{displaymath}
+  u'' + 9u = 0
+\end{displaymath}
+dont les solutions sont les fonctions définies dans $]-\frac{\pi}{2}, \frac{\pi}{2}[$
+\begin{displaymath}
+  t\mapsto \lambda \cos3t + \mu \sin3t
+\end{displaymath}
+Les solutions de $(E)$ sont alors les fonctions définies dans $]-1,1[$
+\begin{displaymath}
+  x\mapsto \lambda \cos(3\arcsin x) + \mu \sin(3\arcsin x)
+\end{displaymath}
+En utilisant
+\begin{align*}
+\cos 3t &= \cos t(1-4\cos t)\\
+\sin 3t &= 3\sin t - 4\sin^3 t
+\end{align*}
+on peut les écrire aussi sous la forme
+\begin{displaymath}
+  x\mapsto \lambda \sqrt{1-x^2}(1-4x) + \mu (3x-4x^3)
+\end{displaymath}
+
+\end{enumerate}

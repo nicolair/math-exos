@@ -1,0 +1,16 @@
+\begin{tiny}(Cva21)\end{tiny} On peut représenter un résultat de l'expérience par une fonction de $\llbracket 1,N\rrbracket$ (les personnes) dans $\llbracket 1,e\rrbracket$ (les étages). On ne doit pas ajouter de conditions supplémentaires dans les conditions de l'énoncé.\newline
+L'événement $X>k$ est formé par les fonctions à valeurs dans $\llbracket k+1, e\rrbracket$. On en tire
+\begin{displaymath}
+  \p(X>k)= \frac{(e-k)^N}{e^N}
+\end{displaymath}
+Le calcul de l'espérance utilise une transformation d'Abel.
+\begin{multline*}
+E(X) = \sum_{k=1}^ek\p(X=k)\\
+= \sum_{k=1}^e k\left( \p(X>k-1) - \p(X>k)\right) \\
+= 0 + \sum_{k=1}^{e-1} \left((k+1)  - k\right) \p(X>k) -e\underset{=0}{\underbrace{\p(X>e)}}\\
+= \sum_{k=1}^{e-1}\left(\frac{k}{e} \right)^N 
+\end{multline*}
+On interprète $\frac{1}{e}E(X)$ comme une somme de Riemann, elle converge vers
+\begin{displaymath}
+  \int_0^1 t^N\,dt = \frac{1}{N+1}
+\end{displaymath}

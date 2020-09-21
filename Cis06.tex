@@ -1,0 +1,9 @@
+\begin{tiny}(Cis06)\end{tiny} Supposons que l'intégrale soit positive et que la fonction ne soit pas de signe constant. Il existe alors $c\in [a,b]$ tel que $f(c)<0$. Par continuité en $c$, il existe $\alpha < \beta$ dans $[a,b]$ tels que $f<0$ dans $[\alpha,\beta]$. \'Ecrivons alors:
+\begin{multline*}
+  \left|\int_a^b f \right| = \int_a^b f =
+\int_a^\alpha f  + \underset{<0}{\underbrace{\int_\alpha^\beta f}} +\int_\beta^b f \\
+< \int_a^\alpha f +\int_\beta^b f
+\leq \int_a^\alpha |f| +\int_\beta^b |f|\\
+< \int_a^\alpha |f| +\int_\alpha^\beta |f|\int_a^\alpha |f| = \int_a^b |f|
+\end{multline*}
+Si $\int_a^b f <0$, on considère $-f$.

@@ -1,0 +1,23 @@
+\begin{tiny}Cfu26\end{tiny}
+Méthode 1. On étudie la fonction
+\[
+  x \mapsto \frac{1}{x} - \frac{1}{s-x}
+\]
+en calculant sa dérivée. Elle atteint sa valeur minimale en $\frac{s}{2}$. Cette valeur minimale est $\frac{4}{s}$.\newline
+On montre par  récurrence que la plus petite valeur pour l'ensemble des sommes de $n$ termes est $\frac{n^2}{s}$. Elle est atteinte pour tous les $x_i$ égaux à $\frac{s}{n}$. \newline
+La formule à l'ordre $n$ entraine celle à l'ordre $n+1$ car
+\[
+  \frac{1}{x} + \left(\frac{1}{x_2}+ \cdots + \frac{1}{x_{n+1}}\right)
+  \geq \frac{1}{x} + \frac{n}{s-x}.
+\]
+On étudie la fonction en dérivant
+\[
+  x \mapsto \frac{1}{x} - \frac{n^2}{s-x}.
+\]
+Elle atteint sa plus petite valeur en $\frac{n+1}{s}$.\newline
+Méthode 2. Avec une décomposition idiote et la formule de Cauchy-Schwarz.
+\begin{multline*}
+  n = \sqrt{x_1}\, \frac{1}{\sqrt{x_1}} + \cdots + \sqrt{x_2}\, \frac{1}{\sqrt{x_n}}\\
+  \Rightarrow
+  n^2 \leq \underset{ = s}{\underbrace{\left( x_1 + \cdots + x_n\right)}}\left( \frac{1}{x_1} + \cdots + \frac{1}{x_n}\right).
+\end{multline*}

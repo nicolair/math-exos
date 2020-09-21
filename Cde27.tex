@@ -1,0 +1,22 @@
+\begin{tiny}(Cde27)\end{tiny} à compléter
+\begin{enumerate}
+  \item Facile
+  \item Pour fixer les idées, plaçons nous dans un intervalle $]a,b]$. Posons
+\begin{displaymath}
+\forall x\in ]a,b],\;  \varphi(x) = \max_{[x,b]}f,\; \psi(x) = \frac{h(x)}{\varphi(x)}
+\end{displaymath}
+C'est possible car $f$ est continue sur le segment $[x,b]$ donc bornée et atteignant ses bornes.
+  \item On doit montrer 
+\begin{displaymath}
+  o(f) = o(g) \Rightarrow f\in O(g) \text{ et } g\in O(f)
+\end{displaymath}
+On va prouver la contraposée. Supposons $f\notin O(g)$ et cherchons à montrer $o(f)\neq o(g)$. Soit $h= \frac{f}{g}$, elle n'est pas localement majorée en $a$. Considérons les fonctions $\varphi$ et $\psi$ de la question b.
+\begin{displaymath}
+\frac{f}{g} = \varphi \psi  \Rightarrow \frac{f}{\varphi} =  \psi g
+\end{displaymath}
+Notons $u$ cette fonction
+\begin{align*}
+  &\frac{1}{\varphi}\rightarrow 0 &\Rightarrow u \in o(f) \\
+  &\psi \text{ ne converge pas vers $0$} &\Rightarrow u \notin o(g) 
+\end{align*}
+\end{enumerate}

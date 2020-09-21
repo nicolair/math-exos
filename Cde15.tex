@@ -1,0 +1,26 @@
+\begin{tiny}(Cde15)\end{tiny} On note 
+\begin{displaymath}
+  I_n = \int_{0}^{1}x^n \ln(1+x^2)\,dx
+\end{displaymath}
+et on encadre 
+\begin{displaymath}
+  0\leq \int_{0}^{1}x^n \ln(1+x^2)\,dx \leq \int_{0}^{1}x^n \ln(2)\,dx = \frac{\ln(2)}{n+1}
+\end{displaymath}
+Ceci assure la convergence vers $0$ par encadrement. Pour former un développement, on intègre par parties:
+\begin{multline*}
+I_n = \left[ \frac{x^{n+1}}{n+1}\ln(1+x^2)\right]_{0}^{1}- \int_{0}^{1} \frac{2x^{n+2}}{(n+1)(1+x^2)}\,dx\\
+= \frac{\ln(2)}{n+1} - \frac{2}{n+1} \int_{0}^{1}\frac{x^{n+2}}{1+x^2}\,dx
+\end{multline*}
+On peut faire une deuxième intégration par parties
+\begin{multline*}
+\int_{0}^{1}\frac{x^{n+2}}{1+x^2}\,dx
+= \left[ \frac{x^{n+3}}{(n+3)(1+x^2)}\right]_{0}^{1} \\
++ \int_{0}^{1}\frac{2x^{n+4}}{(n+3)(1+x^2)^2}\,dx \\
+= \frac{1}{2(n+3)}+\frac{2}{n+3}\int_{0}^{1}\frac{x^{n+4}}{(1+x^2)^2}\,dx
+\end{multline*}
+On en tire
+\begin{multline*}
+  I_n = \frac{\ln(2)}{n+1} -  \frac{1}{(n+1)(n+3)}\\ 
+  \underset{\in O(\frac{1}{n^3})}{\underbrace{-\frac{4}{(n+1)(n+3)}\int_{0}^{1}\frac{x^{n+4}}{(1+x^2)^2}\,dx}}
+\end{multline*}
+par encadrement. Il s'agit bien d'un développement asymptotique.

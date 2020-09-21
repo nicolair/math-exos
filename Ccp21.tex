@@ -1,0 +1,19 @@
+\begin{tiny}(Ccp21)\end{tiny} Si $\lambda$ est réel, $f$ est à valeurs réelles car les $e^{\pm \lambda x}$ sont réels. Si $\lambda$ est imaginaire pur (par exemple $\lambda = it$) par définition de $\cos$,
+\[
+  f(x) = \cos (tx) \in \R.
+\]
+On va montrer que 
+\[
+  \left( f \text{ à  valeurs réelles et } \lambda \notin \R \right) \Rightarrow \lambda \in i\R.
+\]
+Notons $a = \Re(\lambda)$ et $b = \Im(\lambda)$. 
+\begin{multline*}
+  f(x) \in \R 
+  \Rightarrow f(x) = \overline{f(x)}\\
+  \Rightarrow e^{\lambda x} + e^{-\lambda x} = e^{\overline{\lambda} x} + e^{-\overline{\lambda } x}\\
+  \Rightarrow e^{x a} 2i\sin(x b) = e^{-x a} 2i\sin(x b). 
+\end{multline*}
+On sait que $b\neq 0$ car $\lambda \notin \R$. On considère $x = \frac{\pi}{2b}$ de sorte que les $\sin$ valent $1$. On en déduit
+\[
+ e^{x a} = e^{-x a} \Rightarrow a = 0 \Rightarrow \lambda \in i\R. 
+\]

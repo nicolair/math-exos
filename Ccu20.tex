@@ -1,0 +1,20 @@
+\begin{tiny}(Ccu20)\end{tiny} On peut vérifier directement en développant ou utiliser ($x\neq 1$) une somme de termes en progression géométrique
+\begin{multline*}
+  1+x^2+x^4 = 1+x^2+(x^2)^2 = \frac{1-x^6}{1-x^2}\\
+  =\frac{(1-x^3)(1+x^3)}{(1-x)(1+x)}
+  = \frac{(1+x+x^2)(1+x^3)}{(1+x)}
+\end{multline*}
+Transformons $A$ en utilisant la relation précédente sous forme d'égalité de quotients
+\begin{multline*}
+A
+= (1+x)^{yz}(1+x^3)^{yz}\\
+\left( 1 + \left( \frac{1+x+x^2}{1+x}\right)^y \right)^z 
+\left( 1 + \left( \frac{1+x^2+x^4}{1+x^3}\right)^z \right)^y\\
+= (1+x)^{yz}(1+x^3)^{yz}\\
+\left( 1 + \left( \frac{1+x^2+x^4}{1+x^3}\right)^y \right)^z 
+\left( 1 + \left( \frac{1+x+x^2}{1+x}\right)^z \right)^y\\
+=
+\left( (1+x^3)^y + (1+x^2+x^4)^y \right)^z \\
+\left( (1+x)^z + (1+x+x^2)^z \right)^y
+= B
+\end{multline*}

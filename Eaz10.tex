@@ -1,0 +1,23 @@
+\begin{tiny}(Eaz10)\end{tiny} Petit théorème de Fermat étendu.\newline \label{petit_thm_Fermat_et}
+Soit $n\geq 2$ naturel et $\U_n$ l'ensemble des racines $n$-ièmes de l'unité. On note $\mathcal{M}$ l'ensemble des fonctions $\mu$, de $\U_n$ dans $\U_n$ et  vérifiant:
+\begin{displaymath}
+\forall (u,u') \in \U_n^2,\; \mu(uu') = \mu(u)\,\mu(u')  
+\end{displaymath}
+Pour $\mu$ et $\mu'$ dans $\mathcal{M}$, on définit $\mu . \mu'$ par:
+\begin{displaymath}
+\forall u \in \U_n,\;   (\mu . \mu')(u) = \mu(u)\, \mu'(u)
+\end{displaymath}
+\begin{enumerate}
+  \item Montrer que $(\mathcal{M}, ., \circ)$ est un anneau.\footnote{On remarquera que l'opération additive de cet anneau est la multiplication fonctionnelle!}
+  \item Montrer que, pour tout $\mu\in \mathcal{M}$, il existe un unique $m\in \llbracket 0, n-1\rrbracket$ tel que
+\begin{displaymath}
+  \forall u \in \U_n,\; \mu(u) = u^m
+\end{displaymath}
+En déduire le nombre d'éléments de $\mathcal{M}$.
+  \item Montrer que le groupe des inversibles de l'anneau $\mathcal{M}$ contient $\varphi(n)$ éléments (exercice \ref{indicEuler} az07  indicatrice d'Euler).
+  \item En utilisant le théorème de Lagrange dans le cas commutatif (exercice al05 de la feuille \href{\exosurl{fex\_al.pdf}}{Groupes, anneaux, corps}), montrer le petit théorème de Fermat étendu.\newline Pour $m$ et $n$ entiers supérieurs à $2$:
+\begin{displaymath}
+  m^{\varphi(n)} \equiv 1 \mod(n)
+\end{displaymath}
+voir en \ref{petit_thm_Fermat} une version plus simple.
+\end{enumerate}

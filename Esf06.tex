@@ -1,0 +1,26 @@
+\begin{tiny}(Esf06)\end{tiny} Théorème d'approximation de Weierstrass.\newline
+Soit $n\in \N^*$, $x\in[0,1]$ et $f\in \mathcal{C}([0,1],\R)$.\newline
+On se donne aussi des variables aléatoires $X_1,\cdots, X_n$ mutuellement indépendantes et suivant la loi de Bernoulli de paramètre $x$. On note
+\begin{displaymath}
+  S_n = \sum_{k=1}^n X_k,\hspace{0.3cm} Z_n = \frac{1}{n} S_n, \hspace{0.3cm}
+  B_n(f)(x) = E(f(Z_n))
+\end{displaymath}
+\begin{enumerate}
+  \item Quelle est la loi de $S_n$ ? Préciser
+\begin{displaymath}
+E(S_n),\hspace{0.3cm} V(S_n),\hspace{0.3cm} E(Z_n),\hspace{0.3cm} V(Z_n)
+\end{displaymath}
+
+  \item En utilisant l'inégalité de Bienaymé-Chebychev, montrer que 
+\begin{displaymath}
+\forall \alpha >0:
+\sum_{\left|\frac{k}{n}-x\right|\geq \alpha} \binom{k}{n}x^k (1-x)^{n-k} 
+\leq \frac{1}{4n\alpha^2}
+\end{displaymath}
+  \item Montrer que 
+\begin{multline*}
+B_n(f)(x)-f(x) \\ 
+= \sum_{k=0}^{n} \binom{k}{n}x^k (1-x)^{n-k}\left(f(\frac{k}{n})-f(x) \right)  
+\end{multline*}
+  \item En déduire, en utilisant le théorème de Heine que la suite de fonctions $\left( B_n(f)\right)_{n\in \N}$ converge \emph{uniformément} vers $f$ dans $[0,1]$.
+\end{enumerate}

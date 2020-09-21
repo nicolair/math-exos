@@ -1,0 +1,31 @@
+\begin{tiny}(Cre21)\end{tiny} Séparons les indices pairs et impairs de la formule du binôme:
+\begin{multline*}
+ (\sqrt{3}+1)^{2n+1}= \underset{= A}{\underbrace{\sum_{k \text{ pair}}\binom{2n+1}{k}\sqrt{3}^{2n+1-k}}}\\
+ + \underset{= B}{\underbrace{\sum_{k \text{ impair}}\binom{2n+1}{k}\sqrt{3}^{2n+1-k}}}
+\end{multline*}
+Lorsque $k$ est impair, $2n+1-k$ est pair donc $B$ est entier. De plus, en considérant le développement de $(\sqrt{3}+1)^{2n+1}$, on obtient que 
+\begin{align*}
+ A &= \frac{1}{2}\left((\sqrt{3}+1)^{2n+1} + (\sqrt{3}-1)^{2n+1} \right) \\
+ B &= \frac{1}{2}\left((\sqrt{3}+1)^{2n+1} - (\sqrt{3}-1)^{2n+1} \right)
+\end{align*}
+On en déduit
+\begin{displaymath}
+ (\sqrt{3}+1)^{2n+1}= 2B + (\sqrt{3}-1)^{2n+1}
+\end{displaymath}
+avec 
+\begin{displaymath}
+ 0 < (\sqrt{3}-1)^{2n+1} < 1
+\end{displaymath}
+car $1< \sqrt{3} < 2$.\newline
+Si $(a-b\sqrt{d})^{2n+1} = \left\lbrace (a+b\sqrt{d})^{2n+1} \right\rbrace $ alors on doit avoir
+\[
+ 0 < a-b\sqrt{d} <1
+\]
+La condition est suffisante car on peut raisonner exactement comme avec $\sqrt{3}+1$. On remarque que la condition se traduit par 
+\[
+ a = \lceil b\sqrt{d} \rceil.
+\]
+qui permet des calculs fournissant d'autres exemples:
+\[
+ 5+2\sqrt{5}, \;8+3\sqrt{7}, \; \cdots
+\]

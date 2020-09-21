@@ -1,0 +1,38 @@
+\begin{tiny}(Cee25)\end{tiny}
+\begin{enumerate}
+ \item L'énoncé n'impose rien à $u$ et $v$ sauf d'être orthogonaux à $w$. Choisissons
+\begin{displaymath}
+\begin{array}{ccc}
+ u =& e_1 - 2e_3 =& (1,0,-2) \\
+ v =& e_2 - 3e_3 =& (0,1,3)
+\end{array} 
+\end{displaymath}
+La famille $(u,v)$ est libre et ses deux vecteurs sont orthogonaux à $w$ donc la famille $(u,v,w)$ est libre, c'est une base de $E$.
+\item Par définition de $s$, $s(u)=u$, $s(v)=v$, $s(w)=-w$. On en déduit
+\begin{displaymath}
+ S'=
+\begin{pmatrix}
+ 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & -1
+\end{pmatrix}
+\end{displaymath}
+\item On en déduit par changement de base
+\begin{displaymath}
+ S = P\,S' \,P^{-1} \text{ avec }
+P=
+\begin{pmatrix}
+ 1 & 0 & 2 \\0 & 1 & 3 \\ -2 & -3 & 1
+\end{pmatrix}
+\end{displaymath}
+après calculs
+\begin{multline*}
+ P^{-1}= \frac{1}{4}
+\begin{pmatrix}
+ 8 & -6 & 2 \\ 6 & -5 & 3 \\ -2 & 3 & -1
+\end{pmatrix}, \\
+S = \frac{1}{7}
+\begin{pmatrix}
+3 & 6 & -2 \\ -6 & -2 & -3 \\ -2 & -3 & 6 
+\end{pmatrix}
+\end{multline*}
+
+\end{enumerate}

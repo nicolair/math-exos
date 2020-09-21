@@ -1,0 +1,31 @@
+\begin{tiny}(Csc31)\end{tiny} 
+\begin{enumerate}
+  \item La fonction $f_n$
+\begin{displaymath}
+  \left\lbrace 
+\begin{aligned}
+  \left[ 0 , +\infty \right[ &\rightarrow \R \\
+  x &\mapsto x + x^2 + \cdots + x^n
+\end{aligned}
+\right. 
+\end{displaymath}
+est strictement croissante de $0$ à $+\infty$. Le réel $a>0$ admet donc un unique antécédent $x_n$. On peut noter que $x_1=a$.
+  \item On remarque que
+\begin{displaymath}
+  f_{n+1}(x_n) = a + x_{n}^{n+1} > a
+\end{displaymath}
+L'antécédent $x_{n+1}$ de $a$ par $f_{n+1}$ est donc plus petit que $x_n$. La suite $\left( x_n\right)_{n\in \N^*}$ est décroissante. Elle est minorée par $0$ donc elle converge. On note $l$ sa limite.\newline
+Comme $f_n(1)=n$, pour $n$ assez grand, on aura $a<f(n)$. Il existe donc un $N$ tel que 
+\begin{displaymath}
+\forall n\geq N, \; x_n \leq x_N < 1  
+\end{displaymath}
+On en déduit que $\left( x_n^{n+1}\right)_{n\in \N^*}\rightarrow 0$ (majoration par une suite géométrique convergente). En utilisant la formule pour une somme de termes en progression géométrique:
+\begin{displaymath}
+  a = f_n(x_n) = \frac{x_n - x_n^{n+1}}{1-x_n}
+\end{displaymath}
+Par opérations sur les suites convergentes, on déduit
+\begin{displaymath}
+a = \frac{l}{1-l} \Rightarrow l = \frac{a}{1+a}  
+\end{displaymath}
+
+\end{enumerate}

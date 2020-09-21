@@ -1,0 +1,90 @@
+\begin{tiny}(Cgs05)\end{tiny} Conjugaison.
+\begin{enumerate}
+  \item On trouve 
+\begin{multline*}
+  \theta \circ 
+\begin{pmatrix}
+ a_{1} & a_{2} & \cdots & a_{k}
+\end{pmatrix}
+\circ \theta ^{-1}\\
+=
+\begin{pmatrix}
+ \theta(a_{1}) & \theta(a_{2}) & \cdots & \theta(a_{k})
+\end{pmatrix}
+.
+\end{multline*}
+
+  \item Toute permutation $\sigma$ se décompose en cycle disjoints qui commutent: $\sigma = c_1 \circ c_p$ où chaque $c_i$ est un cycle de longueur $l_i$ avec $l_1 \leq \cdots \leq l_p$.\newline
+  Pour toute permutation $\theta$,
+\[
+  \theta \circ \sigma \circ \theta^{-1}
+  =
+  (\underset{=c'_1}{\underbrace{\theta \circ c_1 \circ \theta^{-1}}})\circ \cdots 
+  \circ (\underset{=c'_k}{\underbrace{\theta \circ c_k \circ \theta^{-1}}})
+\]
+Les $c'_i$ sont des cycles disjoints. Chaque $c_i$ est de même longueur que $c'_i$. La suite des longueurs est conservée par Conjugaison.\newline
+Réciproquement, soit $l_1\leq \cdots \leq l_p$ la suite des nombres d'éléments de deux partitions
+\[
+  \begin{aligned}
+    S_1, \cdots, S_p & \text{ disjointes } & \sharp S_i = l_i \\
+    S'_1, \cdots, S'_p & \text{ disjointes } & \sharp S'_i = l_i 
+  \end{aligned}
+\]
+attachées aux décompositions en cycles disjoints de deux permutations $\sigma$ et $\sigma'$. Comme $S_i$ et $S'_i$ ont le même nombre d'éléments, il existe une bijection de $S_i$ dans $S'_i$(les éléments écrits dans l'ordre du cycle). Comme les $S_i$ forment une partition, on définit ainsi une permutation $\theta$ telle que 
+\begin{multline*}
+  \left(\forall i \in \llbracket 1, p \rrbracket, \; \theta \circ c_i \circ \theta^{- 1}
+  = c'_i\right)\\
+  \Rightarrow 
+  c' = \theta \circ \sigma \circ \theta^{-1}.
+\end{multline*}
+
+  \item Une permutation et sa réciproque ont les mêmes orbites donc les mêmes supports des cycles intervenant dans leur décomposition. Les longueurs des cycles sont évidemment les mêmes, une permutation et sa réciproque sont donc  conjuguées.\newline
+  Décomposons en cycles la permutation donnée
+\begin{multline*}
+\theta =
+\begin{pmatrix}
+ 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 \\8 & 1 & 7 & 3 & 2 & 6 & 4 & 5 
+\end{pmatrix}
+\\
+=
+\begin{pmatrix}
+  1 & 8 & 5 & 2
+\end{pmatrix}
+\circ
+\begin{pmatrix}
+  3 & 7 & 4
+\end{pmatrix}
+.
+\end{multline*}
+On obtient la réciproque en inversant le sens des cycles
+\[
+\begin{aligned}
+  \theta      = \begin{pmatrix} 1 & 8 & 5 & 2 \end{pmatrix} \circ \begin{pmatrix}  3 & 7 & 4 \end{pmatrix} \\
+  \theta^{-1} = \begin{pmatrix} 1 & 2 & 5 & 8 \end{pmatrix} \circ \begin{pmatrix}  3 & 4 & 7 \end{pmatrix}
+\end{aligned}
+\]
+On définit facilement $\theta$ à partir des supports
+\begin{multline*}
+\theta =
+\begin{pmatrix}
+  1 & 8 & 5 & 2 & 3 & 7 & 4 \\
+  1 & 2 & 5 & 8 & 3 & 4 & 7
+\end{pmatrix}
+\\
+=
+\begin{pmatrix}
+  1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 \\
+  1 & 8 & 3 & 7 & 5 & 6 & 4 & 2
+\end{pmatrix} \\
+=
+\begin{pmatrix}
+  2 & 8
+\end{pmatrix}
+\circ 
+\begin{pmatrix}
+  4 & 7
+\end{pmatrix}
+.
+\end{multline*}
+
+\end{enumerate}

@@ -1,0 +1,23 @@
+\begin{tiny}(Cee20)\end{tiny} Le déterminant de $S$ se calcule facilement avec la méthode du pivot standard. On se ramène à une matrice triangulaire supérieur avec des $1$ sur la diagonale sauf pour le terme $p,p$. On obtient
+\begin{displaymath}
+ \det S = c -a_1^2 - a_2^2 - \cdots - a_{p-1}^2
+\end{displaymath}
+Il reste à vérifier que $\beta(x,x)\geq 0$ et que $\beta(x,x)=0$ entraine $x=0$ pour tout vecteur $x$ de $E$.\newline
+Considérons donc un vecteur $x$ quelconque de coordonnées $(x-1,\cdots,x_p)$. On calcule en utilisant d'abord l'expression matricielle puis en faisant apparaitre des carrés
+\begin{multline*}
+ \beta(x,x)\\
+=
+\begin{pmatrix}
+ x_1 & \cdots & x_p
+\end{pmatrix}
+\begin{pmatrix}
+ x_1+a_1 x_p \\ x_2+a_2 x_p \\ \vdots \\ x_{p-1}+a_{p-1} x_p \\
+a_1x_1+\cdots+a_{p-1}x_{p-1} +cx_p  
+\end{pmatrix}
+\\
+=x_1^2+\cdots + x_{p-1}^2 + cx_p^2 +
+2\left( a_1x_1+\cdots+a_{p-1}x_{p-1} \right) x_p\\
+=\left((x_1 + a_1x_p)^2-a_1^2x_p^2 \right) + \cdots  \\+ \left((x_{p-1} + a_{p-1}x_p)^2-a_{p-1}^2x_p^2 \right) + cx_p^2\\
+= (x_1 + a_1x_p)^2 + \cdots +(x_{p-1} + a_{p-1}x_p)^2+ (\det S )x_p^2
+\end{multline*}
+On en déduit les propriétés demandées.  

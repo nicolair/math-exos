@@ -1,0 +1,41 @@
+\begin{tiny}(Cre13)\end{tiny} 
+\begin{enumerate}
+  \item Notons $i_0=0$. D'après la définition de la convergence avec $\varepsilon = x_{i_0}$, il existe $i_ > i_0$ tel que 
+\begin{displaymath}
+  0 < x_{i_1} < x_{i_0}
+\end{displaymath}
+On construit ainsi par récurrence une suite d'indices $i_0 < i_1 < \cdots$. La construction de l'indice suivant $i_p$ est justifié par le raisonnement suivant.\newline
+Comme $x_{i_p}>0$ et que la suite converge vers $0$, il existe $i_{p+1}$ tel que
+\begin{displaymath}
+  i_{p+1} > i_p \text{ et } x_{i_{p+1}} < x_{i_p}
+\end{displaymath}
+La suite extraite $\left( x_ {i_p}\right)_{p\in \N}$ est alors décroissante. Elle converge vers $0$ car elle est extraite d'une suite qui converge vers $0$. 
+  \item Soit $p\in \N$ et $v$ un élément quelconque de $X_p$ (peu importe l'indice en lequel il est atteint). Comme la suite converge vers $0$, il existe un $n_v > p$ tel que 
+\begin{displaymath}
+  n\geq n_v \Rightarrow x_n \leq v
+\end{displaymath}
+On en déduit que 
+\begin{displaymath}
+  \max(x_p,x_{p+1},\cdots,x_{n_v},v)
+\end{displaymath}
+est le plus grand élément de $X_p$.
+  \item On raisonne par l'absurde.\newline
+Si $A$ est fini, il existe $N\in \N$ tel que 
+\begin{displaymath}
+\forall n \geq N, \; x_n \neq \max X_n  
+\end{displaymath}
+Or $x_n \in X_n$ donc
+\begin{displaymath}
+  x_n \neq \max X_n  \Leftrightarrow x_n < \max X_n
+\end{displaymath}
+Notons $i_0 = N$, il existe $i_1 > N$ tel que 
+\begin{displaymath}
+x_{i_0} < x_{i_1} = \max X_{i_0} 
+\end{displaymath}
+Alors $x_{i_1} < \max X_{i_1}$ donc il existe $i_2 > i_1$ tel que 
+\begin{displaymath}
+  x_{i_1} < x_{i_2} = \max X_{i_1}
+\end{displaymath}
+On forme ainsi une suite extraite $\left( x_ {i_p}\right)_{p\in \N}$ croissante en contraction avec la convergence vers $0$ de la suite.
+\end{enumerate}
+ 

@@ -1,0 +1,29 @@
+\begin{tiny}(Cev02)\end{tiny} Soit $A$ et $B$ deux parties de $E$ (pas forcément ds sous-espaces).
+\[
+  A \cap B \subset A \subset \Vect(A) 
+  \Rightarrow \Vect(A\cap B) \subset \Vect(A)
+\]
+car $\Vect(A)$ est un sous-espace. On raisonne de même pour $B$ donc 
+\[
+  \Vect(A\cap B) \subset \Vect(A) \cap \Vect(B).
+\]
+L'inclusion réciproque n'est pas vraie en général comme le montre la situation suivante.\newline
+Soit $u\neq 0_E$, soit $a\notin \Vect(u)$, soit $b = \lambda a$ avec $\lambda \neq  1_K$. Notons $A=\left\lbrace u, a\right\rbrace$, $B=\left\lbrace u, b\right\rbrace$. Alors
+\[
+  u + b = u + \lambda a \in \Vect(A)\cap \Vect(B)
+\]
+mais $A\cap B= \left\lbrace u\right\rbrace$ donc $u + b \notin \Vect(A\cap B)$.\newline
+De même pour l'union
+\begin{multline*}
+  \left.
+  \begin{aligned}
+    &A \subset \Vect(A) \subset \Vect(A) + \Vect(B)\\
+    &B \subset \Vect(B) \subset \Vect(A) + \Vect(B)
+  \end{aligned}
+\right\rbrace \\
+\Rightarrow \Vect(A \cup B) \subset \Vect(A) + \Vect(B).
+\end{multline*}
+Tout $x \in \Vect(A) + \Vect(B)$ est somme de deux vecteurs, combinaisons respectivement de vecteurs de $A$ et de $B$. Donc $x$ est combinaison de vecteurs de $A\cup B$ d'où
+\[
+  \Vect(A\cap B) = \Vect(A) + \Vect(B).
+\]

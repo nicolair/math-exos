@@ -1,0 +1,20 @@
+\begin{tiny}(Car06)\end{tiny} Les solutions sont les polynômes de la forme
+\[
+ -2^9 + (X+2)^3 A = 2^9 +(X-2)^3B
+\]
+avec 
+\[
+ 2^{10} = (X+2)^3 A - (X-2)^3 B.
+\]
+Pour que la condition sur le degré soit vérifiée, il faut trouver des solutions de degré au plus $2$ de cette l'équation de Bezout. On pourrait le faire en utilisant l'algorithme d'Euclide étendu. Pour changer, proposons une solution à base de formule du binôme. Comme
+\[
+ \left( (X+2) - (X-2)\right)^5 = 4 ^5 = 2^{10}, 
+\]
+on peut former $A$ avec les termes en $(X+2)^k$ pour $k\in \llbracket 3,5\rrbracket$ et $B$ avec ceux pour $k\in \llbracket 0,2\rrbracket$. On en déduit
+\begin{multline*}
+ A = (X+2)^2 - 5(X+2)(X-2 + 10(X-2)^2 \\
+ = 6X^2 - 38X + 24\\
+ B = 10(X+2)^2 - 5(X+2)(X-2) + (X-2)^2\\
+ = 6X^2 + 38X +24.
+\end{multline*}
+

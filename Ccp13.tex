@@ -1,0 +1,29 @@
+\begin{tiny}(Ccp13)\end{tiny} L'énoncé n'est pas très précis, un des points du cercle ne peut pas avoir d'image mais on ne sait pas lequel. Cela se traduit par : le point d'affixe $-\frac{d}{c}$ est sur le cercle. \newline
+On va supposer que c'est l'origine. On en tire $d=0$. Comme on peut multiplier $a$, $b$, $c$, $d$ par un même nombre complexe non nul sans changer l'homographie, on peut supposer que $c=1$.\newline
+On cherche donc des conditions sur $a$ et $b$ pour que
+\begin{displaymath}
+  z \mapsto a + \frac{b}{z}
+\end{displaymath}
+réponde à la question.\newline
+Considérons les images des points d'affixe $2$ et$1+i$ (ils sont bien sur le cercle). Alors:
+\begin{multline*}
+\Re(a+\frac{b}{2})=\frac{1}{2},\\
+\Re(a+\frac{b}{1+i})= \Re(a+\frac{1}{2}b(1-i)) \\ 
+= \Re(a+\frac{b}{2}) -\Re\frac{bi}{2} =\frac{1}{2}
+\Rightarrow b \in \R
+\end{multline*}
+Montrons maintenant que
+\begin{displaymath}
+ h:  z \mapsto \frac{1}{z}
+\end{displaymath}
+est une homographie qui satisfait à la condition.\newline
+Pour tout point $M$ (d'affixe $m$) du cercle, il existe un réel $t$ tel que
+\begin{displaymath}
+  m = 1+e^{it}
+\end{displaymath}
+alors:
+\begin{displaymath}
+  h(m)=\frac{1}{1+e^{it}} = \frac{1}{2\cos\frac{t}{2}}e^{-i\frac{t}{2}}
+  = \frac{1}{2}+i\frac{\sin\frac{t}{2}}{2\cos\frac{t}{2}}
+\end{displaymath}
+qui sont bien les affixes des points de la droite voulue.

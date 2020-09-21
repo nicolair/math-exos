@@ -1,0 +1,11 @@
+\begin{tiny}(correction gd21)\end{tiny}
+\begin{enumerate}
+ \item La fonction $f$ est continue sur le segment $[a,b]$, elle est donc bornée et atteint ses bornes. Considérons en particulier la borne inférieure $m$ et le minimum global $x_m$ en lequelle elle est atteinte : $f(x_m)=m$.\newline
+Une erreur classique serait de penser que la fonction est localement décroissante au voisinage de $a$ ou localement croissante au voisinage de $b$. Avec nos hypothèses, rien ne permet de l'affirmer. Le raisonnement qui suit utilise uniquement la définition de la convergence \newline
+De $f'(a)<0$, on tire qu'il existe un $\alpha >0$ tel que
+\begin{displaymath}
+ \forall x\in]a,a+\alpha[, \;\frac{f(x)-f(a)}{x-a}<0 \Rightarrow f(x)-f(a)<0
+\end{displaymath}
+Il existe donc des $x\in[a,b]$ tels que $f(x)<f(a)$ ce qui entraine que $a$ ne peut pas être un minimum global.\newline
+On montre de même que $x_m\neq b$. Ainsi le minimum global est à l'intérieur du segment. Comme la fonction est dérivable en ce point sa dérivée est nulle.
+\end{enumerate}

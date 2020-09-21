@@ -1,0 +1,27 @@
+\begin{tiny}(Cdt02)\end{tiny}\begin{enumerate}
+ \item On suppose $a$, $b$, $c$, $d$ non nuls. On sort $abcd$ de la dernière ligne par linéarité. On fait entrer successivement $a$, $b$, $c$, $d$ par linéarité dans les colonnes. Après permutation circulaire, on retrouve un déterminant de VanderMonde.
+\begin{displaymath}
+ (d-a)(c-a)(b-a)(d-b)(c-b)(d-c)
+\end{displaymath}
+
+ \item En partant du bas, on soustrait à chaque ligne celle qui est au dessus. On obtient une matrice triangulaire supérieure. Le déterminant est
+ \begin{displaymath}
+   a(b-a)(c-b)(d-c)
+ \end{displaymath}
+
+ \item Le déterminant (notons le $\delta$) demandé est une fonction polynomiale en $c$. Son degré est au plus $4$. Le coefficient de degré $4$ est nul car en fait aucune des $6$ permutations intervenant dans la définition du déterminant ne contribue au degré $4$. Pour le degré $3$, plusieurs permutations contribuent mais leurs contributions s'annullent le degré en $c$ est donc au plus $2$. Par symétrie il en est de même pour $a$ et $b$. Lorsque deux parmi $a$, $b$, $c$ sont égaux, le déteminant est nul. On en déduit qu'il existe un $\lambda$ réel tel que 
+\begin{displaymath}
+\forall (a,b,c) \in \R^3, \; \delta = \lambda(a-b)(b-c)(c-d)
+\end{displaymath}
+ On calcule $\lambda$ avec $a=0$, $b=1$, $c=-1$, on trouve $0$.
+ 
+ \item On commence par ajouter toutes les colonnes dans la première, on sort un $2$ de la première colonne par linéarité. On soustrait la première colonne aux deux autres et on permute circulairement. On obtient
+\begin{displaymath}
+ 2
+\begin{vmatrix}
+ a & b & c \\ a^2 & b^2 & c^2 \\ a^3 & b^3 & c^3
+\end{vmatrix}
+=2abc(b-a)(c-a)(b-c)
+\end{displaymath}
+
+\end{enumerate}

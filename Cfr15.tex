@@ -1,0 +1,36 @@
+\begin{tiny}(Cfr15)\end{tiny} Les pôles sont $+1$ et $-1$ et les éléments de $\U_n$. La multiplicité de $1$ est toujours $2$, mais celle de $-1$ dépend de la parité de $n$. En fait $-1$ est un pôle double si $n$ est pair mais n'est pas un pôle si $n$ est impair. Les autres éléments de $\U_n$ sont des pôles simples.\newline
+Commençons par former la décomposition complexe en cherchant la partie polaire $\frac{\lambda_u}{X-u}$ en $u \in \U_n \setminus \lbrace -1, 1\rbrace$ . On utilise la dérivée du dénominateur pour calculer $\lambda_u$
+\begin{multline*}
+  \lambda_u = \frac{u^n + 1}{(n+2)u^{n+1}- nu^{n-1} - 2u}
+  = \frac{2}{n(u - u^{-1})}\\
+  = -  \frac{i}{n\sin \theta} \text{ si } u = e^{i \theta}.
+\end{multline*}
+Regroupons les pôles conjugués:
+\begin{multline*}
+  -  \frac{i}{n\sin \theta(X-e^{i\theta})}  + \frac{i}{n\sin \theta(X-e^{-i\theta}) } \\
+  = \frac{ie^{-i\theta} - ie^{i\theta}}{n\sin \theta(X^2 - 2\cos \theta X + 1)}\\
+  = \frac{2}{n(X^2 - 2\cos \theta X + 1)}.
+\end{multline*}
+
+Pour former la partie polaire en $1$ (notée $\Pi_1$), on cherche le développement limité à l'ordre $1$ en $1$
+de
+\[
+  x \mapsto \frac{x^n + 1}{(x+1)(1+x+\cdots +x^{n-1})}.
+\]
+Le développement fondamental est 
+\[
+  x^k = 1 + k(x-1) + o(x-1).
+\]
+Après calculs, le coefficient de $(x-1)$ est nul et le développement cherché est
+\[
+  \frac{1}{n} + o(x-1)
+  \Rightarrow \Pi_1 = \frac{1}{n(X-1)^2}.
+\]
+
+Si $n$ est pair ($ = 2p$), la fraction est conservée par la substitution de $-X$ à $X$ qui échange les pôles doubles $1$ et $-1$. Les autres racines de $1$ sont des pôles simples. On en déduit $\Pi_{-1} = \Pi_1$ et .
+\begin{multline*}
+  F = \frac{1}{n(X-1)^2} + \frac{1}{n(X+1)^2} \\ 
+  + \sum_{k=1}^{p-1}\frac{2}{n(X^2 - 2\cos \theta_k X + 1)}
+  \; \text{ avec } \theta_k = \frac{2 k \pi}{n}.
+\end{multline*}
+Si $n$ est impair ($ = 2p+1$), $-1$ n'est pas un pôle. la décomposition est la même sans $\frac{1}{n(X+1)^2}$. 

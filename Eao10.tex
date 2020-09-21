@@ -1,0 +1,29 @@
+\begin{tiny}(\hyperdef{exo}{Eao10}{Eao10})\end{tiny} Soit $E$ un espace euclidien de dimension $p$, le produit scalaire est noté $(./.)$. Soit $\mathcal U$ une base orthonormée fixée. Soit $f\in \mathcal L(E)$ et $A = \Mat_{\mathcal{U}}(f)$. On appelle \emph{adjoint} de $f$ l'endomorphisme noté $\mathstrut^t\!f$ tel que :
+\begin{displaymath}
+ \Mat_{\mathcal U}\mathstrut^t\!f = \mathstrut^t\!A.
+\end{displaymath}
+\begin{enumerate}
+ \item Pour toute base orthonormée $\mathcal V$, montrer que
+\begin{displaymath}
+ \Mat_{\mathcal V}\mathstrut^t\!f = \mathstrut^t\!\Mat_{\mathcal V}f.
+\end{displaymath}
+\item Montrer que $(f(x)/y)=(x/\trans f(y)$ pour tous les $x$ et $y$ de $E$.
+\item Montrer que 
+\begin{displaymath}
+ \ker \trans f= (\Im f)^\bot , \hspace{0.5cm} \Im \trans f = (\ker f)^\bot.
+\end{displaymath}
+\item On suppose $f$ non surjective et $y \notin \Im f$. L'équation $f(x)=y$ d'inconnue $x\in E$
+ n'admet donc aucune solution. Montrer que l'équation
+\begin{displaymath}
+ \trans f \circ f(x)= \trans f (y)
+\end{displaymath}
+admet des solutions. Montrer que si $x_0$ est une solution de cette équation alors :
+\begin{displaymath}
+ \forall x\in E : \Vert f(x_0)-y\Vert  \leq  \Vert f(x)-y\Vert.
+\end{displaymath}
+\item On dit que $f$ est \emph{normal} si et seulement si 
+\begin{displaymath}
+  \mathstrut^t\!f \circ f  = f \circ \mathstrut^t\!f .
+\end{displaymath}
+Soit $A$ un sous-espace stable par un endomorphisme normal $f$. Montrer que $A^{\bot}$ est stable par $f$. 
+\end{enumerate}

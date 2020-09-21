@@ -1,0 +1,43 @@
+\begin{tiny}(Cre10)\end{tiny} Critères d'irrationalité.
+\begin{enumerate}
+  \item Soit $\beta= \frac{a}{b}>0$ avec $a$ et $b\in\N^*$. Alors
+\begin{displaymath}
+  \left| \beta - \frac{p}{q}\right| = |qa - pb|\frac{1}{bq}
+\end{displaymath}
+On peut donc prendre $q_0=b$ car $|qa-pb|\geq1$ (naturel non nul).
+
+  \item Si $m$ et $n$ sont des entiers distincts tels que
+\begin{displaymath}
+n\beta = \lfloor n\beta\rfloor + \left\lbrace n\beta \right\rbrace  \text{ et }
+m\beta = \lfloor m\beta\rfloor + \left\lbrace m\beta \right\rbrace
+\end{displaymath}
+alors
+\begin{displaymath}
+\left\lbrace n\beta \right\rbrace = \left\lbrace m\beta \right\rbrace \Rightarrow
+\beta = \frac{\lfloor n\beta\rfloor - \lfloor m\beta\rfloor}{n-m} \in \Q
+\end{displaymath}
+La suite injective $\left( \left\lbrace n\beta \right\rbrace\right)_{n\in \N}$ prend une infinité de valeurs dans $]0,1[$. Pour tout $n>0$, il existe (principe des tiroirs) des entiers distincts $u$ et $v$ tels que 
+\begin{displaymath}
+  \left|\left\lbrace u\beta \right\rbrace - \left\lbrace v\beta \right\rbrace \right| < \frac{1}{n}
+\end{displaymath}
+On en tire
+\begin{displaymath}
+  \left|\underset{=q}{\underbrace{(u-v)}}\beta - 
+  \underset{=p}{\underbrace{\left( \lfloor u\beta\rfloor  - \lfloor v\beta\rfloor \right)}}  \right| < \frac{1}{n}
+\end{displaymath}
+
+  \item La proposition contraposée de la précédente est:
+\begin{multline*}
+\left( \exists n \in \N^* \text{ tq }\forall (p,q)\in \Z\times \Z^*
+\left[ 
+\begin{aligned}
+  &|q\beta -p| = 0 \\ &\text{ ou } \\ &|q\beta -p|>\frac{1}{n}
+\end{aligned}
+\right. \right) \\
+\Rightarrow   \beta \text{ rationnel}
+\end{multline*}
+Lorsque $\beta$ vérifie l'hypothèse de c. et en prenant un $n>q_0$, la proposition entre parenthèse est vérifiée assurant que $\beta$ est rationnel.
+  
+  \item Supposons $\beta$ irrationnel. La question b. montre l'existence des suites d'entiers vérifiant la condition.\newline
+Réciproquement, supposons l'existence des suites d'entiers $a_n$ et $b_n$ vérifiant la condition. La condition de la question a. ne peut alors être vérifiée donc $\beta$ n'est pas rationnel.
+\end{enumerate}

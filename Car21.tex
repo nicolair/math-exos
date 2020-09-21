@@ -1,0 +1,58 @@
+\begin{tiny}(Car21)\end{tiny}
+\begin{enumerate}
+  \item Notons $\alpha$ et $\beta$ les valuations $p$-adiques de $a$ et $b$. Comme $a$ et $b$ ne sont pas congrus à $0$ modulo $q=p^m$, on sait que $\alpha$ et $\beta$ sont strictement plus petits que $m$. \'Ecrivons la congruence entre eux. Il existe $s\in \Z$ tel que
+\begin{displaymath}
+  a = b + s p^m \Rightarrow 
+\left\lbrace  
+\begin{aligned}
+  &p^\alpha \text{ divise } b &\Rightarrow \alpha \leq \beta \\
+  &p^\beta \text{ divise } a &\Rightarrow  \beta \leq \alpha 
+\end{aligned}
+\right. \Rightarrow \alpha = \beta
+\end{displaymath}
+
+  \item Remarquons que $v(x)\neq 0$ si et seulement si $p$ divise $x$. Alors, comme $p$ est premier avec $x-1$, le théorème de Bezout entraine $v(x-1) = 0$. On raisonne de même si $p$ divise $x-1$.
+
+  \item Introduisons un compteur : $2=1+1$, $q-1 = 1 +q-2$ donc $\deg(P) = q-2$. Les valeurs de $P$ aux entiers sont des quotients dont le numérateur est un produit de $q-2$ entiers consécutifs et $(q-2)!$ au dénominateur. C'est (au signe près) un coefficient du binôme donc un entier. 
+  
+  \item Pour tout $z$ entier, $P(z)$ est entier avec 
+\[
+(q-2)!P(z) = n_z 
+\]
+où $n_z$ est un entier qui est le produit de $q-2$ entiers consécutifs. Introduisons les valuations $p$-adiques. Comme $p$ est fixé, on n'écrit pas l'indice $p$. Le point important est
+\begin{multline*}
+  v((q-2)!) + v(P(z)) = v(n_z) \text{ avec }  \\
+  v((q-2)!) = v(2) + v(3) + \cdots + v(q-2).
+\end{multline*}
+D'après la question a., on peut évaluer $v(n_z)$ en considérant les $z\geq q$ modulo $q$.
+
+Si $z\equiv 0 \mod q$:
+\begin{displaymath}
+  v(n_z) = v(q-2) + v(q-3) + \cdots + v(1)
+= v((q-2)!)
+\end{displaymath}
+avec $v(1)=0$. On en tire 
+\[
+v(P(z))=0 \Rightarrow P(z) \not\equiv 0 \mod p. 
+\]
+Si $z\equiv 1 \mod q$:
+\begin{multline*}
+  v(n_z) = v(q-1) + v(q-2) + \cdots + v(2)\\ = v((q-2)!)
+\end{multline*}
+avec $v(q-1)=0$ car $p$ ne divise pas $q-1$. On en tire $v(P(z))=0$ donc $P(z) \not\equiv 0 \mod p$.
+
+Si $z\equiv 2 \mod q$:
+\begin{multline*}
+  v(n_z) = v(q) + v(q-1) + \cdots + v(3)\\ = m + v((q-2)!) - v(3)
+\end{multline*}
+avec $v(q)=m$. On en tire $v(P(z))>0$ car $v(3)<m$ donc $P(z) \equiv 0 \mod p$.
+
+Si $z\equiv i \mod q$ avec $1<i<q-1$:
+\begin{multline*}
+  v(n_z) = v(q+i-2) + v(q+i-3) + \cdots + v(i+1)\\ 
+= v(i-2) + \cdots + v(1) + v(q) + v(q-1) + \cdots v(i+1)\\
+= m +v((q-2)!) - v(i) - v(i-1) > v((q-2)!)
+\end{multline*}
+car un seul des $v(i)$ et $v(i-1)$ est non nul. On en tire $v(P(z))>0$ donc $P(z) \equiv 0 \mod p$.
+
+\end{enumerate}

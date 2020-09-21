@@ -1,0 +1,19 @@
+\begin{tiny}(Cmm15)\end{tiny} Par définition du produit matriciel, $X_i\,\mathstrut^t\!Xj$ est la matrice élémentaire $E_{i,j}$. Ces matrices forment une base de $\mathcal{M}_{n}(\K)$.\newline
+Notons $M$ la matrice dont les colonnes sont les $Y_i$ de sorte que $C_i(M)=Y_i$. Comme $M=M\,I_n$, on a aussi 
+\begin{displaymath}
+ Y_i = C_i(M) = C_i(M\,I_n)=M\,C_i(I_n)= M\,X_i
+\end{displaymath}
+En remplaçant, on obtient
+\begin{displaymath}
+ Y_i\,\mathstrut^t Yj = P \left( X_i\,\mathstrut^t\!Xj\right)\,\mathstrut^t\!P
+\end{displaymath}
+On conclut en remarquant que l'application
+\begin{displaymath}
+ \left\lbrace 
+\begin{aligned}
+ \mathcal{M}_{n}(\K) \rightarrow &\mathcal{M}_{n}(\K) \\
+ X &\mapsto P\, X \,\mathstrut^t\!P
+\end{aligned}
+\right. 
+\end{displaymath}
+est un isomorphisme et transforme donc une base en une base.

@@ -1,0 +1,19 @@
+\begin{tiny}(Cao21)\end{tiny} Notons $M$ la matrice des $(u(e_i)/e'_j)$ et $s$ la somme des carrés de ses termes. Comme $\mathcal{B}'$ est orthonormée, cette matrice est la matrice de l'endomorphisme $u$ dans les bases $\mathcal{B}$ pour l'espace de départ et $\mathcal{B}'$ pour l'espace d'arrivée. Le nombre considéré s'interprète comme un trace:
+\begin{displaymath}
+  M = \Mat_{\mathcal{B}\mathcal{B}'}(u),\hspace{0.5cm} s = \tr\left( \trans M\, M\right) 
+\end{displaymath}
+Considèrons de nouvelles bases orthonormées $\mathcal{B}_1$ et $\mathcal{B}'_1$ et notons
+\begin{displaymath}
+P = P_{\mathcal{B}\,\mathcal{B}_1}, \hspace{0.3cm}  
+P' = P_{\mathcal{B}'\,\mathcal{B}'_1}, \hspace{0.3cm}
+M_1 = \Mat_{\mathcal{B}_1\mathcal{B}'_1}(u)
+\end{displaymath}
+Comme les bases sont orthonormées, les inverses des matrices de passage sont les transposées. La formule de changement de base conduit à
+\begin{multline*}
+  M_1 = \trans P'\, M\, P \Rightarrow \\
+\tr\left( \trans M_1\, M_1\right)
+= \tr\left( \trans \left( \trans P'\, M\, P\right) \, \left( \trans P'\, M\, P\right)\right) \\
+= \tr\left( \trans P\, \trans M\, (P'\, \trans P')\, M\, P\right) \\
+= \tr\left( \trans M\, M\, P\, \trans P\right) \text{( en permutant dans la trace)}\\
+= s
+\end{multline*}

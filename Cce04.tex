@@ -1,0 +1,56 @@
+On note 
+\begin{displaymath}
+ f(u) = (\sqrt{\cos u }, \sqrt{\sin u })
+\end{displaymath}
+pour $u$ entre $0$ et $\frac{\pi}{2}$. Le cercle osculateur en $f(u)$ passe par l'origine si et seulement si le rayon de courbure en $f(u)$ est égal à $\Vert \overrightarrow{Of(u)}\Vert$.\newline
+On utilise la formule du déterminant pour calculer ( avec Maple) le rayon de courbure :
+\begin{verbatim}
+ restart;
+#appel de la bibliothèque d'algèbre linéaire
+with(LinearAlgebra):
+
+f:= [sqrt(cos(u)),sqrt(sin(u))];
+
+# tracé de la courbe.
+# Le op pour enlever les crochets de liste
+#plot([op(f),u=0..1.5]);
+
+#calcul des dérivées,
+# transformation en type vecteur  
+ff:=diff(f,u): v:=<ff[1],ff[2]>:
+fff:=diff(ff,u): w:=<fff[1],fff[2]>:
+
+#carré de la distance origine-point
+l:=cos(u)+sin(u):
+
+#carré de la norme de la vitesse
+# simplification :
+nv:= v.v :
+nv := simplify(nv);
+
+#déterminant de la matrice 
+#famille (vitesse, accélération)
+#simplification
+dd:=Determinant(<v|w>):
+dd:=simplify(dd);
+\end{verbatim} 
+
+On obtient en particulier :
+\begin{displaymath}
+ \det(\overrightarrow{f'}(u),\overrightarrow{f''}(u))
+=\dfrac{3}{8\sqrt{\sin u \cos u}}
+\end{displaymath}
+
+En posant $s$ pour $\sin u$ et $c$ pour $\cos u$, la condition cherchée s'écrit :
+\begin{multline*}
+ \dfrac{1}{8}\left(\dfrac{s^2}{c}+\dfrac{c^2}{s} \right)^3=
+ \left( \dfrac{3}{8}\right)^2\dfrac{s+c}{sc} \\
+\Leftrightarrow
+9(cs)^2(c+s)=8(c^3+s^3)^3 
+\end{multline*}
+Or $c^3+s^3 = (c+s)(1-cs)$, la condition s'écrit donc
+$9(cs)^2 = 8 (1+2cs)(1-sc)^3$ Comme $(s+c)^2 = 1+2sc$ la condition s'écrit finalement
+\begin{displaymath}
+ 9(cs)^2=8(1+2sc)(1-cs)
+\end{displaymath}
+On obtient une équation en $\sin 2u$ qui admet une seule solution. Je ne sais pas si cette solution admet une expression particulière.

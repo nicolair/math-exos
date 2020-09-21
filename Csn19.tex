@@ -1,0 +1,19 @@
+\begin{tiny}(Csn19)\end{tiny} Notons 
+\begin{displaymath}
+  U_n = \sum_{k=0}^nu_k,\hspace{0.5cm} V_n = \sum_{k=0}^nv_k
+\end{displaymath}
+Comme $\sigma$ est une bijection, il est clair que
+\begin{displaymath}
+\forall n \in \N, \; \sum_{k=0}^n|v_k| = \sum_{k=0}^n|u_{\sigma(k)}| \leq \sum_{k=0}^{+\infty}|u_{k}|   
+\end{displaymath}
+On en déduit l'absolue convergence de $\serie{v}$.\newline
+Pour montrer que l'égalité des sommes, considérons :
+\begin{displaymath}
+\forall n\in \N, \;
+\varphi_n = 
+\min\left\lbrace k\text{ tq } \llbracket 0,n \rrbracket \subset \sigma\left(\llbracket 0,k \rrbracket \right) \right\rbrace 
+\end{displaymath}
+On peut conclure avec
+\begin{displaymath}
+\left|V_{\varphi_n}-U_n \right| \leq \sum_{k=n+1}^{+\infty}|u_{k}|  
+\end{displaymath}

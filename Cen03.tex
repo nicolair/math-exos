@@ -1,0 +1,25 @@
+\begin{tiny}(Cen 03)\end{tiny} Notons
+\[
+  s_n = \sum_{k - 1}^{n^2} \lfloor \sqrt{k} \rfloor.
+\]
+Classons les $k\in \llbracket 1, n^2 \rrbracket$ suivant la partie entière de leur racine carrée qui est un nombre $i$ entre $0$ et $n$.\newline
+Pour $1 \leq i < n$:
+\begin{multline*}
+  \lfloor k \rfloor = i \Leftrightarrow i^2 \leq k \leq (i+1)^2 - 1 \\
+  \Rightarrow
+  s_n = 
+  \sum_{i = 1}^{n-1}i \underset{=2i + 1}{\underbrace{\left((i+1)^2 - i^2\right)}} + n
+\end{multline*}
+On a traité ce type de somme en début d'année:
+On décompose en suites qui se télescopent
+\begin{multline*}
+  (2i+1)i 
+  = 2i(i+1) - i\\
+  =\frac{2}{3}\left( i(i+1)(i+2) -(i-1)i(i+1)\right) \\ 
+  -\frac{1}{2}\left(i(i+1) - (i-1)i\right)
+\end{multline*}
+On en déduit
+\[
+  s_n
+  = \frac{2}{3}(n-1)n(n+1) -\frac{1}{2}(n-1)n + n.
+\]

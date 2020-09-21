@@ -1,0 +1,26 @@
+\begin{tiny}(Cao09)\end{tiny}
+\begin{enumerate}
+  \item Analyse. Soit $s$ une reflexion telle que $s(u) = v$. Alors
+\[
+  s(v) = u \Rightarrow s(v-u) = u - v = -(v-u)
+\]
+donc $s$ est la réflexion par rapport à l'hyperplan $\Vect(v-u)^\bot$.\newline 
+Synthèse. Soit $s$ la réflexion par rapport à l'hyperplan $\Vect(v-u)^\bot$. Alors:
+\[
+  \forall x \in E, \;
+  s(x) = x - 2\, \frac{(v-u/x)}{\Vert v-u \Vert^2}(v-u).
+\]
+En particulier:
+\[
+  s(u) = u - 2\, \frac{(v-u/u)}{\Vert v-u \Vert^2}(v-u)
+\]
+avec $\Vert v \Vert = \Vert u \Vert$  donc 
+\begin{multline*}
+\Vert v-u \Vert^2
+  = \Vert v \Vert^2 + \Vert u \Vert^2 - 2 (v / u)\\
+  = 2 \Vert u \Vert^2 - 2 (v / u)
+  = -2 (v - u / u).
+\end{multline*}
+On en déduit $s(u) = v$.
+  \item 
+\end{enumerate}

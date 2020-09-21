@@ -1,0 +1,54 @@
+\begin{tiny}(Cip32)\end{tiny} La fonction $F$ est croissante (primitive d'une fonction positive). De plus, pour $x>1$,
+\begin{multline*}
+F(x) = F(1) + \int_1^x\frac{2t^2}{1+t^4}\,dt
+\leq F(1) + \int_1^x\frac{2t^2}{t^4}\,dt \\
+\leq F(1) + 2 - \frac{2}{x} \leq F(1) + 2
+\end{multline*}
+La fonction est donc majorée ce qui assure sa convergence en $+\infty$. On note $L$ le limite\newline
+Le calcul se fait à l'aide d'une décomposition en éléments simples. Notons $a=e^{i\frac{\pi}{4}}$. Il existe un $\lambda\in \C$ tel que, en tenant compte des symétries,
+\begin{displaymath}
+\frac{2X^2}{1+X^4}
+= \frac{\lambda}{X-a} + \frac{\overline{\lambda}}{X-\overline{a}}  - \frac{\lambda}{X+a}  - \frac{\overline{\lambda}}{X+\overline{a}}  
+\end{displaymath}
+Le calcul de $\lambda$ s'effectue comme d'habitude (avec la dérivée du dénominateur) mais il vaut mieux le reporter à la fin et évaluer la primitive avec un $\lambda$ formel.\newline
+On présente cette évaluation dans un tableau comprenant le pôle, une primitive et le coefficient
+\begin{align*}
+a             &:  &\ln|t-a| + i\arctan \frac{t - \Re a}{\Im a} & &\times \lambda \\
+\overline{a}  &:  &\ln|t-a| - i\arctan \frac{t - \Re a}{\Im a} & &\times \overline{\lambda} \\
+-a            &:  &\ln|t+a| - i\arctan \frac{t + \Re a}{\Im a} & &\times -\lambda \\
+-\overline{a} &:  &\ln|t+a| + i\arctan \frac{t + \Re a}{\Im a} & &\times -\overline{\lambda}
+\end{align*}
+La partie logarithmique disparait de la limite en $+\infty$. En $t=0$ elle est nulle car $|a|=1$. En $t=x$:
+\begin{displaymath}
+\ln|x \pm a| = \ln x + \underset{\rightarrow 0 \text{ en }+\infty}{\underbrace{\ln|1 \pm \frac{a}{x}|}}
+\end{displaymath}
+En tenant compte des quatre termes, le coefficient devant $\ln x$ est
+\begin{displaymath}
+  \lambda + \overline{\lambda} - \lambda - \overline{\lambda} = 0  
+\end{displaymath}
+En  ce qui concerne les $\arctan$.\newline
+Comme, en $+\infty$, 
+\begin{displaymath}
+  \arctan \frac{x\pm \Re a}{\Im a} \rightarrow \frac{\pi}{2}
+\end{displaymath}
+la contribution de $t$ en $x$ qui tend vers $+\infty$ est
+\begin{displaymath}
+  \frac{\pi}{2}\left( i\lambda - i\overline{\lambda} + i\lambda - i\overline{\lambda}\right)  = 
+\frac{\pi}{2}\left(-4\Im \lambda\right)  = -2\pi \Im \lambda
+\end{displaymath}
+La contribution de $t$ en $0$ est
+\begin{displaymath}
+-\arctan\frac{\Re a}{\Im a}\left( -i\lambda  + i\overline{\lambda} 
++i\lambda - i\overline{\lambda} \right) = 0
+\end{displaymath}
+On en déduit
+\begin{displaymath}
+  L = -2\pi \Im \lambda 
+\end{displaymath}
+On termine avec le calcul de $\lambda$ 
+\begin{displaymath}
+  \lambda = \frac{2a^2}{4a^3} = \frac{1}{2}e^{-i\frac{\pi}{4}}
+\Rightarrow \Im \lambda = -\frac{1}{2\sqrt{2}} 
+\Rightarrow L = \frac{\pi}{\sqrt{2}}
+\end{displaymath}
+Par le changement de variable $u=\sqrt{\tan t}$, on se ramène à l'intégrale précédente.

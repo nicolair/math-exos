@@ -1,0 +1,48 @@
+\begin{tiny}(Ccp40)\end{tiny}
+\begin{enumerate}
+ \item On résoud le système de 2 équations aux inconnues $u$ et $v$
+\begin{displaymath}
+\left\lbrace 
+\begin{aligned}
+ s(b) &= b \\ s(c) &= c
+\end{aligned}
+\right. 
+\Leftrightarrow
+\left\lbrace 
+\begin{aligned}
+ \overline{b}u + v &= b \\ \overline{c}u + v &= c
+\end{aligned}
+\right. 
+\Leftrightarrow
+\left\lbrace 
+\begin{aligned}
+ (\overline{b}-\overline{c})u &= b-c \\ (b-c)v &=b^2- c^2
+\end{aligned}
+\right. 
+\end{displaymath}
+Après simplification à cause du module $1$:
+\begin{displaymath}
+ u = -bc,\hspace{0.5cm} v =b+c
+\end{displaymath}
+\begin{displaymath}
+ \forall z\in \C,\;s(z) = -bc\overline{z} + b+c.
+\end{displaymath}
+
+ \item Expression de $s\circ s$. Pour tout $z\in \C$,
+\begin{multline*}
+s\circ s(z) = s(s(z)) 
+= -bc(\overline{-bc\overline{z}+b+c}) +b+c \\
+= |bc|^2z -bc(\frac{1}{b}+\frac{1}{c}) + (b+c) = z
+\end{multline*}
+L'affixe $m$ d'un point de la droite $(BC)$ est de la forme
+\begin{displaymath}
+ c + \lambda(b-c) \text{ avec } \lambda\in \R
+\end{displaymath}
+Calculons son image par $s$
+\begin{multline*}
+ s(m) = -bc (\overline{c + \lambda(b-c)}) + b+c \\
+ = s(c) -bc\overline{\lambda(b-c)}
+ = c -\lambda bc(\frac{1}{b}-\frac{1}{c})\\
+ = c -\lambda(c-b) = m
+\end{multline*}
+\end{enumerate}

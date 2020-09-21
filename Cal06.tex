@@ -1,0 +1,44 @@
+\begin{tiny}(Cal06)\end{tiny}
+\begin{enumerate}
+ \item Avec la définition de $g_a$, il s'agit d'une simple reformulation des propriétés. 
+ \item Supposons $a$ inversible à gauche. Il existe alors $b$ tel que $ab=1_A$. On en déduit la surjectivité de $g_a$ car, pour tout $y\in A$,
+\begin{displaymath}
+ aby=y\Rightarrow g_a(by)=y
+\end{displaymath}
+Supposons $g_a$ surjectif. Il existe alors $b$ tel que $g_a(b)=1_A$ c'est à dire $ab=1_A$.
+ \item Supposons $a$ inversible (des deux côtés). L'inversibilité à gauche entraine que $g_a$ est surjective. Si $x$ et $y$ dans $A$ sont tels que $g_a(x)=g_a(y)$ alors $ax=ay$ et en multipliant à gauche par l'inverse $a^{-1}$ on obtient $x=y$ c'est à dire l'injectivité de $g_a$.\newline
+Supposons $g_a$ bijectif. De la surjectivité, on tire l'existence d'un $b$ tel que $ab=1_A$. On multiplie à droite par $a$ et on utilise l'injectivité
+\begin{displaymath}
+ aba=a\Rightarrow g_a(ba)=g_a(1_A) \Rightarrow ba=1_A
+\end{displaymath}
+
+ \item Il est immédiat que $g_x \circ g_y = g_{xy}$. On peut reformuler les hypothèses de manière ensembliste.
+\begin{multline*}
+ \left. 
+\begin{aligned}
+ g_a \circ g_b\text{ surjectif} &\Rightarrow g_a \text{ surjectif }\\
+ g_b \circ g_a \text{ injectif} &\Rightarrow g_a \text{ injectif }
+\end{aligned}
+\right\rbrace \\ 
+\Rightarrow
+ g_a \text{ bijectif} \Rightarrow a \text{ inversible }
+\end{multline*}
+puis pour l'inversibilité de $b$ :
+\begin{displaymath}
+ \left. 
+\begin{aligned}
+ g_a \circ g_b\text{ surjectif}\\
+ g_a \text{ bijectif}
+\end{aligned}
+\right\rbrace \Rightarrow g_b \text{ surjectif}
+\end{displaymath}
+\begin{displaymath}
+ \left. 
+\begin{aligned}
+ g_b \circ g_a\text{ injectif}\\
+ g_a \text{ bijectif}
+\end{aligned}
+\right\rbrace \Rightarrow g_b \text{ injectif}
+\end{displaymath}
+
+\end{enumerate}

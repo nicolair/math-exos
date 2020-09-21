@@ -1,0 +1,27 @@
+\begin{tiny}(mf01)\end{tiny} Par définition des matrices de passage:
+\begin{displaymath}
+ P_{\mathcal{B} \mathcal{U}}=
+\begin{pmatrix}
+ 1 & 0 & 0 \\ 0 & 1 & 1\\ 0 & 0 & 1
+\end{pmatrix}
+\end{displaymath}
+Cette matrice traduit un système que l'on peut inverser pour exprimer l'autre matrice de passage
+\begin{multline*}
+ \left\lbrace 
+\begin{aligned}
+ u_1 &= e_1\\ u_2 &= e_2 \\ u_3 &= e_2+e_3
+\end{aligned}
+\right. 
+\Rightarrow
+ \left\lbrace 
+\begin{aligned}
+ e_1 &= u_1\\ e_2 &= u_2 \\ e_3 &= -u_2+u_3
+\end{aligned}
+\right. 
+\\
+\Rightarrow
+ P_{\mathcal{U} \mathcal{B} }=
+\begin{pmatrix}
+ 1 & 0 & 0 \\ 0 & 1 & -1\\ 0 & 0 & 1
+\end{pmatrix}.
+\end{multline*}

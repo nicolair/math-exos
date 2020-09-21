@@ -1,0 +1,19 @@
+\begin{tiny}(Cpo18)\end{tiny} Pour simplifier l'écriture, on notera $c, s, t$ au lieu de $\sin \theta$, $\cos \theta$, $\tan \theta$. On écrit que $\sin 9\theta$ est la partie imaginaire de $(c+is)^9$ développé avec la formule du binôme. Seules les puissances impaires de $is$ contribuent à cette partie imaginaire, les coefficients présentent une alternance de $+$ et de $-$. En mettant en facteur $c^8s$, on obtient
+\begin{multline*}
+ \sin 9\theta =c^8s ( 
+\binom{9}{1}-\binom{9}{3}t^2 + \binom{9}{5}t^4\\
+ -\binom{9}{7}t^6 + \binom{9}{9}t^8 ) 
+= c^8s \widetilde{P}(t^2)
+\end{multline*}
+avec
+\begin{displaymath}
+ P= 9-\binom{9}{3}X^2 + \binom{9}{5}X^2 -\binom{9}{7}X^3 + X^4
+\end{displaymath}
+Les racines de $P$ sont les $\tan^2 \theta$ non nuls pour les $\theta$ annulant $\sin 9\theta$.
+\begin{multline*}
+ \sin 9\theta =0 \Rightarrow
+\theta \equiv  0 \mod \frac{\pi}{9}\\
+\Rightarrow \tan \theta \in\left\lbrace \tan \frac{k\pi}{9},k=1,\cdots,8\right\rbrace \\
+\Rightarrow \tan^2 \theta \in\left\lbrace \tan \frac{k\pi}{9},k=1,\cdots,4\right\rbrace
+\end{multline*}
+car ils sont deux à deux opposés. Les carrés des quatre tangentes exprimées en degré de l'énoncé sont donc les racines de $P$. Leur produit est $9$ d'après l'expression de $P$. On en déduit la relation demandée car elles sont positives.

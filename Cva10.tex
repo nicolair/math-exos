@@ -1,0 +1,10 @@
+\begin{tiny}(Cva10)\end{tiny} Modélisons le tirage à l'aide d'un parcours aléatoire sur un graphe orienté. Chaque noeud représente l'état de l'urne a un instant donné, il est donc associé à une partie de $\llbracket 1,n \rrbracket$.\newline
+Un événement élémentaire est une chemin partant de $\llbracket 1,n \rrbracket$ et aboutissant à $\emptyset$.\newline
+Pour un noeud $A$ qui est une partie de cardinal $a$, il existe $n-a$ arêtes qui arrivent sur $A$ et $a$ arêtes qui en partent. Ces arêtes sortantes sont équiprobables. On en tire que la probabilité d'un chemin de longeur $k$ ne dépend que de $k$, elle est égale à
+\begin{displaymath}
+ \underset{k \text{ facteurs }}{\underbrace{\frac{1}{n}\,\frac{1}{n-1}\cdots}}
+\end{displaymath}
+Les suites strictement croissantes de $k$ nombres sont en bijection avec les parties à $k$ éléments. On en tire
+\begin{displaymath}
+ \p(X_n>k) = \binom{n}{k}\frac{1}{n}\,\frac{1}{n-1}\cdots = \frac{1}{k!}.
+\end{displaymath}

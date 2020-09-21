@@ -1,0 +1,47 @@
+\begin{tiny}(Ccp20)\end{tiny} Cercles définis par un diamètre.
+\begin{enumerate}
+  \item On multiplie par la quantité conjuguée:
+\begin{multline*}
+\frac{Z-u}{Z+u} =\frac{(Z-u)\overline{(Z+u)}}{|Z+u|^2}\in i\R\\
+\Leftrightarrow
+|Z|^2\underset{\in i\R}{\underbrace{-u\overline{Z}+\overline{u}Z}} -|u|^2\in i\R
+\Leftrightarrow |Z|^2-|u|^2=0
+\end{multline*}
+
+  \item En écrivant
+\begin{align*}
+a &=  \frac{a+b}{2} + \frac{a-b}{2} \\ b &=  \frac{a+b}{2} - \frac{a-b}{2}  
+\end{align*}
+on se ramène à la question précédente avec 
+\begin{displaymath}
+  Z = z-\frac{a+b}{2}, \hspace{0.5cm} u= \frac{a-b}{2} 
+\end{displaymath}
+On en déduit la caractérisation demandée. Si $M$ est le point d'affixe $z$, il est sur le cercle de diamètre $AB$ si et seulement si $\overrightarrow{MA}$ et $\overrightarrow{MB}$ sont orthogonaux. 
+  \item
+\begin{itemize}
+  \item Homographie : $z \rightarrow \frac{z+4}{z-1}$.\newline
+Le point d'affixe $1$ n'est pas dans l'espace de départ, on cherche donc l'image $\mathcal{I}$ du cercle privé de ce point. L'homographie est bijective avec
+\begin{displaymath}
+  Z=\frac{z+4}{z-1} \Leftrightarrow z = \frac{4+Z}{Z-1}
+\end{displaymath}
+D'après les questions précédentes,
+\begin{displaymath}
+Z \in \mathcal{I} \Leftrightarrow \frac{\frac{4+Z}{Z-1} +1}{\frac{4+Z}{Z-1}-1}\in i\R  
+\Leftrightarrow 3+2Z \in i \R
+\end{displaymath}
+L'image cherchée est donc la droite d'équation $3+2x = 0$.
+
+  \item Homographie : $z \rightarrow \frac{z-1}{z-5}$.\newline
+Cette fois, tous les complexes ont une image avec
+\begin{displaymath}
+ Z=\frac{z-1}{z-5}\Leftrightarrow z=\frac{5Z-1}{Z-1} 
+\end{displaymath}
+et
+\begin{displaymath}
+Z\in \mathcal{I}\Leftrightarrow \frac{\frac{5Z-1}{Z-1}+1}{\frac{5Z-1}{Z-1}-1}\in i\R  
+\Leftrightarrow \frac{Z-\frac{1}{3}}{Z} \in i \R
+\end{displaymath}
+L'image cherchée est le cercle de diamètre les points d'affixes $\frac{1}{3}$ et $0$.
+\end{itemize}
+
+\end{enumerate}

@@ -1,0 +1,34 @@
+\begin{tiny}(Ccu16)\end{tiny} Nommons $A, B, \cdots, G$ les sommes que l'on nous demande de calculer.
+\begin{displaymath}
+  A + iB = \sum_{k=1}^{n}(\cos x\, e^{ix})^k = \frac{1-(\cos x)^{n}\,e^{nix}}{1-\cos x\,e^{ix}} (\cos x\, e^{ix})
+\end{displaymath}
+Or
+\begin{multline*}
+\frac{e^{ix}}{1-\cos x\,e^{ix}} = \frac{1}{e^{-ix}-\cos x} = \frac{i}{\sin x}\\
+\Rightarrow
+\left\lbrace 
+\begin{aligned}
+ &A = \frac{(\cos x)^{n+1}\sin(nx)}{\sin x}\\
+ &B = \frac{\cos x(1 - (\cos x)^n \cos(nx))}{\sin x}
+\end{aligned}
+\right. 
+\end{multline*}
+La troisième somme est la partie réeelle d'une somme géométrique de raison 
+\begin{displaymath}
+\frac{e^{ix}}{\cos x} \hspace{0.3cm}\text{ avec } \hspace{0.3cm} 1- \frac{e^{ix}}{\cos x} = -i\tan x  
+\end{displaymath}
+\begin{displaymath}
+  C = \Re\left( \frac{1-\left( \frac{e^{ix}}{\cos x}\right)^{n+1} }{1-\frac{e^{ix}}{\cos x}}\right) 
+  = \frac{\sin(n+1)x}{\sin x (\cos x)^n}
+\end{displaymath}
+Pour $D$, $E$, $F$ on linéarise:
+\begin{multline*}
+  \cos^2 u = \frac{1}{2} + \frac{1}{2}\cos(2u), \hspace{0.5cm}
+  \sin^2 u = \frac{1}{2} - \frac{1}{2}\cos(2u),\\
+  \cos^3 u = \frac{1}{4}\left( \cos(3u) + 3\cos u\right) 
+\end{multline*}
+\begin{multline*}
+  D = \frac{n+1}{2} +\frac{1}{2}\Re\left(\frac{1-e^{i(n+1)2x}}{1-e^{i2x}} \right) \\
+  = \frac{n+1}{2} +\frac{\sin((n+1)x)\cos(nx)}{\sin(x)}\\
+  E = \frac{n+1}{2} -\frac{\sin((n+1)x)\cos(nx)}{\sin(x)}
+\end{multline*}

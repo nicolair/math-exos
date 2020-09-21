@@ -1,0 +1,35 @@
+\begin{tiny}(Csc07)\end{tiny}
+\begin{enumerate}
+  \item Soit $f$ définie par $f(x) = (1-x)^n + nx$ dans $\left[ 0, 1 \right[$.
+\[
+  f'(x) = n \left( -(1-x)^{n-1} +1\right) > 0.
+\]
+Donc, pour tout $\alpha \in \left]0 , 1 \right[$,
+\[
+  f(\alpha) > f(0)
+  \Rightarrow (1- \alpha)^n > 1 - n\alpha.
+\]
+
+  \item Considérons 
+\[
+  \frac{x_{n}}{x_{n-1}} = \frac{n+1}{n} \left( \frac{n+1}{n-1}\right)^{n-1}
+   = \frac{(n+1)^{n}}{n(n-1)^{n-1}}.
+\]
+Avec $\alpha = \frac{1}{n^2}$, l'inégalité devient
+\begin{multline*}
+  (1-\frac{1}{n^2})^n > 1 - \frac{1}{n} 
+  \Rightarrow \frac{(n-1)^{n-1} (n+1)^{n}}{n^{2n-1}} > 1 \\
+  \Rightarrow \frac{(n+1)^{n}}{n} \geq \frac{n^{2(n-1)}}{(n-1)^{n-1}}\\
+  \Rightarrow \frac{x_{n}}{x_{n-1}} \geq \frac{n^{2(n-1)}}{(n-1)^{n-1}} \, \frac{1}{(n-1)^{n-1}} \\
+  = \left(\frac{n}{n-1} \right)^{2(n-1)}\geq 1.
+\end{multline*}
+Donc la suite est croissante. 
+
+  \item Avec $\alpha = \frac{1}{6n +1}$, l'inégalité devient
+\begin{multline*}
+  (1- \frac{1}{6n+1})^n > 1 - \frac{n}{6n + 1} \\
+  \Rightarrow \left( \frac{6n}{6n + 1}\right)^n > \frac{5n + 1}{6n + 1}\\
+  \Rightarrow \left( \frac{6n + 1}{6n}\right)^{6n} < \left( \frac{6n + 1}{5n + 1}\right)^6
+\end{multline*}
+La suite $(\left( \frac{6n + 1}{5n + 1}\right)^6)_{n\in \N}$ converge vers $(\frac{6}{5})^6$ donc elle est bornée. On en déduit que la suite extraite croissante $(x_n)_{n \in 6\N}$ est convergente. Cela entraine la convergence de la suite complète car elle est croissante. 
+\end{enumerate}

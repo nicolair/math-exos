@@ -1,0 +1,49 @@
+\begin{tiny}(Cee23)\end{tiny} 
+\begin{enumerate}
+  \item  En développant, on trouve
+\begin{multline*}
+  (x_\lambda /a)(x_\lambda /b) -(a/b)\left\|x_\lambda \right\|^2   = K\lambda \\ \text{ avec } K= \left( \Vert a \Vert ^2 \Vert b \Vert^2 -(a/b)^2\right)
+\end{multline*}
+
+  \item La fonction est  rationnelle:
+\begin{displaymath}
+\varphi(\lambda) =  \frac{\lambda}{\Vert a\Vert^2 \lambda^2 + 2(a/b)\lambda + \Vert b\Vert^2}
+\end{displaymath}
+et son dénominateur ne s'annule pas. Elle est donc continue ce qui entraine que $I= \varphi(\R)$ est un intervalle d'après le théorème des valeurs intermédiaires. Elle change de signe en $0$ et converge vers $0$ en $+$ et $- \infty$. Le calcul de la dérivée montre qu'elle admet ses extréma absolus pour
+\begin{displaymath}
+  \lambda = \pm \frac{\Vert b \Vert}{\Vert a \Vert}
+\end{displaymath}
+les valeurs étant
+\begin{align*}
+  M &= \frac{\Vert a\Vert \Vert b\Vert}{\Vert \Vert b\Vert a + \Vert a\Vert b\Vert^2}
+  = \frac{1}{2\left((a/b) + \Vert a\Vert \Vert b \Vert \right) }\\
+ m &= -\frac{\Vert a\vert \Vert b\Vert}{\Vert \Vert b\Vert a - \Vert a\Vert b\Vert^2}
+ = \frac{1}{2\left((a/b) - \Vert a\Vert \Vert b \Vert \right) }
+\end{align*}
+ce qui entraine $I = \left[ m, M \right]$. 
+  \item En fait $\mathcal{H}$ est l'image d'une partie de $V$ car  
+\begin{displaymath}
+\Phi(\lambda a + \mu b) = \Phi(\frac{\lambda}{\mu }a + b)  .
+\end{displaymath}
+On peut donc se limiter aux $\Phi(x_\lambda)$ et, d'après a.,
+\begin{displaymath}
+\Phi(x_\lambda) = (a/b) + K\varphi(\lambda).  
+\end{displaymath}
+On en tire
+\begin{displaymath}
+  \mathcal{H} = \left[(a/b) + Km, (a/b)+ KM \right] .
+\end{displaymath}
+
+\item D'après la question précédente, $\mathcal{H}$ est un intervalle. En considérant un vecteur orthogonal à $a$ ou $b$ dans $V$, on montre que $0 \in \mathcal{H}$.  De plus
+\begin{displaymath}
+\forall x \in E, \; \Phi(x) = \underset{\in [0,1]}{\underbrace{\frac{\Vert p(x)\Vert^2}{\Vert x\Vert^2}}}\,\underset{\in \mathcal{H}}{\underbrace{\Phi(p(x))}} \in \mathcal{H}  
+\end{displaymath}
+car $\mathcal{H}$ est un intervalle qui contient $0$.\newline
+En calculant, on trouve
+\begin{align*}
+ (a/b) + Km &= \frac{1}{2}\left((a/b) - \Vert a \Vert \Vert a \Vert\right)\\ 
+ (a/b) + KM &= \frac{1}{2}\left((a/b) + \Vert a \Vert \Vert a \Vert\right)
+\end{align*}
+L'inégalité de Richard est équivalente à $\Phi(x) \in \mathcal{H}$.
+
+\end{enumerate}

@@ -1,0 +1,10 @@
+\begin{tiny}(Cdt16)\end{tiny} Notons $C_i$ la colonne canonique qui ne contient que des $0$ sauf un $1$ en position $i$ et $C$ la colonne qui ne contient que des $0$.\newline
+La colonne $i$ de la matrice dont on veut calculer le déterminant est égale à $(x-a_i)C_i +a_iC$. Quand on développe le déterminant par multilinéarité on on obtient une somme de $2^n$ déterminants. Tous ceux dans lesquels la colonne $C$ figure deux fois sont nuls. Ils ne reste donc plus que $n+1$ déterminants. Celui qui ne contient pas $C$ qui est diagonal est égal au produit des $x-a_i$ et ceux qui contiennent une fois la colonne $C$. Une permutation contribuant pour un terme non nul à un tel déterminant coïncide avec l'identité sur $n-1$ éléments. C'est donc l'identité. On en déduit: 
+\begin{displaymath}
+ P_n(x)=(x-a_1)\cdots(x-a_n)+\sum_{i=1}^n\frac{(x-a_1)\cdots(x-a_n)}{x-a_i}
+\end{displaymath}
+ d'où
+\begin{displaymath}
+ \frac{P_n(x)}{(x-a_1)\cdots(x-a_n)} = 1 + \sum_{i=1}^n\frac{1}{x-a_i}
+\end{displaymath}
+Notons $\varphi$ cette fonction. Elle diverge vers $+\infty$ ou $-\infty$ de chaque côté de $a_i$. Mais les signes sont opposés entre $a_i^+$ et $a_{i+1}^-$. Cette fonction admet donc $n-1$ zéros distincts, un dans chaque intervalle ouvert. Chacun est un zéro de la fonction polynomiale $P_n$ qui étant de degré $n$ admet un $n$-ième zéro. Il est différent de tous les autres sinon, dans un intervalle il devrait y avoir encore un autre zéro.

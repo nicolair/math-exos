@@ -1,0 +1,23 @@
+\begin{tiny}(Cpo19)\end{tiny} \begin{enumerate}
+\item Comme le reste est de degré inférieur ou égal à 1, il est de la forme
+\begin{displaymath}
+R = uX + v
+\end{displaymath}
+avec $u$ et $v$ dans $K$. En substituant $\alpha$ et $\beta$ à $X$, on obtient un système de deux équations aux inconnues $\alpha$ et $\beta$ 
+\begin{displaymath}
+\left\lbrace 
+\begin{aligned}
+u\alpha + v &= \tilde{P}(\alpha) \\ u\beta + v &= \tilde{P}(\beta)
+\end{aligned}
+\right.
+\end{displaymath}
+que l'on résoud avec les formules de Cramer
+\begin{displaymath}
+ u= \frac{\tilde{P}(\alpha)- \tilde{P}(\beta)}{\alpha - \beta},\hspace{0.5cm}
+ v= \frac{\alpha\tilde{P}(\beta)- \beta\tilde{P}(\alpha)}{\alpha - \beta}
+\end{displaymath}
+\item Comme $X^2+1=(X-i)(X+i)$, on peut appliquer la première question avec $\alpha=i$ et $\beta=-i$. Comme $P$ est à coefficients réels, on peut remarquer que $\tilde{P}(\beta)=\overline{\tilde{P}(\alpha)}$. On en déduit que $u$ est la partie imaginaire de $\tilde{P}(i)$ et $v$ sa partie réelle. En introduisant la fonction exponentielle, on obtient finalement que le reste demandé est
+\begin{displaymath}
+ X\sin S + \cos S \text{ avec } S=\sum_{k=1}^na_k
+\end{displaymath}
+\end{enumerate}

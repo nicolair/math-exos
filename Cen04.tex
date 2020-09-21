@@ -1,0 +1,36 @@
+\begin{tiny}(Cen04)\end{tiny} 
+\begin{enumerate}
+  \item Notons $\mathcal{I}$ l'ensemble des couples $(A,B)$ vérifiant $A\subset B \subset E$.\newline
+Classons les éléments de $\mathcal{I}$ selon le deuxième élément des couples. Pour chaque $B \subset E$, notons
+\[
+  \mathcal{I}_B =
+  \left\lbrace (A,B) \text{ tq } A \subset B \right\rbrace.
+\]
+Les $\mathcal{I}_B$ forment une partition de $\mathcal{I}$ et chaque $\mathcal{I}_B$ est en bijection avec $\mathcal{P}(B)$. On en déduit
+\begin{multline*}
+\sharp\, \mathcal{I} =  \sum_{B \in \mathcal{P}(E)} \sharp \mathcal{I}_B
+ = \sum_{B \in \mathcal{P}(E)} 2^{\sharp B}\\
+ = \sum_{k \in \llbracket 0,n\rrbracket} \binom{n}{k} 2^k 
+ = (1+2)^n = 3^n.
+\end{multline*}
+en regroupant les $B$ avec le même nombre d'éléments puis en utilisant la formule du binôme.\newline
+On peut retrouver ce résultat en formant une bijection entre $\mathcal{S}$ et $\mathcal{F}(E,\llbracket 0,2 \rrbracket)$.
+
+  \item Notons $\mathcal{U}= \left\lbrace (A,B) \text{ tq } A\cup B = E\right\rbrace$. Les applications
+\begin{multline*}
+\left\lbrace
+  \begin{aligned}
+    \mathcal{U} &\rightarrow \mathcal{I} \\
+    (A,B)       &\mapsto (A\cap B, B)
+  \end{aligned}
+\right., \\
+\left\lbrace
+  \begin{aligned}
+    \mathcal{I} &\rightarrow \mathcal{U} \\
+    (A,B) &\mapsto (A \cup \overline{B},B)
+  \end{aligned}
+\right..
+\end{multline*}
+sont des bijections réciproques l'une de l'autre donc $\sharp\, \mathcal{U} = 3^n$.
+\end{enumerate}
+

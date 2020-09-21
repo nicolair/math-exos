@@ -1,0 +1,17 @@
+\begin{tiny}(di35)\end{tiny} Formons des théorèmes du rang: 
+\begin{align*}
+\dim E_0 &= \dim (\Im f_0) + \dim (\ker f_0) &\times (-1)^0 \\  
+\dim E_1 &= \dim (\Im f_1) + \dim (\ker f_1) &\times (-1)^1 \\
+\dim E_2 &= \dim (\Im f_2) + \dim (\ker f_2) &\times (-1)^2  \\
+ & \vdots \\
+ \dim E_n &= \dim (\Im f_n) + \dim (\ker f_n) &\times (-1)^n
+\end{align*}
+On somme en tenant compte de $\Im f_i = \ker f_{i+1}$:
+\begin{multline*}
+  \sum_{i=0}^n (-1)^{i}\dim E_i = \dim (\ker f_0) + (-1)^n\Im f_{n}\\
+  = (-1)^n \dim E_{n+1}
+\end{multline*}
+car $f_0$ est injective et $f_n$ est surjective. On en déduit
+\[
+  \sum_{i=0}^{n+1} (-1)^{i}\dim E_i = 0.
+\]

@@ -1,0 +1,37 @@
+\begin{tiny}(Cde13)\end{tiny} La démonstration ressemble beaucoup à celle du \href{http://back.maquisdoc.net/v-1/index.php?act=chelt&id_elt=4881}{théorème de Césaro}.
+\begin{enumerate}
+ \item On pose $\varphi(x)=\frac{f(x)}{g(x)}$. \`A cause de l'hypothèse de négligeabilité, cette fonction converge vers $0$ en $+\infty$. On coupe alors $F(x)$ par la relation de Chasles en introduisant un $A$ arbitraire, pour $x\geq A$,
+\begin{multline*}
+ F(x) = F(A)+\int_A^x\varphi(t)g(t)\,dt\\
+\leq F(A) + (\sup_{[A,x]}\varphi) (G(x)-G(A))\\
+\leq F(A) + (\sup_{[A,x]}\varphi) G(x)
+\end{multline*}
+On en déduit
+\begin{displaymath}
+ 0\leq\frac{F(x)}{G(x)}\leq \frac{F(A)}{G(x)} + \sup_{[A,x]}\varphi 
+\end{displaymath}
+Pour tout $\varepsilon >0$, comme $\varphi \rightarrow 0$, on peut fixer un $A$ tel que $\sup_{[A,x]}\varphi\leq \frac{\varepsilon}{2}$. Pour ce $A$ fixé, comme $G\rightarrow +\infty$, il existe un $B$ tel que $\frac{F(A)}{G(x)}\leq \frac{\varepsilon}{2}$ pour $x\geq B$. On a bien alors :
+\begin{displaymath}
+ x\geq B \Rightarrow 0\leq\frac{F(x)}{G(x)}\leq \varepsilon
+\end{displaymath}
+Ce qui prouve que $F$ est négligeable devant $G$.
+\item L'application repose sur la première question et des intégrations par parties.
+Il est clair que $f_{k+1}$ est négligeable devant $f_k$ et que $F_k(x)\rightarrow +\infty$ car
+\begin{displaymath}
+ F_k(x) \geq \frac{e^x -e }{x^k}
+\end{displaymath}
+Ce qui entraine que $F_{k+1}$ est négligeable devant $F_k$. D'autre part, une intégration par parties conduit à 
+\begin{displaymath}
+ F_k(x) = \frac{e^x}{x^k} -e + kF_{k+1}(x)
+\end{displaymath}
+En négligeant $F_{k+1}$ devant $F_k$ et $e$ devant $\frac{e^x}{x^k}$, on tire
+\begin{displaymath}
+ F_k(x) \sim  \frac{e^x}{x^k}
+\end{displaymath}
+En intégrant $p$ fois par parties, on arrive à la formule :
+\begin{multline*}
+ F_1(x) = \frac{e^x}{x}+1!\frac{e^x}{x^2}+2!\frac{e^x}{x^3}+\cdots+(p-1)!\frac{e^x}{x^p}\\
++p!F_{p+1}(x)+\left( 1+1!+2!+\cdots+(p-1)!\right)e 
+\end{multline*}
+qui est un développement asymptotique.
+\end{enumerate}

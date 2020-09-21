@@ -1,0 +1,16 @@
+\begin{tiny}(Cgs13)\end{tiny} Considérons successivement
+\[
+  k_1=\theta^{-1}(1), k_2=\theta^{-1}(2), \cdots , k_i=\theta^{-1}(i), \cdots
+\]
+Ils forment une énumération de $\llbracket 1,n \rrbracket$ car $\theta$ est bijective.
+\begin{multline*}
+  \sigma(k_1) \leq \theta(k_1)= 1 \Rightarrow \sigma(k_1) = \theta(k_1)= 1 \\
+  \sigma(k_2) \leq \theta(k_2)= 2 \Rightarrow \sigma(k_2) = \theta(k_2)= 2
+\end{multline*}
+car $\sigma(k_2) \neq \sigma(k_1)$.\newline
+On continue par récurrence.\newline
+Si $\sigma$ et $\theta$ coincident sur $\left\lbrace k_1, \cdots, k_{i-1} \right\rbrace$ alors 
+\[
+  \sigma(k_i) \notin \left\lbrace \sigma(k_1), \cdots, \sigma(k_{i-1})\right\rbrace = \llbracket 1, i-1 \rrbracket 
+\]
+donc $\sigma(k_i)\leq \theta(k_i)=i$ entraine $\sigma(k_i) = i$.

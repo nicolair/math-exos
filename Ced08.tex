@@ -1,0 +1,33 @@
+\begin{tiny}(Ced08)\end{tiny} Considérons l'équation 
+\[
+  (E_K) y' - y = K
+\]
+dont les solutions sont les fonctions de la forme
+\[
+  t \rightarrow -K + \lambda e^t  \hspace{0.5cm}(\lambda \in \R).
+\]
+Analyse. Soit $f$ une solution de l'équation fonctionnelle. C'est une solution de $(E_K)$ avec 
+\[
+  K = \int_0^1f(t)\,dt.
+\]
+Il existe donc $\lambda \in \R$ tel que 
+\[
+  \forall t \in \R, \; f(t) = -K + \lambda e^t = 1 - \lambda + \lambda e^t
+\]
+car la condition $f(0)=1$ entraine $K= \lambda - 1$. On peut alors intégrer:
+\begin{multline*}
+  K = \int_0^1f(t)\,dt 
+  \Rightarrow 
+  \lambda - 1 = 1- \lambda + \lambda(e-1)\\
+  \Rightarrow 
+  \lambda = \frac{2}{3-e}.
+\end{multline*}
+Il existe donc au plus une fonction:
+\[
+  f(t) = \frac{1-e}{3-e}+ \frac{2}{3-e}\,e^t.
+\]
+Synthèse. Il faut montrer que $f$ définie par
+\[
+  f(t) = \frac{1-e}{3-e}+ \frac{2}{3-e}\,e^t.
+\]
+vérifie le système fonctionnel. Cela ne pose pas de difficulté.

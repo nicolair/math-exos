@@ -1,0 +1,29 @@
+\begin{tiny}(Eee08)\end{tiny}
+\textbf{Matrices de Gram} \par \noindent
+Soit $x_{1},\cdots ,x_{p}$ une famille de vecteurs d'un espace euclidien $E$
+et $G(x_{1},\cdots ,x_{p})\in \mathcal{M}_{p}(\R)$ la matrice dont
+le terme $i,j$ est $(x_{i}/ x_{j})$.
+\begin{enumerate}
+\item  Montrer que si la famille $(x_{1},\cdots ,x_{p})$ est li{\'e}e alors la matrice  $G(x_{1},\cdots ,x_{p})$ n'est pas inversible.
+
+\item Soit $x_{1},\cdots ,x_{p}$ libre. Montrer qu'il existe des matrices inversibles $P$ telles que
+\[
+G(x_{1},\cdots ,x_{p}) = \trans P P.
+\]
+En déduire que $\det G(x_{1},\cdots ,x_{p})>0$. Expliquer pourquoi on peut trouver une matrice $P$ triangulaire supérieure vérifiant la relation précédente.
+
+Soit $x$ un {\'e}l{\'e}ment de $E$ et $m_{1},\cdots ,m_{p+1}$ les mineurs de $G(x_{1},\cdots ,x_{p},x)$ associ{\'e}s aux indices $$(p+1,1),(p+1,2),\cdots ,(p+1,p+1)$$ sur la derni{\`e}re ligne.
+\item  Soit 
+\[
+y=(-1)^{p+2}m_{1}x_{1}+\cdots +(-1)^{2p+1}m_{p}x_{p}+m_{p+1}x.
+\]
+Montrer que $y\in \left( \Vect(x_{1},\cdots ,x_{p})\right) ^{\perp }$.
+
+\item  Montrer que $\frac{1}{m_{p+1}}y$ est la projection orthogonale de $x$ sur $\Vect(x_{1},\cdots ,x_{p})^{\perp }$.
+
+\item  Montrer que
+\begin{multline*}
+d(x,\Vect(x_{1},\cdots ,x_{p}))=\frac{1}{\left| m_{p+1}\right| }\left\|y\right\| \\
+=\sqrt{\frac{\det (G(x_{1},\cdots ,x_{p},x))}{\det (G(x_{1},\cdots,x_{p}))}}.
+\end{multline*}
+\end{enumerate}

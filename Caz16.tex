@@ -1,0 +1,25 @@
+\begin{tiny}(Caz16)\end{tiny} Supposons $(a+b)\wedge(ab) = 1$ et utilisons le théorème de Bezout. Il existe des entiers $\lambda$ et $\mu$ tels que
+\[
+ \lambda(a+b) + \mu(ab)= 1 
+ \Rightarrow
+ \lambda a + (\lambda + \mu a) b = 1.
+\]
+On en déduit $a\wedge b =1$.\newline
+Réciproquement, supposons $a\wedge b = 1$ et considérons un diviseur premier $p$ de $ab$ et de $a+b$. Comme il est premier, il divise $a$ ou $b$. Mais comme $p$ divise $a+b$, s'il divise l'un il doit diviser l'autre en contradiction avec le fait que $a$ et $b$ sont premiers entre eux. Donc $ab$ et $a+b$ n'ont pas de diviseur premier en commun, ils sont premiers entre eux.\newline
+Autre méthode, d'après Bezout, il existe $\lambda$ et $\mu$ tels que $\lambda a + \mu b = 1$. On transforme le carré pour faire apparaitre $a+b$ et $ab$.
+\begin{multline*}
+ 1 = (\lambda a + \mu a)^2 \\
+ = \lambda^2 \left( a(a+b) -ab\right) + \mu^2\left( b(a+b) - ab\right) + 2\lambda \mu ab\\
+ = \left( \lambda^2 a + \mu^2 b\right) (a+b) + \left(2\lambda \mu -\lambda^2 - \mu^2 \right) ab \\
+ = \left( \lambda^2 a + \mu^2 b\right) (a+b) - (\lambda - \mu)^2 ab .
+\end{multline*}
+On conclut par le théorème de Bezout.
+On veut montrer
+\[
+a\wedge b=(a+b)\wedge (a\vee b).
+\]
+C'est une conséquence immédiate de la relation précédente lorsque $a$ et $b$ sont premiers entre eux. Dans le cas général on utilise la linéarité avec les notations habituelles $d =a \wedge b$, $a = da', ...$.
+\begin{multline*}
+ (a+b)\wedge(a\vee b) = d (a'+b')\wedge (a'\vee b') \\
+ = d (a'+b')\wedge (a'b') = d = a\wedge b.
+\end{multline*}

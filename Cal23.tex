@@ -1,0 +1,29 @@
+\begin{tiny}(Cal23)\end{tiny}
+\begin{itemize}
+  \item Montrons que $f(e)=e$. Par surjectivité, pour tout $x\in \Omega$, il existe $y\in \Omega$ tel que $f(y)=x$. Alors: 
+\begin{displaymath}
+\begin{aligned}
+&x*f(e) = f(y*e) = f(y) = x \\
+&f(e) * x = f(e*y) = f(y) =x  
+\end{aligned}
+\end{displaymath}
+  \item Réciproquement, par injectivité de $f$
+\begin{displaymath}
+  f(a)=e \Rightarrow f(a)=f(e) \Rightarrow a = e
+\end{displaymath}
+  \item Si $x\in I$ alors $f(x)\in I$. En effet:
+\begin{displaymath}
+\begin{aligned}
+  &x*x^{-1} = e \Rightarrow f(x) * f(x^{-1})=f(e)=e\\
+  &x^{-1}*x = e \Rightarrow f(x^{-1}) * f(x)=f(e)=e
+\end{aligned}
+\end{displaymath}
+ce qui entraine $f(x)$ inversible d'inverse $f(x^{-1})$.
+\item Supposons $f(x)$ inversible. Il admet un inverse et, comme $f$ est surjective, il existe $y$ tel que
+\begin{multline*}
+  f(x)^{-1} = f(y)
+\Rightarrow f(x*y) = f(x)*f(y) = e\\
+\Rightarrow x*y = e
+\end{multline*}
+De même de l'autre côté, $x$ est donc inversible d'inverse $y$.
+\end{itemize}

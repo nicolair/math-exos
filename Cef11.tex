@@ -1,0 +1,43 @@
+\begin{tiny}Cef11\end{tiny}
+\begin{enumerate}
+  \item Soit $(u_n)_{n\in \N}$ et $(v_n)_{n\in \N}$ dans $E$ et $\lambda \in \R$. Les suites $(u_n)_{n\in \N} + (v_n)_{n\in \N}$ et $\lambda(u_n)_{n\in \N}$ vérifient encore la relation de récurrence définissant $E$. On en déduit la stabilité de $E$ qui est donc un sous-espace de l'espace de toutes les suites.\newline
+  La relation définssant $E$ est une relation de récurrence linéaire d'ordre $2$ à coefficients non constants. Chaque suite de $E$ est complément définie par ses deux premières valeurs. On peut donc considérer $(z_n)_{n\in \N}$ et $(u_n)_{n\in \N}$ dans $E$ telles que 
+\[
+  z_0 = 1, \, z_1 = 0, \, u_0 = 0, \, u_1 = 1.
+\]
+La famille $\left((z_n)_{n\in \N},(u_n)_{n\in \N}\right)$ est une base de $E$ qui est donc de dimension $2$.
+\[
+  \forall n \in \N, \; (n+3) - (n+2) -1 =0.
+\]
+Donc $a\in E$ (suite constante de valeur $1$). De plus
+\begin{multline*}
+  \left.
+  \begin{aligned}
+    b_{n+1} &= b_n + \frac{1}{(n+1)!} \\ b_{n+2} &= b_n + \frac{1}{(n+1)!} + \frac{1}{(n+2)!}
+  \end{aligned}
+\right\rbrace \\
+\Rightarrow
+(n+3)b_{n+1} -(n+2)b_{n+2} - b_n \\
+= \frac{n+3}{(n+1)!} - \frac{n+2}{(n+1)!} -\frac{n+2}{(n+2)!}
+= \frac{1}{n!} - \frac{1}{n!} = 0 .
+\end{multline*}
+Donc $b \in E$. Montrons que $(a,b)$ est libre. Soit $\lambda$ et $\mu$ réels. Alors $\lambda a + \mu b = 0$ entraine, considérant les deux premiers termes,
+\[
+  \left\lbrace
+  \begin{aligned}
+    \lambda + \mu &= 0 \\ \lambda + 2\mu &= 0
+  \end{aligned}
+\right.
+\Rightarrow \lambda = \mu = 0.
+\]
+Comme $(a,b)$ est une famille libre à $2$ éléments dans $E$ qui est de dimension $2$, c'est une base.
+  \item Soit $p \in \N$. L'application $\pi_p$ de $E$ dans $\R$
+  \[
+    (x_n)_{n\in \N} \mapsto x_p
+  \]
+est une forme linéaire. Elle est non nulle car $\pi_p(a) = 1$. Son noyau $F_p$ est un sous-espace de $E$ qui n'est pas $E$. Il contient au moins la suite 
+\[
+  c = b - \left(\sum_{i=0}^p\frac{1}{i!}\right)a
+\]
+qui n'est pas nulle car $(a,b)$ est libre. Donc $\dim F_p \neq 0$, $\dim F_p \neq 2$ ce qui entraine $\dim F_p = 1$. C'est une droite vectorielle de base $(c)$. 
+\end{enumerate}

@@ -1,0 +1,39 @@
+\begin{tiny}(Csc13)\end{tiny} Suites de Cauchy.
+\begin{enumerate}
+ \item Soit $\left( x_n \right)_{n \in \N}$ une suite qui converge vers un réel $x$. Pour tout $\varepsilon >0$, il existe un entier $N_{\varepsilon}$ tel que $\cdots$. Alors:
+\[
+\left. 
+\begin{aligned}
+ &p > N_{\frac{\varepsilon}{2}} \\  &q > N_{\frac{\varepsilon}{2}} 
+\end{aligned}
+\right\rbrace \Rightarrow 
+\left|x_p - x_q\right| \leq \left|x_p - x\right| + \left|x - x_q\right| \leq \varepsilon
+\]
+Donc la suite est de Cauchy.
+ \item Supposons $\left( x_n \right)_{n \in \N}$ de Cauchy. Il existe $N_1$ tel que
+\[
+\left. 
+\begin{aligned}
+ &p > N_{1} \\  &q > N_{1} 
+\end{aligned}
+\right\rbrace \Rightarrow 
+\left|x_p - x_q\right| \leq 1
+\]
+En particulier, pour tout $n\geq N_1$:
+\[
+ |x_n| \leq |x_n - x_{N_1}| + |x_{N_1}| \leq 1 + |x_{N_1}|. 
+\]
+On a majoré ainsi tous les termes sauf ceux d'indice strictement plus petit que $N_1$ qui sont en nombre fini. La suite est donc bornée.
+ \item Supposons $\left( x_n \right)_{n \in \N}$ de Cauchy. Elle est bornée d'après la question précédente. Le théorème de Bolzano-Weierstrass entraine qu'il existe une partie infinie $\mathcal{I}$ de $\N$ telle que la suite extraite $\left( x_n \right)_{n \in \mathcal{I}}$ converge. Soit $x$ sa limite.\newline
+ Montrons que la suite complète $\left( x_n \right)_{n \in \N}$  converge vers $x$. Pour tout $\varepsilon >0$,
+ \begin{itemize}
+  \item il existe $N_{c,\frac{\varepsilon}{2}}$ attaché à la propriété de Cauchy,
+  \item il existe $N_{e,\frac{\varepsilon}{2}}$ attaché à la convergence de la suite extraite.
+ \end{itemize}
+Soit $n\in \N$ plus grand que les deux. Il existe $m\in \mathcal{I}$ tel que $n \leq m$. Alors
+\[
+ |x_n -x| \leq |x_n -x_m| + |x_m -x| \leq \frac{\varepsilon}{2} + \frac{\varepsilon}{2} = \varepsilon
+\]
+avec $|x_n -x_m|\leq \frac{\varepsilon}{2}$ car $m$ et $n \geq N_{c,\frac{\varepsilon}{2}}$, \\
+avec $|x_m -x|\leq \frac{\varepsilon}{2}$ car $m \geq N_{e,\frac{\varepsilon}{2}}$.
+\end{enumerate}

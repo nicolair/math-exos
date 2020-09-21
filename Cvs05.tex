@@ -1,0 +1,29 @@
+\begin{tiny}(Cvs05)\end{tiny}
+\begin{enumerate}
+  \item Des inclusions évidentes:
+\begin{multline*}
+  A\cap B \subset
+  \left\lbrace 
+  \begin{aligned}
+    A \cup B \\ B\cup C \\ C \cup A
+  \end{aligned}
+  \right. \\
+  \Rightarrow
+A\cap B \subset  (A \cup B) \cap (B\cup C) \cap (C \cup A) 
+\end{multline*}
+De même pour $B\cap C$ et $C\cap A$. On en déduit l'inclusion demandée.
+
+  \item Il est clair que l'ensemble à gauche de l'inclusion précédente (union d'intersections) est l'ensemble des $x$ de $E$ tels que $n(x)\geq 2$.\newline
+  Considérons un $x$ dans $(A\cup B)\cap (B\cup C) \cap (C\cup A)$. Il est alors dans l'union donc $n(x)\geq 1$. Si $x\notin A$ alors $x\in B$ et $x\in C$ car il appartient aux trois unions. On en déduit $n(x)\geq 2$. De même s'il n'est pas dans $B$ ou pas dans $C$. Ceci prouve l'inclusion demandée et donc l'égalité.
+  
+  \item Soit $0< p <n$. Considérons:
+ \begin{displaymath}
+   \left\lbrace x\in E \text{ tq } n(x)\geq p\right\rbrace
+= \cup_{I\in \mathcal{P}_p}\hat{A}_I
+ \end{displaymath}
+En notant $\mathcal{P}_p$ l'ensemble des parties à $p$ éléments de $\llbracket 1, n\rrbracket$ et, pour une telle partie $I=\left\lbrace i_1,\cdots, i_p \right\rbrace$,
+\begin{displaymath}
+  \hat{A}_I = \bigcap_{i\in I}A_i = A_{i_1}\cap A_{i_2}\cap \cdots \cap A_{i_p} 
+\end{displaymath}
+
+\end{enumerate}

@@ -1,0 +1,28 @@
+\begin{tiny}(Csn14)\end{tiny} Formons un développement limité de $u_n$:
+\begin{multline*}
+ u_n = \sqrt{n} + a\sqrt{n+1} + b\sqrt{n+2} \\
+ = (1+a+b)\sqrt{n} + \frac{a+2b}{2}\frac{1}{\sqrt{n}} + O(\frac{1}{n^{\frac{3}{2}}}).
+\end{multline*}
+Si la série $\sum u_n$ converge, son terme général tend vers $0$ donc
+\[
+ 1 + a + b = 0.
+\]
+Comme la série de Riemann de terme général $\frac{1}{\sqrt{n}}$ est divergente, si la série $\sum u_n$ converge, alors
+\[
+ a + 2 b =0.
+\]
+ En résolvant le système, on trouve que $\sum u_n$ converge entraine 
+\[
+ a = -2, \hspace{0.5cm} b = 1.
+\]
+Pour ces valeurs de $a$ et $b$, la suite des sommes partielles se simplifie par télescopage.
+\begin{multline*}
+ u_n = \sqrt{n} - 2\sqrt{n+1} + \sqrt{n+2} \\
+ = \left( \sqrt{n} - \sqrt{n+1}\right) - \left( \sqrt{n+1} - \sqrt{n+2}\right)\\
+ \Rightarrow
+ \sum_{k=0}^{n}u_k
+ = -1 - \left( \sqrt{n+1} - \sqrt{n+2}\right)
+ = -1 + O(\frac{1}{\sqrt{n}}) \\
+\Rightarrow
+\sum_{k=0}^{+\infty}u_k = -1.
+\end{multline*}

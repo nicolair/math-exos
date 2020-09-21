@@ -1,0 +1,36 @@
+\begin{tiny}(Cmm04)\end{tiny} Par un simple calcul matriciel, il vient
+\begin{displaymath}
+ A^3 = A^2 + 2A
+\end{displaymath}
+On peut poser $A^n=\alpha_n A + \beta_n A^2$ avec
+\[
+\begin{aligned}
+ \alpha_1 = 1& & \beta_1=0\\ \alpha_2 = 0& & \beta_2=1 
+\end{aligned}
+\]
+On forme des relations de récurrence
+\begin{multline*}
+ A^n=\alpha_n A + \beta_n A^2\\ \Rightarrow
+ A^{n+1}=\alpha_n A^2 + \beta_n A^3
+= (\alpha_n +\beta_n)A^2 +2\beta_n A^3\\
+\Rightarrow
+\left\lbrace 
+\begin{aligned}
+\alpha_{n+1}&= 2\beta_n\\\beta_{n+1}&=\alpha_n + \beta_n 
+\end{aligned}
+\right. 
+\end{multline*}
+On en déduit que la suite $\left( \beta_n\right) _{n\in \N}$ vérifie la relation de récurrence linéaire d'ordre 2
+\begin{displaymath}
+ \beta_{n+2} = \beta_{n+1} + 2\beta_n
+\end{displaymath}
+Les racines de l'équation caractéristiques sont $2$ et $-1$. La valeur $\beta_0=\frac{1}{2}$ est cohérente avec la relation et les valeurs de $\beta_2$ et $\beta_1$. On en déduit après calcul 
+\begin{displaymath}
+ \left\lbrace 
+\begin{aligned}
+ \alpha_n &= \frac{1}{3}2^{n-1} + \frac{2}{3}(-1)^{n-1}\\
+ \beta_n &= \frac{1}{6}2^n + \frac{1}{3}(-1)^n
+\end{aligned}
+\right. 
+\end{displaymath}
+

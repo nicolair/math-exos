@@ -1,0 +1,39 @@
+\begin{tiny}(Cvs08)\end{tiny} Notons $D_f$ l'espace de départ de $f$ et $A_f$ son espace d'arrivée et adoptons des notations analogues pour les autres fonctions. La possibilité de composer les fonctions se traduit par des inclusions:
+\[
+\begin{aligned}
+  h \circ g \circ f &: 
+  \left\lbrace 
+    \begin{aligned}
+      A_f &\subset D_g \\
+      A_g &\subset D_h
+    \end{aligned}
+  \right. \\
+  g \circ f \circ h &: 
+  \left\lbrace 
+    \begin{aligned}
+      A_h &\subset D_f \\
+      A_f &\subset D_g
+    \end{aligned}
+  \right. \\
+  f \circ h \circ g &: 
+  \left\lbrace 
+    \begin{aligned}
+      A_g &\subset D_h \\
+      A_h &\subset D_f
+    \end{aligned}
+  \right.  
+\end{aligned}
+\]
+Comme certaines inclusions se repètent: trois suffisent:
+\[
+  A_f \subset D_g, \; A_g \subset D_h, \; A_h \subset D_f .
+\]
+On utilise les résultats relatifs à la composition de 2 fonctions. Si la composée est injective alors la première est injective, si la composée est surjective, alors la deuxième est surjective.
+\begin{displaymath}
+\left. 
+\begin{aligned}
+h \circ g \circ f &\text{ injective} \\ f \circ h \circ g &\text{ surjective}  
+\end{aligned}
+\right\rbrace \Rightarrow f \text{ bijective}
+\end{displaymath}
+Avec le même argument, on obtient $g\circ f$ et $f\circ h$ injectives et $f \circ h$ surjectives. En composant par la bijection réciproque $f^{-1}$, on conserve les propriétés. On en déduit que $g$ et $h$ sont injectives et $h$ surjective. On a donc $h$ bijective. Il ne manque plus que la surjectivité de $g$ qui se déduit de celle de $f \circ h \circ g$ et de la bijectivité de $f$ et $h$.

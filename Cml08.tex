@@ -1,0 +1,25 @@
+\begin{tiny}(Cml08)\end{tiny} La vérification de la linéarité de $g_f$ est immédiate. Montrons que son noyau est réduit au vecteur nul.
+\begin{displaymath}
+ a\in \ker g_f \Rightarrow a = -f(a)\in A \cap B =\{0_E\}
+\end{displaymath}
+Montrons que $g_f(A)$ et $B$ sont supplémentaires.\newline
+Soit  $b\in g_f(A)\cap B$. Il existe $a\in A$ tel que $b=a+f(a)$ donc $a=b-f(a)\in A\cap B$. Il est donc nul ce qui entraine $b=0_E$.\newline
+Soit $x\in E$. Il existe $a\in A$ et $b\in B$ tels que $x=a+b$. Alors
+\begin{displaymath}
+ x = a+f(a) +b-f(a) = g_f(a) +  \underset{\in B}{\underbrace{b-f(a)}}
+\end{displaymath}
+Ce qui montre que $B$ et $g_f(A)$ sont supplémentaires.\newline
+Pour tout $a\in A$, on peut écrire $a = g_f(a) - f(a)$. C'est une décomposition de $a$ dans les espaces supplémentaires $g_f(A)$ et $B$. On en déduit que $-f(a)$ est le projeté de $a$ sur $B$ dans la direction de $g_f(A)$.\newline
+Notons $\gamma$ l'application $f\rightarrow g_f(A)$.\newline
+Soit $C$ un supplémentaire de $B$.\newline
+S'il existe un $f\in \mathcal{L}(A,B)$ tel que $\gamma(f)=C$, d'après la question précédente, il doit vérifier $f = - p_{B,C}$. Ce qui assure l'injectivité.\newline
+Posons $f = - p_{B,C}$. Alors, pour tout $a\in A$, 
+\begin{displaymath}
+g_f(a)= a - p_{B,C}(a) = p_{C,B}(a)\subset C 
+\end{displaymath}
+Réciproquement, pour tout $c\in C$, notons $a=p_{A,B}(c)$ et calculons $g_f(a)$:
+\begin{multline*}
+ g_f(a) = a - p_{B,C}(a)=p_{C,B}(a) = p_{C,B}( p_{A,B}(c))\\
+= p_{C,B}( c - p_{B,A}(c)) = p_{C,B}( c) = c 
+\end{multline*}
+

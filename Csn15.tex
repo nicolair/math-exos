@@ -1,0 +1,15 @@
+\begin{tiny}(Csn15)\end{tiny} La condition se traduit par une décroissance qui permet une domination:
+\begin{multline*}
+\frac{u_{n+2}}{u_n}\leq \frac{v_{n+2}}{v_n} 
+\Rightarrow \frac{u_{n+2}}{v_{n+2}}\leq \frac{u_n}{v_n} \\
+\Rightarrow
+\frac{u_n}{v_n} \leq 
+\left\lbrace 
+\begin{aligned}
+  \frac{u_0}{v_0} &\text{ si $n$ pair} \\
+  \frac{u_1}{v_1} &\text{ si $n$ impair}
+\end{aligned}
+\right. 
+\Rightarrow u_n \leq M v_n
+\end{multline*}
+avec $M=\max(\frac{u_0}{v_0},\frac{u_1}{v_1})$. La convergence de $\sum v_n$ entraîne alors celle de $\sum u_n$.

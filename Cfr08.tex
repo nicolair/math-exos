@@ -1,0 +1,27 @@
+\begin{tiny}(fr08)\end{tiny} Décomposons $F_0$ en éléments simples
+\begin{displaymath}
+ F_0 = \frac{\alpha}{1+X} + \frac{\beta}{1+aX} + \frac{\gamma}{1+a^2X}
+\end{displaymath}
+sans calculer tout de suite les coefficients. \'Ecrivons la somme en respectant les colonnes
+\begin{align*}
+ \frac{\alpha}{1+X} + &\frac{\beta}{1+aX}& +   \frac{\gamma}{1+a^2X}   &                          &                           &\\
+                      &\frac{a\alpha}{1+aX}& + \frac{a\beta}{1+a^2X}   & + \frac{a\gamma}{1+a^3X} &                           &\\
+                   &                       &   \frac{a^2\alpha}{1+a^2X}& + \frac{a^2\beta}{1+a^3X}& + \frac{a^2\gamma}{1+a^4X}&\\               &                       &      \vdots               &                          &                     &   
+\end{align*}
+ Un facteur $\gamma + a\beta + a^2\alpha$ se dégage dans le coeur de la sommation. Ce facteur est nul car comme le degré de $F_0$ est $-2$, en multipliant par $X$ et en allant à l'infini, il vient
+\begin{displaymath}
+ \alpha + \frac{\beta}{a} + \frac{\gamma}{a^2}=0
+\end{displaymath}
+La somme se simplifie en domino et il ne reste que deux termes à chaque extrémité
+\begin{displaymath}
+ \frac{\alpha}{1+X}+\frac{\beta + a\alpha}{1+aX}\\
++\frac{a^{n-1}\gamma + a^{n}\beta}{1+a^{n+1}X}+\frac{a^n\gamma}{1+a^{n+2}X}
+\end{displaymath}
+Les coefficients $\alpha$, $\beta$, $\gamma$ dans $F_0$ se calculent comme d'habitude
+\begin{align*}
+ &\alpha = \frac{1+\frac{1}{a}}{(1-a)(1-a^2)}\\
+&\beta = \frac{1+\frac{1}{a^2}}{(1-\frac{1}{a})(1-a)}\\
+&\gamma = \frac{1+\frac{1}{a^3}}{(1-\frac{1}{a^2})(1-\frac{1}{a})}
+\end{align*}
+
+ 

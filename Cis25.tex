@@ -1,0 +1,22 @@
+\begin{tiny}(Cis25)\end{tiny} Montrons puis utilisons l'inégalité proposée.
+\begin{multline*}
+ (\sqrt{x'-x})^2 - (\sqrt{x'} - \sqrt{x})^2
+ = 2\sqrt{xx'} - 2x \\
+ = 2\sqrt{x} (\sqrt{x'} - \sqrt{x}) \geq 0 \\
+ \Rightarrow 
+ \sqrt{x'} - \sqrt{x} \leq \sqrt{x' - x}.
+\end{multline*}
+On en déduit que la fonction racine carrée est uniformément continue dans $\left[ 0, + \infty\right[$. En effet,
+\begin{displaymath}
+ \forall \varepsilon, \; \exists \alpha\; ( =\sqrt{\varepsilon} )\text{ tq } 
+ |x - x' | \leq \alpha \Rightarrow \left|\sqrt{x'} - \sqrt{x}\right| \leq \varepsilon.
+\end{displaymath}
+La fonction racine carrée n'est pas $k$-lipschitzienne sur $[0,+\infty[$ car
+\[
+ \frac{\sqrt{x} - \sqrt{0}}{x - 0} \xrightarrow{0^{++}} +\infty.
+\]
+Il ne peut donc exister de $k\in \R$ tel que
+\[
+ \forall (x,x') \in \left[ 0,+\infty\right[^2, \;
+ x \neq x' \Rightarrow \frac{\left|\sqrt{x} - \sqrt{x'}\right|}{\left|x - x'\right|} \leq k.
+\]

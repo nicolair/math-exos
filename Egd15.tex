@@ -1,0 +1,23 @@
+\begin{tiny}(Egd15)\end{tiny}
+On se donne $n$ nombres réels 
+\begin{displaymath}
+ x_1 < x_2 < \cdots < x_n
+\end{displaymath}
+Pour chaque entier $i$ entre $1$ et $n$, on définit une fonction $L_i$ dans $\R$ par :
+\begin{displaymath}
+L_i(x) = \prod_{j\in\{1,\cdots,n\}-\{i\}}\frac{x-x_j}{x_i-x_j} 
+\end{displaymath}
+On admet que $L'_i$ ne s'annule que $n-2$ fois au plus.
+\begin{enumerate}
+ \item Montrer que :
+\begin{align*}
+ (-1)^{n+i}L_i \xrightarrow{+\infty} +\infty & &
+ (-1)^{i-1}L_i \xrightarrow{-\infty} +\infty 
+\end{align*}
+ \item Montrer que :
+\begin{align*}
+ \forall j<i &: (-1)^{i+j+1}L'_i(x_j) >0 \\
+ \forall j>i &: (-1)^{i+j}L'_i(x_j) >0
+\end{align*}
+Il est à remarquer que l'on ne peut rien dire du signe de $L'_i(x_i)$.
+\end{enumerate}

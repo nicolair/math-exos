@@ -1,0 +1,23 @@
+\begin{tiny}(Ere16)\end{tiny} On rappelle les notations suivantes:
+\begin{displaymath}
+\forall x\in \R:\;
+\left\lbrace 
+\begin{aligned}
+ &\lfloor x \rfloor = \max \left\lbrace k\in \Z \text{ tq } k\leq x\right\rbrace \\
+ &\lceil x \rceil = \min \left\lbrace k\in \Z \text{ tq } x\leq k\right\rbrace \\
+ & x = \lfloor x \rfloor + \{x\}
+\end{aligned}
+\right. .
+\end{displaymath}
+\begin{enumerate}
+ \item Montrer que $\lceil -x \rceil = - \lfloor x \rfloor$ pour tout $x$ réel.
+ 
+\item Montrer que $\forall n\in \N, \lfloor nx \rfloor = n \lfloor x \rfloor + \lfloor n\{x\}\rfloor$.\newline
+En déduire $\lfloor\frac{1}{n}\lfloor nx\rfloor\rfloor  = \lfloor x\rfloor$ si $n\neq 0$.
+
+ \item Montrer que, pour tout $n\in \N^*$ et $x\in ]0,1[$ réel,
+\begin{displaymath}
+ \sum_{k=0}^{n-1}\lfloor x+\frac{k}{n}\rfloor = \lfloor nx\rfloor .
+\end{displaymath}
+ \'Etendre la formule à tous les $x$ réels.
+\end{enumerate}

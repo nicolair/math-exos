@@ -1,0 +1,18 @@
+\begin{tiny}(Cre22)\end{tiny} Notons, pour tout entier $p$
+\begin{displaymath}
+ X_p = \left\lbrace x_n , n\geq p \right\rbrace 
+\end{displaymath}
+Cela permet de reformuler la condition de l'énoncé :
+\begin{displaymath}
+ \forall n \geq p : x_n\leq x_p \Leftrightarrow x_p = \max X_p
+\end{displaymath}
+On nous demande donc de prouver que, lorsque la suite $(x_n)_{n\in \N}$ converge vers $0$, l'ensemble (notons le $A$) des $p$ tels que $x_p = \max X_p$ est infini.\newline
+En fait on va montrer que lorsque cet ensemble est fini, on peut extraire de $(x_n)_{n\in \N}$ une suite \emph{croissante} ce qui est évidemment incompatible (thm de passage à la limite dans une inégalité) avec une convergence vers 0.
+
+Si $A$ est fini, il existe un $N$ tel que pour tout $n\geq N$ : $x_n<\max X_n$. Posons $i_0=N$
+\begin{align*}
+ x_{i_0}<\max X_{i_0} &\Rightarrow \exists i_1 > i_0 \text{ tel que } x_{i_0}<x_{i_1} \\
+ x_{i_1}<\max X_{i_1} &\Rightarrow \exists i_2 > i_1 \text{ tel que } x_{i_1}<x_{i_2} \\
+\cdots
+\end{align*}
+

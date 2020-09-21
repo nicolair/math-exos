@@ -1,0 +1,28 @@
+\begin{tiny}(Esr03)\end{tiny}
+\textbf{Applications contractantes}\newline
+On dira qu'une application est contractante lorsqu'elle est lipschitzienne de rapport $k$ avec $0<k1$. On considère ici une application contractante définie dans un intervalle stable $I$ fermé.\newline
+Par intervalle \emph{fermé}, on désigne un intervalle de la forme
+\begin{displaymath}
+ \R,\; ]-\infty,a],\; [a,+\infty[,\; [a,b]
+\end{displaymath}
+
+On définit une suite $\left( x_n\right) _{n\in \N}$ par :
+\begin{displaymath}
+ \forall n\in \N: x_{n+1}=f(x_n)
+\end{displaymath}
+avec une condition initiale $x_0$ quelconque dans $I$.
+\begin{enumerate}
+ \item Montrer que $f$ admet au plus un point fixe.
+ \item  On introduit les notations suivantes :
+\begin{align*}
+ u_n = |x_{n+1}-x_n|&,& U_n=u_0+u_1+\cdots+u_n
+\end{align*}
+Montrer que la suite $\left(U_n\right) _{n\in \N}$ est majorée par $\frac{u_0}{1-k}$.
+\item On pose de plus\footnote{On utilise une méthode analogue pour la définition de la fonction exponentielle dans la \href{http://back.maquisdoc.net/data/temptex/fexvc.pdf}{feuille d'exercices sur les suites à valeurs complexes}. Il s'agit d'une méthode accessible en première année pour contourner la notion de suite de Cauchy.}
+\begin{align*}
+ a_n = (x_{n+1}-x_n)_{+}&,& A_n=a_0+a_1+\cdots+a_n \\
+ b_n = (x_{n+1}-x_n)_{-}&,& B_n=b_0+b_1+\cdots+b_n 
+\end{align*}
+Montrer que les deux suites $\left(A_n\right) _{n\in \N}$ et $\left(B_n\right) _{n\in \N}$ sont convergentes. En déduire la convergence de $\left(x_n\right) _{n\in \N}$.
+\item Formuler un résultat relatif à une fonction contractante dans un intervalle stable et fermé.
+\end{enumerate}

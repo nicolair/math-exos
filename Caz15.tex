@@ -1,0 +1,21 @@
+\begin{tiny}(Caz15)\end{tiny} Soit $m = qn +r$ la division de $m$ par $n$. Alors
+\begin{multline*}
+p^m - 1 = p^m - p^r + p^r -1
+= p^r\left( (p^m)^r - 1 \right) + p^r - 1 \\
+= (p^m-1)p^r\left( p^{m(r-1)} + p^{m(r-2)} + \cdots + 1\right) 
+\end{multline*}
+Comme $0 < p^r - 1 < p^m -1$, cette écriture est la division euclidienne de $p^m -1$ par $p^n -1$. Les suites de divisions euclidiennes de l'algorithme d'Euclide pour le calcul du pgcd de $m$ et $n$ ou de $p^m-1$ et $p^n-1$ sont parallèles. On en déduit
+\[
+ (p^m - 1)\wedge (p^n - 1) = p^{m \wedge n} - 1.
+\]
+Si $n$ n'est pas premier, il admet un diviseur $m$ tel que $1 < m < n$. La question précédente (avec $p=2$) montre que $2^m - 1$ divise $M_n$. On en déduit 
+\[
+ M_n \text{ premier } \Rightarrow n \text{ premier}.
+\]
+Bien que $M2 =3$, $M_3 = 7$, $M_5 = 31$, $M_7 = 127$ soient premiers, la réciproque est fausse car $M_{11} = 2047$ n'est pas premier car il est divisible par $23$. Ce diviseur a été trouvé à l'aide de quelques lignes de Python
+\begin{verbatim}
+d = 2
+while 2047 % d != 0 and d*d <= 2047:
+    d += 1
+print(d)
+\end{verbatim} 

@@ -1,0 +1,16 @@
+\begin{tiny}(Cre27)\end{tiny} Preuve de (1). Notons $s$ la somme des parties entières. Avec les encadrements de définition habituels, on obtient:
+\begin{displaymath}
+  n- \frac{3}{2} < s \leq n + \frac{1}{2}
+\end{displaymath}
+Cela justifie seulement $s\in\left\lbrace n-1,n\right\rbrace$. Pour terminer, on remarque que $n+m$ et $n-m+1$ n'ont pas la même parité. On peut donc remplacer un des encadrements par une égalité ce qui conduit à
+\begin{displaymath}
+  n- \frac{1}{2} < s \leq n + \frac{1}{2} \Rightarrow s = n.
+\end{displaymath}
+Preuve de (2).
+\begin{multline*}
+  x = \lfloor x + \rfloor + \lbrace x \rbrace \\
+  \Rightarrow \lfloor \frac{x+1}{2}\rfloor 
+  = \lfloor \underset{\in \frac{\Z}{2}}{\underbrace{\frac{\lfloor x \rfloor +1}{2}}} 
+  + \underset{\in \left[ 0, \frac{1}{2}\right[}{\underbrace{\frac{\lbrace x \rbrace}{2}}}\rfloor 
+  = \lfloor \frac{\lfloor x \rfloor}{2} \rfloor.
+\end{multline*}

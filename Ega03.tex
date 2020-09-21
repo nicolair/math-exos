@@ -1,0 +1,47 @@
+\begin{tiny}(Ega03)\end{tiny}
+\begin{figure}[ht]
+ \centering
+ \input{Ega03_1.pdf_t}
+ \caption{Exercice \arabic{enumi}}
+ \label{fig:Ega03_1}
+\end{figure}
+Cet exercice propose deux parties indépendantes autour d'une même configuration.\newline
+ Les points $A_1$, $A_2$, $A_3$ sont alignés sur une droite $\mathcal D$ dirigée par un vecteur $u$. Les points $A'_1$, $A'_2$, $A'_3$ sont alignés sur une droite $\mathcal D'$ dirigée par un vecteur $u'$. Tous ces points sont distincts du point d'intersection noté $O$ des deux droites. 
+\begin{enumerate}
+ \item Les points $B_1$, $B_2$, $B_3$ sont respectivement les intersections $(A_2,A'_3)\cap(A'_2,A_3)$, $(A_3,A'_1)\cap(A'_3,A_1)$, $(A_1,A'_2)\cap(A'_1,A_2)$ qui sont supposées non vides.\newline
+Par des calculs de coordonnées dans le repère $(O,(u,v))$, montrer que les points $B_1$, $B_2$, $B_3$ sont alignés.\footnote{ce résultat est un cas particulier du théorème de l'hexagramme de Pascal. Les $B$ sont alignés lorsque les $6$ points $A_1,...$ sont sur une même conique. En utilisant Maple, cela peut se démontrer par le calcul. Les deux droites $\mathcal{D}$ et $\mathcal{D'}$ forment une conique dégénérée. (voir le problème \href{http://back.maquisdoc.net/data/devoirs_nicolair/AhexaP.pdf}{hexaP})}\\
+On utilisera le résultat de l'exercice dt15 de la \href{\exosurl _fex_dt.pdf}{feuille sur les déterminants}. \`A savoir:
+\begin{displaymath}
+ \begin{vmatrix}
+ \alpha_2'-\alpha_3' & \alpha_2 - \alpha_3 & \alpha_2\alpha_2'-\alpha_3\alpha_3' \\
+ \alpha_3'-\alpha_1' & \alpha_3 - \alpha_1 & \alpha_3\alpha_3'-\alpha_1\alpha_1' \\
+ \alpha_1'-\alpha_2' & \alpha_1 - \alpha_2 & \alpha_1\alpha_1'-\alpha_2\alpha_2'
+\end{vmatrix}
+=0
+\end{displaymath}
+pour des réels non nuls $\alpha_1$, $\alpha_2$, $\alpha_3$, $\alpha_1'$, $\alpha_2'$, $\alpha_3'$.
+\item On définit trois applications affines $f_1$, $f_2$, $f_3$ par :
+\begin{align*}
+ \left\lbrace \begin{aligned}
+  f_1(O)=&O\\ f_1(A_2)=&A_3 \\ f_1(A'_3)=&A'_2
+ \end{aligned}\right. 
+& &
+\left\lbrace  \begin{aligned}
+  f_2(O)=&O\\ f_2(A_3)=&A_1 \\ f_2(A'_1)=&A'_3
+ \end{aligned}\right. 
+& &
+\left\lbrace  \begin{aligned}
+  f_3(O)=&O\\ f_3(A_1)=&A_2 \\ f_3(A'_2)=&A'_1
+ \end{aligned}\right. 
+\end{align*}
+Que peut-on dire de la matrice dans la base $(u,v)$ de la partie linéaire d'une de ces fonctions ? Montrer que ces fonctions commutent entre elles. Que vaut la composée des trois ?\newline
+On suppose maintenant que 
+\begin{displaymath}
+ (A_1,A'_2)\parallel (A'_1,A_2)\text{ et } (A_2,A'_3)\parallel (A'_2,A_3)
+\end{displaymath}
+Que peut-on en déduire pour $f_3$ et $f_1$? Montrer que 
+\begin{displaymath}
+ (A_1,A'_3)\parallel (A'_1,A_3)
+\end{displaymath}
+(théorème de Pappus)
+\end{enumerate}

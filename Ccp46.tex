@@ -1,0 +1,17 @@
+\begin{tiny}(Ccp46)\end{tiny} Comme les $z_i$ sont de même module, les quotients $\frac{z_k}{z_l}$ sont de module 1. Donc, pour $k \neq l$,
+\begin{multline*}
+  \frac{z_k}{z_l} + \frac{z_l}{z_k} = \frac{z_k}{z_l} + \overline{\frac{z_k}{z_l}} = 2 \Re( \frac{z_k}{z_l}) \in \R \\
+  \Rightarrow z = n + \sum_{1\leq k < l \leq n}2 \Re( \frac{z_k}{z_l}) \in \R.
+\end{multline*}
+Comme les quotients sont de module $1$, les parties réelles sont plus petites que $1$ et il existe $\frac{n(n-1)}{2}$couples $(k,l)$ avec $k < l$:
+\begin{displaymath}
+  z \leq n + \frac{n(n-1)}{2}\, 2 = n^2.
+\end{displaymath}
+
+Pourquoi $z$ est-il positif? Introduisons le module commun $R$ et des arguments: $z_k = R e^{i\theta_k}$.
+\begin{multline*}
+  z = (z_1 + \cdots + z_n)(\frac{1}{z_1} + \cdots \frac{1}{z_n}) \\
+  = R\,\underset{ = S}{\underbrace{(e^{i \theta_1} + \cdots + e^{i \theta_n})}}
+  \frac{1}{R}\,\underset{ = \overline{S}}{\underbrace{(e^{-i \theta_1} + \cdots + e^{-i \theta_n})}} \\
+  = |S|^2 \geq 0.
+\end{multline*}

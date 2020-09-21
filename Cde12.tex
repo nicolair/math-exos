@@ -1,0 +1,9 @@
+\begin{tiny}(Cde12)\end{tiny} On transforme par une intégration par parties
+\begin{displaymath}
+ \int_1^xe^{t}\ln t\, dt = e^x\ln x-\int_1^x\frac{e^t}{t}dt 
+\end{displaymath}
+On majore le reste car pour $t\geq 1$, $\frac{1}{t}\leq 1$:
+\begin{displaymath}
+ 0\leq \int_1^x\frac{e^t}{t}dt \leq \int_1^x e^t\,dt = e^x -e
+\end{displaymath}
+Cela montre que ce reste est négligeable devant $e^x\ln x$ ce qui prouve l'équivalence demandée.

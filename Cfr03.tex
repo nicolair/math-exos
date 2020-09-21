@@ -1,0 +1,32 @@
+\begin{tiny}(Cfr03)\end{tiny} Formule de Taylor pour une fraction rationnelle.
+\begin{enumerate}
+ \item Soit $F$ une fraction dont $a$ n'est pas un pôle. Il existe des polynômes $P$ et $Q$ tels que $F=\frac{P}{Q}$ avec $\widetilde{Q}(a)\neq0$. Les dérivées successives de $F$ sont des fractions dont le dénominateur est une puissance de $Q$ donc $a$ n'est pôle d'aucune de ces dérivées. 
+ \item Définissons la fraction $R_n$ par la formule :
+\begin{displaymath}
+ R_n = F-\left( F(a)+\frac{F'(a)}{1!}(X-a) + \cdots\right) 
+\end{displaymath}
+D'après les propriétés algébriques de la dérivation : 
+$R_n^{(k)}(a)=0$ pour $0\leq k \leq n$. En particulier de $R_n(a)=0$, on déduit que $a$ est un zéro de $R_n$. Soit $p$ sa multiplicité. Il existe alors une fraction $G$ telle que $F=(X-a)^pG$ avec $G(a)\neq0$. En utilisant la formule de Leibniz, on montre que $R_n^{(p)}(a)=p!G(a)\neq0$. On en déduit que $p>n$.\newline
+En divisant par $(X-a)^{n+1}$, la contribution de la partie principale de la formule de Taylor apparait donc comme la partie polaire en $a$ de la fraction
+\begin{displaymath}
+ \frac{F}{(X-a)^{n+1}}
+\end{displaymath}
+Cette méthode peut être utile pour chercher la partie polaire d'un pôle avec une multiplicité élecée.
+\item On peut appliquer deux fois la question précédente.
+\begin{align*}
+ &\text{dér. succ.}:& &\frac{1}{(X+1)^2},& &\frac{-2}{(X+1)^{3}},& &\frac{6}{(X+1)^{4}}\\
+ &\text{val. en 1}:& &\frac{1}{4},& &-\frac{1}{4},& &\frac{3}{8}
+\end{align*}
+\begin{align*}
+ &\text{dér. succ.}:& &\frac{1}{(X-1)^3},& &\frac{-3}{(X-1)^{4}}\\
+ &\text{val. en $-1$}:& &-\frac{1}{8},& &-\frac{3}{16}
+\end{align*}
+On en déduit:
+\begin{multline*}
+ \frac{1}{(X-1)^3(X+1)^2}=\\
+\frac{\frac{1}{4}}{(X-1)^3}+\frac{\frac{-1}{4}}{(X-1)^2}+\frac{\frac{3}{16}}{X-1}\\
++\frac{-\frac{1}{8}}{(X+1)^2}+\frac{-\frac{3}{16}}{X+1}
+\end{multline*}
+
+\end{enumerate}
+ 

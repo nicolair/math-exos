@@ -1,0 +1,101 @@
+\begin{tiny}(Cmo21)\end{tiny}
+\begin{enumerate}
+ \item Dans ce cas, $C$ est de rang $3$ donc inversible. Après calcul de l'inverse, 
+\begin{displaymath}
+ B=AC^{-1}= A
+\begin{pmatrix}
+ 2 & -2 & -3 \\1 & -1 & -1 \\ 3 & -4 & -5
+\end{pmatrix}
+=
+\begin{pmatrix}
+ 1 & 1 & 1 \\1 & 1 & -1 \\ 1 & -1 & -1
+\end{pmatrix}
+\end{displaymath}
+\item Cette fois $\rg C = 2$ donc $C$ n'est pas inversible.\newline
+Analyse.\newline
+Soit $a$, $b$, $c$ les endomorphismes de $\R^3$ dont les matrices dans la base canonique sont $A$, $B$, $C$.
+\begin{displaymath}
+ BC=A \Leftrightarrow b\circ c = a \Rightarrow \ker c \subset \ker a.
+\end{displaymath}
+Donc $k$ doit vérifier $\ker c \subset \ker a$. De plus
+\begin{multline*}
+ (x,y,z)\in \ker c \Leftrightarrow
+\left\lbrace  
+\begin{aligned}
+ x+2y-z&=0\\2x-y-z &=0\\-5x + 3z &=0
+\end{aligned}
+\right. \\
+\Leftrightarrow (x,y,z)=\frac{z}{5}(3,1,5).
+\end{multline*}
+Alors $\ker c \subset \ker a$ entraine
+\begin{displaymath}
+\begin{pmatrix}
+-2 & 1 & 1 \\ 8 & 1 & -5 \\ 4 & 3 & k 
+\end{pmatrix}
+\begin{pmatrix}
+ 3\\1\\5
+\end{pmatrix}
+=
+\begin{pmatrix}
+ 0\\0\\0
+\end{pmatrix}
+\Rightarrow k=-3 .
+\end{displaymath}
+Synthèse.\newline
+Introduisons $\mathcal{C}=(e_1,e_2,e_3)$ la base canonique et $u=(3,1,5)$ un générateur du noyau.\newline
+Alors $\mathcal{U}=(c(e_1),c(e_2),u)$ est une base. Définissons $b$ par prolongement linéaire 
+\begin{displaymath}
+ b(c(e_1))=a(e_1),\; b(c(e_2))=a(e_2),\; b(u)=0.
+\end{displaymath}
+Elle vérifie bien $b\circ c = a$. Ceci se traduit par
+\begin{displaymath}
+ \mathop{\mathrm{Mat}}_{\mathcal U \mathcal C}b =
+\begin{pmatrix}
+ -2 & 1 & 0 \\ 8 & 1 & 0\\ 4 & 3 &0
+\end{pmatrix}.
+\end{displaymath}
+On en tire
+\begin{displaymath}
+ B = \mathop{\mathrm{Mat}}_{\mathcal C}b
+= \mathop{\mathrm{Mat}}_{\mathcal U \mathcal C}b\, \mathop{\mathrm{Mat}}_{\mathcal C \mathcal U }\Id_E
+=  \mathop{\mathrm{Mat}}_{\mathcal U \mathcal C}b \, P_{\mathcal{C} \mathcal U }^{-1}.
+\end{displaymath}
+Après calculs;
+\[
+ P_{\mathcal{C} \mathcal U }
+=\frac{1}{10}
+\begin{pmatrix}
+ 1 & 2 & 3 \\ 2 & -1 & 1 \\ -5 & 0 & 5
+\end{pmatrix}
+\]
+\begin{displaymath}
+ P_{\mathcal{C} \mathcal U }^{-1}
+=\frac{1}{10}
+\begin{pmatrix}
+ 1 & 2 & -1 \\ 3 & -4 & -1 \\ 1 & 2 & 1
+\end{pmatrix}
+\end{displaymath}
+\begin{displaymath}
+B =\frac{1}{10}
+\begin{pmatrix}
+ 1 & -8 & 1 \\ 11 & 12 & -9 \\ 13 & -4 & -7
+\end{pmatrix}
+\end{displaymath}
+Il y a plusieurs $B$ solutions. On peut multiplier le générateur $u$ du noyau par un scalaire non nul. Cela ne change pas $\MatBB{U}{C}b$ mais change les matrices de passage.\newline
+Code pour la vérification en Python
+\begin{verbatim}
+import numpy as np
+import numpy.linalg as la
+C = np.array([[1,2,-1],[2,-1,-1]
+                ,[-5,0,3]])
+P = np.array([[1,2,3],[2,-1,1]
+                ,[-5,0,5]])
+Q = la.inv(P)
+M = np.array([[-2,1,0],[8,1,0],[4,3,0]])
+B = np.matmul(M,Q)
+
+#Vérification
+A = np.matmul(B,C)
+\end{verbatim} 
+\end{enumerate}
+ 

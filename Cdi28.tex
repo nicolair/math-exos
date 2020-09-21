@@ -1,0 +1,42 @@
+\begin{tiny}(Cdi28)\end{tiny} 
+\begin{enumerate}
+ \item On vérifie que 
+\[
+ \left\lbrace 
+ \begin{aligned}
+  \mathcal{A} &\rightarrow \mathcal{L}(B,E)\\
+  f &\mapsto f_{|B}
+ \end{aligned}
+\right. 
+\]
+est un isomorphisme. On en déduit 
+\begin{multline*}
+\dim \mathcal{A} = \dim(B) \dim(E)\\
+= (\dim(E) - \dim(A))\dim(E). 
+\end{multline*}
+
+
+ \item La linéarité est immédiate car toutes les fonctions en jeu sont linéaires. D'autre part, il est clair que
+\begin{multline*}
+  \left\lbrace f\in \mathcal{L}(E) \text{ tq } \Im a \subset \ker f\right\rbrace = \ker \delta\\
+  \Im(\delta) \subset \left\lbrace g\in \mathcal{L}(E) \text{ tq } \ker a \subset \ker g\right\rbrace.  
+\end{multline*}
+D'après la question a.
+\begin{multline*}
+ \dim(\ker \delta) = \dim(\ker a)\dim E, \\
+ \dim \left\lbrace g\in \mathcal{L}(E) \text{ tq } \ker a \subset \ker g\right\rbrace = \rg a\,\dim E 
+\end{multline*}
+Or, d'après le théorème du rang 
+\begin{multline*}
+ \dim(\ker \delta) + \dim (\Im(\delta)) = \dim(E)^2\\
+ \Rightarrow 
+\dim (\Im(\delta)) =  \dim(E)^2 - \dim(\ker a)\dim E\\
+= \rg a \dim E.
+\end{multline*}
+On en déduit 
+\[
+ \Im(\delta) = \left\lbrace g\in \mathcal{L}(E) \text{ tq } \ker a \subset \ker g\right\rbrace.
+\]
+
+\end{enumerate}
+

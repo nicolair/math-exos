@@ -1,0 +1,31 @@
+\begin{tiny}(Cgd19)\end{tiny} Notons
+\begin{displaymath}
+ f_{n}(x) = 1 +x + \frac{x^2}{2!}+\cdots+\frac{x^n}{n!}-\lambda e^x
+\end{displaymath}
+et remarquons que $f_{n}^{(k)} =f_{n-k}$
+On peut dériver $n$ fois pour simplifier la partie polynomiale
+\begin{displaymath}
+ f_{n,\lambda}^{(n)} = 1-\lambda e^x 
+\end{displaymath}
+On en déduit le tableau de variations
+\begin{center}
+\begin{tabular}{l|lllll}
+                & $0$           &            &            &           & $+\infty$ \\\hline
+                & $1-\lambda>0$ &            &            &           &           \\
+$f_{n}^{(n)}$   &               &            & $\searrow$ &           &            \\
+                &               &            &            &           & $-\infty$  \\ \hline
+                &               &            & $>0$       &           &  \\
+$f_{n}^{(n-1)}$ &               & $\nearrow$ &            &$\searrow$ &  \\
+                & $1-\lambda>0$ &            &            &           & $-\infty$
+\end{tabular}
+\end{center}
+La situation se reproduit lorsque l'ordre des dérivations diminue. \`A droite de $0$, la fonction commence par croître en restant positive avant de décroître (à partir d'un $\alpha_k$) vers $-\infty$. Elle admet donc un unique zéro noté $\alpha_n$ et cet enchainement de tableaux de variations montre que la suite est bien croissante. D'autre part d'après le résultat admis, pour tout $A\in \R$,
+\begin{displaymath}
+ \left( \Lambda_n(A)\right) _{n\in \N} \rightarrow 1
+\end{displaymath}
+Comme $\lambda <1$, il existe $N_A$ tel que 
+\begin{multline*}
+ n\geq N_A \Rightarrow \Lambda_n(A) > \lambda \Rightarrow f_{n,\lambda}(A)>0\\
+\Rightarrow A< \alpha_n
+\end{multline*}
+Cela prouve la divergence vers $+\infty$.

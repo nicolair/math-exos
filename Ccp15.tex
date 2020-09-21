@@ -1,0 +1,46 @@
+\begin{tiny}(Ccp15)\end{tiny} \label{Ccp15}
+\begin{enumerate}
+  \item Pour étudier si les points sont distincts, on considère les équations $z=z^2$, $z=z^3$ et $z^2=z^3$. On en déduit que si $z$ est $0$ ou $1$, les trois points sont confondus. Si $z=-1$ deux points sont confondus. Pour les autres valeurs, les points sont distincts.\newline
+On suppose donc $z\neq 0$ et $z\neq \pm 1$. Les points d'affixes $z$, $z^2$, $z^3$ sont alors alignés si et seulement si
+\begin{displaymath}
+  \frac{z^3-z}{z^2-z}\in \R
+  \Leftrightarrow z+1\in \R
+  \Leftrightarrow \Im(z) = -1
+\end{displaymath}
+
+  \item On suppose $z\neq 0, \neq 1, \neq -1$. Trois cas sont possibles pour le triangle $z$, $z^2$, $z^3$.
+\begin{itemize}
+  \item Rectangle en $z$.
+\begin{displaymath}
+  \frac{z^2-z}{z^3-z}=\frac{1}{z+1}\in i\R \Leftrightarrow
+  z+1 \in i\R
+\end{displaymath}
+Le point d'affixe $z$ est sur la droite parallèle à $(Oy)$ d'abscisse $-1$.
+
+ \item Rectangle en $z^2$.
+\begin{displaymath}
+  \frac{z-z^2}{z^3-z^2}=-\frac{1}{z}\in i\R \Leftrightarrow
+  z \in i\R
+\end{displaymath}
+Le point d'affixe $z$ est sur la droite $(Oy)$.
+
+  \item Rectangle en $z^3$.
+\begin{displaymath}
+  \frac{z-z^3}{z^2-z^3}=\frac{1+z}{z}\in i\R
+\end{displaymath}
+Notons $O$ l'origine, $A$ le point d'affixe $-1$ et $Z$ le point d'affixe $z$. La condition traduit que l'angle $\widehat{OZA}$ est droit c'est à dire que $Z$ est sur le cercle de diamètre $OA$ (voir exercice \ref{cp20}).
+\end{itemize}
+
+  \item Notons $x=\Re(z)$ et $y=\Im(z)$. Deux orthogonalités suffisent:
+\begin{displaymath}
+\frac{z^3 - z^2}{z - 0} \in i\R \Leftrightarrow z^2-z\in i\R \Leftrightarrow x^2-y^2-x = 0  
+\end{displaymath}
+\begin{displaymath}
+\frac{z^3 - z}{z^2 - 0} \in i\R \Leftrightarrow z-\frac{1}{z}\in i\R \Leftrightarrow x - \frac{x}{x^2+y^2} = 0  
+\end{displaymath}
+Comme $x=0$ est incompatible avec la première équation, on doit avoir $x^2+y^2=1$. En remplaçant dans la première équation, on obtient
+\begin{displaymath}
+  2x^2-x-1=0 \Rightarrow x = 1 \text{ ou } -\frac{1}{2}
+\end{displaymath}
+Comme $1$ est exclu les bons $z$ sont $j$ et $j^2$.
+\end{enumerate}

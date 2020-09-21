@@ -1,0 +1,36 @@
+\begin{tiny}(Cao12)\end{tiny} On choisit pour $\overrightarrow I$ un vecteur unitaire orthogonal à $\overrightarrow K$, par exemple
+\begin{displaymath}
+ \overrightarrow I = \frac{1}{\sqrt{2}}(\overrightarrow i -\overrightarrow j)
+\end{displaymath}
+La famille $(\overrightarrow K , \overrightarrow I, \overrightarrow K\wedge \overrightarrow I)$ est alors orthonormée directe. On peut donc choisir
+\begin{displaymath}
+ \overrightarrow J = \overrightarrow K\wedge \overrightarrow I
+=
+\frac{1}{\sqrt{6}}(\overrightarrow i + \overrightarrow j -2 \overrightarrow k)
+\end{displaymath}
+Notons $\mathcal A = (\overrightarrow i, \overrightarrow j, \overrightarrow k)$ et $\mathcal B = (\overrightarrow I, \overrightarrow J, \overrightarrow K)$. Ce sont des matrices orthogonales transposées l'une de l'autre:
+\begin{align*}
+ &P_{\mathcal A \mathcal B}=\frac{1}{\sqrt{6}}
+\begin{pmatrix}
+ \sqrt{3}&1&\sqrt{2}\\-\sqrt{3}&1&\sqrt{2}\\ 0&-2&\sqrt{2}
+\end{pmatrix}\\
+&P_{\mathcal B \mathcal A}=\frac{1}{\sqrt{6}}
+\begin{pmatrix}
+ \sqrt{3}&-\sqrt{3}&0\\1&1&-2\\ \sqrt{2}&\sqrt{2}&\sqrt{2}
+\end{pmatrix}
+\end{align*}
+On en déduit
+\begin{displaymath}
+ \left\lbrace 
+\begin{aligned}
+x &=\frac{1}{\sqrt{6}}(\sqrt{3}X+Y+\sqrt{2}Z)\\
+y &=\frac{1}{\sqrt{6}}(-\sqrt{3}X+Y+\sqrt{2}Z)\\
+z &=\frac{1}{\sqrt{6}}(-2Y+\sqrt{2}Z)
+\end{aligned}
+\right. 
+\end{displaymath}
+puis
+\begin{multline*}
+xy + yz + zx = \frac{1}{2}\left( (\underset{\sqrt{3}Z}{\underbrace{x+y+z}})^2-(\underset{X^2+Y^2+Z^2}{\underbrace{x^2+y^2+z^2}})\right) \\
+=  \frac{1}{2}\left( 2Z^2-X^2-Y^2\right) .
+\end{multline*}

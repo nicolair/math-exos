@@ -1,0 +1,23 @@
+\begin{tiny}Cen14\end{tiny} L'énoncé nous indique de modéliser une main par un ensemble de 5 cartes. Le nombre total de mains est 
+\[
+ \binom{32}{5}.
+\]
+Rappelons qu'une carte est caractérisée par une hauteur parmi 8 (7, 8, 9, 10, Valet, Dame, Roi, As) et une couleur parmi 4 (coeur, carreau, pique, trèfle).\newline
+Notons $\mathcal{M}$ l'ensemble des mains contenant exactement un brelan. Pour le démombrer, classons les mains appartenant à $\mathcal{M}$ suivant l'unique brelan qu'elles contiennent. Notons $\mathcal{B}$ l'ensemble des brelans. Pour un brelan $B$ donné, notons $\mathcal{M}_B$ l'ensemble des mains contenant $B$. Alors:
+\[
+ \sharp \mathcal{M} = \sum_{B \in \mathcal{B}} \mathcal{M}_B.
+\]
+Combien $\mathcal{M}_B$ contient-il d'éléments? Autant que de parties à deux éléments qui ne forment pas une paire et ne sont pas de la hauteur du brelan. On les classe suivant l'ensemble des 2 hauteurs associé à un de ces ensembles de deux cartes. Comme le niveau du brelan est interdit il reste 7 hauteurs et il existe 
+\[
+ \binom{7}{2} \text{ tels ensembles } \left\lbrace h_1, h_2 \right\rbrace \text{ de 2 hauteurs}.
+\]
+Comme il existe 4 couleurs, on peut former autant d'ensemble de 2 cartes de ces deux hauteurs que de fonctions d'un ensemble à 2 éléments dans un ensemble à 4 éléments soit $16 = 4 \times 4$.
+\[
+ \sharp \mathcal{M}_B = 16 \times \binom{7}{2}.
+\]
+Ce cardinal est le même pour tous les brelans $B$. Combien existe-t-il de brelans?\newline
+On classe les brelans suivant leur hauteur puis suivant la couleur qu'ils ne contiennent pas. On en déduit qu'il en existe $8 \times 4$.
+Finalement le nombre de mains cherché est donc
+\[
+ (8 \times 4) \times (16 \times \binom{7}{2}).
+\]

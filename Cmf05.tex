@@ -1,0 +1,49 @@
+\begin{tiny}(Cmf05)\end{tiny} Notons $c_1, c_2, c_3$ les trois vecteurs de $\mathcal{C}$.
+\begin{multline*}
+    f(c_1) = f(e_2) = a' e_1 + b'e_2 + c'e_3 = b'c_1 + c'b_2 + a'b_3 \\
+    f(c_2) = f(e_3) = a'' e_1 + b''e_2 + c''e_3 = b''c_1 + c''b_2 + a''b_3\\
+    f(c_3) = f(e_1) = a e_1 + b e_2 + ce_3 = bc_1 + cb_2 + ab_3
+ \\
+\Rightarrow
+\Mat_{\mathcal{B} \mathcal{C}} =
+\begin{pmatrix}
+ b' & a'' & b \\
+ c' & c'' & c \\
+ a' & a'' & a
+\end{pmatrix}
+\end{multline*}
+Utiliser la formule de changement de base n'est pas une bonne idée. Mettons la en \oe{}uvre pour le montrer
+\[
+  P_{\mathcal{B} \mathcal{C}} =
+\begin{pmatrix}
+ 0 & 0 & 1 \\
+ 1 & 0 & 0 \\
+ 0 & 1 & 0
+\end{pmatrix}, \hspace{0.3cm}
+  P_{\mathcal{C}\mathcal{B}} =
+\begin{pmatrix}
+ 0 & 1 & 0 \\
+ 0 & 0 & 1 \\
+ 1 & 0 & 0
+\end{pmatrix} 
+\]
+car $e_1 = c_3$, $e_2 = c_1$, $e_3 = c_2$. Il reste encore à calculer le produit
+\[
+\underset{= P_{\mathcal{C}\mathcal{B}}}{\underbrace{
+\begin{pmatrix}
+ 0 & 1 & 0 \\
+ 0 & 0 & 1 \\
+ 1 & 0 & 0
+\end{pmatrix} }}
+  \begin{pmatrix}
+ a & a' & a'' \\
+ b & b' & b'' \\
+ c & c' & c''
+\end{pmatrix}
+\underset{= P_{\mathcal{B} \mathcal{C}}}{\underbrace{
+\begin{pmatrix}
+ 0 & 0 & 1 \\
+ 1 & 0 & 0 \\
+ 0 & 1 & 0
+\end{pmatrix}}}.
+\]

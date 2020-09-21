@@ -1,0 +1,24 @@
+\begin{tiny}(Cva13)\end{tiny} On part de la formule de transfert pour $E(g\circ X)$ puis on sépare en deux sommes:
+\begin{multline*}
+  E(g \circ X)
+  = 
+  \sum_{x \in X(\Omega)}g(x) \p(X=x)\\
+  = \sum_{\substack{x \in X(\Omega) \\ x\geq a}}\underset{\substack{\geq g(a) \\ g \nearrow}}{\underbrace{g(x)}} \p(X=x)
+  + \sum_{\substack{x \in X(\Omega) \\ x < a}}\underset{> 0}{\underbrace{g(x)}} \p(X=x)\\
+  \geq g(a) \p(X \geq a)
+  \Rightarrow 
+  \p(X\geq a) \leq \frac{E(g\circ f)}{g(a)}.
+\end{multline*}
+Pour tout $t>0$ la fonction
+\[
+  g_t:\; x \mapsto e^{tx}
+\]
+est strictement croissante à valeurs positives. On peut lui appliquer le premier résultat :
+\[
+  \p(X\leq a) \leq \frac{E(e^{tX})}{e^{ta}}
+  = E(e^{t(X-a)}.
+\]
+Comme ceci est valable pour tous les $t>0$. On en déduit
+\[
+  \p(X \leq a) \leq \inf_{t >0} E(e^{t(X-a)}).
+\]

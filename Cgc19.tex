@@ -1,0 +1,8 @@
+\begin{tiny}(Cgc19)\end{tiny} Une premiere manière de résoudre cet exercice est d'évoquer le théorème de cours: une fonction continue et injective sur un intervalle et strictement monotone. Puis de justifier soigneusement que la stricte monotonie interdit l'égalité des limites.\newline
+L'outil semble disproportonné, proposons une preuve directe dans le cas où la limite commune est $l\in \R$ et la fonction non constante.\newline
+Il existe alors $u\in I$ tel que $f(u)\neq l$, par exemple $f(u)>l$. Comme les lites aux extrémités sont $l$, il existe un $a$ assez proche de l'extrémité gauche et un $b$ assez proche de l'extrémité droite tels que 
+\begin{displaymath}
+  f(a) < \frac{f(u)+l}{2}\hspace{0.5cm} f(b) < \frac{f(u)+l}{2}
+\end{displaymath}
+En appliquant le théorème des valeurs intermédiaires dans $[a,u]$ et dans $[u,b]$, on prouve l'existence de deux antécédents distincts de $\frac{f(u) + l}{2}$ ce qui prouve que $f$ n'est pas injective.\newline
+Adapter cette démonstration dans les autres cas.

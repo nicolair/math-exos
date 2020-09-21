@@ -1,0 +1,44 @@
+\begin{tiny}(Cfu18)\end{tiny} Après réduction au même dénominateur de la première équation, le système devient
+\begin{multline*}
+\left\lbrace 
+\begin{aligned}
+\sin(x+y) = \frac{1}{2} \\ \cos(x) \, \cos(y) = \frac{1}{2}  
+\end{aligned}
+\right. \\
+\Leftrightarrow
+\left\lbrace 
+\begin{aligned}
+\sin(x+y) = \frac{1}{2} \\ \cos(x+y) + \cos(x-y) = 1  
+\end{aligned}
+\right. \\
+\Leftrightarrow
+\end{multline*}
+D'après la première équation, on doit avoir 
+\begin{displaymath}
+  \cos(x+y) = \pm \frac{\sqrt{3}}{2}
+\end{displaymath}
+Mais dans la deuxième équation, seul
+\begin{displaymath}
+  \cos(x+y) = \frac{\sqrt{3}}{2}
+\end{displaymath}
+est possible, sinon le $\cos$ serait plus grand que $1$. On en tire qu'il existe $u\in \Z$ tel que
+\begin{displaymath}
+  x+y = \frac{\pi}{6} + 2u\pi
+\end{displaymath}
+et la deuxième équation s'écrit:
+\begin{displaymath}
+\cos(2x-\frac{\pi}{6})=1-\frac{\sqrt{3}}{2}  
+\end{displaymath}
+Finalement, les solutions sont données par:
+\begin{displaymath}
+\left\lbrace 
+\begin{aligned}
+&x \equiv \frac{\pi}{12} \pm \alpha \mod \pi \\
+&y \equiv -\frac{\pi}{6} + x \mod 2\pi
+\end{aligned}
+\right. 
+\end{displaymath}
+avec
+\begin{displaymath}
+  \alpha = \arccos(1-\frac{\sqrt{3}}{2})
+\end{displaymath}

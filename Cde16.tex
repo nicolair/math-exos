@@ -1,0 +1,35 @@
+\begin{tiny}(Cde16)\end{tiny} 
+\begin{enumerate}
+\item  Le d\'{e}veloppement limit\'{e} de $\arctan $ en 0 s'obtient en int\'{e}grant celui de sa d\'{e}riv\'{e}e $\frac{1}{1+x^{2}},$ soit
+\begin{displaymath}
+\arctan x=x-\frac{1}{3}x^{3}+\frac{1}{5}x^{5}+o(x^{6}) 
+\end{displaymath}
+On en d\'{e}duit des d\'{e}veloppements 
+\begin{align*}
+\arctan \sqrt{x} &= \sqrt{x}-\frac{1}{3}\sqrt{x}^{3}+\frac{1}{5}\sqrt{x}%
+^{5}+o(x^{3}) \\
+\frac{\arctan \sqrt{x}}{\sqrt{x}} &= 1-\frac{1}{3}x+\frac{1}{5}x^{2}+o(x^{%
+\frac{5}{2}})
+\end{align*}
+\begin{multline*}
+ \frac{1+x}{\sqrt{x}}\arctan \sqrt{x} 
+= 1+\frac{2}{3}x+(\frac{1}{5}-\frac{1}{3})x^{2}+o(x^{\frac{5}{2}}) \\
+= 1+\frac{2}{3}x-\frac{2}{15}x^{2}+o(x^{\frac{5}{2}})
+\end{multline*}
+On peut affaiblir en écrivant $o(x^2)$ pour avoir un véritable développement limité.
+\item  Le d\'{e}veloppement montre que $f$ converge vers $1$ en $0$. La fonction prolong\'{e}e est d\'{e}rivable en $0$ car elle admet un d\'{e}veloppement limit\'{e} d'ordre 1 en $0$. Sa d\'{e}riv\'{e}e en $0$ vaut $\frac{2}{3}$.
+
+\item  On sait que pour tous les $x$ r\'{e}els, 
+\[
+\arctan x+\arctan \frac{1}{x}=\frac{\pi }{2}
+\]
+Cette formule permet d'\'{e}crire les d\'{e}veloppements suivants car $\frac{1}{\sqrt{x}}\rightarrow 0$ quand $x\rightarrow \infty $.
+\begin{multline*}
+f(x) =(\sqrt{x}+\frac{1}{\sqrt{x}})(\frac{\pi }{2}-\arctan \frac{1}{\sqrt{x}}) \\
+ = (\sqrt{x}+\frac{1}{\sqrt{x}})(\frac{\pi }{2}-\frac{1}{\sqrt{x}}+\frac{1}{3x\sqrt{x}}+o(\frac{1}{x\sqrt{x}})) \\
+ = \frac{\pi }{2}\sqrt{x}-1+(\frac{1}{3}-1)\frac{1}{x}+\frac{\pi }{2\sqrt{x}}+o(\frac{1}{x}) \\
+ = \frac{\pi }{2}\sqrt{x}-1+\frac{\pi }{2\sqrt{x}}-\frac{2}{3x}+o(\frac{1}{x})
+\end{multline*}
+La parabole $y=\frac{\pi }{2}\sqrt{x}-1$ est asymptote au graphe de $f$ au voisinage de $+\infty $. le graphe est au dessus de la parabole \`{a} cause du terme $+\frac{\pi }{2\sqrt{x}}$.
+\end{enumerate}
+

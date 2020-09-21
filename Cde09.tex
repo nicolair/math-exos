@@ -1,0 +1,41 @@
+\begin{tiny}(Cde09)\end{tiny} La restriction de $t\mapsto \tan t - t$ dans un intervalle 
+\[
+ \left] -\frac{\pi}{2} + n\pi , \frac{\pi}{2} + n\pi\right[ 
+\]
+définit une bijection strictement croissante à valeurs dans $\R$. Il existe donc un unique $x_n$ dans cet intervalle tel que 
+\[
+ \tan x_n = x_n.
+\]
+De $-\frac{\pi}{2} + n\pi < x_n < \frac{\pi}{2} + n\pi$ on déduit par encadrement $x_n \sim n\pi$.\newline
+On pose $b_n = x_n - n\pi$. Alors
+\[
+ -\frac{\pi}{2} < b_n < \frac{\pi}{2} \Rightarrow b_n = \arctan x_n.
+\]
+Comme $(x_n)\rightarrow +\infty$, $(b_n)\rightarrow \frac{\pi}{2}$. On pose $c_n = b_n - \frac{\pi}{2}$. On sait que $(c_n)\rightarrow 0$ c'est à dire $c_n = o(1)$. On a obtenu le développement suivant
+\[
+ x_n = n\pi + \frac{\pi}{2} + c_n \text{ avec } c_n \in o(1).
+\]
+Pour tout $x>0$, on a
+\[
+ \arctan x + \arctan \frac{1}{x} = \frac{\pi}{2}.
+\]
+On en déduit
+\begin{multline*}
+ \frac{\pi}{2} + c_n = b_n = \arctan x_n = \frac{\pi}{2} - \arctan \frac{1}{x_n}\\
+ \Rightarrow c_n = - \arctan \frac{1}{x_n}
+ = - \arctan \frac{1}{n\pi + \frac{\pi}{2} + o(1)}.
+\end{multline*}
+On calcule le développement composé pour $\arctan$:
+\begin{multline*}
+ \frac{1}{n\pi + \frac{\pi}{2} + o(1)} = \frac{1}{n\pi}\left( 1 - \frac{1}{2n} + o(\frac{1}{n})\right)\\
+ = \frac{1}{n\pi} - \frac{1}{2n^2\pi} + o(\frac{1}{n^2}) = u.\\
+\arctan u = u + o(u^2) \text{ avec } o(u) = o(\frac{1}{n^2}) \\
+\Rightarrow 
+c_n = -\frac{1}{n\pi} + \frac{1}{2n^2\pi} + o(\frac{1}{n^2}). 
+\end{multline*}
+On a donc obtenu le développement
+\[
+ x_n = n\pi + \frac{\pi}{2} - \frac{1}{n\pi} + \frac{1}{2n^2\pi} + o(\frac{1}{n^2}).
+\]
+
+ 

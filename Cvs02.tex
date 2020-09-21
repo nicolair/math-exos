@@ -1,0 +1,54 @@
+\begin{tiny}(Cvs02)\end{tiny}
+On notera $\bar{X}$ le complémentaire d'une partie $X$ de $E$ dans $E$.
+\begin{enumerate}
+ \item Si l'équation admet une solution alors $A\subset B$. On en déduit la discussion.
+\begin{itemize}
+ \item Si $A$ n'est pas inclus dans $B$, l'équation n'admet pas de solutions.
+ \item Si $A\subset B$ alors l'équation admet des solutions et une partie $X$ de $E$ est solution si et seulement si 
+\begin{displaymath}
+B\setminus A \subset X \text{ et } X\subset B 
+\end{displaymath}
+On peut remarquer que l'ensemble des solutions est en bijection avec l'ensemble des parties de $A$. 
+\end{itemize}
+ 
+ \item \'Equation $(1)$. Une partie $X$ de $E$ est solution si et seulement si $\bar{X}$ est solution de $E(\bar{A},\bar{B})$. On en déduit que $(1)$ admet des solutions si et seulement si 
+\begin{displaymath}
+ \bar{A}\subset \bar{B}\Leftrightarrow B \subset A
+\end{displaymath}
+Dans ce cas, $X\subset E$ est solution de $(1)$ si et seulement si
+\begin{displaymath}
+ \bar{B}\setminus \bar{A}\subset \bar{X}\subset \bar{B}
+\Leftrightarrow
+B\subset X\subset B \cup \bar{A} 
+\end{displaymath}
+\'Equation $(2)$. Une partie $X$ est solution de $(2)$ si et seulement si $\bar{X}$ est solution de $E(A,\bar{B})$. Il existe des solutions si et seulement si 
+\begin{displaymath}
+ A\subset \bar{B} \Leftrightarrow A\cap B =\emptyset
+\end{displaymath}
+Dans ce cas, $X\subset E$ est solution de $(2)$ si et seulement si
+\begin{displaymath}
+ \bar{B}\setminus A \subset \bar{X}\subset \bar{B}
+\Leftrightarrow
+B\subset X\subset A \cup B 
+\end{displaymath}
+\'Equation $(3)$. Une partie $X$ est solution de $(3)$ si et seulement si $X$ est solution de $E(\bar{A},\bar{B})$. Il existe des solutions si et seulement si 
+\begin{displaymath}
+ \bar{A}\subset \bar{B} \Leftrightarrow B\subset A
+\end{displaymath}
+Dans ce cas, $X\subset E$ est solution de $(3)$ si et seulement si
+\begin{displaymath}
+ \bar{B}\setminus \bar{A} \subset X\subset \bar{B}
+\Leftrightarrow
+A\setminus B \subset X \subset \bar{B}
+\end{displaymath}
+\item D'après la question a., pour tous les $i$ de $I$, l'équation $i$ du système $(S_1)$ admet des solutions si et seulement si $A_i\subset B_i$ . Lorsque ceci est réalisé, une partie $X$ est solution du système si et seulement si $B_i\setminus A_i \subset X \subset B_i$ pour tous les $i\in I$. Par définition de l'union et de l'intersection d'une famille, ceci est équivalent à
+\begin{displaymath}
+ \bigcup_{i\in I}(B_i\setminus A_i) \subset X \subset \bigcap_{i\in I} B_i 
+\end{displaymath}
+On peut donc conclure que la condition assurant l'existence de solutions pour le système est
+\begin{displaymath}
+ \forall i\in I, A_i\subset B_i \text{ et } \bigcup_{i\in I}(B_i\setminus A_i) \subset \bigcap_{i\in I} B_i
+\end{displaymath}
+Pour $(S_2)$, on remarque que $X$ est solution de $(S_2)$ si et seulement si $\bar{X}$ est solution du système $S_1$ attaché aux complémentaires.
+\end{enumerate}
+ 

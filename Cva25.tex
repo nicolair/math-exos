@@ -1,0 +1,26 @@
+\begin{tiny}(Cva25)\end{tiny} L'ensemble des valeurs de $N$ et $B$ est $\llbracket 0,n \rrbracket$. Pour tout $(i,j) \in \llbracket 1,n \rrbracket^2$,
+\[
+ \left( B = i \text{ et } N = j\right) =
+\left\lbrace 
+\begin{aligned}
+ \left( B = i\right) &\text{ si } i>1 \text{ et } j = 1\\
+ \left( N = j\right) &\text{ si } i=1 \text{ et } j > 1\\
+ \emptyset &\text{ sinon}
+\end{aligned}
+\right. .
+\]
+On en déduit
+\begin{multline*}
+ E(B\,N)
+ = \sum_{(i,j)\in \llbracket 0,n \rrbracket^2}ij\,\p\left( B = i \text{ et } N = j\right)\\
+ = \sum_{i=2}^{n}i\,\p\left( B = i\right) + \sum_{j=2}^{n}j\,\p\left( N = j\right) \\
+ = E(B) - \p\left( B = 1\right) + E(N) - \p\left( N = 1\right) \\
+ = E(B) + E(N) - 1
+\end{multline*}
+car $\left( B = 1\right)$ et $\left( N = 1\right)$ forment un système complet d'événements.
+On termine en factorisant
+\begin{multline*}
+ \cov(N,B) = E(N\,B) - E(N)E(B)\\
+ = E(N) + E(B) -1 - E(N)E(B)\\
+ = -\left( E(N) - 1\right)\left( E(B) - 1\right). 
+\end{multline*}

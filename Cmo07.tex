@@ -1,0 +1,41 @@
+\begin{tiny}(Cmo07)\end{tiny} On suppose que l'algorithme du pivot partiel ne nécessite pas de permutations de lignes. Il procède donc de haut en bas. Pour chaque $i$ entre $1$ et $p$ la ligne $i$ permet de nettoyer la colonne $i$ des lignes $i+1$ à $p$. Ces opérations se font avec des matrices élémentaires \emph{triangulaires inférieures}.\newline
+Il existe donc des matrices élémentaires triangulaires inférieures $P_1, \cdots , P_s$ telles que
+\begin{displaymath}
+  P_s \cdots P_1 A = U \Rightarrow A = L\,U
+\end{displaymath}
+avec $U$ triangulaire supérieure et
+\begin{displaymath}
+  L = \left(P_s \cdots P_1\right)^{-1}  
+\end{displaymath}
+triangulaire inférieure.\newline
+Comment calculer $L$ sans avoir à stocker les matrices élémentaires $P_i$ ?\newline
+En remarquant que
+\begin{displaymath}
+  L = I\, P_1^{-1}\cdots P_s^{-1}
+\end{displaymath}
+ce qui permet, à partir de $I_p$ d'opérer sur les colonnes avec l'inverse de la matrice élémentaire.\newline
+Pour l'exemple de 
+\begin{displaymath}
+A=\begin{pmatrix}
+5 & 2 & 1 \\
+5 & -6 & 2 \\
+-4 & 2 & 1    
+  \end{pmatrix}.
+\end{displaymath}
+présentons en parallèle les opérations codées
+\begin{align*}
+  L_2 \leftarrow& L_2 - L_1             &  C_1 \leftarrow& C_1 + C_2 \\
+  L_3 \leftarrow& L_3 + \frac{4}{5}L_1  &  C_1 \leftarrow& C_1 -\frac{4}{5} C_3 \\
+  L_3 \leftarrow& L_3 + \frac{9}{20}L_2 &  C_2 \leftarrow& C_2 -\frac{9}{20} C_3
+\end{align*}
+On obtient après calculs:
+\begin{displaymath}
+L = 
+\begin{pmatrix}
+  1 & 0 & 0 \\ 1 & 1 & 0 \\ -\frac{4}{5} & -\frac{9}{20} & 1
+\end{pmatrix},\hspace{0.5cm}
+U = 
+\begin{pmatrix}
+  5 & 2 & 1 \\ 0 & -8 & 1 \\ 0 & 0 & \frac{9}{4}
+\end{pmatrix}.
+\end{displaymath}

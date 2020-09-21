@@ -1,0 +1,35 @@
+\begin{tiny}(Csl05)\end{tiny} On utilise la formule
+\[
+  \cos((p+q)\alpha) = \cos(q\alpha) \cos(q\alpha) - \sin(q\alpha) \sin(q\alpha).
+\]
+Après les opérations
+\[
+\; L2 \leftarrow L_2 - \cos(\alpha)L_1, L3 \leftarrow L_3 - \cos(2\alpha)L_1,
+\]
+on obtient le système équivalent
+\[
+\left\lbrace  
+\begin{alignedat}{4}
+  x +& y\cos(\alpha)              &+& z\cos(2\alpha)             &=& a \\
+    -& y\sin^2(\alpha)            &+& z\sin(2\alpha)\sin(\alpha) &=& b-a\cos(\alpha) \\
+    -& y\sin(2\alpha)\sin(\alpha) &+& z\sin^2(2\alpha)           &=& c-a\cos(2\alpha) \\
+\end{alignedat}
+\right.
+\]
+Comme $\alpha \not \equiv 0 \mod \frac{\pi}{2}$, on peut diviser par $\sin(\alpha)$ et $\sin(2\alpha)$:
+\[
+\left\lbrace  
+\begin{alignedat}{4}
+  x +& y\cos(\alpha) &+& z\cos(2\alpha) &=& a \\
+    -& y             &+& 2z\cos(\alpha) &=& \frac{b-a\cos(\alpha)}{\sin^2(\alpha)} \\
+    -& y             &+& 2z\cos(\alpha) &=& \frac{c-a\cos(2\alpha)}{\sin(2\alpha)\sin(\alpha)} \\
+\end{alignedat}
+\right.
+\]
+Le système admet des solutions si et seulement si
+\begin{multline*}
+  2\cos(\alpha)(b-a\cos(\alpha)) = c - a \cos(2\alpha)\\
+  \Leftrightarrow
+  (2\cos^2(\alpha)-\cos(2\alpha))a - 2\cos(\alpha)b  + c = 0\\
+  \Leftrightarrow a - 2\cos(\alpha)b  + c = 0.
+\end{multline*}

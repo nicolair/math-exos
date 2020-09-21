@@ -1,0 +1,19 @@
+\begin{tiny}(Cfr13)\end{tiny} On considère une fraction
+\begin{displaymath}
+  F = \frac{x}{X-1}+\frac{y}{X}+\frac{z}{X+1}
+\end{displaymath}
+Alors, $(x,y,z)$ est solution si et seulement si
+\begin{displaymath}
+  \widetilde{F}(a)=\widetilde{F}(b)=\widetilde{F}(c)=1
+\end{displaymath}
+Cela revient à chercher un polynôme $A$ de degré $2$ avec des valeurs prescrites en $a$, $b$, $c$:
+\begin{displaymath}
+  \left\lbrace 
+\begin{aligned}
+  \widetilde{A}(a) &= (a-1)a(a+1)\\
+  \widetilde{A}(b) &= (b-1)b(b+1)\\
+  \widetilde{A}(c) &= (c-1)c(c+1)
+\end{aligned}
+\right. 
+\end{displaymath}
+On peut l'obtenir avec les polynômes d'interpolation de Lagrange en $a$, $b$, $c$. Il reste alors à décomposer la fraction $F$ en éléments simples pour obtenir la solution $(x,y,z)$.

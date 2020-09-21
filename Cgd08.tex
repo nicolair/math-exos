@@ -1,0 +1,31 @@
+\begin{tiny}(Cgd08)\end{tiny} Fonctions de Gronwall.
+\begin{enumerate}
+  \item Si $f$ est $\mathcal{C}^1$ et ne s'annule pas la fonction $\frac{f'}{f}$ est continue sur le segment $I$. Elle est donc bornée (et atteint ses bornes) ce qui entraine qu'elle est $M_1-\mathcal{G}$ avec $M_1 = \max_{I}|f'|$.
+  \item Avec les formules sur la dérivabilité des résultats d'opérations, on montre
+\begin{itemize}
+ \item $\lambda f$ est $\alpha-\mathcal{G}$,
+ \item $fg$ est $(\alpha + \beta)-\mathcal{G}$,
+ \item $f\circ \psi$ et $(M_1\alpha)-\mathcal{G}$ avec $M_1 = \max_{I}|\psi'|$.
+\end{itemize}
+
+  \item Comme $f$ est $\alpha - \mathcal{G}$ et à valeurs positives,
+\[
+ |f'(x)|\leq \alpha |f(x)| \Rightarrow f'(x)\leq \alpha f(x)
+\]
+On en déduit en dérivant que $\varphi = \left( x\mapsto f(x)e^{\alpha x}\right) $ est décroissante. La fonction $\varphi$ est à valeurs positives, décroissante dans $I = \left[ -1,1\right] $. Si elle est nulle en $0$, elle est nulle dans $[0,1]$.\newline
+D'après b., la fonction $f\circ \psi$ vérifie les mêmes hypothèses que $f$. Elle est nulle dans $[0,1]$ ce qui entraine que $f$ est nulle dans $[-1,0]$.
+  \item Les hypothèses sont semblables aux précédentes sauf que l'on ne suppose plus que $f$ est à valeurs positives. On s'y ramène avec la question b et $f^2 = f f$. La nullité de $f^2$ entraine celle de $f$.
+  
+  \item Les hypothèses sont semblables aux précédentes sauf que $f$ s'annule en un $a\in \left[ -1, +1 \right]$ dont on ne sait rien. On se propose de le ramener en $0$ à l'aide d'une fonction $\psi_\lambda$. \newline
+Si $-1 < a < 1$:
+\begin{multline*}
+\psi_\lambda(0) = a 
+\Leftrightarrow 
+-1 + 2^{1-\lambda} = a \\
+\Leftrightarrow
+(1-\lambda)\ln(2) = \ln(a+1)\\
+\Leftrightarrow
+\lambda = 1 - \frac{\ln(a+1)}{\ln(2)}
+\end{multline*}
+Si $a=-1$ ou $1$, on peut raisonner comme en c.
+\end{enumerate}

@@ -1,0 +1,17 @@
+\begin{tiny}(Cis27)\end{tiny} Notons $I$ l'intervalle sur lequel les fonctions sont définies (ce n'est pas forcément un segment) et $M_f$, $M_g$ des majorants de $|f|$, $|g|$. Le caractère uniformément continu de $f$ et $g$ se traduit par
+\[
+  \forall \varepsilon >0, \; \exists \alpha_{f, \varepsilon}>0, \, \exists \alpha_{g,\varepsilon}> 0 \text{ tels que } \cdots 
+\]
+Majorons l'accroissement du produit en introduisant un terme croisé
+\begin{multline*}
+\left|f(x)g(x) - f(y)g(y)\right| \leq \left|f(x)g(x) - f(x)g(y)\right| \\
++ \left|f(x)g(y) - f(y)g(y)\right| \\
+ \leq M_f \left|g(x) - g(y)\right| + M_g \left|f(x) - f(y)\right| .
+\end{multline*}
+On déduit que
+\[
+ \min(\alpha_{g,\frac{\varepsilon}{2M_f}}, \alpha_{f,\frac{\varepsilon}{2M_g}})
+\]
+assure l'uniforme continuité de $fg$.
+ 
+

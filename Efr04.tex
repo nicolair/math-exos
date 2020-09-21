@@ -1,0 +1,31 @@
+\begin{tiny}(Efr04)\end{tiny} Soit $n\geq 2$ dans $\N$ et $A_n$, $B_n$ dans $\Z[X]$:
+\begin{align*}
+ A_n &= \sum_{k=0}^{\lfloor \frac{n-1}{2}\rfloor}(-1)^k\binom{n}{2k+1}X^{2k+1}\\
+ B_n &= \sum_{k=0}^{\lfloor \frac{n}{2}\rfloor}(-1)^k\binom{n}{2k}X^{2k}
+\end{align*}
+ On définit la fraction rationnelle $F_n=\frac{A_n}{B_n}$ et l'ensemble 
+\begin{displaymath}
+ I_n = \llbracket 0, n-1 \rrbracket \setminus\left\lbrace \frac{n-1}{2} \right\rbrace 
+\end{displaymath}
+On remarque que si $n$ est pair, $\frac{n-1}{2}$ n'est pas entier et il n'y a rien à enlever à $\llbracket 0, n-1 \rrbracket$. Pour $k\in I_n$, on note :
+\begin{displaymath}
+ \theta_k = \frac{(2k+1)\pi}{2n},\hspace{0.5cm} t_k = \tan(\theta_k)
+\end{displaymath}
+
+\begin{enumerate}
+ \item Montrer que, pour $x$ non congru à $\frac{\pi}{2}$ modulo $\pi$,
+\begin{displaymath}
+\begin{aligned}
+  \sin(nx) &= (\cos(x))^n\widetilde{A_n}(\tan(x))\\
+  \cos(nx) &= (\cos(x))^n\widetilde{B_n}(\tan(x))
+ \end{aligned}
+\end{displaymath}
+En déduire que $\tan(nx)=\widetilde{F_n}(\tan(x))$ lorsque $\tan(x)$ n'est pas un pôle de $F_n$.
+\item Montrer que $\left\lbrace t_k,k\in I_n\right\rbrace$ est l'ensemble des racines de $B_n$. Calculer $\widetilde{A_n}(t_k)$ pour $k\in I_n$.
+\item Quel est le degré de $F_n$ ? Quels sont les pôles de $F_n$? Montrer que la décomposition en éléments simples de $F_n$ est
+\begin{align*}
+ &-\frac{1}{n}\sum_{k\in I_n}\frac{1+t_k^2}{X-t_k}& &\text{ si $n$ est pair}\\
+&\frac{1}{n}X-\frac{1}{n}\sum_{k\in I_n}\frac{1+t_k^2}{X-t_k}& &\text{ si $n$ est impair}
+\end{align*}
+
+\end{enumerate}

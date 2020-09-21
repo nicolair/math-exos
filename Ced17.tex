@@ -1,0 +1,32 @@
+\begin{tiny}(Ced17)\end{tiny}
+\begin{enumerate}
+  \item On dérive par rapport à $x$ et on prend $y=0$. On obtient
+\begin{displaymath}
+ \forall x\in \R,\; f'(x) = f'(x)f(0)
+\end{displaymath}
+Si $f$ est constante de valeur $1$ alors $f(0)=1$. Sinon, il existe un $x$ tel que $f'(x)\neq0$ et $f(0)=1$. Donc on a toujours $f(0)=1$.\newline
+On dérive par rapport à $y$ et on prend $y=0$. On obtient
+\begin{displaymath}
+\forall y \in \R,\;  0 = 2f(x)f'(0) 
+\end{displaymath}
+Comme $f$ n'est pas identiquement nulle, il existe $x$ tel que$f(x)\neq0$ donc $f'(0)=0$.
+\item On dérive une fois par rapport à $x$ une fois par rapport à $y$ et on ajoute. On obtient
+\begin{displaymath}
+\forall (x,y)\in \R^2,\;
+f'(x+y) = f'(x)f(y) + f(x)f'(y)
+\end{displaymath}
+On dérive encore par rapport à $y$ puis on prend $y=0$. On obtient
+\begin{displaymath}
+  \forall y \in \R,\; f''(x) = f(x)f''(0)
+\end{displaymath}
+\item Soit $\delta$ une racine carrée de $f''(0)$. Les solutions de l'équation différentielle sont de la forme
+\begin{displaymath}
+  x\rightarrow \alpha e^{\delta x} + \beta e^{-\delta x}
+\end{displaymath}
+Les conditions $f(0)=1$ et $f'(0)=0$ entrainent $\alpha = \beta = \frac{1}{2}$.\newline
+On vérifie que, pour tout $\delta$ complexe non nul, les fonctions
+\begin{displaymath}
+  t \mapsto \frac{1}{2}\left( e^{\delta t} + e^{-\delta t}\right) 
+\end{displaymath}
+sont solutions de l'équation fonctionnelle.
+\end{enumerate}

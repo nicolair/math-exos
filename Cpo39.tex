@@ -1,0 +1,27 @@
+\begin{tiny}(Cpo39)\end{tiny} Si $z$ est une racine double, elle est aussi racine du polynôme dérivé donc
+\begin{multline*}
+ \left\lbrace 
+ \begin{aligned}
+  (z-1)^n &= z^n - 1 \\ (z-1)^{n-1} &= z^{n-1}
+ \end{aligned}
+ \right. 
+ \Rightarrow (z-1)z^{n-1} = z^n -1 \\
+ \Rightarrow z^{n-1} = 1
+\end{multline*}
+On doit donc aussi avoir $(z-1)^{n-1}=1$. Géométriquement $z$ et $z-1$ dans le cercle unité ne peut se produire que si $z=e^{\pm i \frac{\pi}{3}}$. On doit donc avoir 
+\[
+ (n-1)\frac{\pi}{3} \equiv 0 \mod(2^\pi)
+ \Leftrightarrow n \equiv 1 \mod(6).
+\]
+Réciproquement, si $n \equiv 1 \mod(6)$, alors $z=e^{i\frac{\pi}{3}}$ est une racine double. En effet $z-1=e^{i\frac{2\pi}{3}}$ donc 
+\[
+ z^{n-1} = (z-1)^{n-1} = 1 
+ \Rightarrow 
+ \left\lbrace 
+ \begin{aligned}
+   \widetilde{P_n}(z) = z - 1 -z +1 &= 0 \\
+   \widetilde{P_n'}(z) = n(1-1) &= 0.
+ \end{aligned}
+\right. 
+\]
+Ainsi

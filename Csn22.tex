@@ -1,0 +1,24 @@
+\begin{tiny}(Csn22)\end{tiny} On note 
+\begin{displaymath}
+ \forall n\in \N V_n\; V_n = \sum_{k=0}^n v_k
+\end{displaymath}
+Par hypothèse, il existe $V>0$ tel que 
+\begin{displaymath}
+ \forall n \in \N,\; |V_n| \leq V.
+\end{displaymath}
+Effectuons une transformation d'Abel en écrivant $v_k = V_k - V_{k-1}$ pour $k\geq 1$ et $v_0 = V_0$.
+\begin{multline*}
+ \sum_{k=0}^n u_kv_k
+= u_0 V_0 + \sum_{k=1}^n u_k(V_k - V_{k-1})\\
+= u_0 V_0 + \sum_{k=1}^n u_kV_k - \sum_{k=0}^{n-1} u_{k+1}V_{k}\\
+= \sum_{k=1}^n (u_k-u_{k+1})V_k +u_{n+1}V_n
+\end{multline*}
+La suite $(u_{n+1}V_n)$ converge vers $0$ car $(u_n)$ converge vers $0$ et $(V_n)$ est bornée. La série
+$\left( \sum (u_k-u_{k+1})V_k\right)$ est \emph{absolument} convergente car
+\begin{multline*}
+ \sum_{k=0}^n \left|(u_k-u_{k+1})V_k\right| 
+= \sum_{k=0}^n (u_k-u_{k+1})\left|V_k\right| \\
+\leq V \sum_{k=0}^n (u_k-u_{k+1})
+\leq Vu_0
+\end{multline*}
+car la suite $(u_n)$ est décroissante.

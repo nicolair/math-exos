@@ -1,0 +1,21 @@
+\begin{tiny}(Cgd31)\end{tiny} La définition de la dérivabilité à droite en $a$ avec $\lambda$ dans le rôle de $\varepsilon$ assure l'existence d'un $\alpha_\lambda(a)$. On vérifie facilement que $a+\alpha_\lambda(a)\in E_\lambda$.\newline
+Pour montrer que $\beta\in E_\lambda$, on doit prouver la majoration affine pour tous les $t\in [a,\beta]$.\newline
+Si $t<\beta$, il n'est pas un majorant de $E_\lambda$. Il existe donc un $x$ dans $E_\lambda$ strictement plus grand que $t$. Par définition de $E_\lambda$, la majoration affine est alors vérifiée. 
+Pour avoir la majoration affine en $\beta$, il suffit de passer à la limite strictement à gauche de $\beta$ dans l'inégalité. On en conclut donc que $\beta\in E_\lambda$\footnote{on dit que $E_\lambda$ est fermé.}.\newline
+Supposons $\beta <b$. On peut utiliser la dérivabilité en $\beta$. Il existe un $\alpha_\lambda(\beta)$ tel que
+\begin{multline*}
+\left. 
+\begin{aligned}
+ &\forall t\in[\beta,\beta + \alpha_\lambda(\beta)],& & f(t)\leq f(\beta) + \lambda(t-\beta)\\
+ & & & f(\beta)\leq f(a) + \lambda(\beta -a)
+\end{aligned}
+\right\rbrace \\
+\Rightarrow
+f(t)\leq f(a)+\lambda(t-f(a)
+\end{multline*}
+ en additionnant. Cela prouve que $\beta + \alpha_\lambda(\beta)\in E_\lambda$ ce qui est contraire à la définition de $\beta$ comme borne supérieure. On doit donc avoir $\beta=b$.\newline
+On peut donc écrire que pour tout $t\in[a,b]$ et tous $\lambda >0$,
+\begin{displaymath}
+ f(t)\leq f(a) + \lambda(t-a)
+\end{displaymath}
+Pour $t$ fixé et $\lambda$ quelconque, on en déduit $f(t)\leq f(a)$. On obtient l'autre inégalité en appliquant ce résultat à $-f$ qui vérifie les mêmes propriétés.

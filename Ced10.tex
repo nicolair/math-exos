@@ -1,0 +1,48 @@
+\begin{tiny}(Ced10)\end{tiny}
+\begin{enumerate}
+ \item Après calculs, on trouve
+\begin{displaymath}
+  \left( \frac{x\sqrt{1+x^2}}{2x^2+1}\right)' =
+\frac{1}{\sqrt{1+x^2}(2x^2+1)^2} 
+\end{displaymath}
+
+ \item Avec des coefficients indéterminés, on trouve que le degré doit être inférieur ou égal à 2. On vérifie que $y_0$ tel que $y_0(x)=x$  est solution de l'équation (1).
+
+ \item Avec des coefficients indéterminés, on trouve que le degré doit être inférieur ou égal à 2. On trouve que $y_1$ tel que $y_1(x)=2x^2 + 1$  est solution de l'équation (2). (on pourrait multiplier $y_1$ par une constante arbitraire)
+
+ \item À partir de la définition de $w$, et du fait que $y_1$ est solution de (2), il vient
+\begin{multline*}
+ (1+x^2)w'(x) + xw(x) = \\
+ \underset{=4y_1(x)}{\underbrace{\left((1+x^2)y_1''(x) +x y_1'(x) \right)}}z(x) \\
+ - \left( (1+x^2)z''(x)-xz'(x)\right)y_1(x) \\
+= -\left((1+x^2)z''(x)-xz'(x)-4z(x) \right)y_1(x)   
+\end{multline*}
+Comme $y_1$ ne s'annule pas, on peut bien en déduire que $w$ est solution de (3) si et seulement si $z$ est solution de (2).
+
+ \item Recherche des solutions de (3). 
+\begin{displaymath}
+ \text{ primitive de }\frac{x}{1+x^2} : \frac{1}{2}\ln(1+x^2)
+\end{displaymath}
+Les solutions de (3) sont donc les fonctions 
+\begin{displaymath}
+ x \rightarrow \frac{\lambda}{\sqrt{1+x^2}}\text{ avec } \lambda \in \R
+\end{displaymath}
+Pour $w_0(x) = \frac{1}{1+x^2}$, l'équation proposée s'écrit
+\begin{displaymath}
+ y'(x) - \frac{4x}{2x^2+1}y(x) = -\frac{1}{\sqrt{1+x^2}(2x^2+1)}  \hspace{0.5cm} (4)
+\end{displaymath}
+L'expression avec le déterminant montre clairement que $y_1$ est une solution de l'équation homogène associée à (4). On cherche donc une solution de (4) sous la forme $x\rightarrow \lambda(x) y_0(x)$. Une telle fonction est solution si et seulement si
+\begin{displaymath}
+ \lambda'(x) = -\frac{1}{\sqrt{1+x^2}(2x^2+1)^2}
+\end{displaymath}
+On peut alors utiliser le calcul de dérivée de la première question. On en déduit une solution de (4) qui, d'après la question d est solution de (2). 
+\begin{displaymath}
+ x\rightarrow x\sqrt{1+x^2}
+\end{displaymath}
+On en déduit que les solutions de (1) sont les fonctions
+\begin{displaymath}
+ x\rightarrow x + \lambda(2x^2+1) + \mu x\sqrt{x^2+1}
+\end{displaymath}
+avec $\lambda$ et $\mu$ réels.
+\end{enumerate}
+ 

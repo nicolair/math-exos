@@ -1,0 +1,21 @@
+\begin{tiny}(Csn07)\end{tiny} Par définition:
+\[
+ d_1 = \underset{q \text{ nbs impairs}}{\underbrace{1 + \frac{1}{3} + \cdots + \frac{1}{2q-1}}} 
+ - \left(\underset{p\text{ nbs pairs}}{\underbrace{ \frac{1}{2} + \frac{1}{4} + \cdots + \frac{1}{2p}}}\right)  
+\]
+\begin{multline*}
+ d_n = \underset{nq\text{ premiers impairs}}{\underbrace{i_{nq}}} 
+ - \underset{nq\text{ premiers pairs}}{\underbrace{p_{nq}}}\\
+ = h_{2nq} - p_{nq} - p_{np}
+ = h_{2nq} - \frac{h_{nq} + h_{np}}{2}
+\end{multline*}
+Introduisons une suite $\varepsilon_n$ qui tend vers $0$ pour traduire la propriété admise par l'énoncé:
+\[
+ \sum_{k=1}^{n}\frac{1}{k} = \ln n + \gamma + \varepsilon_n.
+\]
+Les $\gamma$ disparaissent de l'expression de $d_n$:
+\begin{multline*}
+ d_n = \ln(2nq) - \frac{\ln(nq) + \ln(np)}{2} + \varepsilon_{2nq} - \frac{\varepsilon_{np} + \varepsilon_{nq}}{2}\\
+ = \ln 2 + \ln \sqrt{\frac{q}{p}} + \underset{\rightarrow 0}{\underbrace{\varepsilon_{2nq} - \frac{\varepsilon_{np} + \varepsilon_{nq}}{2}}}\\
+ \rightarrow \ln 2 + \ln \sqrt{\frac{q}{p}}.
+\end{multline*}

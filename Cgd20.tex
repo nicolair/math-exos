@@ -1,0 +1,44 @@
+\begin{tiny}(Cgd20)\end{tiny}
+\begin{enumerate}
+  \item On fixe un $a >0$ puis on majore avec l'inégalité des accroissements finis.
+\begin{multline*}
+  \forall x \geq a, \;
+  f(x) = f(a) + \left(f(x) - f(a)\right)\\
+  \Rightarrow |f(x)| \leq |f(a)| + \left| f(x) - f(a)\right|\\
+  \leq |f(a)| + (x-a)\max_{\left[a,X\right]}|f'| \\
+  \Rightarrow \frac{|f(x)|}{x} \leq \frac{|f(a)|}{x} + \max_{\left[a,X\right]}|f'|.
+\end{multline*}
+On termine comme pour le théorème de Cesaro \index{théorème de Cesaro}.\newline
+Pour tout $\varepsilon >0$, il existe $a>0$ tel que
+\[
+  \max_{\left[a,X\right]}|f'|\leq \frac{\varepsilon}{2}.
+\]
+Ce $a$ étant fixé, $\frac{|f(a)|}{x} \rightarrow 0$. Il existe $b >a$ tel que
+\[
+  x >b \Rightarrow
+  \frac{|f(x)|}{x} \leq \frac{\varepsilon}{2} + \frac{\varepsilon}{2}.
+\]
+
+  \item On se ramène au a. appliqué à $g$ définie par
+\[
+  g(x) = f(x) - \lambda x.
+\]
+
+  \item Cette fois l'inégalité des accroissements finis permet d'écrire
+\[
+  \frac{f(x)}{x} \geq -\frac{|f(a)|}{x} + \frac{x-a}{x}\,\min_{\left[a,X\right]}|f'|. 
+\]
+Pour tout $E$, il existe $a$ assez grand pour que 
+\[
+ x\geq a \Rightarrow  \min_{\left[a,x\right]}|f'| \geq 4E.
+\]
+Ce $a$ étant fixé, il existe $b >a$ assez grand pour que
+\[
+  x \geq b \Rightarrow \frac{x-a}{x} \geq \frac{1}{2} \;\text{ et }\; \frac{|f(a)|}{x} \leq A
+\]
+On en déduit
+\[
+  x \geq b \Rightarrow \frac{f(x)}{x} \geq - A + \frac{1}{2} 4 A = A. 
+\]
+
+\end{enumerate}

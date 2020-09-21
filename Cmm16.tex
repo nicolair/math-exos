@@ -1,0 +1,19 @@
+\begin{tiny}(Cmm16)\end{tiny} Matrices de diagonale nulle.
+\begin{enumerate}
+  \item Le terme d'indice $i,j$ de $AD-DA$ est $(d_j-d_i)a_{ij}$. Tous les termes de la diagonale sont donc nuls. On peut remarquer aussi que, comme les termes de la diagonale de $D$ sont deux à deux distincts, $AD-DA=0$ entraine que $A$ est diagonale.
+  \item Considérons l'application $\varphi$
+\begin{displaymath}
+  \varphi :
+\left\lbrace 
+\begin{aligned}
+  \mathcal{M}_p(\K) &\rightarrow \mathcal{M}_p(\K) \\ A &\mapsto AD - DA
+\end{aligned}
+\right. 
+\end{displaymath}
+Cette fonction est un endomorphisme. D'après la question précdente, son image est inclus dans le sous-espace des matrices à diagonale nulle qui est de dimension $p^2-p$. On en tire $$\rg \varphi \leq p^2-p$$ La question précédente montre aussi que le noyau est formé des matrices diagonales qui est un sous-espace de dimension $p$.
+Le théorème du rang donne
+\begin{displaymath}
+  p^2 = \dim(\ker \varphi) + \rg \varphi \Rightarrow \dim(\Im \varphi) = p^2 - p
+\end{displaymath}
+On en tire que $\Im \varphi$ est exactement formé des matrices à diagonale nulle ce qui répond à la question.
+\end{enumerate}

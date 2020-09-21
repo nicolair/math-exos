@@ -1,0 +1,21 @@
+\begin{tiny}(Caz09)\end{tiny}
+\begin{enumerate}
+  \item Dans la décomposition d'un diviseur, l'exposant de $p_i$ est arbitraire entre $0$ et $m_i$. Le nombre de diviseurs de $n$ est donc
+\begin{displaymath}
+ d(n)=(1+m_1)\cdots(1+m_k).
+\end{displaymath}
+  \item On introduit une relation entre les diviseurs positifs de $n$: $d$ et $d'$ sont en relation si et seulement si $dd'=n$. C'est une relation d'équivalence, les classes forment donc une partition de l'ensemble des diviseurs positifs. Or toutes les classes sont des paires sauf éventuellement le singleton $\left\lbrace m \right\rbrace $ si $m^2 = n$.\newline
+  On en déduit que $n$ est un carré d'entier si et seulement si il existe une telle classe à un élement c'est àdire si et seulement si $d(n)$ est impair. 
+  \item On remarque d'abord que si $n$ est un carré alors $n^{d(n)}$ aussi. Si $n$ n'est pas un carré, alors $d(n)$ est pair donc $n^{d(n)}$ est encore un carré.\newline
+  \'Ecrivons le produit des diviseurs
+  \begin{multline*}
+   \pi = \prod_{(i_1,\cdots,i_k)\in \llbracket 0,m_1\rrbracket \times \cdots \times \llbracket 0,m_k\rrbracket} p_1^{i_1} \cdots p_p^{i_k}\\
+   = p_1^{\frac{m_1(m_1+1)}{2}}\cdots p_1^{\frac{m_p(m_1+1)}{2}}\\
+   \Rightarrow \pi^2 = \left(p_1^{m_1}\cdots p_k^{m_k}\right)^{(m_1+1)\cdots(m_k+1)} = n^d(n). 
+   \end{multline*}
+
+  \item Soit $(a,b)$ dont le ppcm est $n$, notons $\alpha_k$ et $\beta_k$ les exposants de $p_k$. Un doit être égal à $m_k$ et l'autre plus petit. Attention, à ne pas compter deux fois le couple $(m_k,m_k)$. On en déduit donc que le nombre de couples cherché est
+\begin{multline*}
+ (2(m_1+1)-1)\cdots (2(m_p+1)-1)\\=(1+2m_1)\cdots(1+2m_p)=d(n^2)
+\end{multline*}
+\end{enumerate}  

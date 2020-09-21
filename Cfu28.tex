@@ -1,0 +1,15 @@
+\begin{tiny}(Cfu28)\end{tiny} En utilisant la définition de $\sh$ et la propriété fondamentale de l'exponentielle puis en multipliant par $2$, on écrit
+\begin{multline*}
+ \sum_{k=0}^{n-1}\sh(x+k) = 0
+\Leftrightarrow
+\sum_{k=0}^{n-1}e^x\,e^k = \sum_{k=0}^{n-1}e^{-x}\,e^{-k} \\
+\Leftrightarrow
+e^{2x} = \frac{\sum_{k=0}^{n-1}e^{-k}}{\sum_{k=0}^{n-1}e^{k}}
+= \frac{1+e^{-1}+\cdots+e^{-(n-1)}}{1+e^{1}+\cdots+e^{n-1}}\\
+= \frac{e^{-(n-1)}\left( e^{n-1} + e^{n-2} + \cdots + 1\right) }{1+e^{1}+\cdots+e^{n-1}}
+= e^{1-n}
+\end{multline*}
+Comme la fonction exponentielle réelle est bijective, il existe une unique solution:
+\begin{displaymath}
+  \frac{1-n}{2}
+\end{displaymath}

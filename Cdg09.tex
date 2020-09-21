@@ -1,0 +1,14 @@
+\begin{enumerate}
+ \item On écrit le théorème d'approximation pour la partie réelle et la partie imaginaire avec $h=u+iv$ ($u$ et $v$ réels).
+\begin{align*}
+ \Re f(m+h) &= \Re f(m) + \frac{\partial \Re f}{\partial x} u + \frac{\partial \Re f}{\partial y}v + r_1(h)\\
+ \Im f(m+h) &= \Im f(m) + \frac{\partial \Im f}{\partial x} u + \frac{\partial \Im f}{\partial y}v + r_2(h)
+\end{align*}
+puis on les combine :
+\begin{multline*}
+ f(m+h) = f(m)+ \frac{\partial f}{\partial x} u + \frac{\partial f}{\partial y} u + r(h)\\
+=f(m)+ \frac{1}{2}\frac{\partial f}{\partial x}(h+\overline{h}) - \frac{i}{2}\frac{\partial f}{\partial x}(h-\overline{h})+r(h)\\
+=f(m)+\frac{\partial f}{\partial z} h + \frac{\partial f}{\partial \overline{z}} \overline{h} + r(h)
+\end{multline*}
+
+\end{enumerate}

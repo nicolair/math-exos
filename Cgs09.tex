@@ -1,0 +1,19 @@
+\begin{tiny}(Cgs09)\end{tiny} Dans la colonne $j$ de $P_{\sigma}$, le seul $1$ est en ligne $\sigma(j)$. On en déduit
+\begin{multline*}
+ C_j(M\, P_{\sigma}) = C_{\sigma(j)}(M), \\
+ M\, P_{\sigma} = 
+ \begin{pmatrix}
+  C_{\sigma(1)}(M) & \cdots & C_{\sigma(p)}(M)
+ \end{pmatrix}.
+\end{multline*}
+Multiplier à droite par une matrice de permutation permute les colonnes.
+Pour la multiplication à gauche, utilisons la transposition
+\[
+ P_{\theta^{-1}} M = \trans (\trans M P_{\theta}) 
+ \Rightarrow P_{\theta^{-1}} M = 
+ \begin{pmatrix}
+  L_{\theta(1)}(M) \\ \vdots \\ L_{\theta(p)}(M)
+ \end{pmatrix} .
+\]
+Attention, multiplier à gauche par une matrice de permutation permute les lignes selon la permutation réciproque.\newline
+On en tire que le terme $i,j$ de $P_{\theta^{-1}} M P_{\sigma}$ est $a_{\theta(i) \sigma(j)}$.

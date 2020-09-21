@@ -1,0 +1,50 @@
+\begin{tiny}(Ced17)\end{tiny} 
+\begin{enumerate}
+  \item Pour $n\geq 0$, introduisons la fonction $f_n$:
+\[
+  f_n(x) = x^n -nx +1 \Rightarrow f_n'(x) = n(x^{n-1} - 1) .
+\]
+Donc $f_n$ est strictement décroissante dans $\left[0,1\right]$ avec 
+\[
+  f_n(0) = 1 >0 \text{ et } f_n(1) = 2 - n \leq 0.
+\]
+On en déduit que $f_n(x)= 0$ admet une unique solution (notée $\alpha_n$) dans $\left] 0,1 \right[$.
+
+  \item Pour tout $\varepsilon >0$ fixé, considérons $(f_n(\varepsilon))_{n \geq 2}$. Il est évident qu'elle tend vers $-\infty$.\newline
+\`A partir d'un certain rang:
+\[
+  f_n(\varepsilon) < 0 \Rightarrow 0 < \alpha_n < \varepsilon .
+\]
+car $f_n$ est décroissante. Donc $(\alpha _{n})_{n\geq 2} \rightarrow 0$.\newline
+Par définition:
+\[
+  n\alpha_n = 1 + \underset{\rightarrow 0}{\underbrace{\alpha_n^n}} \Rightarrow n\alpha_n \sim 1 \Rightarrow \alpha_n\sim \frac{1}{n}.
+\]
+
+  \item On creuse l'idée d'évaluer le signe de la suite des $f_n(\varepsilon)$ en remplaçant $\varepsilon$ par une expression de $n$.\newline
+Pour $\lambda \geq 1$, formons un développement 
+\begin{multline*}
+  \left(\frac{1}{n} + \frac{\lambda}{n^{n+1}}\right)^n
+  = \frac{1}{n^n}\left( 1 + \frac{\lambda}{n^n}\right)^n\\
+  = \frac{1}{n^n} e^{\frac{\lambda}{n^{n-1}} + O(\frac{1}{n^{2n-1}})} \text{ car} \\
+          \ln(1+\frac{\lambda}{n^n}) = \frac{\lambda}{n^n} + O(\frac{1}{n^{2n}}) \\
+  = \frac{1}{n^n}\left( 1 + \frac{\lambda}{n^{n-1}} + O(\frac{1}{n^{2n-2}})\right) \text{ avec }  \\
+  e^u = 1 + u + O(u^2)\\
+  = \frac{1}{n^n} + \frac{\lambda}{n^{2n-1}} + O(\frac{1}{n^{3n-2}})
+\end{multline*}
+On en tire
+\[
+  f_n\left( \frac{1}{n} + \frac{\lambda}{n^{n+1}}\right)
+  = \frac{1-\lambda}{n^n} + \frac{\lambda}{n^{2n-1}} + O(\frac{1}{n^{3n-2}}). 
+\]
+Pour $\lambda = 1$, cette suite est $>0$ à partir d'un certain rang. Pour $\lambda >1$, cette suite est $<0$ à partir d'un certain rang.\newline
+Pour tout $\varepsilon >0$ (avec $\lambda = 1 +\varepsilon$), à partir d'un certain rang:
+\begin{multline*}
+  \frac{1}{n} + \frac{1}{n^{n+1}} \leq \alpha_n \leq \frac{1}{n} + \frac{1+\varepsilon}{n^{n+1}} \\
+  \Rightarrow
+  1 \leq n^{n+1} \left( \alpha_n - \frac{1}{n}\right) \leq 1 + \varepsilon \\
+  \Rightarrow \alpha_n - \frac{1}{n} \sim \frac{1}{n^{n+1}}.
+\end{multline*}
+
+
+\end{enumerate}

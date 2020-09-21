@@ -1,0 +1,29 @@
+\begin{tiny}(Cev11)\end{tiny} Considérons un polynôme quelconque de $\R_2[X]$:
+\begin{displaymath}
+  P =a_0 + a_1 X +a_2 X^2
+\end{displaymath}
+On cherche à exprimer $a_0$, $a_1$, $a_2$ en fonction de $\alpha_0(P)$, $\alpha_{-1}(P)$, $\alpha_{1}(P)$.
+\begin{multline*}
+\left\lbrace  
+\begin{aligned}
+  a_0 &= \alpha_0(P)\\
+  a_0 - a_1 + a_2 &= \alpha_{-1}(P)\\
+  a_0 + a_1 + a_2 &= \alpha_{1}(P)
+\end{aligned}
+\right. \\
+\Rightarrow
+\left\lbrace 
+\begin{aligned}
+  a_0 &= \alpha_0(P)\\
+  a_1 &= \frac{1}{2}\alpha_1(P)-\frac{1}{2}\alpha_{-1}(P)\\
+  a_2 &= -\alpha_0(P) + \frac{1}{2}\alpha_1(P)+\frac{1}{2}\alpha_{-1}(P)
+\end{aligned}
+\right. 
+\end{multline*}
+On peut alors remplacer
+\begin{multline*}
+  s(P) = a_0 + \frac{1}{2}a_1+\frac{1}{3}a_2 \\
+  = \frac{2}{3}\alpha_0(P) + \frac{5}{12}\alpha_{1}(P) - \frac{1}{12}\alpha_{-1}(P) \\
+\Rightarrow
+s  = \frac{2}{3}\alpha_0 + \frac{5}{12}\alpha_{1} - \frac{1}{12}\alpha_{-1}
+\end{multline*}

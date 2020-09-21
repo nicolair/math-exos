@@ -1,0 +1,20 @@
+\begin{tiny}(Ccp34)\end{tiny} Supposons que les nombres complexes $z$ et $-(z+1)$ aient les mêmes arguments. Il existe alors $\alpha$ tel que
+\begin{displaymath}
+ z = |z|e^{i\alpha}\hspace{0.5cm} z+1 = -|z+1|e^{i\alpha}
+\end{displaymath}
+On en tire 
+\begin{displaymath}
+ z+1 = -\frac{|z+1|}{|z|}z
+\Rightarrow
+\left( 1 + \frac{|z+1|}{|z|}\right) z = -1
+\end{displaymath}
+ce qui entraine que $z$ est un réel négatif. Mais il faut aussi que $-(z+1)$ soit strictement négatif. Finalement, l'ensemble cherché est $]-1,0[$.\newline
+Pour la deuxième question.
+\begin{displaymath}
+ z=e^{i\alpha}, \hspace{0.5cm} z+1 = |z+1|e^{-i\alpha}
+\end{displaymath}
+Or $z+1 = 2\cos\frac{\alpha}{2}e^{i\frac{\alpha}{2}}$ donc
+\begin{displaymath}
+ e^{i\frac{3\alpha}{2}} = \frac{|\cos\frac{\alpha}{2}|}{\cos\frac{\alpha}{2}}
+\end{displaymath}
+On en tire $\frac{3\alpha}{2}\equiv 0 \mod \pi$ puis $\alpha \equiv 0 \mod \frac{2\pi}{3}$ donc $z\in\left\lbrace1, j , j^2 \right\rbrace$. Mais pour $j$ et $j^2$, la somme des arguments est $\pi$ donc $1$ est la seule solution.

@@ -1,0 +1,55 @@
+\begin{tiny}(Edg09)\end{tiny}
+\textbf{Fonctions holomorphes}.\newline On s'interesse ici aux fonctions à valeurs complexes d'une variable complexe. On commence par redéfinir des notations usuelles afin de les faire entrer dans le cadre des \emph{systèmes de coordonnées} 
+\begin{align*}
+ x=\Re &,& y=\Im &,& z= x+iy &,& \overline{z}=x-iy
+\end{align*}
+On notera bien que le dernière relation n'est pas une égalité entre nombres complexes mais entre \emph{fonctions complexes}. De même $\overline{z}$ n'est pas le conjugué d'un nombre complexe mais la \emph{conjugaison} elle même. Les fonctions $x$ et $y$ forment un système de fonctions coordonnées. On aura donc en particulier pour tous les $w$ complexes :
+\begin{align*}
+ z(w)=w &,& x(w)=\Re w &,& y(w)= \Im w &,& \overline{z}(w)=\overline{w}
+\end{align*}
+Normalement les opérateurs $\frac{\partial}{\partial x}$ et $\frac{\partial}{\partial y}$ agissent sur les fonctions à valeurs réelles, on les étend aux fonctions $f$ à valeurs complexes par linéarité (complexe). On pose donc :
+\begin{align*}
+ \dfrac{\partial f}{\partial x} = \dfrac{\partial \Re f}{\partial x} + i\dfrac{\partial \Im f}{\partial x}\\
+\dfrac{\partial f}{\partial y} = \dfrac{\partial \Re f}{\partial y} + i\dfrac{\partial \Im f}{\partial y}
+\end{align*}
+On définit des opérateurs linéaires $\frac{\partial}{\partial z}$ et $\frac{\partial}{\partial \overline{z}}$ sur les fonctions à valeurs complexes par les formules:
+\begin{align*}
+ \dfrac{\partial}{\partial z} =& \dfrac{1}{2}\left( \dfrac{\partial}{\partial x} - i \dfrac{\partial}{\partial y}\right) \\
+\dfrac{\partial}{\partial \overline{z}} =& \dfrac{1}{2}\left( \dfrac{\partial}{\partial x} + i\dfrac{\partial}{\partial y}\right)  
+\end{align*}
+Soit $f$ une fonction de classe $\mathcal C^1$ dans $\C$. 
+\begin{enumerate}
+ \item Montrer que, pour tous complexes $m$ et $h$ :
+\begin{displaymath}
+ f(m+h)-f(m) = \dfrac{\partial f}{\partial z}(m)h + \dfrac{\partial f}{\partial \overline{z}}(m)\overline{h} + r(h)
+\end{displaymath}
+avec 
+\begin{displaymath}
+ \dfrac{r(h)}{|h|} \xrightarrow{0} 0
+\end{displaymath}
+\item Pour tout complexe $m$, on note $\tau_m$ la fonction définie dans $\C^*$ par :
+\begin{displaymath}
+ \tau_m(h)=\dfrac{f(m+h)-f(m)}{h}
+\end{displaymath}
+Montrer l'équivalence entre les deux propriétés suivantes :
+\begin{align*}
+ &(1) & & \tau_m \text{ admet une limite en $0$ }\\
+ &(2) & & \dfrac{\partial f}{\partial \overline{z}}(m) = 0
+\end{align*}
+On dit alors que $f$ est holomorphe en $m$.
+\item Calculer
+\begin{displaymath}
+ \dfrac{\partial }{\partial \overline{z}}\circ \dfrac{\partial }{\partial z}
+\text{ et }
+\dfrac{\partial }{\partial z} \circ \dfrac{\partial }{\partial \overline{z}}
+\end{displaymath}
+Montrer que 
+\begin{displaymath}
+ \dfrac{\partial \overline{f}}{\partial z}
+=
+\overline{\dfrac{\partial f}{\partial \overline{z}}}
+\end{displaymath}
+En déduire que, lorsque $f$ est holomorphe, ses parties réelles et imaginaires sont harmoniques.
+\end{enumerate}
+
+

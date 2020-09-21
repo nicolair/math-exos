@@ -1,0 +1,30 @@
+\begin{tiny}(Cvs03)\end{tiny} Négation des propositions.
+\begin{enumerate}
+  \item Soit $X$ une partie de $\R$,
+\begin{displaymath}
+  \exists x \in X \text{ tq } \forall n\in \N,\; n < x.
+\end{displaymath}
+Cette proposition est clairement fausse.
+
+  \item Soit $\left( x_n\right)_{n\in \N}$ une suite de nombres complexes,
+\begin{displaymath}
+  \forall M\in \R, \; \exists n_M \in \N \text{ tq } M < |x_{n_M}|.
+\end{displaymath}
+Cette proposition signifie que la suite $\left( x_n\right)_{n\in \N}$ n'est pas bornée.
+
+  \item Soit $\left( x_n\right)_{n\in \N}$ une suite de nombres réels,
+\begin{multline*}
+  \exists \varepsilon >0 \text{ tq } \forall N\in \N, \; \exists n_N \in \N \\
+  \text{ tq } \left( \left( n\geq N \Rightarrow |x_n| < \varepsilon\right) \text{ faux }\right) 
+\end{multline*}
+  L'implication $\mathcal{P} \Rightarrow \mathcal{Q}$ est une abbréviation pour $\text{non}\mathcal{P} \text{ ou } \mathcal{P}$. Sa négation est donc
+\[
+  \mathcal{P} \text{ et non } \mathcal{Q}.
+\]
+Finalement, la négation demandée s'écrit:
+\begin{multline*}
+  \exists \varepsilon >0 \text{ tq } \forall N\in \N, \; \exists n_N \in \N \\
+  \text{ tq } \left( n \geq N  \text{ et } \varepsilon \leq |x_n| \right) .
+\end{multline*}
+
+\end{enumerate}

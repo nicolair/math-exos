@@ -1,0 +1,32 @@
+\begin{tiny}(Cis12)\end{tiny}
+\begin{enumerate}
+ \item On découpe l'intervalle $[na,nb]$ en segments de longueur $2\pi$ en partant de $na$. En posant $K_n=\lfloor\frac{n(b-a)}{2\pi} \rfloor$, on peut écrire (en utilisant la valeur de l'intégrale donnée par l'énoncé)
+\begin{multline*}
+ \int_{na}^{nb}|\sin| 
+= \sum_{k=0}^{K_n-1}\int_{na+2k\pi}^{na+2(k+1)\pi}|\sin| \\ + \int_{na+2K_n\pi}^{nb}|\sin|
+= 4K_n + \int_{na+2K_n\pi}^{nb}|\sin|
+\end{multline*}
+Des encadrements
+\begin{displaymath}
+ 0\leq \int_{na+2K_n\pi}^{nb}|\sin| \leq 2\pi
+\end{displaymath}
+et 
+\begin{displaymath}
+ \frac{n(b-a)}{2\pi}-1 < K_n \leq \frac{n(b-a)}{2\pi}
+\end{displaymath}
+on tire
+\begin{displaymath}
+ \left(\frac{1}{n}\int_{na}^{nb}|\sin | \right)_{n\in\N^*} \rightarrow \frac{2}{\pi}(b-a)
+\end{displaymath}
+\item On commence par montrer la limite demandée pour une fonction $\varphi$ en escalier sur $[a,b]$. Cela résulte de la linéarite de l'intégrale et du résultat de a. appliqué à chaque segment d'une subdivision adaptée.\newline
+Lorsque $f$ est continue par morceaux, on l'approche par des fonctions en escalier. Pour tout $\varepsilon >0$, il existe une fonction en escalier $\varphi$ telle que 
+\begin{displaymath}
+|f-\varphi|\leq \frac{\varepsilon}{2(b-a)} 
+\end{displaymath}
+dans $[a,b]$. On peut majorer la différence:
+\begin{multline*}
+ \left\vert\frac{1}{n}\int_{na}^{nb}(f(\frac{u}{n})-\varphi(\frac{u}{n}))|\sin | \right\vert\\
+\leq \frac{1}{n}\int_{na}^{nb}\frac{\varepsilon}{2(b-a)}|\sin |\leq \frac{nb-na}{n}\frac{\varepsilon}{2(b-a)}=\frac{\varepsilon}{2}
+\end{multline*}
+
+\end{enumerate}

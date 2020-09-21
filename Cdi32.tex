@@ -1,0 +1,35 @@
+\begin{tiny}(di32)\end{tiny} On note $f$ l'application définie par l'énoncé.
+\begin{enumerate}
+  \item La linéarité est évidente. L'examen des termes de plus haut degré montre que 
+\[
+  \deg(f(P)) \leq \deg(P) - 1.
+\]
+Donc $f \in \mathcal{L}(E)$.
+
+  \item D'après la formule du binôme, $f(1) = f(X) = 0$ donc 
+\[
+  \R_1[X] \subset \ker f \text{ et } \dim(\ker f) \geq 2.
+\]
+et
+\[
+  f(X^p) = \sum_{\substack{i \in \llbracket 1, p\rrbracket\\ i \text{ pair}}} 2\binom{p}{i} X^{p-i}
+\]
+dont le degré est $p-2$ pour $p \geq 2$.\newline
+Les $p-1$ polynômes $f(X^2), \cdots, f(X^p)$ forment une famille échelonnée donc libre de l'image. On en déduit
+\[
+  \R_{n-1}[X] \subset \Im f \text{ et } \rg f \geq n - 1.
+\]
+D'après le théorème du rang
+\begin{multline*}
+  2 \leq \dim(\ker f) = n+1 - \rg f  \leq n+1 -(n-1)=2 \\
+  \Rightarrow 
+  \left\lbrace
+  \begin{aligned}
+    &\dim(\ker f) = 2, & \ker f = \R_1[X] \\
+    &\rg f = n-1, & \Im f = \R_{n-2}[X]
+  \end{aligned} 
+  \right. .
+\end{multline*}
+
+  \item 
+\end{enumerate}

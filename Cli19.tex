@@ -1,0 +1,60 @@
+\begin{tiny}(Cli19)\end{tiny}
+\begin{enumerate}
+  \item On prend la valeur en $0$ de la dérivée de 
+  \[
+    h \mapsto f(a+h) = f(a-h).
+  \]
+On en déduit $f'(a) = -f'(a) \Rightarrow f'(a) = 0$.
+  \item Démonstration directe.\newline
+  Soit $a < b$ quelconques. On découpe $[a,b]$ en $2n$ segments de même longueur $\frac{b-a}{2n}$.
+  \[
+    x_0 = a < x_1 < x_2 < \cdots < x_{2n-1} < x_{2n} = b.
+  \]
+On choisit $n$ assez grand pour que $\frac{b-a}{2n}$ soit strictement plus petit que le $\alpha$ de la définition de $f$ uls.\newline
+Par symétrie locale par rapport à $x_1$, $x_3$, ... :
+\begin{multline*}
+  f(a) = f(x_0) = f(x_2) \\
+  = \cdots =f(x_{2n-2}) = f(x_{2n}) = f(b).
+\end{multline*}
+
+Démonstration par contraposition et dichotomie.\newline
+Soit $a < b$ avec $f(a) \neq f(b)$.\newline
+Construisons par dichotomie des suites $(a_n)_{n\in \N}$ et $(b_n)_{n\in \N}$ telles que $f(a_n) \neq f(b_n)$ pour tous les $s$.\newline
+On pose $a_0 = a$ et $b_0 = b$ de sorte que $f(a_0) \neq f(b_0)$.\newline
+Pour un $n \in \N$ tel que $f(a_n) \neq f(b_n)$, considérons le milieu $\frac{a_n + b_n}{2}$. Son image par $f$ ne peut être égale à la fois à $f(a_n)$ et $f(b_n)$ car $f(a_n) \neq f(b_n)$. 
+Alors
+\[
+\begin{aligned}
+&\frac{a_n + b_n}{2} \neq f(a_n) 
+  \Rightarrow
+  \left\lbrace
+    \begin{aligned}
+    a_{n+1} &= a_n \\ b_{n+1} &= \frac{a_n + b_n}{2}
+    \end{aligned}
+  \right. \\
+  &\frac{a_n + b_n}{2} \neq f(b_n) 
+  \Rightarrow
+  \left\lbrace
+    \begin{aligned}
+    a_{n+1} &= \frac{a_n + b_n}{2} \\ b_{n+1} &= b_n
+    \end{aligned}
+  \right. 
+\end{aligned}
+\]
+Par construction $b_n - a_n = \frac{b-a}{2^n}$. Comme $f(a_n) \neq f(b_n)$ les $\alpha >0$ de la locale symétrie au milieu $\frac{a_n + b_n}{2}$ doivent être strictement plus petit que la moitié de la longueur c'est à dire $\frac{b-a}{2^{n+1}}$. Pour n'importe quel $\alpha >0$, il existe donc des réels $x$ pour lesquels la fonction n'est pas symétrique par rapport à $x$ dans $[a- \alpha, a+ \alpha]$. La fonction n'est pas uls.
+
+  \item
+  \begin{enumerate}
+    \item à compléter
+    \item Supposons $A_a$ majoré et notons $\beta = \sup A_a$. La fonction est alors loc. sym. en $b = a + \beta$ et en $b' = a - \beta$. Il existe $\gamma >0$ assez petit pour que 
+\[
+  \begin{aligned}
+    &\left[ b' - \gamma ,b' + \gamma\right] \text{ domaine de symétrie en } b' \\
+    &\left[ b - \gamma ,b + \gamma\right] \text{ domaine de symétrie en } b
+  \end{aligned}
+\]
+
+    \item
+  \end{enumerate}
+
+\end{enumerate}

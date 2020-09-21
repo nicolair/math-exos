@@ -1,0 +1,71 @@
+\begin{tiny}(Csn26)\end{tiny} 
+\begin{enumerate}
+ \item Inégalité 1.\newline
+La suite est croissante et positive donc
+\begin{multline*}
+\left( \forall k \leq n, \; x_k \leq x_n\right) 
+ \Rightarrow S_n \leq nx_n \\
+ \Rightarrow x_{n+1} \geq x_n + \frac{1}{nx_n}. 
+\end{multline*}
+Inégalité 2.\newline
+On écrit $x_n^2$ comme une somme et on utilise la comparaison somme-intégrale dans le cas décroissant. On commence par élever au carré:
+\begin{multline*}
+ (1)\Rightarrow x_{n+1}^2 \geq x_n^2 + \frac{2}{n}
+ \Rightarrow 
+ x_n^2 - a^2 \geq \sum_{k=1}^{n-1}\frac{2}{k}\\
+ \geq \int_1^n\frac{2}{t}\, dt = 2\ln n. 
+\end{multline*}
+Inégalité 3.\newline
+De l'inégalité (2), on tire $x_n \geq \sqrt{2 \ln n}$ pour $n\geq 2$. On en déduit une minoration de $S_n$ que l'on minore encore par comparaison somme-intégrale cette fois dans le cas croissant.
+\[
+ S_n \geq a + \sum_{k=2}^{n}\sqrt{2\ln k} 
+ \geq  a + \int_1^n \sqrt{2 \ln t}\, dt.
+\]
+
+ \item Notons $F$ la primitive nulle en $e$. Pour obtenir un équivalent, on utilise une intégration par parties (à partir de $e$ pour éviter les problèmes en $0$).
+\[
+ \int_e^x \sqrt{2\ln t}\,dt =
+\left[ t \sqrt{2\ln t} \right]_0^x - \int_e^x \frac{dt}{\sqrt{2}(\ln t)^{\frac{3}{2}}} 
+\]
+Comme la fonction $\ln$ est croissante
+\[
+ 0 \leq \int_e^x \frac{dt}{\sqrt{2}(\ln t)^{\frac{3}{2}}} \leq \frac{x}{\sqrt{2}(\ln t)^{\frac{3}{2}}}
+ \in o(x \sqrt{\ln x}).
+\]
+On en déduit 
+\[
+ F(x) \sim 2\sqrt{x\ln x}.
+\]
+\item Notons
+\[
+ w_n = \frac{1}{a + \int_1^n \sqrt{2 \ln t}\, dt}.
+\]
+De sorte que $\frac{1}{S_n}\leq w_n$ par l'inégalité (3) et, par définition
+\[
+ x_{n+1} - x_n \leq w_n 
+ \Rightarrow
+ x_n - a \leq \sum_{k=1}^{n-1}w_k.
+\]
+On a donc un encadrement
+\[
+ \sqrt{2 \ln n} \leq x_n \leq a + \sum_{k=1}^{n-1}w_k \hspace{0.5cm} (E).
+\]
+D'après la question b.,
+\[
+ w_n \sim \frac{1}{n\sqrt{2 \ln n}}
+\]
+D'après le résultat admis,
+\[
+ \sum_{k=1}^{n-1}w_k \sim \sum_{k=1}^{n-1}\frac{1}{n\sqrt{2 \ln n}}.
+\]
+Par comparaison somme-intégrale,
+\[
+ \sum_{k=1}^{n-1}\frac{1}{n\sqrt{2 \ln n}} \sim \int_2^n \frac{dt}{t\sqrt{2 \ln t}}.
+\]
+Or
+\[
+ \int_2^n \frac{dt}{t\sqrt{2 \ln t}}=
+ \left[ \sqrt{2 \ln t}\right]_2^n \sim \sqrt{2 \ln n} .
+\]
+En divisant l'encadrement $(E)$ par $\sqrt{2 \ln n}$, on obtient que $x_n \sim \sqrt{2 \ln n}$.
+\end{enumerate}

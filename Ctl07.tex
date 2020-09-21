@@ -1,0 +1,32 @@
+\begin{tiny}(Ctl07)\end{tiny} Toute formule de Taylor est une formule de Taylor \emph{idiote}. Par exemple
+\begin{displaymath}
+  \tan u = u + R(u)
+\end{displaymath}
+où $R$ est le \emph{reste} c'est à dire
+\begin{displaymath}
+  R(u) = \tan u -u.
+\end{displaymath}
+Ce qui fait l'utilité d'une formule de Taylor c'est l'information dont on dispose sur le reste. Il n'est pas intéressant d'introduire trop tôt ce renseignement dans le contexte d'une intégrale.
+\begin{multline*}
+  f(a) = \int_{0}^{\pi}\left( a\sin x + R(a\sin x)\right)\,dx \\
+  = 2a + \int_{0}^{\pi}R(a\sin x)\,dx
+\end{multline*}
+On connait les développements limités de $\tan$. On en déduit une information sur le reste
+\begin{displaymath}
+  R(u) \in O(u^3)
+\end{displaymath}
+que l'on traduit sous une forme adaptée à l'utilisation dans l'intégrale. Il existe une fonction $\varphi$ définie au voisinage de $0$ telle que 
+\begin{displaymath}
+  R(u) = u^3 \varphi(u)
+\end{displaymath}
+La fonction $\varphi$ est localement bornée en $0$. Il existe $\alpha>0$ et $\Phi>0$ tels que
+\begin{displaymath}
+  |u|\leq \alpha \Rightarrow |R(u)|\leq |u|^3 \Phi
+\end{displaymath}
+On en déduit, en majorant l'intégrale,
+\begin{multline*}
+  |a|\leq \alpha \Rightarrow \left|\int_{0}^{\pi}R(a\sin x)\,dx\right| 
+  \leq \int_{0}^{\pi}|a|^3(\sin x)^3 \Phi\,dx\\
+  \leq \pi \Phi |a|^3
+\end{multline*}
+

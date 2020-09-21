@@ -1,0 +1,22 @@
+\begin{tiny}(Ctl08)\end{tiny} Définissons une fonction $\varphi$ et dérivons la:
+\begin{multline*}
+  \varphi(x) = \frac{f(a)+f(x)}{2} - f(\frac{a+x}{2})\\
+\varphi'(x) = \frac{1}{2}\left(f'(x)-f'(\frac{a+x}{2}) \right) 
+\end{multline*}
+Comme $x-\frac{a+x}{2}=\frac{x-a}{2}$, l'inégalité des accroissements finis appliquée à $\varphi'$ donne
+\begin{displaymath}
+  \frac{m_2}{4}(x-a)\leq \varphi'(x)\leq \frac{M_2}{4}(x-a) 
+\end{displaymath}
+avec $m_2$ et $M_2$ les valeurs minimale et maximale de la fonction continue $f''$ dans le segement.\newline
+En intégrant entre $a$ et $b$, on obtient 
+\begin{displaymath}
+  \frac{m_2}{8}(b-a)^2\leq \varphi(b)-\varphi(a)\leq \frac{M_2}{8}(b-a)^2
+\end{displaymath}
+On termine en remarquant que $\varphi(a)=0$ et en appliquant le théorème de la valeur intermédiaire à la fonction continue $f''$:
+\begin{displaymath}
+  m_2\leq \frac{8\varphi(b)}{(b-a)^2}\leq M_2  
+\end{displaymath}
+entraine qu'il existe $c\in [a,b]$ tel que 
+\begin{displaymath}
+  \varphi(b) = \frac{(b-a)^2}{8}f''(c)
+\end{displaymath}

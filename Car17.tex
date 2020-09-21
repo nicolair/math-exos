@@ -1,0 +1,11 @@
+\begin{tiny}(Car17)\end{tiny} Comme l'algorithme d'Euclide renvoie le pgcd, $A(y)$ est non nul si et seulement si $P$ et $X^2-y$ sont premiers entre eux. Comme tous les polynômes à coefficients complexes sont scindés, deux polynômes de $\C[X]$ sont premiers entre eux si et seulement si ils n'ont pas de racine en commun. On en déduit que $A(y)=0$ si et seulement si $P$ et $X^2-y$ ont une racine en commun c'est à dire si et seulement si il existe $z\in \C$ tel que $y=z^2$ avec $\widetilde{P}(z)=0$.\newline
+Pour l'exemple de l'énoncé, l'algorithme d'Euclide calcule
+\begin{multline*}
+ X^3+2X^2-X+3,\hspace{0.4cm} X^2 -y, \hspace{0.4cm} (y-1)X+3+2y, \\
+\left( \frac{3+2y}{1-y}\right)^2-y 
+\end{multline*}
+On en déduit que les racines de 
+\begin{displaymath}
+ Q = (3+2X)^2 -X(1-X)^2
+\end{displaymath}
+sont les carrés de celles de $P$. 

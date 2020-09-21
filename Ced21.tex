@@ -1,0 +1,10 @@
+\begin{tiny}(Ced21)\end{tiny} On effectue une intégration par parties dans $I_0(x)$ en considérant $1$ comme la dérivée de $t$.
+\begin{multline*}
+  I_0(x) = 
+  \left[ t (1-t^2)^{-\frac{1}{2}}\right]_0^x 
+  - \int_0^x t^2 (1-t^2)^{-\frac{3}{2}}\, dt \\
+  = \frac{x}{\sqrt{1-x^2}} - \int_0^x (t^2 -1 + 1) (1-t^2)^{-\frac{3}{2}}\, dt \\
+  = \frac{x}{\sqrt{1-x^2}} + I_0(x) - I_1(x) \\
+  \Rightarrow 
+  I_1(x) = \frac{x}{\sqrt{1-x^2}}.
+\end{multline*}

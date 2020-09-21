@@ -1,0 +1,10 @@
+\begin{tiny}(Cee18)\end{tiny} On va montrer que, si $p$ n'est pas orthogonale, il existe un vecteur strictement plus long que l'un de ses antécédents par projection. \newline
+En effet $\Im p \subset \ker(p)^{\perp}$ est alors faux sinon on aurait l'égalité. Il existe $b \in \Im(p)$ qui n'est pas orthogonal à $\ker(p)$ donc il existe $a\in \ker(p)$ tel que $(a/b)\neq 0$. Pour tous les réels $\lambda$, les vecteurs $b_{\lambda} = b+\lambda a$ sont des antécédents de $b$ pour la projection. Quel est le plus court? Aura-t-on la malchance que ce soit $b_0 = b$?\newline
+Une équivalence locale en $0$ prouve que non :
+\begin{displaymath}
+  \|b_\lambda \|^2 - \|b \|^2 \sim 2(a/b)\lambda
+\end{displaymath}
+Il existe donc bien des $\lambda$ réels proches de 0 tels que 
+\begin{displaymath}
+  \|b_\lambda \| < \|b \| = \|p(b_\lambda) \|
+\end{displaymath}

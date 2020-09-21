@@ -1,0 +1,22 @@
+\begin{tiny}(Cmf21)\end{tiny} Intervertir les vecteurs d'une base :
+\[
+  \mathcal{U} = (u_1,u_2,\cdots,u_p)\leftrightsquigarrow \mathcal{V} = (u_p,u_{p-1},\cdots,u_1)
+\]
+Par exemple avec une matrice $3\times3$ représentant un endomorphisme $g$.
+\begin{multline*}
+\Mat_{(u_1,u_2,u_3)}(g)=
+\begin{pmatrix}
+    a & b & c \\ 0 & d & e \\ 0 & 0 & f 
+  \end{pmatrix} \\
+  \Rightarrow
+\left\lbrace
+\begin{aligned}
+  g(e_3) &= fe_3 + ee_2 + ce_1 \\ g(e_2) &= de_2 + b e_1 \\ g(e_1) &= ae_1 
+\end{aligned}
+\right. \\
+\Rightarrow 
+\Mat_{(u_3,u_2,u_1)}(g) =
+\begin{pmatrix}
+    f & 0 & 0 \\ e & d & 0 \\ c & b & a 
+  \end{pmatrix} .
+\end{multline*}

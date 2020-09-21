@@ -1,0 +1,56 @@
+\begin{tiny}(Cip04)\end{tiny}
+\begin{itemize}
+ \item Primitive de $\frac{1}{4x^2+4x+5}$. 
+\begin{multline*}
+ \frac{1}{4x^2+4x+5}=\frac{1}{(2x+1)^2+4} \\
+ = \frac{1}{4}\frac{1}{(x+\frac{1}{2})^2+1}.
+\end{multline*}
+Une primitive est donc
+\begin{displaymath}
+ F(t) = \frac{1}{4}\arctan(t+\frac{1}{2})
+\end{displaymath}
+
+ \item Primitive de $\frac{1}{x^2-4x+2} $
+\begin{displaymath}
+ \frac{1}{x^2-4x+2} = \frac{\frac{1}{2\sqrt{2}}}{x-2-\sqrt{2}}+ \frac{-\frac{1}{2\sqrt{2}}}{x-2+\sqrt{2}}
+\end{displaymath}
+Une primitive est donc
+\begin{displaymath}
+ F(t)= \frac{1}{2\sqrt{2}} \ln|x-2-\sqrt{2}| - \frac{1}{2\sqrt{2}} \ln|x-2+\sqrt{2}|
+\end{displaymath}
+
+ \item Primitive de $\frac{1}{5+3\cos x}$.
+Pour $t$ dans $\R$, changement de variable $u=\tan \frac{x}{2}$ dans $F(t)$.
+\begin{multline*}
+ F(t) = \int^t\frac{1}{5+3\cos x}\,dx\\
+ = \int^{\tan \frac{t}{2}}\frac{2\,du}{5(1+u^2)+3(1-u^2)}\\
+= \frac{1}{4}\int^{\tan \frac{t}{2}}\frac{du}{1+(\frac{u}{2})^2}
+= \frac{1}{2}\arctan\left(\frac{1}{2}\tan(\frac{t}{2}) \right) 
+\end{multline*}
+
+ \item Primitive de $\frac{1}{x}\sqrt{\frac{x-1}{x+1}}$. On se place dans $\left[ 1, +\infty\right[$.\newline
+Première méthode.
+\[
+ F(x) = \int_1^{x}\sqrt{\frac{t-1}{t+1}}\frac{dt}{t}
+ = \int_1^{x}\frac{\sqrt{t^2-1}}{t(t+1)}\,dt.
+\]
+Changement de variable $t = \ch u$.
+\begin{multline*}
+ F(x) = \int_{0}^{\argch(x)}\frac{\ch u -1}{\ch u}\, du \\
+ = \argch(x) - \int_{0}^{\argch(x)}\frac{1}{\ch u}\, du \\
+ = \argch(x) - \int_{0}^{\argch(x)}\frac{\ch u}{1 + \sh^2 u}\, du \\
+ = \argch(x) - \arctan \circ \sh \circ \argch (x)\\
+ = \argch(x) - \arctan(\sqrt{x^2 - 1}).
+\end{multline*}
+Deuxième méthode.\newline
+Changement de variable $u = \sqrt{\frac{t-1}{t+1}}$.
+\[
+ F(x) = \int_{0}^{\sqrt{\frac{x-1}{x+1}}} \frac{4u^2}{(1+u^2)(1-u^2)}\,du = \cdots
+\]
+ 
+ 
+ \item Primitive de $\frac{x}{\sqrt{x^2+x+1}} $\\pas encore de correction
+ \item Primitive de $\frac{1}{e^x+2e^{-x}} $\\pas encore de correction
+ \item Primitive de $\frac{x^2}{\sqrt{1-x^2}} $\\pas encore de correction
+ \item Primitive de $\frac{\sin x +2\cos x}{\sin x -\cos x} $\\pas encore de correction
+\end{itemize}

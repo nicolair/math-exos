@@ -1,0 +1,17 @@
+\begin{tiny}(Cmo20)\end{tiny} D'après le résultat cité, chaque hyperplan matriciel est associé à une matrice $A$ non nulle définissant son équation avec la trace. Pour montrer que l'hyperplan matriciel contient une matrice inversible, il suffit de montrer que : pour toute matrice non nulle $A$ il existe $M \in GL_p(\K)$ telle que $\tr(AM) = 0$.\newline
+Soit $r = \rg(A)>0$. Il existe des matrices inversibles $P$ et $Q$, produit de matrices élémentaires telles que
+\[
+ A = Q\,J_r\,P.
+\]
+Comme la trace se conserve par permutation,
+\[
+ \tr(AM) = \tr\left( J_r(P\, M\, Q)\right) 
+\]
+Il suffit donc de trouver une matrice inversible $S$ telle que $\tr(J_r\,S) = 0$.\newline
+Si $r\geq 2$, on peut trouver $S$ diagonale. Si $r = 1$, on prend une matrice diagonale par bloc avec
+\[
+ \begin{pmatrix}
+  0 & 1 \\ 1 & 0
+ \end{pmatrix}
+\]
+en haut à gauche et $I_{p-2}$ en bas à droite.

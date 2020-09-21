@@ -1,0 +1,72 @@
+\begin{tiny}(Cal07)\end{tiny} Théorème de Lagrange.
+\begin{enumerate}
+  \item Si $Hg = Hg'$ alors $g=eg\in Hg=Hg'$ donc il existe $h\in H$ tel que
+\begin{displaymath}
+  g = h g' \Rightarrow gg'^{-1} \in H
+\end{displaymath}
+Réciproquement, supposons $gg'^{-1} \in H$.
+\begin{displaymath}
+  \forall x \in Hg,\; \exists h\in H\text{ tq } x = hg = \underset{\in H}{\underbrace{h(gg'^{-1})}}\,g' \in Hg'
+\end{displaymath}
+On en déduit $Hg \subset Hg'$.\newline
+On obtient l'autre inclusion en échangeant les rôles de $g$ et $g'$. On peut le faire car 
+\begin{displaymath}
+  g'g^{-1} = (gg'^{-1})^{-1} \in H
+\end{displaymath}
+
+  \item Réflexivité: un sous-groupe contient le neutre
+\begin{displaymath}
+gg^{-1}=e\in H  \Rightarrow g \mathcal{R}_H g
+\end{displaymath}
+Symétrie: par stabilité de $H$ pour l'inversion:
+\begin{multline*}
+g \mathcal{R}_H g' \Rightarrow gg'^{-1} \in H \Rightarrow (gg'^{-1})^{-1} \in H\\
+\Rightarrow g'g^{-1} \in H \Rightarrow g' \mathcal{R}_H g
+\end{multline*}
+
+Transitivité: stabilité de $H$ pour l'opération.
+\begin{multline*}
+\left. 
+\begin{aligned}
+g &\mathcal{R}_H g' \\ g' &\mathcal{R}_H g''  
+\end{aligned}
+\right\rbrace \Rightarrow
+\left. 
+\begin{aligned}
+gg'^{-1} &\in H \\ g'g''^{-1} &\in H  
+\end{aligned}
+\right\rbrace \\
+\Rightarrow
+gg''^{-1} = gg'^{-1}  g'g''^{-1} \in H 
+\Rightarrow g \mathcal{R}_H g''
+\end{multline*}
+
+  \item Comme $\mathcal{R}_H$ est une relation d'équivalence, ses classes forment une partition de $G$. D'après la quetion a., chacune de ses classes est de la forme $Hg$ et contient donc $\card H$ éléments. Toutes les classes ont le même nombre d'éléments $\card H$.
+\begin{center}
+$\card G$ = Nb classes $\times$ Nb elts dans une classe  
+\end{center}
+Si on note $p$ le nombre de classes, on obtient
+\begin{displaymath}
+  \card G = p\times \card H
+\end{displaymath}
+qui traduit que $\card H$ divise $\card G$.
+  \item L'ensemble
+\begin{displaymath}
+  N = \left\lbrace k\in \Z \text{ tq } g^k = e\right\rbrace 
+\end{displaymath}
+est un sous groupe de $(\Z, +)$. Il existe donc (cours) un unique $m_g \in \N$ tel que 
+\begin{displaymath}
+  N = m_g \Z
+\end{displaymath}
+
+  \item On vérifie que le sous-groupe de $G$ engendré par $g$ est 
+\begin{displaymath}
+  \left\lbrace e, g, \cdots , g^{m_g -1}\right\rbrace 
+\end{displaymath}
+Il est donc de cardinal $m_g$. D'après la question c., il existe un entier $p$ tel que 
+\begin{displaymath}
+\card G = p\,m_g \Rightarrow g^{\card G} = (g^{m_g})^{p} = e^p = e  
+\end{displaymath}
+
+\end{enumerate}
+

@@ -1,0 +1,21 @@
+\begin{tiny}(Cpb28)\end{tiny} On modélise une issue par une partie de $\llbracket 1,100\rrbracket$ à 2 éléments. 
+\[
+  \Omega = \mathcal{P}_2(\llbracket 1, 100 \rrbracket).
+\]
+On peut interpréter dans ce cadre les événements proposés
+\[
+  \begin{aligned}
+   S = \left\lbrace A \text{ tq } \min(A) \geq 20\right\rbrace &= 
+   \mathcal{P}_2(\llbracket 20, 100 \rrbracket)\\
+   I = \left\lbrace A \text{ tq } \max(A) \leq 60\right\rbrace &= 
+   \mathcal{P}_2(\llbracket 1, 60 \rrbracket)\\
+   S \cap I  &= 
+   \mathcal{P}_2(\llbracket 20, 60 \rrbracket)
+  \end{aligned}
+\]
+On en déduit
+\[
+  \p_I(S) = \frac{\p(I \cap S)}{\p(I)}
+  = \frac{\binom{41}{2}}{\binom{60}{2}}
+  = \frac{41 \times 40}{60 \times 59}.
+\]

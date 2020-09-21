@@ -1,0 +1,32 @@
+\begin{tiny}(Cal21)\end{tiny} La propriété est évidente si $k\in \llbracket -2, 3\rrbracket$. En effet dans ce cas la propriété est valable pour $i=-1$ ou pour $i=2$.
+Pour $i= -1$:
+\begin{displaymath}
+  (ab)^{-1} = a^{-1}b^{-1}\Rightarrow b^{-1}a^{-1} = a^{-1}b^{-1}
+\end{displaymath}
+Autrement dit, tous les inverses commutent. Mais comme tous les éléments du groupe sont des inverses, le groupe est commutatif.\newline
+Pour $i=2$:
+\begin{displaymath}
+  (ab)^{2} = a^2 b^2 \Rightarrow abab = aabb\Rightarrow ba = ab
+\end{displaymath}
+En multipliant à gauche par $a^{-1}$ et à droite par $b^{-1}$.\newline
+Pour $k\in \Z$, on va d'abord montrer que le $b$ quelconque commute avec certaines puissances.
+\begin{multline*}
+ab = (ab)^{k}(ab)^{-(k-1)} 
+= (ab)^{k} ((ab)^{k-1})^{-1}\\
+= a^k b^k (a^{k-1}b^{k-1})^{-1} 
+= a^{k} b^{k} b^{-(k-1)} a^{-(k-1)}\\
+= a^{k} b a^{-(k-1)}
+\Rightarrow b a^{k-1} = a^{k-1} b 
+\end{multline*}
+\begin{multline*}
+ab = (ab)^{k+1}(ab)^{-k} 
+= (ab)^{k+1} ((ab)^{k})^{-1}\\
+= a^{k+1} b^{k+1} (a^{k}b^{k})^{-1} 
+= a^{k+1} b^{k+1} b^{-k} a^{-k}\\
+= a^{k+1} b a^{-k}
+\Rightarrow b a^{k} = a^{k} b 
+\end{multline*}
+Si $b$ commute avec les puissances $k-1$ de  \emph{tous} les éléments de $G$, il commute aussi avec toutes les puissances $-(k-1)$ car il suffit de considérer l'inverse. On peut donc écrire
+\begin{displaymath}
+  ba = ba^k a^{-(k-1)} = a^k b a^{-(k-1)} = a^k a^{-(k-1)}b = ab 
+\end{displaymath}

@@ -1,0 +1,20 @@
+\begin{tiny}(Ccp26)\end{tiny} Notons $z= e^{i \theta}$ et $z' = e^{i \theta'}$. Remarquons que 
+\[
+zz' + 1 \neq 0 
+\Leftrightarrow
+\theta + \theta' \not \equiv \pi \mod (2\pi).
+\]
+En utilisant la méthode usuelle de transformation:
+\begin{multline*}
+  \frac{z + z'}{1 + zz'}
+  = \frac{e^{i \theta} + e^{i\theta'}}{1 + e^{i(\theta + \theta')}}
+  = \frac{e^{i\, \frac{\theta + \theta'}{2}}\, 2 \cos \frac{\theta - \theta'}{2}}{e^{i\, \frac{\theta + \theta'}{2}}\, 2 \cos \frac{\theta + \theta'}{2}}\\
+  = \frac{\cos \frac{\theta - \theta'}{2}}{\cos \frac{\theta + \theta'}{2}} \in \R.
+\end{multline*}
+Une mesure de l'angle rouge est un argument de
+\[
+  \frac{z-z'}{\overline{z}-z'}
+  = \frac{z-z'}{\frac{1}{z}-z'}
+  = z\, \frac{z - z' }{1-zz'}
+\]
+Un argument de $z$ est une mesure de l'angle bleu. On applique le premier résultat à $-z'$ qui est aussi de module 1. On en déduit la congruence modulo $\pi$ des mesures.

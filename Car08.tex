@@ -1,0 +1,17 @@
+\begin{tiny}(Car08)\end{tiny} On met en \oe{}uvre l'algorithme d'Euclide étendu dans ce cas particulier.
+\begin{center}
+\renewcommand{\arraystretch}{2}
+\begin{tabular}{|c|c|c|c|}\hline
+$X^4 + X^3 -2X +1$ & $X^2 + X +1$ & $-X-2$   & $7$ \\ \hline
+                   & $X^2 - 1$    & $-X-3$   & \\ \hline
+$1$                & $0$          & $1$      & $U_3$\\ \hline
+$0$                & $1$          & $-X^2+1$ & $V_3$ \\ \hline
+\end{tabular}
+\end{center}
+\[
+ U_3 = X + 3, \; V_3 = -X^3 -3 X^2 +X +4.
+\]
+On en déduit l'ensemble des solutions de l'équation:
+\[
+ \left\lbrace \left( \frac{1}{7}U_0+\Lambda B, \frac{1}{7}V_0-\Lambda A\right), \Lambda \in \R[X] \right\rbrace 
+\]

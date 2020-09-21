@@ -1,0 +1,32 @@
+\begin{tiny}(Cre02)\end{tiny} Pour tout $s \in A+B$, il existe $(a,b) \in A\times B$ tel que 
+\[
+ s = a + b \Rightarrow
+ \inf A + \inf B \leq s \le \sup A + \sup B.
+\]
+On en déduit que $A+B$ est bornée et que
+\[
+ \inf A + \inf B \leq \inf(A+B) \leq \sup(A+b) \leq \sup A + \sup B.
+\]
+D'autre part, notons $S = \sup(A+B)$,
+\begin{multline*}
+ \left( \forall a \in A, \forall b \in B, \; a+b \in A+B\right) \\
+ \Rightarrow
+ \left( \forall a \in A, \forall b \in B, \; a+b \leq S \right) \\
+ \Rightarrow
+ \left( \forall a \in A, \left( \forall b \in B, \; b \leq S -a \right) \right) \\
+ \Rightarrow
+ \left( \forall a \in A,  S -a \text{ majore } B \right) \\
+ \Rightarrow
+ \left( \forall a \in A,  \sup B \leq S -a  \right) \\
+ \Rightarrow
+ \left( \forall a \in A,  a \leq S - \sup B  \right) \\
+ \Rightarrow
+ \left( S - \sup B \text{ majore } A\right) \\
+ \Rightarrow \sup A \leq S - \sup B
+ \Rightarrow \sup A + \sup B \leq \sup(A+B).
+\end{multline*}
+On en déduit $\sup A + \sup B = \sup(A+B)$.\newline
+L'égalité pour les bornes inférieures se démontre par une suite d'implications analogues commençant par 
+\[
+ \left( \forall a \in A, \forall b \in B, \; \inf(A+B) \leq a + b  \right) \Rightarrow \cdots.
+\]

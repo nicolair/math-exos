@@ -1,0 +1,19 @@
+\begin{tiny}(Etl03)\end{tiny}
+Soit $I$ un intervalle ouvert , $a\in I$ et $p$ un entier naturel. Pour tout $x$ de $I$, on définit $r_p(x)$ par :
+\begin{multline*}
+ f(x) = f(a)+(x-a)f'(a)+\cdots+\frac{(x-a)^{p-1}}{(p-1)!}f^{(p-1)}(a)\\+r_p(x)
+\end{multline*}
+On suppose de plus qu'il existe un entier $q>p$ tel que
+\begin{multline*}
+ f^{(p+1)}(a)=f^{(p+2)}(a)=\cdots=f^{(q-1)}(a)=0 \\ f^{(q)}(a)\neq 0
+\end{multline*}
+\begin{enumerate}
+ \item Montrer qu'il existe $\alpha >0$ tel que $f^{(p)}_{|[a-\alpha, a]}$ et $f^{(p)}_{|[a, a +\alpha]}$ soient monotones. Dans toute la suite de l'exercice $x\in I$ et $|x-a|<\alpha$.
+\item Montrer qu'il existe un unique $\theta_x\in[0,1]$ tel que
+\begin{displaymath}
+ r_p(x) = \frac{(x-a)^p}{p!}f^{(p)}(a+\theta_x(x-a))
+\end{displaymath}
+Cette forme du reste de la formule de Taylor est dite \emph{de Maclaurin}.
+\item Déterminer la limite de $\theta_x$ en $a$.\newline
+On trouvera l'inverse d'une racine d'un coefficient du binôme. 
+\end{enumerate}

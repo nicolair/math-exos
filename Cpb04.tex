@@ -1,0 +1,11 @@
+\begin{tiny}(Cpb04)\end{tiny} On modélise l'univers des issues par l'ensemble des fonctions de $\llbracket 1,n\rrbracket$ dans $\llbracket 1,6 \rrbracket$ avec $n= 6, 12, 18$.\newline
+On considère les événements contraires c'est à dire obtenir au plus $0,1,2$ fois un $6$ ce qui revient à considérer les fonctions à valeurs dans $\llbracket 1,5 \rrbracket$.
+On présente en tableau les évaluations
+\begin{align*}
+  &\text{pas de 6 (6 dés)} &:&(\frac{5}{6})^6 \simeq 0.33\\
+  &\text{au plus un 6 (12 dés)} &:& (\frac{5}{6})^{12} + 12\times \frac{1}{6}\times(\frac{5}{6})^{11} \simeq 0.38\\
+  &\text{au plus deux 6 (18 dés)} &:& (\frac{5}{6})^{18} + 18\times \frac{1}{6}\times(\frac{5}{6})^{17}
++\binom{18}{2}\times (\frac{1}{6})^2\times(\frac{5}{6})^{16}\simeq 0.40
+\end{align*}
+L'événement le plus probable est donc \og obtenir au moins un 6 en lançant 6 dés\fg.\newline
+Les probabilités ne sont pas conservées en \og multipliant tout par $3$\fg~ (paradoxe du chevalier de Méré.

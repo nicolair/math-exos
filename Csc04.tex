@@ -1,0 +1,54 @@
+\begin{tiny}(Csc04)\end{tiny} 
+Pour tout $n\in \N^*$, on définit
+\begin{displaymath}
+  f_n:
+\left\lbrace 
+\begin{aligned}
+  \left[  0, + \infty \right[  &\rightarrow \R \\ t &\mapsto \sqrt{n + t}
+\end{aligned}
+\right. 
+\end{displaymath}
+
+On pose aussi $F_n = f_1\circ f_2 \circ \cdots \circ f_n$.
+Les fonctions $f_n$ et $F_n$ sont croissantes pour tous les $n$.\newline
+Pour $x\geq 0$, on a donc $x_n = F_n(x)$.
+\begin{enumerate}
+  \item Alors
+\begin{displaymath}
+  x_{n+1} = F_n(f_{n+1}(x))
+\end{displaymath}
+Pour $x$ fixé, la suite $\left( f_n(x)\right)_{n\in \N}$ diverge vers $+\infty$. Donc pour $n$ assez grand
+\begin{displaymath}
+  x \leq f_{n+1}(x)
+\end{displaymath}
+On en déduit que $\left( x_n\right)_{n\in \N}$ est croissante à partir d'un certain rang.
+
+\item Avec ces notations, le $y_n$ défini par l'énoncé s'écrit 
+\begin{displaymath}
+  y_n = F_n(x+n)
+\end{displaymath}
+Alors, pour tout $n$, $x_n \leq y_n$ car $F_n$ est croissante. De plus
+\begin{displaymath}
+  y_{n+1} = F_n(f_{n+1}(x+n+1))=F_n(\sqrt{x+2n+2})
+\end{displaymath}
+Pour $x$ fixé,
+\begin{displaymath}
+\left( x+n - \sqrt{x+2n+2}\right)_{n\in \N} \rightarrow +\infty  
+\end{displaymath}
+Donc pour $n$ assez grand,
+\begin{displaymath}
+  \sqrt{x+2n+2} \leq x + n \Rightarrow y_{n+1} \leq y_n 
+\end{displaymath}
+Si on se place assez loin pour que la suite des $x_n$ soit croissante et celle des $y_n$ décroissante, n'importe quel $y_n$ majore $\left( x_n\right)_{n\in \N}$ sauf pour un nombre fini de termes. Ceci assure que $\left( x_n\right)_{n\in \N}$ est majorée donc convergente. On note $\varphi(x)$ sa limite.
+
+\item Supposons $0\leq x \leq y$. Comme $F_n$ est croissante: $F_n(x)\leq F_n(y)$. Par passage à la limite dans une inégalité, on obtient $\varphi(x) \leq \varphi(y)$ donc $\varphi$ croissante. Pour montrer qu'elle est constante, on remarque que (en multipliant par la quantité conjuguée)
+\begin{displaymath}
+  0\leq \sqrt{k+y} - \sqrt{k+x} \leq \frac{y-x}{2\sqrt{k}}
+\end{displaymath}
+On en déduit par récurrence que
+\begin{displaymath}
+  0\leq F_n(y) - F_n(x) \leq \frac{y-x}{2^n\sqrt{n!}}
+\end{displaymath}
+Par passage à la limite dans une inégalité, on obtient  $\varphi(x) = \varphi(y)$.
+
+\end{enumerate}

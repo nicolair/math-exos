@@ -1,0 +1,40 @@
+\begin{tiny}(Cen06)\end{tiny} On suppose $1\leq p\leq n$. 
+\begin{enumerate}
+  \item On classe les surjections $f$ d'un ensemble $E$ à $n$ éléments dans un ensemble $F$ à $p$ éléments suivant l'ensemble des antécédents d'un élément fixé $y$ de $F$, c'est à dire 
+\[
+  f^{-1}(\left\lbrace y\right\rbrace).
+\]
+Un tel ensemble d'antécédents est une partie de $E$ dont le complémentaire doit contenir au moins $p-1$ éléments. Il doit donc contenir au plus $n-p+1$ éléments.\newline
+Pour toute partie $A$ fixée à $k$ éléments ($1 \leq k\leq n-p+1$), il existe des surjections $f$ telles que $ A= f^{-1}(\left\lbrace y\right\rbrace)$. Elles sont caractérisées par leur restriction au complémentaire de $A$. Il y en a autant que de surjections de $E\setminus A$ dans $F\setminus\left\lbrace y \right\rbrace$ soit $s(n-k,p-1)$.\newline
+Ce nombre est le même pour toutes les parties $A$ à $k$ éléments. On peut donc les regrouper dans la somme selon leur nombre d'éléments ce qui fait apparaître des coefficients du binôme. On obtient finalement
+\begin{multline*}
+  s(n,p) = \sum_{k=1}^{n-p+1}\binom{n}{k}s(n-k,p-1) \\
+  = \sum_{k=p-1}^{n-1}\binom{n}{k}s(k,p-1)
+\end{multline*}
+en numérotant avec $n-k$.
+  \item Soit $a \in E$ fixé. On classe les surjections suivant l'image de $a$. On note $S_y$ l'ensemble des $f$ surjectives telles que $f(a) = y$. Les $S_y$, pour $y\in F$, forment une partition de l'ensemble des surjections. Que vaut $\sharp S_y$?\medskip \newline
+  On classe les $f \in S_y$ selon que $a$ soit le seul antécédent de $y$ ou non. On note $S_{y,1}$ et $S_{y,2}$ les parties de $S_y$ associées.\newline
+  Les applications
+\begin{multline*}
+  \left\lbrace
+  \begin{aligned}
+    S_{y, 1} &\rightarrow \mathcal{S}(E\setminus \left\lbrace a \right\rbrace, F\setminus \left\lbrace y \right\rbrace)\\
+    f &\mapsto f_{E\setminus \left\lbrace a \right\rbrace}
+  \end{aligned}
+   \right., \\
+  \left\lbrace
+  \begin{aligned}
+    S_{y, 2} &\rightarrow \mathcal{S}(E\setminus \left\lbrace a \right\rbrace, F)\\
+    f &\mapsto f_{E\setminus \left\lbrace a \right\rbrace}
+  \end{aligned}
+   \right.
+\end{multline*}
+sont des bijections. On en déduit 
+\begin{multline*}
+  \sharp S_y = s(n-1,p-1) + s(n-1,p)\\
+  \Rightarrow s(n,p) = p \times\left(s(n-1,p-1) + s(n-1,p)\right).
+\end{multline*}
+
+
+\end{enumerate}
+

@@ -1,0 +1,47 @@
+\begin{tiny}Cfu06\end{tiny} 
+\begin{enumerate}
+  \item Notons
+\[
+  \theta = \arctan \frac{x}{\sqrt{1-x^2}}.
+\]
+On veut montrer que $\theta = \arcsin x$.\newline
+Par définition, $\theta$ est dans le bon intervalle $\left[ -\frac{\pi}{2}, -\frac{\pi}{2}\right]$ pour $\arcsin$. Il reste à montrer que $\sin \theta = x$.\newline
+Exprimons $\sin \theta$ en fonction de $\tan \theta$:
+\[
+  \sin \theta = \cos \theta \tan \theta 
+  = \frac{\tan \theta}{\pm \sqrt{1+ \tan^2 \theta}}
+  = \frac{\tan \theta}{\sqrt{1+ \tan^2 \theta}}
+\]
+car $\cos \theta \geq 0$ à cause de l'intervalle. Alors:
+\[
+  \sin \theta = \frac{x}{\sqrt{1-x^2}}\, \frac{1}{\sqrt{1 + \frac{x^2}{1 - x^2}}}
+  = x.
+\]
+  \item L'expression est définie pour les $x$ tels que
+\[
+  \frac{1-x}{1+x} \text{ et } \frac{2\sqrt{x}}{1+x} \text{ dans } \left[ -1, 1 \right]
+\]
+En écrivant que les carrés sont $\leq 1$, on obtient la seule condition $x\geq 0$ car le deuxième quotient est toujours dans l'intervalle.
+On pose $x = \tan^2 \theta$ ou plutôt $\theta = \arctan \sqrt{x}$ ce qui assure $0\leq \theta < \frac{\pi}{2}$.
+\begin{multline*}
+  \frac{1-x}{1+x} = \frac{1-\tan^2 \theta}{1+\tan^2 \theta}
+  = \cos ^2 \theta - \sin^2 \theta = \cos 2\theta\\
+  \frac{2\sqrt{x}}{1+x} = \frac{2\sqrt{\tan^2 \theta}}{1+\tan^2 \theta}
+  = 2\cos \theta \sin \theta = \sin 2\theta.
+\end{multline*}
+Comme $0 \leq 2\theta \leq \pi$,
+\[
+  \arccos \frac{1-x}{1+x} = 2\theta.
+\]
+En revanche, le $\arcsin(\sin 2\theta)$ est égal à
+\[
+  \left\lbrace
+  \begin{aligned}
+    2\theta &\text{ si } 0 \leq 2 \theta \leq \frac{\pi}{2} \\
+    \pi - 2\theta &\text{ si } \frac{\pi}{2} < 2 \theta \leq \pi
+  \end{aligned}
+\right. .
+\]
+On en déduit que l'ensemble des solutions est formé par les $x$ du second cas c'est à dire $x > 1$.
+\end{enumerate}
+

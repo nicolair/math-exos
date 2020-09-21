@@ -1,0 +1,10 @@
+\begin{tiny}(Cis04)\end{tiny} L'intégrale $\int_{\left[ 0,\pi\right] } \sin f$ est nulle donc la fonction $\sin f$ s'annule dans l'ouvert en changeant de signe. Comme $\sin$ garde un signe constant sur $\left[ 0, \pi\right]$, c'est $f$ qui s'annule en changeant de signe (disons en $\theta_0$).\newline
+Considérons 
+\begin{multline*}
+ \int_0^\pi
+f(t) \sin(t-\theta_0)\,dt = 
+\cos \theta_0 \underset{= 0}{\underbrace{\int_0^\pi f(t)\sin t\, dt}} \\
+- \sin \theta_0  \underset{= 0 }{\underbrace{\int_0^\pi f(t)\cos t\, dt}}
+= 0.
+\end{multline*}
+La fonction $t\mapsto f(t) \sin(t-\theta)$ s'annule en changeant de signe dans l'ouvert (disons en $\theta_1$). De plus $\theta_1 \neq \theta_0$ car cette fonction \emph{ne change pas de signe en $\theta_0$} (les deux facteurs changent de signe donc le produit garde le même signe). 

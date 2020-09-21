@@ -1,0 +1,65 @@
+\begin{tiny}(Cmo06)\end{tiny} Après calculs, on trouve les matrices inverses suivantes
+\begin{multline*}
+\frac{1}{2} 
+\begin{pmatrix}
+1 & -i & -i \\ 1+i & 1+i & 1-3i \\-i & 1 & -1  
+\end{pmatrix},\;
+\begin{pmatrix}
+ -j & 1 & -j \\ -j & -j^2 & 1 \\ 1 & -j^2 & -j^2
+\end{pmatrix},\;\\
+\begin{pmatrix}
+1 &-2 & 1 \\0 & 1 & -2\\ 0 & 0 &1  
+\end{pmatrix},\;
+\begin{pmatrix}
+5 & -1 & -2\\ -5 & -1 & 1\\ 2 & 1 & 0
+\end{pmatrix},\;\\
+\begin{pmatrix}
+ -3 & 8 & 1\\ 4 & -11 &-1 \\-2 & 6 & 1
+\end{pmatrix}
+\end{multline*}
+
+Détail du calcul pour la dernière
+\begin{align*}
+  &\begin{pmatrix}
+ -5 & -2 & 3 & 1 & 0 & 0\\
+ -2 & -1 & 1 & 0 & 1 & 0\\
+  2 & 2  & 1 & 0 & 0 & 1
+\end{pmatrix}& \\
+  &\begin{pmatrix}
+  1 & 4  & 6 & 1 & 0 & 3\\
+ -2 & -1 & 1 & 0 & 1 & 0\\
+  2 & 2  & 1 & 0 & 0 & 1
+\end{pmatrix}& L_1 \leftarrow L_1 + 3L_3\\
+  &\begin{pmatrix}
+  1 & 4  & 6   & 1  & 0 & 3 \\
+  0 & 7  & 13  & 2  & 1 & 6 \\
+  0 & -6 & -11 & -2 & 0 & -5
+\end{pmatrix}& 
+\begin{aligned}
+  L_2 &\leftarrow L_2 + 2L_1\\
+  L_3 &\leftarrow L_3 - 2L_1
+\end{aligned} \\
+  &\begin{pmatrix}
+  1 & 4  & 6   & 1  & 0 & 3 \\
+  0 & 1  & 2   & 0  & 1 & 1 \\
+  0 & -6 & -11 & -2 & 0 & -5
+\end{pmatrix}& L_2 \leftarrow L_2 + L_3 \\
+  &\begin{pmatrix}
+  1 & 0 & -2  & 1  & -4 & -1 \\
+  0 & 1 & 2  & 0   & 1  & 1 \\
+  0 & 0 & 1  & -2  & 6  & 1
+\end{pmatrix}& 
+\begin{aligned}
+  L_1 \leftarrow L_1 - 4L_2 \\
+  L_3 \leftarrow L_3 + 6L_2
+\end{aligned} \\
+  &\begin{pmatrix}
+  1 & 0 & 0 & -3 & 8   & 1 \\
+  0 & 1 & 0 & 4  & -11 & -1 \\
+  0 & 0 & 1 & -2  & 6  & 1
+\end{pmatrix}& 
+  \begin{aligned}
+  L_1 \leftarrow L_1 + 2L_3\\
+  L_2 \leftarrow L_2 - 2L_3
+  \end{aligned}
+\end{align*}

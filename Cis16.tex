@@ -1,0 +1,16 @@
+\begin{tiny}(Cis16)\end{tiny} Avec l'indication de l'énoncé et par linéarité,
+\begin{multline*}
+ I_n = 
+\int_{0}^{\pi}\frac{ \sin x}{ 1 + \frac{x}{n}}\, dx
+= \int_{0}^{\pi}\sin x\, dx -\frac{1}{n}\int_{0}^{\pi}x\sin x\, dx\\
++ \frac{1}{n^2} \int_{0}^{\pi} \frac{x^2 \sin x}{1 + \frac{x}{n}}\, dx.
+\end{multline*}
+Comme $\int_0^\pi x\sin x\,dx$ est un nombre fixé, la suite $\left(\frac{1}{n} \int_0^\pi x\sin x\,dx\right)_{n\in \N}$ converge vers $0$. De plus,
+\[
+\forall x\in [0,\pi], \; 0 \leq \int_{0}^{\pi} \frac{x^2 \sin x}{1 + \frac{x}{n}}\, dx 
+\leq \int_{0}^{\pi} x^2 \sin x\, dx 
+\]
+qui est un nombre fixé. On en déduit que
+\[
+ \left( I_n \right)_{n \in \N^*} \rightarrow \int_{0}^{\pi}\sin x\, dx = 2.
+\]

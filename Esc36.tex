@@ -1,0 +1,22 @@
+\begin{tiny}(Esc36)\end{tiny} Soit $(\varepsilon_n)_{n\in \N}$ une suite de $-1$ et $+1$. On lui associe $(a_n)_{n\in \N}$ définie par
+\[
+  \forall n \in \N,\;
+  a_n = \frac{\varepsilon_0}{1} + \frac{\varepsilon_0 \varepsilon_1}{2} + \cdots + \frac{\varepsilon_0 \varepsilon_1 \cdots \varepsilon_n}{2^n}.
+\]
+\begin{enumerate}
+  \item Montrer que $(a_n)_{n\in \N}$ converge vers un élément de $\left[-2, +2 \right]$ (noté $a$). \newline
+  (Utiliser l'exercice re17 de la feuille \href{\exosurl _fex_re.pdf}{Corps des réels})
+  \item Réciproquement, montrer que tout $a \in \left[-2, +2 \right]$ est la limite d'une suite du type précédent.
+  \item Vérifier que 
+\[
+  \forall h \in \left[ -\frac{\pi}{4}, \frac{\pi}{4}\right],\;
+  \sin(\frac{\pi}{4} + h) 
+  =  \sqrt{\frac{1 + \sin(2h)}{2}}.
+\]
+Soit $(\varepsilon_n)_{n\in \N}$ et $(a_n)_{n\in \N}$ définis comme au début. Pour tout $n\in \N$, on définit
+\begin{multline*}
+  x_n = \varepsilon_0\sqrt{2 + \varepsilon_1\sqrt{2 + \cdots + \varepsilon_{n-1}\sqrt{2+\varepsilon_n\sqrt{2}}}}, \\
+  y_n = 2 \sin(\frac{\pi}{4}\,a_n).
+\end{multline*}
+Montrer que $(x_n)_{n\in \N} = (y_n)_{n\in \N}$. En déduire que $(x_n)_{n\in \N}$ converge.
+\end{enumerate}

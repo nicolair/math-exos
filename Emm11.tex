@@ -1,0 +1,25 @@
+\begin{tiny}(Emm11)\end{tiny} Matrice circulante.
+Soit $a_1,\cdots,a_n$ dans $\C$ et $w=e^{\frac{2i\pi}{n}}$. Le polynôme $P$ est défini par
+\begin{displaymath}
+ P = a_1+a_2X+\cdots +a_nX^{n-1}
+\end{displaymath}
+On définit les matrices $D$, $A$, $M$ ($n\times n$). La matrice $D$ diagonale avec des $P(w^{i-1})$ sur la diagonale et :
+\begin{align*}
+ &A=
+\begin{pmatrix}
+ a_1 & a_2 & a_3 & \cdots & a_n \\
+ a_n & a_1 & a_2 & \cdots & a_{n-1} \\
+ a_{n-1} & a_n & a_1 & \cdots & a_{n-2} \\
+\vdots & & & & \vdots \\
+a_2 & a_3 & a_4 & \cdots & a_1
+\end{pmatrix} \\
+&M=
+\begin{pmatrix}
+ 1 & 1 & 1 &\cdots & 1\\
+ 1 & w & w^{2} & \cdots & w^{n-1}\\
+ 1 & w^2 & w^{2.2} & \cdots & w^{2(n-1)}\\
+ \vdots & & & & \vdots \\
+ 1 & w^{n-1} & w^{2(n-1)} & \cdots & w^{(n-1)(n-1)}
+\end{pmatrix}
+\end{align*}
+Exprimer $AM$ à l'aide de $M$ et $D$. 

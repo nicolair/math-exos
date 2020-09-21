@@ -1,0 +1,28 @@
+\begin{tiny}(Edt06)\end{tiny}
+Soit $(P_{1},\cdots ,P_{n})$ des polyn{\^o}mes dans $\C_{n-1}[X]$ et
+\begin{displaymath}
+ A = \Mat_{(1,X,\cdots,X^{n-1})}(P_{1},\cdots ,P_{n})
+\end{displaymath}
+Soit $(x_{1},\cdots ,x_{n})\in \C^{n}$ et $V$ la matrice de VanderMonde associée 
+\begin{displaymath}
+V =
+\begin{vmatrix}
+1 & \cdots  & \cdots  & 1 \\
+x_{1} &  &  & x_{n} \\
+\vdots  &  &  & \vdots  \\
+x_{1}^{n-1} & \cdots  & \cdots  & x_{n}^{n-1}
+\end{vmatrix}
+\end{displaymath}
+Soit $Y\in \mathcal{M}_p(\C)$ la matrice dont le terme d'indice $i,j$ est $P_{i}(x_{j})$.\newline
+Former une relation entre les matrices $A$, $Y$, $V$ puis entre leurs déterminants.\newline
+Application. Calculer
+\begin{displaymath}
+ D_n =
+\begin{vmatrix}
+ 1^0     & 2^0         & \cdots & (n)^0 \\
+ 2^1     & 3^1         & \cdots & (n+1)^1 \\
+ \vdots  & \vdots      &        & \vdots \\
+ n^{n-1} & (n+1)^{n-1} & \cdots & (2n-1)^{n-1}
+\end{vmatrix}
+\end{displaymath}
+On pourra utiliser le résultat de l'exercice \href{\exosurl Wdt01.html}{dt01} pour exprimer le déterminant de la matrice $V$.

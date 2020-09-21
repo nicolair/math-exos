@@ -1,0 +1,31 @@
+\begin{tiny}(Ear18)\end{tiny} Discriminant d'un polynôme.\\
+On considère un polynôme à coefficients complexes
+\begin{displaymath}
+ P = X^3 +pX+q
+\end{displaymath}
+avec $p\neq 0$. On appelle \emph{discriminant} de ce polynôme, le nombre complexe
+\begin{displaymath}
+ \Delta = 4p^3 + 27q^2
+\end{displaymath}
+\begin{enumerate}
+ \item En utilisant l'algorithme d'Euclide pour $P$ et $P'$, montrer que $P$ admet une racine multiple si et seulement si $\Delta =0$.
+ \item On suppose ici
+\begin{displaymath}
+ P = (X-z_1)(X-z_2)(X-z_3)
+\end{displaymath}
+ Montrer que
+\begin{multline*}
+ \Delta = \widetilde{P'}(z_1)\widetilde{P'}(z_2)\widetilde{P'}(z_3)\\
+ = \prod_{(i,j)\in\{1,2,3\}^2,i\neq j} (z_i-z_j)
+\end{multline*}
+\item On suppose $p$ et $q$ réels.
+\begin{enumerate}
+ \item Déduire de la question précédente que $P$ admet trois racines réelles distinctes si et seulement si son discriminant est strictement négatif.
+ \item Retrouver le résultat précédent (sans utiliser aucune question de cet exercice) en étudiant la fonction
+\begin{displaymath}
+ x\rightarrow x^3+px+q
+\end{displaymath}
+On formera en particulier le produit des valeurs de la fonction aux extrémas locaux (lorsqu'ils existent).
+\end{enumerate}
+\end{enumerate}
+On peut définir le discriminant pour un polynôme de degré quelconque par le produit des valeurs du dérivé aux racines et vérifier que c'est encore le produit de toutes les différences des racines (pour des indices distincts). La nullité du discriminant caractérise toujours l'existence de racines multiples.

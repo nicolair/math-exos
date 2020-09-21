@@ -1,0 +1,22 @@
+\begin{tiny}(Car25)\end{tiny} Les racines de $P - X$ sont les \og points fixes\fg~ de $P$ c'est à dire les $z \in \C$ tels que $\widetilde{P}(z) = z$. \'Evidemment ils sont points fixes de $\widehat{P}(P)$ noté aussi $P\circ P$.\newline
+Lorsque les racines de $P - X$ sont toutes simples, $P-X$ divise donc $\widehat{P}(P) -X$.\newline
+Plus généralement, soit $z$ une racine de $P-X$ de multiplicité $m\geq1$. Alors $P$ est de la forme
+\[
+  P = X + (X-z)^m Q \,\text{ avec }\, \widetilde{Q}(z) \neq 0.
+\]
+On en déduit, après disparition de deux $X$:
+\begin{multline*}
+  \widehat{P}(P) - X\\
+  = (X-z)^m Q + \left( X + (X-z)^m Q - z\right)^m \widehat{Q}(P)\\
+  = (X-z)^m \underset{ = H}{\underbrace{\left[ Q + \left(1 + (X-z)^{m-1}Q\right)^m\right]}}.
+\end{multline*}
+La multiplicité de $z$ comme racine de $\widehat{P}(P) - X$ est donc supérieure ou égale à $m$. Elle peut être strictement supérieure car 
+$\widetilde{H}(z)= \widetilde{Q}(z) + 1$ peut être nul.\newline
+Notons $B$ le polynôme proposé:  $B = \widehat{P}(P) - X$ avec 
+\[
+  P = X^2 - 3X +1.
+\]
+En effectuant la division, il vient
+\[
+  B = (X^2 - 2X + 1)(X^2 - 4X +1).
+\]

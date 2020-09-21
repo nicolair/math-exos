@@ -1,0 +1,36 @@
+\begin{tiny}(Cip01)\end{tiny} On se place dans $]0,+\infty[$ mais ce qui nous intéresse est le comportement en $0$. On remarque que $x\mapsto \frac{\cos x}{x}$ n'admet pas de limite en $0$. On ne peut donc pas prolonger la fonction en $0$ et considérer une intégrale de $0$ à $a$.\newline
+Une étude de fonctions montre que
+\begin{displaymath}
+\forall x>0,\;
+1 - \frac{x^2}{2} \leq \frac{\cos x}{x} \leq 1
+\end{displaymath}
+On en déduit
+\begin{displaymath}
+  \ln 3 - 2a^2 \leq \int_{a}^{3a}\frac{\cos x}{x}\,dx \leq \ln 3
+\end{displaymath}
+Par le théorème d'encadrement, la fonction converge vers $\ln 3$ en $0$. Considérons
+\begin{displaymath}
+  F:\;
+\left\lbrace 
+  \begin{aligned}
+    \left[0, +\infty\right[ &\rightarrow \R \\
+    a &\mapsto
+      \left\lbrace 
+        \begin{aligned}
+          &\int_{a}^{3a}\frac{\cos x}{x}\,dx &\text{ si } a>0 \\
+          &\ln 3 &\text{ si } a = 0
+        \end{aligned}
+      \right.
+    \end{aligned}
+\right. 
+\end{displaymath}
+La fonction $F$ ainsi prolongée est continue et, à priori, dérivable seulement dans l'ouvert avec
+\begin{displaymath}
+\forall a>0, \;
+F'(a) = \frac{\cos 3a - \cos a}{a}
+\end{displaymath}
+Comme cette fonction converge en $0$, le théorème de la limite de la dérivée montre que $F$ et $\mathcal{C}^1$. On peut intégrer son développement limité
+\begin{align*}
+  F'(a) =& -4a + o(a^2) \\
+  F(a) =& \ln 3 -2a^2 + o(a^3)
+\end{align*}

@@ -1,0 +1,58 @@
+\begin{tiny}(Ctl01)\end{tiny}
+\begin{enumerate}
+  \item \'Ecrivons les formules de Taylor avec reste intégral entre $x$ et $x-a$ puis entre $x$ et $x+a$.
+\begin{multline*}
+\left\lbrace
+  \begin{aligned}
+f(x-a) &= f(x) - af'(x) + \frac{a^2}{2}f''(x) + R_-(x) \\ 
+f(x+a) &= f(x) + af'(x) + \frac{a^2}{2}f''(x) + R_+(x)
+  \end{aligned}
+\right. \\
+\Rightarrow 
+2af'(x) = f(x+a) - f(x-a) \\
+-\left(R_+(x) - R_-(x)\right)\\
+\text{ avec } \left| f(x+a) - f(x-a)\right| \leq 2 M_0 
+\text{ et }\\
+\left|R_+(x) - R_-(x)\right| \leq 2 \, \frac{a^2}{2}M_2
+\end{multline*}
+par l'inégalité de Taylor Lagrange. On en déduit l'inégalité demandée.
+
+  \item La question précédente montre que pour tout $a \in \R$, 
+\[
+  \frac{M_0}{a} + \frac{M_2}{2}\, a
+\]
+est un majorant de $|f'|$. Le meilleur majorant que l'on peut obtenir ainsi est la plus petite valeur de la fonction
+\[
+  \varphi : a \mapsto \frac{M_0}{a} + \frac{M_2}{2}\, a.
+\]
+On forme le tableau de variations de la fonction
+\[
+  \varphi'(a) = -\frac{M_0}{a^2} + \frac{M_2}{2}.
+\]
+La fonction est décroissante puis croissante. Elle atteint sa plus petite valeur $\sqrt{2 M_0 M_1}$ en $\sqrt{2\frac{M_0} {M_2}}$.
+
+  \item On calcule les dérivées dans chaque intervalle pour former les tableaux de variations.
+\[
+  f'(x) = 
+  \left\lbrace
+  \begin{aligned}
+   & -x &&\text{ si } -x \in \left[-2,0\right] \\
+   & -\frac{x}{(1+x^2)^2} &&\text{ si } x \in \left[0, +\infty\right[ 
+  \end{aligned}
+\right.
+\]
+\[
+  f''(x) = 
+  \left\lbrace
+  \begin{aligned}
+   & -1 &&\text{ si } -x \in \left[-2,0\right] \\
+   & -\frac{3x^2-1}{(1+x^2)^3} &&\text{ si } x \in \left[0, +\infty\right[ 
+  \end{aligned}
+\right.
+\]
+On constate que les fonctions se raccordent bien et que $f$ est donc $\mathcal{C}^2$.
+\[
+  f^{(3)}(x) = \frac{12x}{(1+x^2)^4}(1-x^2)\text{ si } x>0.
+\]
+On en déduit $M_0 = M_1 = 2$ et $M_2=1$ qui sont atteints en $-2$ et non aux extréma locaux ($0$, $\frac{1}{\sqrt{3}}$, $\frac{1}{\sqrt{2}}$). Cette fonction vérifie $M_1 = \sqrt{M_0 M_2}$ mais elle n'est pas dans $\mathcal{C}^2(\R)$ donc on n'a pas montré que l'inégalité du b. est optimale. 
+\end{enumerate}

@@ -1,0 +1,22 @@
+\begin{tiny}(Cis32)\end{tiny} Comme les fonctions sont bornées, il existe $M_f$ et $M_g$ tels que $|f(t)|\leq M_f$ et $|g(t)|\leq M_g$ pour tous les $t$ dans $I$. Considérons alors des réels $x$ et $y$ quelconques. Pour tout $\varepsilon >0$, il existe $t_x\in I$ tel que
+\begin{displaymath}
+ \varphi(x) \leq f(t_x) + xg(t_x) + \varepsilon
+\end{displaymath}
+ D'autre part, par définition de $\varphi(y)$ comme borne supérieure:
+\begin{displaymath}
+  f(t_x) + yg(t_x) \leq \varphi(y)
+\end{displaymath}
+On en déduit
+\begin{displaymath}
+ \varphi(x) - \varphi(y) \leq (x-y)g(t_x)+\varepsilon
+\leq |x-y|M_g+\varepsilon
+\end{displaymath}
+Comme ceci est valable pour tous les $\varepsilon >0$, on a
+\begin{displaymath}
+ \varphi(x) - \varphi(y) \leq (x-y)M_g
+\end{displaymath}
+En échangeant les rôles de $x$ et $y$, on obtient
+\begin{displaymath}
+ \varphi(y) - \varphi(x) \leq (x-y)M_g
+\end{displaymath}
+Ce qui montre que $\varphi$ et $M_g$-lipschitzienne.

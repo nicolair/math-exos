@@ -1,0 +1,70 @@
+\begin{tiny}(Cdi37)\end{tiny} Pour majorer la valeur absolue, écrivons
+\begin{multline*}
+  f = (f+g) - g 
+  \Rightarrow \Im(f) \subset \Im(f+g) + \Im(g)\\
+  \Rightarrow \rg(f) \leq \dim\left( \Im(f+g) + \Im(g)\right) \\
+  \leq \rg(f+g) + \rg(g)
+\end{multline*}
+On en déduit une première inégalité, on obtient l'autre en échangeant les rôles de $f$ et $g$.\newline
+Supposons
+\begin{displaymath}
+\left\lbrace 
+\begin{aligned}
+    &E = \ker f + \ker g \\ &\Im(f) \cap \Im(g) = \left\lbrace 0_F\right\rbrace 
+  \end{aligned}
+  \right.  
+\end{displaymath}
+Montrons
+\begin{displaymath}
+  \Im(f) + \Im(g) \subset \Im(f+g)
+\end{displaymath}
+En effet, pour tout $y \in \Im(f) + \Im(g)$, il existe $x_f$ et $x_g$ tels que
+\begin{displaymath}
+  y = f(x_f) + g(x_g)
+\end{displaymath}
+Chacun se décompose dans la somme de noyau et seul \og l'autre\fg~ noyau contribue. Il existe $a\in \ker(g)$ et $b\in \ker(f)$ tels que
+\begin{displaymath}
+  y = f(a) + g(b) = (f+g)(a+b)
+\end{displaymath}
+car $f(b)=g(a)=0$.\newline
+On en déduit 
+\begin{displaymath}
+  \Im(f) + \Im(g) = \Im(f+g)
+\end{displaymath}
+car l'autre inclusion est évidente puis
+\begin{displaymath}
+  \rg(f) + \rg(g) = \rg(f+g)
+\end{displaymath}
+car la somme est directe d'après la deuxième hypothèse.\newline
+Supposons 
+\begin{displaymath}
+  \rg(f+g) = \rg(f) + \rg(g)
+\end{displaymath}
+Alors, d'après le théorème du rang
+\begin{multline*}
+\dim(E) - \dim\left( \ker(f+g)\right)\\
+= 2\dim(E)- \dim(\ker(f)) - \dim(\ker(g)) \\
+\Rightarrow
+\dim(\ker(f)) + \dim(\ker(g)) \\
+= \dim(E) + \dim\left( \ker(f+g)\right) \\
+\Rightarrow
+\dim\left( \ker(f) + \ker(g)\right)
+=\dim(E) \\
++ \underset{\geq 0}{\underbrace{\dim\left( \ker(f+g)\right) - \dim\left( \ker(f) \cap \ker(g)\right) }}
+\end{multline*}
+On en déduit $\ker(f) + \ker(g) = E$ et $\ker(f+g) = \ker(f) \cap \ker(g)$. \newline
+Il reste à montrer que l'intersection des images se réduit au vecteur nul. Or
+\begin{displaymath}
+  \Im(f+g) \subset \Im(f) + \Im(g)
+\end{displaymath}
+avec
+\begin{multline*}
+  \dim(\Im(f+g)) \leq \dim(\Im(f) + \Im(g)) \\
+  \leq \dim(\Im(f)) + \dim(\Im(g))
+\end{multline*}
+On en déduit $\Im(f+g) = \Im(f) + \Im(g)$ et 
+\begin{displaymath}
+\dim(\Im(f) + \Im(g))
+=\dim(\Im(f)) + \dim(\Im(g))
+\end{displaymath}
+ce qui entraine que les images sont en somme directe.

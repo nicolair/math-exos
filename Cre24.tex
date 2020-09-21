@@ -1,0 +1,15 @@
+\begin{tiny}(Cre24)\end{tiny} La partie $A$ est non vide et minorée par $0$. Montrons qu'elle admet un plus petit éléments
+\[
+  \in A = \min A = n^2.
+\]
+En effet $n^2 \in A$ en prenant tous les $a_i=1$. D'autre part, on sait que
+\[
+  \forall t >0, \; t + \frac{1}{t} \geq 2.
+\]
+On en déduit,
+\begin{multline*}
+  \sum_{(i,j)\in \llbracket 1,n\rrbracket^2} \frac{x_i}{x_j} 
+  = n +  2\sum_{i < j} \left(\underset{ \geq 2}{\underbrace{\frac{x_i}{x_j} + \frac{x_j}{x_i}}}\right)\\
+  \geq n + \frac{n(n-1)}{2}\times 2 = n^2.
+\end{multline*}
+Donc $n^2$ est bien un minorant de $A$ qui appartient à $A$.

@@ -1,0 +1,39 @@
+\begin{tiny}(Cee21)\end{tiny} Sur l'équation de $H$, on lit les coordonnées d'un vecteur $u$ orthogonal à $H$:
+\begin{displaymath}
+ u = 5e_1 -2e_2 -2e_3 + 4e_4
+\end{displaymath}
+Soit $U = \Vect(u)=H^{\perp}$. La symétrie $s_H$ par rapport à $H$ s'exprime en fonction de la projection $p_U$ sur $U$
+\begin{displaymath}
+ s_H = p_{H} - p_U = Id_E - 2p_U
+\end{displaymath}
+ On connait l'expression vectorielle de $P_U$:
+\begin{displaymath}
+ p_U(x) = \frac{(x/u)}{\Vert u \Vert^2}u
+\end{displaymath}
+soit pour la matrice des coordonnées:
+\begin{displaymath}
+\frac{1}{49}(5x_1-2x_2-2x_3+4x_4)
+\begin{pmatrix}
+ 5 \\ -2 \\ -2 \\4
+\end{pmatrix} 
+\end{displaymath}
+On en déduit la matrice de $p_U$:
+\begin{displaymath}
+\frac{1}{49}
+ \begin{pmatrix}
+25  & -10 & -10 & 20 \\
+-10 & 4   & 4   & -8  \\
+-10 & 4   & 4   & -8  \\
+20  & -8  & -8  & 16 
+ \end{pmatrix}
+\end{displaymath}
+puis celle de $s_U$
+\begin{displaymath}
+\frac{1}{49}
+ \begin{pmatrix}
+-1  & 20 & 20 & -40 \\
+20 & 41   & -8   & 16  \\
+20 & -8   & 41   & 16  \\
+-40  & 16  & 16  & 17 
+ \end{pmatrix}
+\end{displaymath}

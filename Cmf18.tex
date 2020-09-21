@@ -1,0 +1,17 @@
+\begin{tiny}(Cmf18)\end{tiny}
+\begin{enumerate}
+  \item On montre que $\lambda(x)= \lambda(y)$ pour $x$ et $y$ non nuls en distinguant deux cas suivant que $(x,y)$ est libre ou lié. Notons $\mu$ cette valeur commune. Alors $f$ est une homothétie de rapport $\mu$, sa trace est $\mu \dim(E)\neq 0$.
+  \item Si $\tr(f) = 0$, d'après la question précédente, il existe $u_1\neq 0_E$ tel que $(u_1,f(u_1))$ soit libre. On note $u_2 = f(u)$ et on complète $(u_1,u_2)$ en une base $\mathcal{U} = (u_1,\cdots,u_n)$ de $E$. Soit $A=\MatB{\mathcal{U}}{f}$ alors $a_{1 1} = 0$ car c'est la coordonnée de $f(u_1)=u_2$ dans $\mathcal{U}$. En fait,
+\[
+  C_1(A) =
+  \begin{pmatrix}
+    0 \\ 1 \\ 0 \\ \vdots \\ 0
+  \end{pmatrix} .
+\]
+Notons $p$ la projection sur $V = \Vect(u_2,\cdots,u_n)$ parallèlement à $\Vect(u_1)$ et $f_V$ la restriction de $f$ à $V$. Alors
+\[
+  A_{\llbracket 2,n\rrbracket\,\llbracket 2,n\rrbracket} = \Mat_{(u_2,\cdots,u_n)}{p\circ f_V}
+\]
+
+  \item On utilise la question précédente en raisonnant par récurrence sur la dimension de l'espace.
+\end{enumerate}

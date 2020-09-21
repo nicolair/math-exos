@@ -1,0 +1,25 @@
+\begin{tiny}(Csc35)\end{tiny} 
+\begin{enumerate}
+ \item 
+ \item
+ \item Comme $(v_n)$ décroit vers $0$, tous les $v_n$ sont positifs ou nuls. Ceci entraine en particulier que parmi deux valeurs consécutives de $u_n$, au moins une est positive.\newline
+ Si $u_n \geq 0$ alors $|u_n| = u_n \leq \max(u_n,u_{n-1}) = v_{n-1}$.\newline
+ Si $u_n < 0$ alors $u_{n-1}$ et $u_{n+1}$ sont $\geq 0$.
+\[
+ \left. 
+ \begin{aligned}
+  u_{n-1} &\geq 0 \\ u_n &< 0
+ \end{aligned}
+ \right\rbrace \Rightarrow u_{n-1} = v_{n-1}.
+\]
+\[
+ 0 \leq u_{n+1} \leq \frac{u_{n-1} + u_n}{2}\Rightarrow u_{n-1} + u_n \geq 0.
+\]
+On en déduit
+\[
+ |u_n| = -u_n \leq u_{n-1} = v_{n-1}.
+\]
+On conclut par le théorème d'encadrement.
+
+ \item On se ramène au cas précédent en considérant la suite $\left( u_n -v\right)_{n \in \N}$. 
+\end{enumerate}

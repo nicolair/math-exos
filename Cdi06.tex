@@ -1,0 +1,37 @@
+\begin{tiny}(Cdi06)\end{tiny} \label{exo: di06}
+\begin{enumerate}
+  \item La fonction est clairement linéaire et son noyau est
+\begin{displaymath}
+  \ker(\alpha_1) \cap \cdots \cap \ker(\alpha_n)
+\end{displaymath}
+Soit $x$ dans ce noyau. Alors $\alpha(x)=0$ pour toute forme linéaire $\alpha$ car $\alpha$ est une combinaison linéaire des $\alpha_i$. En considérant pour $\alpha$ les formes coordonnées dans une base, on prouve que toutes les coordonnées de $x$ dans une base sont nulles donc $x=0_E$. L'application $\Phi$ est injective donc bijective car c'est un endomorphisme en dimension finie.
+
+  \item On utilise l'isomorphisme de la question précédente. On définit $(a_1,\cdots,a_n)$ comme les antécédents des vecteurs de la base canonique de $\K^n$. 
+  
+  \item On vérifie facilement que
+\begin{multline*}
+  \alpha \in \Vect(\alpha_1,\cdots, \alpha_p) \\
+  \Rightarrow \ker(\alpha_1) \cap \cdots \cap \ker(\alpha_p) \subset \ker(\alpha).
+\end{multline*}
+Pour la réciproque, on peut supposer que la famille est libre. En effet, si elle ne l'est pas, on extrait une sous-famille libre qui engendre le même sous-espace et on raisonne avec celle-ci.\newline
+On complète en une base de $E^*$
+\begin{displaymath}
+  (\alpha_1,\cdots, \alpha_n)
+\end{displaymath}
+et on utilise la base antéduale de la question b.
+\begin{displaymath}
+  (a_1,\cdots, a_n)
+\end{displaymath}
+Considérons la forme linéaire
+\begin{displaymath}
+  \varphi = \alpha - \alpha(a_1)\alpha_1 - \cdots - \alpha(a_p)\alpha(p)
+\end{displaymath}
+La forme $\varphi$ est nulle car $\varphi(a_i)=0$ pour tous les $i$ entre $1$ et $n$ (les raisons sont différentes selon $i\leq p$ ou $i>p$). 
+
+  \item Supposons
+\begin{displaymath}
+  \dim(\ker \alpha_1\cap\cdots\cap\ker\alpha_p) = \dim E -p
+\end{displaymath}
+Le théorème du rang appliqué à $\Phi_p$ montre que $\Phi_p$ est surjective. Il existe alors des antécédents $a_1,\cdots,a_p$ aux vecteurs de la base canonique. Ils permettent de montrer que la famille est libre.\newline
+Supposons la famille libre; on la complète en une base. La fonction $\Phi_n$ est alors surjective ce qui entraine que $\Phi_p$ est surjective. On obtient la dimension avec le théorème du rang appliqué à $\Phi_p$.
+\end{enumerate}

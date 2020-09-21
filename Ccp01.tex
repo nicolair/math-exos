@@ -1,0 +1,27 @@
+\begin{tiny}(Ccp01)\end{tiny} \label{Ccp01} Les formules suivantes sont souvent utiles:
+\begin{align*}
+ \alpha &= \frac{\alpha + \beta}{2} + \frac{\alpha - \beta}{2}\\
+ \beta &= \frac{\alpha + \beta}{2} - \frac{\alpha - \beta}{2}
+\end{align*}
+car elles permettent de factoriser une somme ou une différence d'exponentielles.\\
+On peut mettre en facteur l'exponentielle de la somme et obtenir un $\sin$ ou un $\cos$.
+\begin{align*}
+ a+b &= e^{i\frac{\alpha + \beta}{2}}\left( 2\cos(\alpha - \beta)\right)\\ 
+ a-b &= e^{i\frac{\alpha + \beta}{2}}\left( 2i\sin(\alpha - \beta)\right)
+\end{align*}
+De même avec $0$ comme argument de l'exponentielle:
+\begin{align*}
+ 0  &= \frac{\gamma}{2}-\frac{\gamma}{2}\\
+ \gamma &= \frac{\gamma}{2}+\frac{\gamma}{2}
+\end{align*}
+ce qui donne
+\begin{displaymath}
+ 1-e^{i(\alpha + \beta)}=e^{i\frac{\alpha + \beta}{2}}\left(-2i\sin \frac{\alpha + \beta}{2}\right) 
+\end{displaymath}
+On en déduit:
+\begin{align*}
+ \frac{a+b}{a-b} &= -i\,\frac{\cos(\alpha - \beta)}{\sin(\alpha - \beta)}\\
+ \frac{a+b}{1-ab} &= i\,\frac{\cos(\alpha - \beta)}{\sin \frac{\alpha + \beta}{2}}
+\end{align*}
+
+ 

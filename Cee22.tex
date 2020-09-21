@@ -1,0 +1,46 @@
+\begin{tiny}(Cee22)\end{tiny} Soit $U$ et $V$ deux sous-espaces de $E$ euclidien. On veut montrer que, pour tout $a\in E$, il existe des uniques vecteurs
+\begin{multline*}
+  x\in U\cap V,\; u\in \left( U\cap V\right)^{\perp}\cap U,\; 
+v\in \left( U\cap V\right)^{\perp}\cap V,\; \\
+y\in U^{\perp}\cap V^{\perp}
+\end{multline*}
+tels que $x=x+u+v+y$.\newline
+Existence. Décomposons $a$ en utilisant la formule du cours pour l'orthogonal d'une somme:
+\begin{displaymath}
+  a = \underset{=y}{\underbrace{p_{\orth{U}\cap \orth{V}}(a)}} 
+  + \underset{=b}{\underbrace{p_{U+V}(a)}}
+\end{displaymath}
+On peut encore décomposer $b$ (sans unicité). Il existe $u_0\in U$ et $v_0\in V$ tels que $b=u_0 + v_0$.\newline
+Comme $U\cap V$ est un sous-espace de $U$ et de $V$, posons
+\[
+\begin{aligned}
+  u &= p_{\orth{\left( U\cap V\right) }\cap\, U}(u_0) \in \orth{\left( U\cap V\right)}\cap\, U, \\
+  v &= p_{\orth{\left( U\cap V\right) }\cap\, V}(v_0) \in \orth{\left( U\cap V\right)}\cap\, V
+\end{aligned}
+\]
+Alors:
+\begin{multline*}
+\left. 
+\begin{aligned}
+u_0 &= u +w_u &\text{ avec }  w_u\in U\cap V \\ 
+v_0 &= v +w_v &\text{ avec }  w_v\in U\cap V 
+\end{aligned}
+\right\rbrace \\ 
+\Rightarrow
+b = u +v + \underset{=x\in U\cap V}{\underbrace{(w_u+w_v)}}
+\end{multline*}
+Unicité.
+\begin{displaymath}
+  a = \underset{\in U+ V = \left( \orth{U}\cap \orth{V}\right)^{\perp} }{\underbrace{x+ u + v}} + \underset{\in \orth{U}\cap \orth{V}}{\underbrace{y}} 
+  \Rightarrow y = p_{\orth{U}\cap \orth{V}}(a)
+\end{displaymath}
+\begin{displaymath}
+  a = \underset{\in U\cap V}{\underbrace{x}} + \underset{\in \orth{U}+ \orth{V}=\orth{(U\cap V)} }{\underbrace{u + v + y}} 
+  \Rightarrow x = p_{U\cap V}(a)
+\end{displaymath}
+Ceci assure l'unicité du $x$ et du $y$. d'autre part,
+\begin{multline*}
+  x+u+v+y= x+u'+v'+y 
+\Rightarrow u+v = u'+v'\\
+\Rightarrow u-u' = v'-v \in \orth{\left( U\cap V\right)} \cap \left( U\cap V\right) = \left\lbrace 0_e \right\rbrace  
+\end{multline*}

@@ -1,0 +1,19 @@
+\begin{tiny}(Eee20)\end{tiny} On considère un $\R$-espace vectoriel $E$ de dimension $p\geq 3$ muni d'une base $\mathcal{E}=(e_1,\cdots,e_n)$ et $p$ nombres réels $a_1, \cdots ,a_{p-1}$, $c$. À l'aide d'une matrice 
+\begin{displaymath}
+ S=
+\begin{pmatrix}
+ 1     & 0      & \cdots & \cdots  & 0       & a_1    \\
+0      & 1      & \ddots &         & \vdots  & a_2    \\
+\vdots & \ddots & \ddots & \ddots  & \vdots  & \vdots \\
+\vdots &        & \ddots & 1       & 0       & a_{p-2} \\
+0      & \cdots & \cdots & 0       & 1       & a_{p-1} \\
+a_1    & a_2    & \cdots & a_{p-2} & a_{p-1} & c      \\
+\end{pmatrix}
+\end{displaymath}
+on définit une forme bilinéaire symétrique $\beta$ sur $E$ en posant:
+\begin{displaymath}
+ \forall (x,y)\in E^2,
+\beta(x,y) = 
+\trans \Mat_{\mathcal{E}}(x) \, S \, \Mat_{\mathcal{E}}(y)
+\end{displaymath}
+ Montrer que $\beta$ est un produit scalaire si et seulement si $\det S >0$.

@@ -1,0 +1,22 @@
+\begin{tiny}(Cgc16)\end{tiny} 
+\begin{enumerate}
+  \item On raisonne par  récurrence. Pour $n=1$,
+\begin{displaymath}
+\forall x \in I,\; m \leq f(x) - g(x) \Rightarrow f(x) \geq g(x) + 1\times m  
+\end{displaymath}
+Montrons que l'inégalité pour $n$ entraine celle pour $n+1$. Pour tout $x\in I$, 
+\begin{multline*}
+f^{n+1}(x) = f^{n}(f(x))\\
+\geq g^{n}(f(x)) -n\,m  \;\text{ (hyp. recu en $f(x)$} \\
+= f(g^{n}(x)) - n\,m \;\text{ (permut. $f$ et $g$)} \\
+\geq g(g^{n}(x)) -m - n\,m \;\text{ (def. de $m$)} \\
+= g^{n+1}(x) -(n+1)m
+\end{multline*}
+
+  \item Comme $g([a,b])\subset [a,b]$, l'inégalité précédente entraine $f^n(x) \geq a + nm$. Comme $f$ aussi est à valeurs dans $[a,b]$, la suite $\left( f^n(x)\right)_{n\in \N^*}$ est majorée par $b$ ce qui entraine $m\leq 0$ (sinon il y aurait divergence vers $+\infty$).\newline
+  Notons $M = \max_{I}(f-g)$. Alors 
+\begin{displaymath}
+  M = -\min_{I}(g-f)
+\end{displaymath}
+On échange les rôles de $f$ et $g$ pour conclure que $M\geq 0$. On peut alors appliquer le théorème des valeurs intermédiaires. 
+\end{enumerate}

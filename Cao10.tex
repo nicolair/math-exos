@@ -1,0 +1,53 @@
+\begin{tiny}(Cao10)\end{tiny} à compléter
+\begin{enumerate}
+  \item 
+  \item
+  \item 
+  \item L'équation proposée admet des solutions si et seulement si il existe $x\in E$ tel que
+\[
+  \trans f(f(x) - y) = 0_E
+  \Leftrightarrow
+  f(x) - y \in \ker \trans f = (\Im f)^\bot. 
+\]
+Introduisons la projection orthogonale $p$ sur $\Im f$:
+\[
+  y = \underset{ \in \Im f}{\underbrace{p(y)}} + \underset{ \in (\Im f)^\bot}{\underbrace{y - p(y)}}.
+\]
+On en déduit
+\[
+  f(x) - y \in (\Im f)^\bot
+  \Leftrightarrow
+  f(x) = p(y).
+\]
+Cette équation admet des solutions car $p(y) \in \Im f$.\newline
+Soit $x_0$ une solution. Alors, pour tout $x \in E$,
+\begin{multline*}
+  \Vert f(x) - y \Vert ^2
+  = \Vert \underset{ \in \Im f}{\underbrace{f(x) - f(x_0)}} + \underset{ \in (\Im f)^\bot}{\underbrace{f(x_0) - y}} \Vert ^2 \\
+  =  \Vert \underset{ \in \Im f}{\underbrace{f(x) - f(x_0)}}\Vert ^2 + \Vert \underset{ \in (\Im f)^\bot}{\underbrace{f(x_0) - y}} \Vert ^2\\
+  \geq \Vert \underset{ \in (\Im f)^\bot}{\underbrace{f(x_0) - y}} \Vert ^2.
+\end{multline*}
+
+
+  \item On complète une base orthonormée du sous-espace stable $A$ pour former une base orthonormée $\mathcal{U}$ de $E$. La stabilité se traduit par un bloc nul.
+\begin{displaymath}
+M = \Mat_{\mathcal{U}}(f)=
+\begin{pmatrix}
+  U & V \\ 0 & W
+\end{pmatrix}
+\end{displaymath}
+Il s'agit de montrer que le bloc $V$ est nul. Traduisons le caractère normal
+\begin{multline*}
+\trans M =
+\begin{pmatrix}
+  \trans U & 0 \\ \trans V & \trans W
+\end{pmatrix}, \;
+M \trans M = M \trans M \Rightarrow\\
+  U\trans U + V\trans V =\trans U U
+\end{multline*}
+en considérant seulement le bloc en haut à gauche. On termine en prenant la trace. Il reste seulement
+\begin{displaymath}
+  \tr V\trans V = 0
+\end{displaymath}
+La somme des carrés des coefficients de $V$ est nulle, le bloc $V$ est nul.
+\end{enumerate}

@@ -1,0 +1,23 @@
+\begin{tiny}(Cgd29)\end{tiny} Pour toute valeur de $A$, $\varphi(a)=\varphi(b)=0$. Il existe une seule valeur de $A$ pour laquelle $\varphi(c)=0$:
+\begin{displaymath}
+  A= \frac{2}{(c-a)(c-b)}\left(f(c)-f(a)-\frac{c-a}{b-a}(f(b)-f(a)) \right) 
+\end{displaymath}
+On applique le théorème de Rolle à $\varphi$ entre $a$ et $c$ puis entre $c$ et $b$. Il existe $d$ et $e$ tels que 
+\begin{displaymath}
+  a< d < c < e < b \hspace{0.5cm} \varphi'(d)=\varphi'(e)=0
+\end{displaymath}
+On applique le théorème de Rolle à $\varphi'$ entre $d$ et $e$, il existe $\delta$ tel que $\varphi''(\delta)=0$. Or
+\begin{align*}
+&\varphi'(x) = f'(x)-\frac{f(b)-f(a)}{b-a}-\frac{x-a +x-b}{2}A \\
+&\varphi''(x) = f''(x) -A  
+\end{align*}
+On en tire $A=f''(\delta)$ puis la formule demandée.\newline
+La différence entre $f$ et son interpolation linéaire est
+\begin{displaymath}
+  E(x) = f(x) - f(a) -\frac{f(b)-f(a)}{b-a}(x-a)
+\end{displaymath}
+Notons $M_2$ un majorant de $|f''|$. On déduit de la première question que, pour tout $c\in ]a,b[$,
+\begin{displaymath}
+  |E(c)|\leq \frac{(c-a)(b-c)}{2}M_2
+\end{displaymath}
+On étudie la fonction de $c$ pour trouver le plus petit majorant.

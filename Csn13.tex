@@ -1,0 +1,40 @@
+\begin{tiny}(Csn13)\end{tiny} Calcul de sommes.\newline
+Pour chaque cas, la convergence vient de ce que l'on peut exprimer la somme partielle comme une suite pour laquelle la limite résulte des propriétés usuelles sur les suites convergentes.
+
+\begin{itemize}
+  \item $\sum_{n=0}^{+\infty}\frac{n+1}{3^n}$
+  \item $\sum_{n\geq 2} \frac{1}{n^3 - n}$
+  \item Le terme général tend vers $0$ et la somme du terme d'indice $n$ (pair) et du suivant est nulle.
+\[
+ \sum_{n=2}^{+\infty}\ln\left( 1+\frac{(-1)^n}{n}\right) = 0.
+\]
+
+  \item Ici aussi, le terme général tend vers $0$. On peut factoriser les polynômes $(n+1)(n+2)$ et $n(n+3)$ et simplifier les logarithmes en dominos.
+\[
+\sum_{n\geq 1}\ln\frac{n^2+3n+2}{n^2+3n} = 2\ln 3 
+\]
+
+  \item Cette fois, il s'agit d'une combinaison de suites géométriques de raison $\frac{1}{16}$ (pairs) et $\frac{1}{4}$ (impairs):
+\begin{multline*}
+ 1 + \frac{1}{2} + \frac{1}{4^2} + \frac{1}{2^3} + \frac{1}{4^4} + \cdots \\
+ \Rightarrow 
+\sum_{n\geq 0}\left( 3+(-1)^n\right)^{-n} = \frac{1}{1-\frac{1}{16}} + \frac{1}{2}\,\frac{1}{1-\frac{1}{4}}\\
+= \frac{16}{15} + \frac{2}{3}.
+\end{multline*}
+  
+  \item Cette fois, il s'agit plutôt de dominos multiplicatifs. Introduisons
+\[
+\left. 
+\begin{aligned}
+C_n &= \prod_{k=1}^{n}\cos \frac{x}{2^k} \\
+\cos \frac{x}{2^k} & = \frac{\sin \frac{x}{2^{k-1}}}{2 \sin \frac{x}{2^{k}}}
+\end{aligned}
+\right\rbrace \Rightarrow
+C_n = 2^{-n} \frac{\sin x}{\sin \frac{x}{2^{n}}}
+\]
+Pour $0< x < \frac{\pi}{2}$, tout est positif. Comme $\sin u \sim u$ en $0$. On obtient
+\[
+\sum_{n\geq 1}\ln(\cos\frac{x}{2^n}) = \ln \frac{\sin x}{x}. 
+\]
+ 
+\end{itemize}

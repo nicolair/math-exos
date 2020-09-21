@@ -1,0 +1,28 @@
+\begin{tiny}(Ctl02)\end{tiny} Remarquons que
+\begin{multline*}
+  \left(\frac{1}{x-a}\right)^{(p)}
+  = \underset{p \text{ facteurs}}{\underbrace{(-1)(-2)\cdots}}\,\frac{1}{(x-a)^{p+1}}\\
+  = (-1)^p p!\,\frac{1}{(x-a)^{p+1}}.
+\end{multline*}
+Pour $x\neq a$, la formule de Leibniz s'écrit:
+\begin{multline*}
+  \tau^{(n)}(x)
+= \sum_{k=0}^n \binom{n}{k}\left(f(x) - f(a)\right)^{(k)} \left(\frac{1}{x-a}\right)^{(n-k)}\\
+= \left(f(x) - f(a)\right)(-1)^n n! \,\frac{1}{(x-a)^{n+1}}\\
++ \sum_{k=1}^n \binom{n}{k}f^{(k)}(x)(-1)^{n-k}(n-k)!\, \frac{1}{(x-a)^{n-k+1}}
+\end{multline*}
+On peut interpréter l'expression de $\tau^{(n)}$ en utilisant une formule de Taylor entre $x$ et $a$. 
+\begin{multline*}
+  \tau^{(n)}(x)
+  = \frac{n!}{(a-x)^{n+1}}(f(a)-f(x) \\
+  - \sum_{k=1}^n \frac{f^{(k)}}{k!}(x)\,(a-x)^{k})\\
+  = \frac{n!}{(a-x)^{n+1}}R_n(x)
+\end{multline*}
+où $R_n(x)$ est le reste intégral de la formule de Taylor. L'encadrement de Lagrange montre qu'il existe $c_x$ entre $a$ et $x$ tel que
+\[
+ \tau^{(n)}(x) = \frac{1}{n+1}f^{(n+1)}(c_x).
+\]
+Lorsque $x$ tend vers $a$, comme la fonction est $\mathcal C^\infty$, la limite est $\frac{f^{(n+1)}(a)}{n+1}$. En utilisant une récurrence et le théorème de la limite de la dérivée, on  montre que $\tau$ est $\mathcal C^\infty(I)$ avec 
+\[
+  \tau^{(n)}(a) = \frac{f^{(n+1)}(a)}{n+1}.
+\]

@@ -1,0 +1,17 @@
+\begin{tiny}(Cen07)\end{tiny}
+Soit $n$ le nombre d'{\'e}l{\'e}ments de l'ensemble $E$.
+\begin{itemize}
+  \item Une op{\'e}ration interne dans $E$, c'est une application de $E\times E$ dans $E$. On peut former autant d'op{\'e}rations que de
+  telles fonctions soit
+  \[n^{n^2}\]
+  \item Pour compter les op{\'e}rations commutatives dans $E$, num{\'e}rotons ses {\'e}l{\'e}ments : $E=\{e_1,\cdots e_n\}$.\newline
+  Notons $T$ l'ensemble des couples $(e_i,e_j)$ avec $i\leq j$. Il y a autant d'op{\'e}rations commutatives que d'applications de $T$
+  dans $E$. Comme $T$ contient $\frac{n(n+1)}{2}$ {\'e}l{\'e}ments, ce nombre est
+  \[n^{\frac{n(n+1)}{2}}\]
+  \item Choisissons un {\'e}l{\'e}ment arbitraire $a$ de $E$ et examinons les op{\'e}rations admettant cet {\'e}l{\'e}ment comme neutre.\newline
+  On doit avoir $ax=xa=x$ pour tous les $x$ de $E$. Cela d{\'e}finit les images de $2n-1$ couples. Les op{\'e}rations internes sont
+  d{\'e}finies par les images de tous les autres couples soit
+  \[n^{n^2-(2n-1)}\]
+  Une op{\'e}ration admet au plus un neutre, en faisant varier le $a$ choisi, on obtient toutes les lois possibles soit
+  \[n^{n^2-2n+2)}\]
+\end{itemize}

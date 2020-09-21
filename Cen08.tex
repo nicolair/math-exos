@@ -1,0 +1,16 @@
+\begin{tiny}(Cen08)\end{tiny} Soit $a$ fixé dans $E$. Pour toute partie $A$ de $E$ et contenant $a$, notons $\mathcal{R}_A$ l'ensemble des relations d'équivalence sur $E$ pour lesquelles la classe de $a$ est $A$. Cet ensemble est clairement en bijection avec l'ensemble des relations d'équivalence sur $E\setminus A$.\newline
+Les $\mathcal{R}_A$ forment, lorsque $A$ décrit toutes les parties de $E$ possibles, une partition de l'ensemble des relations d'équivalence sur $E$.\newline 
+Classons ces parties $A$ suivant leur nombre d'éléments (au moins $1$ car la partie doit contenir $a$). L'ensemble des parties de $E$ de cardinal $k$ et contenant $a$ est en bijection avec l'ensemble des parties à $k-1$ éléments de $E\setminus\{a\}$. On en déduit: 
+\begin{displaymath}
+ r_n = \sum_{k=1}^{n}\binom{n-1}{k-1}r_{n-k}
+\end{displaymath}
+En convenant que $r_0=1$ qui correspond dans la formule au cas où $A=E$ et donc à une unique relation d'équivalence, celle avec une seule classe.
+Dans un singleton, une seule relation d'équivalence est possible, celle avec une seule classe, le singleton lui même. On a donc $r_1=1$.\newline
+Dans une paire, il y a deux relations d'équivalence possibles (avec une ou deux classes). On a donc $r_2=2$.\newline
+On utilise ensuite la formule trouvée
+\begin{align*}
+ &r_3 = r_2 + 2r_1 + r_0=5 \\
+ &r_4 = r_3 + 3r_2 + 3r_1 +r_0= 15\\
+ &r_5 = r_4+4r_3+6r_2+4r_1+r_0= 52\\
+\end{align*}
+

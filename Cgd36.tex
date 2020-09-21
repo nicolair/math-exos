@@ -1,0 +1,33 @@
+\begin{tiny}(Cgd36)\end{tiny} De $f^2$ et $(1+f')^2$ majorés par $1$, on déduit que 
+\[
+  \forall x \in \R, \; f(x) \in \left[-1,1\right], \; f'(x) \in \left[-2,0\right].
+\]
+Donc $f$ est bornée et décroissante.\newline
+On va montrer que l'existence d'un $a$ tel que $f(a) < 0$ ou $f(a) > 0$ conduit à des contradictions.\newline
+Soit $a\in \R$ tel que $f(a)<0$. Considérons $\left[ a, +\infty\right[$.
+\begin{multline*}
+  \forall x \geq a,\; f(x) \leq f(a)<0
+  \Rightarrow f(x)^2 \geq f(a)^2 \\
+  \Rightarrow (1+f'(x))^2 \leq 1 - f(a)^2 \\
+  \Rightarrow f'(x) \leq \underset{ = - \delta}{\underbrace{- 1 + \sqrt{1 - f(a)^2}}}
+\end{multline*}
+avec $\delta >0$. La fonction $x \mapsto f(x) + \delta x$ est décroissante dans $\left[ a, +\infty\right[$ donc
+\[
+  \forall x \geq a, \;
+  f(x) \leq -\delta x + f(a) + \delta a .
+\]
+On en déduit que $f$ diverge vers $-\infty$ en $+\infty$ en contradiction avec son caractère borné.\newline
+S'il existe un réel $a$ tel que $f(a)>0$, on se place dans l'intervalle $\left] - \infty, a \right]$. Comme $f$ est décroissante,
+\begin{multline*}
+  x  \leq a \Rightarrow f(x) \geq f(a) > 0 
+  \Rightarrow f(x)^2 \geq f(a)^2 > 0\\
+  \Rightarrow (1+f'(x))^2 \leq 1 - f(x)^2 \leq 1 - f(a)^2 \\
+  \Rightarrow  1 + f'(x) \leq \sqrt{1-f(a)^2}\\
+  \Rightarrow f'(x) \leq \underset{=-\alpha}{\underbrace{-1 +\sqrt{1-f(a)^2}}}
+\end{multline*}
+avec $\alpha >0$. Considérons $\varphi: x\mapsto f(x) + \alpha x$.\newline
+Elle est décroissante dans $\left] - \infty, a \right]$ donc
+\[
+  x \leq a \Rightarrow \varphi (a) \leq \varphi(x) = f(x) + \alpha x .
+\]
+Comme $f$ est bornée et $\alpha > 0$, $\varphi \rightarrow - \infty$ en $-\infty$ en contradiction avec la minoration par $\varphi(a)$.

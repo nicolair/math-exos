@@ -1,0 +1,30 @@
+\begin{tiny}(Epo09)\end{tiny} Soit $u= \left( u_n\right) _{n\in \N^*}$ une suite de nombres complexes. On dira qu'une suite $\left( Q_n\right) _{n\in \N}$ de polynômes à coefficients complexes vérifie $E(u)$ si et seulement si:
+\begin{displaymath}
+ Q_0 = 1, \hspace{0.5cm}\forall n\in \N^*:
+\left\lbrace 
+\begin{aligned}
+ \widetilde{Q_n}(0) &= u_n \\
+ Q'_n &= \widehat{Q_{n-1}}(X+1) 
+\end{aligned}
+\right. 
+\end{displaymath}
+\begin{enumerate}
+ \item Montrer qu'il existe une unique suite de polynômes vérifiant $E(u)$.
+ \item Soit $\varepsilon$ la suite nulle: $\varepsilon_n=0$ pour tout $n\in \N^*$. Montrer que la suite $\left( P_n\right) _{n\in \N}$ avec 
+\begin{displaymath}
+ P_0=1,\hspace{0.5cm}\forall n\in \N^*:\;
+P_n = \frac{1}{n!}X(X+n)^{n-1}
+\end{displaymath}
+vérifie $E(\varepsilon)$.
+\item Soit $a\in \C$ et $\alpha = \left( \widetilde{P_n}(a)\right) _{n\in \N^*}$.\newline
+Montrer que $\left( \widehat{P_n}(X+a)\right) _{n\in \N}$ vérifie $E(\alpha)$.
+\item Soit $y\in \C$. Montrer qu'il existe une suite $u$ à déterminer telle que
+\begin{displaymath}
+ \left( \sum_{i=0}^{n}\widetilde{P_{n-i}}(y)P_i\right) _{n\in \N}
+\end{displaymath}
+vérifie $E(u)$. En déduire que:
+\begin{displaymath}
+ \widetilde{P_{n}}(x+y) = \sum_{i=0}^{n}\widetilde{P_{i}}(x)\widetilde{P_{n-i}}(y)
+\end{displaymath}
+pour tous $x, y$ complexes et $n$ naturel.
+\end{enumerate}

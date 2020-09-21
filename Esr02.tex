@@ -1,0 +1,47 @@
+\begin{tiny}(Esr02)\end{tiny}
+\textbf{R{\'e}currence homographique}\newline
+Les suites consid{\'e}r{\'e}es ici sont à valeurs complexes.\newline
+Soit $a,b,c,d$ des nombres complexes tels que $c\neq 0$ et $\delta = ad-bc\neq 0$. On consid{\`e}re une fonction homographique $f$ définie dans $\C\setminus\{-\frac{d}{c}\}$ par :
+\begin{displaymath}
+ f(z) = \frac{az+b}{cz+d}
+\end{displaymath}
+ainsi que l'{\'e}quation du second degr{\'e} en $x$ :
+\begin{equation}
+x=\frac{ax+b}{cx+d}  \tag{E}
+\end{equation}
+caractérisant les points fixes de $f$.
+Dans toute la suite, on supposera que une suite $(u_n)_{n\in \N}$ v{\'e}rifie une relation de r{\'e}currence homographique; c'est {\`a} dire que :
+\[
+\forall n\in \N, u_{n+1}=\frac{au_n+b}{cu_n+d}=f(u_n)
+\]
+\begin{enumerate}
+\item Montrer que 
+\begin{displaymath}
+ f(x)=\frac{a}{c}-\frac{\delta}{c(cx+d)}
+\end{displaymath}
+En déduire des expressions factorisées pour $f(x)-f(y)$ et $f'(x)$ (avec $x$ réel dans le dernier cas).
+
+\item  Dans cette question, on suppose que (E) admet deux racines distinctes $\alpha $ et $\beta $. On définit $g_n$ par :
+\begin{displaymath}
+ g_n = \frac{u_{n}-\alpha }{u_{n}-\beta}
+\end{displaymath}
+
+\begin{enumerate}
+ \item Montrer que, si $u_{0}\neq \beta $, alors $u_{n}$ $\neq \beta $ pour tout $n$. Montrer que $(g)_{n\in \N}$ est une suite g{\'e}om{\'e}trique. Préciser la raison.
+ \item Exprimer $u_n$ en fonction de $g_n$.\\ Quels sont les comportements possibles pour la suite $(u_n)_{n\in \N}$ ?
+ \item Ici, $a$, $b$, $c$, $d$ sont réels et les deux points fixes sont réels. Calculer $f'(\alpha)f'(\beta)$.
+\end{enumerate}
+\item  Dans cette question, on suppose que (E) admet une racine double $\alpha $. On définit $a_n$ par :
+\begin{displaymath}
+ a_n = \frac{1}{u_n-\alpha}
+\end{displaymath}
+\begin{enumerate}
+ \item Montrer que, si $u_{0}\neq \alpha $, alors $u_{n}$ $\neq \alpha $ pour tout $n$ et $(a_n)_{n\in \N}$ est une suite arithm{\'e}tique.
+ \item Exprimer $u_n$ en fonction de $a_n$, en déduire sa limite.
+\end{enumerate}
+  \item  Exemples.
+\[
+u_{n+1}=\frac{4u_{n}+2}{u_{n}+5}, u_{n+1}=\frac{7u_{n}-12}{3u_{n}-5}, u_{n+1}=\frac{1}{1-u_{n}}
+\]
+\end{enumerate}
+Dans le dernier exemple, comparer $u_{n+3}$ avec $u_n$.

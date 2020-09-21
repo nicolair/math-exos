@@ -1,0 +1,21 @@
+\begin{tiny}(Cal24)\end{tiny} Montrer que les opérations sont égales, c'est montrer que
+\begin{displaymath}
+  \forall (a,b)\in E^2, \; a+b = a*b
+\end{displaymath}
+Considérons la deuxième propriété dans le cas particulier
+\begin{displaymath}
+  (a + e) * (b +e) = (a*b) + (e*e)
+\end{displaymath}
+puis utilisons la première ($e$ est neutre pour les deux opérations)
+\begin{displaymath}
+  a + b = a*b + e = a*b 
+\end{displaymath}
+On considère ensuite
+\begin{displaymath}
+  (e + b) * (a + e) = (e*a)+(b*e)\Rightarrow b * a = a + b = a*b
+\end{displaymath}
+et enfin, pour tout $c\in E$,
+\begin{displaymath}
+  (a+b)*(e+c) = a + (b*c)\Rightarrow (a+b)*c = a+(b*c)
+\end{displaymath}
+comme $*=+$, on obtient bien l'associativité.

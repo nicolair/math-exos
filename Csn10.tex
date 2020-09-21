@@ -1,0 +1,26 @@
+\begin{tiny}(Csn10)\end{tiny} Remarquons que $u_n$ est la différence entre deux termes consécutifs d'une suite dont on connait l'expression. Calculons par télescopage la somme partielle
+\[
+  U_n =
+  \sum_{k=1}^{n}u_k
+  = \frac{(-1)^{n+1}}{\sqrt{n+1}} -\frac{(-1)}{1}.
+\]
+On en déduit que la série $\left( \sum u_n \right)$ converge avec 
+\[
+  \sum_{k=1}^{+\infty} u_k = 1.
+\]
+Notons que cette série semi convergente c'est à dire qu'elle n'est pas absolument convergente car
+\[
+  |u_n| \sim \frac{2}{\sqrt{n}}
+\]
+qui est le terme général d'une série de Riemann divergente. Cette équivalence montre aussi que $\frac{1}{n}$ est négligeable devant $u_n$ donc que $u_n \sim v_n$.\newline
+Pour des séries qui ne sont pas de signe constant, cette équivalence ne signifie pas qu'elles sont de même nature.
+\[
+  \left.
+  \begin{aligned}
+  \left( \sum u_n \right) &\text{ Cvgte} \\    
+  \left( \sum \frac{1}{n} \right) &\text{ Dvgte}
+  \end{aligned}
+\right\rbrace
+\Rightarrow
+\left( \sum (u_n + \frac{1}{n}) \right) \text{ Dvgte}.
+\]

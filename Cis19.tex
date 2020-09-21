@@ -1,0 +1,20 @@
+\begin{tiny}(Cis19)\end{tiny}
+\begin{enumerate}
+ \item Vérification facile. L'intégrale se calcule.
+ \item On décompose arbitrairement l'intégrale avec un $a>0$ par relation de Chasles et on la majore par des inégalités de la moyenne. On obtient
+\begin{displaymath}
+ |K_n(f)|\leq \sup_{[0,a]}|f| + M_fk_n(a)
+\end{displaymath}
+où $M_f= \sup_{[0,1]}|f|$.\newline
+Pour tout $\varepsilon >0$, comme $f\rightarrow 0$ en $0$, on choisit un $a>0$ assez petit pour que $\sup_{[0,a]}|f|<\frac{\varepsilon}{2}$. Ce $a$ étant fixé, comme la suite $\left( k_n(a)\right) _{n\in \N}\rightarrow 0$, il existe un $N$ tel que $M_fk_n(a)<\frac{\varepsilon}{2}$ dès que $n\geq N$. On en déduit la convergence vers $0$ demandée.
+\item Dans le cas général,
+\begin{displaymath}
+ \left( K_n(f)\right) _{n\in \N} \rightarrow f(0)
+\end{displaymath}
+En effet, par hypothèse et question b.,
+\begin{displaymath}
+ K_n(f) = f(0)\underset{\rightarrow 1}{\underbrace{K_n(1)}} 
++ \underset{\rightarrow 0}{\underbrace{K_n(f-f(0))}}
+\end{displaymath}
+
+\end{enumerate}

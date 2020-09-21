@@ -1,0 +1,16 @@
+\begin{tiny}(Cis17)\end{tiny} Par linéarité, on se ramène au cas où $f(0)=0$. Notons 
+\[
+ M = \max_{[0,1]}|f|.
+\]
+Raisonnons à la Cesàro en coupant arbitrairement l'intégrale pour la majorer.
+\[
+ \forall \alpha \in \left] 0,1\right[, \;
+ |I_n| \leq \alpha \max_{\left[ 0, \alpha^n\right] }|f| + (1-\alpha)M.
+\]
+Pour tout $\varepsilon >0$:
+\begin{align*}
+ &\exists \alpha \in \left] 0,1 \right[ \text{ (proche de $1$) tq } (1-\alpha)M \leq \frac{\varepsilon}{2}, \\
+ &\exists \beta >0 \text{ tq } \max_{\left[ 0, \alpha^n\right] }|f| \leq \frac{\varepsilon}{2} \text{ (continuité en $0$)},\\
+ &\exists N \text{ tq } n\geq N \Rightarrow \alpha^n < \beta.
+\end{align*}
+On écrit alors la définition de la convergence vers $0$.

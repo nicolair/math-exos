@@ -1,0 +1,19 @@
+\begin{tiny}(Eva19)\end{tiny} Suite de piles ou faces.\newline
+\`A chaque lancer à partir du deuxième, si le côté obtenu est différent du précédent, on gagne 1 euro. On note $X_n$ la variable aléatoire égale au gain total après $n$ lancers.
+\begin{enumerate}
+  \item Préciser les lois de $X_2$ et $X_3$ et leurs espérances.
+  \item Préciser $X_n(\Omega)$. Montrer que 
+\begin{displaymath}
+\p(X_n=0) = \p(X_n=n-1).  
+\end{displaymath}
+  \item Former une relation entre $\p(X_{n+1}=k)$, $\p(X_n =k)$ et $\p(X_n=k-1)$ pour $k\in X_n(\Omega)$.
+  \item On note $G_n$ la fonction génératrice de $X_n$.
+\begin{displaymath}
+  G_n(s) = \sum_{k \in X_n(\Omega)} \p(X_n = k)s^k.
+\end{displaymath}
+Montrer que $G_n$ est polynomiale et que 
+\begin{displaymath}
+  G_{n+1}(s) = \frac{1+s}{2}G_n(s).
+\end{displaymath}
+En déduire l'espérance de $X_n$.
+\end{enumerate}

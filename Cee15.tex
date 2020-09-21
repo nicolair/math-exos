@@ -1,0 +1,68 @@
+\begin{tiny}(Cee15)\end{tiny}
+\begin{enumerate}
+ \item On utilise la formule de la question b. On obtient
+\renewcommand{\arraystretch}{1.2}
+\begin{displaymath}
+ P=
+\begin{pmatrix}
+ 1 & 1 & -1 \\ 2 & 0 & 1 \\ 1 & 1 & 0
+\end{pmatrix}, \;
+P^{-1}=
+\begin{pmatrix}
+ \frac{1}{2} & \frac{1}{2} & -\frac{1}{2} \\
+ -\frac{1}{2} & -\frac{1}{2} & \frac{3}{2} \\
+ -1 & 0 & 1
+\end{pmatrix}
+\end{displaymath}
+La matrice cherchée est 
+\begin{displaymath}
+ \begin{pmatrix}
+ \frac{3}{2} & \frac{1}{2} & -2 \\
+\frac{1}{2} & \frac{1}{2} & -1 \\
+-2 & -1 & \frac{7}{2}
+ \end{pmatrix}
+\end{displaymath}
+Remarque. Le code Maple suivant permet d'effectuer le calcul
+\begin{verbatim}
+with(LinearAlgebra):
+P := Matrix([[1,1,-1],[2,0,1],[1,1,0]]);
+Q :=P^(-1);
+MatrixMatrixMultiply(Transpose(Q),Q);
+\end{verbatim}
+
+ \item D'après les formules (de cours) de changement de base pour la matrice d'un produit scalaire:
+\begin{displaymath}
+ \Mat_{\mathcal{B}}(/) = \trans P_{\mathcal{B}\mathcal{B}}\, \underset{=I_n}{\Mat_{\mathcal{B}}(/)} \,P_{\mathcal{B}\mathcal{B}}
+= \trans P ^{-1} P ^{-1}
+\end{displaymath}
+
+ \item On peut exprimer assez facilement $a_1$, $a_2$, $a_3$ en fonction des $b_i$ puis vérifier la formule
+\begin{displaymath}
+ b_{k-1} - 2b_k +b_{k+1} = a_{k+1}
+\end{displaymath}
+pour $k$ entre $2$ et $n-1$. On en déduit la matrice de passage 
+\begin{displaymath}
+ P^{-1}=
+\begin{pmatrix}
+ 1      & -2 & 1        & 0     & \cdots & 0   \\
+ 0      & 1  & -2       & 1     &        & \vdots    \\
+        & 0  & 1        &-2     & \ddots & 0   \\
+ \vdots &    & \ddots   &\ddots & \ddots & 1   \\
+        &    &          &\ddots &\ddots  & -2  \\
+ 0      &    & \cdots   &       &   0    & 1   \\
+\end{pmatrix}
+\end{displaymath}
+puis la matrice cherchée qui est une matrice bande de largeur 4
+\begin{displaymath}
+ \begin{pmatrix}
+1      & -2     & 1      & 0      & 0      & \cdots & 0      \\
+-2     & 5      & -4     & 1      & 0      &        & \vdots \\
+ 1     & -4     &  6     & -4     & 1      & \ddots &  0     \\
+ 0     &    1   & -4     &  6     &        & \ddots &  0     \\
+ 0     & \ddots & \ddots & \ddots & \ddots &        &  1     \\
+\vdots & \ddots & \ddots &   1    &   -4   &    6   & -4     \\
+ 0     & \cdots &    0   &  0     & 1      &   -4   & 6      \\
+ \end{pmatrix}
+\end{displaymath}
+
+\end{enumerate}

@@ -1,0 +1,18 @@
+\begin{tiny}(Cpo28)\end{tiny} On rappelle que
+\[
+  k\binom{n}{k} = n\binom{n-1}{k-1},\; k(k-1)\binom{n}{k} = n(n-1)\binom{n-2}{k-2}. 
+\]
+On exprime le $\left(\frac{k}{n}-\alpha\right)^2$ avec $k(k-1)$ et $k$:
+\begin{multline*}
+\left(\frac{k}{n}-\alpha\right)^2
+= \frac{k^2}{n^2} - 2\alpha \frac{k}{n} + \alpha^2 \\
+=\frac{1}{n^2}k(k-1) + \left(\frac{1}{n^2} - \frac{2\alpha}{n} \right)k + \alpha^2.
+\end{multline*}
+On en déduit
+\begin{multline*}
+\sum_{k=0}^n \left( \frac{k}{n}-\alpha \right)^2\binom{n}{k}X^k(1-X)^{n-k}\\
+= \frac{n-1}{n}X^2\sum_{k=2}^n \binom{n-2}{k-2}X^{k-2}(1-X)^{n-2-(k-2)}\\
++ \frac{1-n\alpha}{n} X \sum_{k=1}^n \binom{n-1}{k-1}X^{k-1}(1-X)^{n-1-(k-1)} + \alpha^2 \\
+= (1-\frac{1}{n}) X^2 + (\frac{1}{n}-2\alpha) X + \alpha^2 \\
+= (X-\alpha)^2 + \frac{1}{n}X(1-X).
+\end{multline*}

@@ -1,0 +1,40 @@
+\begin{tiny}(Cal17)\end{tiny} Le fait que $A$ soit un morphisme se traduit par $A_{gh}=A_g \circ A_h$ et entraine aussi que $(A_g)^{-1}=A_{g^{-1}}$.
+\begin{enumerate}
+ \item On vérifie les stabilités, si $g$ et $h$ sont dans $G_\omega$,
+\begin{displaymath}
+ A_{gh}(\omega)=A_g \circ A_h(\omega)=A_g( A_h(\omega))=A_g(\omega)=\omega
+\end{displaymath}
+Donc $gh\in G_\omega$. Comme $A_g$ est une bijection, si $A_g(\omega)=\omega$, l'élément $\omega$ est son propre antécédent par $A_g$. On en déduit
+\begin{displaymath}
+ \omega = A_{g^{-1}}(\omega)= A_{g^{-1}}(\omega)
+\end{displaymath}
+donc $g^{-1}\in G_\omega$.
+ \item Soit $g_0\in U$ c'est à dire $A_{g_0}(\omega)=\omega_1$. Pour tout $g\in G_\omega$, on a alors
+\begin{displaymath}
+ A_{g_0g}(\omega)=A_{g_0}(A_g(\omega))= A_{g_0}(\omega)=\omega_1
+\end{displaymath}
+On peut donc définir une application
+\begin{displaymath}
+ \varphi:
+\left\lbrace 
+\begin{aligned}
+ G_\omega &\rightarrow U \\ g &\rightarrow g_0g
+\end{aligned}
+\right. 
+\end{displaymath}
+Cette application est injective car on peut multiplier à gauche par $g_0^{-1}$. Elle est surjective car, pour tout $h\in U$, l'élément $g_0^{-1}h$ est dans $G\omega$ et c'est un antécédent de $h$ pour $\varphi$. C'est donc une bijection ce qui assure
+\begin{displaymath}
+ \sharp G_\omega = \sharp U
+\end{displaymath}
+Classons les éléments de $G$ suivant la valeur de $A_g(\omega)$. On forme ainsi autant de classes qu'il y a d'éléments dans l'orbite. Soit $\omega_1$ un élément de l'orbite, la classe associée est formée par les $g$ tels que $A_g(\omega)=\omega_1$. Il s'agit donc de l'ensemble $U$ du début de la question, il contient $\sharp G_\omega$ éléments qui est indépendant du $\omega_1$ de l'orbite. Toutes les classes ont donc le même nombre d'éléments qui doit donc diviser le cardinal de $G$. On en déduit que le nombre d'éléments d'une orbite est
+\begin{displaymath}
+ \frac{\sharp\,G}{\sharp\,G_\omega}
+\end{displaymath}
+
+ \item Tout élément de $\Omega$ est au moins dans une orbite : la sienne! Supposons que deux orbites se coupent. Il existe alors $\omega_1, \omega_2$ dans $\Omega$ et $g_1, g_2$ dans $G$ tels que $A_{g_1}(\omega_1)=A_{g_2}(\omega_2)$. On en déduit
+\begin{displaymath}
+ \omega_1 = A_{g_1}^{-1}\circ A_{g_2}(\omega_2)= A_{g_1^{-1}g_2}(\omega_2)
+\end{displaymath}
+Donc $\omega_1$ est dans l'orbite de $\omega_2$, on en déduit que l'orbite de $\omega_1$ est dans celle de $\omega_2$. On peut intervertir les rôles, les deux orbites sont donc égales lorsqu'elles se coupent. 
+\end{enumerate}
+ 

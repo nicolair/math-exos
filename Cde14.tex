@@ -1,0 +1,26 @@
+\begin{tiny}(Cde14)\end{tiny} Il n'est pas question d'exprimer la solution du problème de Cauchy pour l'équation différentielle proposée. Comme toute solution d'une telle équation est $\mathcal{C}^{\infty}$, elle admet un développement de Taylor à tous les ordres. On écrit des développements avec les hypothèses puis on utilise l'équation 
+\[
+  y''(x) = x\sin x - y'(x) - y(x)  
+\]
+pour les améliorer en intégrant.
+\begin{align*}
+ y'(x)   &= 1 + o(1) \\
+ y''(x)  &= -1 + o(1)
+\end{align*}
+On intégre et on recommence
+\begin{align*}
+  y'(x)   &= 1 - x + o(x) \\
+  y(x)    &= x +  o(x)\\
+  y''(x)  &= -1 + o(x)
+\end{align*}
+On intègre encore
+\begin{align*}
+ y'(x)   &= 1 -x + o(x^2) \\
+  y(x)   &= x  -\frac{x^2}{2} + o(x^2)\\
+  y''(x) &= -1 + \frac{3x^2}{2} + o(x^2) 
+\end{align*}
+On intègre encore
+\begin{align*}
+  y'(x) = 1 -x + \frac{x^3}{2} + o(x^3) \\
+  y(x) = x - \frac{x^2}{2} + \frac{x^4}{8} + o(x^4).
+\end{align*}

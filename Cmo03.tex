@@ -1,0 +1,74 @@
+\begin{tiny} (Cmo03) \end{tiny}
+\begin{enumerate}
+ \item Notons $A$ la matrice à étudier, $C_1, \cdots, C_n$ ses colonnes et $X_1, \cdots X_n$ les colonnes canoniques. On introduit la colonne $C$ qui ne contient que des 1. On va essayer d'exprimer les $X_i$ en fonction des $C_i$. Remarquons que 
+\[
+ C = X_1 + \cdots + X_n
+\]
+On peut écrire
+\begin{displaymath}
+ \forall i \in \llbracket 1,n \rrbracket,\;
+C_i = C + a_i X_i \Rightarrow 
+X_i = \frac{1}{a_i}C_i - \frac{1}{a_i}C
+\end{displaymath}
+En sommant, on obtient
+\begin{displaymath}
+ C = \left( \sum_{i=1}^n\frac{1}{a_i}C_i\right)  - sC\;
+\text{ où }
+s = \sum_{i=1}^n\frac{1}{a_i}.
+\end{displaymath}
+\begin{itemize}
+ \item $s=-1 \Rightarrow \sum_{i=1}^n\frac{1}{a_i}C_i = 0$. La famille des $C_i$ est liée, $A$ n'est pas inversible.
+ \item $s\neq -1 \Rightarrow C$ combinaison des $C_i \Rightarrow$ les $X_j$ combinaisons des $C_i \Rightarrow (C_1,\cdots,C_n)$ génératrice $\Rightarrow$ base $ \Rightarrow A$ inversible.
+\end{itemize}\medskip
+Calculons $A^{-1}$ dans ce cas. Notons $\alpha = 1+s$.
+\begin{displaymath}
+ C = \sum_{i=1}^n\frac{1}{\alpha a_i}C_i 
+ \Rightarrow 
+ X_i = - \sum_{j=1}^n\frac{1}{\alpha a_i a_j}C_j + \frac{1}{a_i}C_i
+\end{displaymath}
+Ceci donne la $j$-ème colonne de $A^{-1}$ qui s'écrit
+\begin{displaymath}
+\begin{pmatrix}
+ \frac{1}{a_1} & 0      & \cdots & 0 \\
+ 0             & \ddots &        & \vdots  \\ 
+               &        & \ddots &  0 \\
+ 0             & \ddots &    0   & \frac{1}{a_n}  \\
+\end{pmatrix}
+ - \frac{1}{\alpha}
+ \begin{pmatrix}
+  \frac{1}{a_1 a_1} & \cdots & \frac{1}{a_1 a_n} \\
+  \vdots            &        & \vdots            \\
+  \frac{1}{a_n a_1} & \cdots &  \frac{1}{a_n a_n}  \\
+ \end{pmatrix}.
+\end{displaymath}
+
+ \item Notons $M$ la matrice à étudier, $T$ est la matrice de rang 1 dont les trois colonnes sont $U$. De plus
+\[
+M = 2 T - (\alpha + \beta + \gamma)I_3.
+\]
+Si $\alpha + \beta + \gamma =0$, alors $M = 2T$ n'est pas inversible.\newline
+Si $\alpha + \beta + \gamma \neq 0$, multiplions la relation par $T$ :
+\[
+  MT =2T^2 -(\alpha + \beta + \gamma)I,
+\]
+puis calculons $T^2$:
+\begin{multline*}
+ \trans{V}U = \alpha + \beta + \gamma \; \text{ (matricette)}\\
+ \Rightarrow
+T^2 = U\left(\trans{V}U \right) \trans{V} = (\alpha + \beta + \gamma)T  \\
+\Rightarrow MT = (\alpha + \beta + \gamma)T.
+\end{multline*}
+Notons $s=\alpha + \beta + \gamma \neq 0$.
+\begin{multline*}
+  \left.
+  \begin{aligned}
+    M  &= 2T - sI_3 &\times& -s\\
+    MT &= sT        &\times& 2
+  \end{aligned}
+\right\rbrace \\
+\Rightarrow M \left(-sI_3 + 2T\right) = s^2 I_3\\
+\Rightarrow M^{-1} = -\frac{1}{s}\, I_3 + \frac{2}{s^2}\,T.
+\end{multline*}
+
+\end{enumerate}
+

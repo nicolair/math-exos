@@ -1,0 +1,15 @@
+\begin{tiny}(Cgd23)\end{tiny} On montre que $\tau$ est $\mathcal{C}^1$ en $a$ en utilisant le théorème de la limite de la dérivée.\newline
+Pour tout $x\neq a$,
+\[
+ \tau'(x) =
+\frac{\varphi'(x)(x-a)-\varphi(x) + \varphi(a)}{(x-a)^2}
+\]
+En utilisant l'exercice \ref{taylor} avec $\varphi$ pour $f$ et $x$ pour $b$, il existe $c_x$ entre $a$ et $x$ tel que 
+\[
+ \tau'(x) = \frac{\frac{(a-x)^2}{2}f''(c_x)}{(x-a)^2}
+ = \frac{f''(c_x)}{2}
+\]
+Comme $f''$ est continue en $a$, $\tau' \xrightarrow{a} \frac{f''(a)}{2}$ ce qui assure que $\tau$ est dérivable en $a$ avec
+\[
+ \tau'(a) = \frac{f''(a)}{2}.
+\]

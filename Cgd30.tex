@@ -1,0 +1,57 @@
+\begin{tiny}(Cgd30)\end{tiny}
+\begin{enumerate}
+ \item On sait que $\cos \theta(x) >0$ car $-\frac{\pi}{2} < \theta(x) < \frac{\pi}{2}$ donc
+\begin{multline*}
+ \cos \theta(x) = \frac{1}{\sqrt{1+ \tan^2 \theta(x)}} = \frac{1}{\sqrt{1+x^2}},\\
+\sin \theta(x) = \cos \theta(x) \tan \theta(x) = \frac{x}{\sqrt{1 + x^2}}, \\
+\theta'(x) = \frac{1}{1+x^2} = \cos^2 \theta(x).
+\end{multline*}
+Pour alléger, on note $\theta$ au lieu de $\theta(x)$. On en déduit
+\begin{multline*}
+\theta' = \cos^2 \theta \\
+\Rightarrow
+\theta^{(2)} = -2 \theta'\cos \theta \sin \theta 
+ = -\cos^2\theta \sin 2\theta \\
+ \Rightarrow
+\theta^{(3)} = - 2\theta'\cos \theta\left( -\sin \theta \sin 2\theta + \cos \theta \cos 2\theta\right) \\
+ = -2 \cos^3\theta \cos 3\theta \\ 
+\theta^{(4)} = 6\theta'\cos^2 \theta\left( \sin \theta \cos 3\theta + \cos \theta \sin 3\theta\right) \\
+= 6 \cos^3\theta \sin 4\theta
+\end{multline*}
+Pour tout $\varphi \in \R$:
+\begin{displaymath}
+ \cos (\varphi + \frac{\pi}{2}) = - \sin \varphi,\hspace{0.5cm}
+ \sin (\varphi + \frac{\pi}{2}) = \cos \varphi.
+\end{displaymath}
+On peut alors réécrire les relations précédentes:
+\begin{align*}
+\theta' &= \cos \theta \sin(\theta + \frac{\pi}{2})\\
+\theta^{(2)} &= \cos^2 \theta \sin \left( 2(\theta + \frac{\pi}{2})\right) \\ 
+\theta^{(3)} &= 2 \cos^3 \theta \sin \left( 3(\theta + \frac{\pi}{2})\right) \\
+\theta^{(4)} &= 3! \cos^4 \theta \sin \left( 4(\theta + \frac{\pi}{2})\right).
+\end{align*}
+On vérifie alors par récurrence la relation
+\begin{displaymath}
+ \theta^{(n)} = (n-1)! \cos^{n}\theta \sin\left( 4(\theta + \frac{\pi}{2})\right).
+\end{displaymath}
+La relation demandée par l'énoncé en est une reformulation.
+
+ \item Comme $1+x^2 >0$, il existe une fonction $P_n$ telle que 
+\begin{displaymath}
+ \forall x \in \R, \; \arctan^{(n)}(x) =
+\frac{P_n(x)}{(1+x^2)^n}.
+\end{displaymath}
+Les fonctions $P_n$ vérifient une relation de récurrence.
+\begin{multline*}
+ \forall x\in \R, \; P_1(x) = 1, \\
+P_{n+1}(x) = (1+x^2)P'_n(x) - 2nxP_n(x).
+\end{multline*}
+On en déduit que $P_n$ est polynomiale de degré $n-1$.\newline
+Comme $P_1$ est de degré $1$, il admet une racine réelle. Supposons que $P_n$ admette $n-1$ racines réelles. Par le théorème de Rolle, $\arctan^{(n+1)}$ (donc $P^{n+1}$) s'annule entre chacune donc admet $n-2$ racines. Soit $a$ la plus petite et $b$ la plus grande. Le fait que $\arctan^{(n+1)}$ converge $0$ en $+\infty$ et $-\infty$ permet d'obtenir deux autres racines (à rédiger).
+ 
+ \item En utilisant la question a. On obtient que les racines de $P_n$ sont les 
+\begin{displaymath}
+ -\cot \frac{k\pi}{n} \text{ avec } k \in \llbracket 1, n-1 \rrbracket.
+\end{displaymath}
+
+\end{enumerate}

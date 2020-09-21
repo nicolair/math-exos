@@ -1,0 +1,65 @@
+\begin{tiny}(Cde32)\end{tiny}
+\'Equation (1) : $\mathcal{Z} = \left\lbrace 0 \right\rbrace$.
+\begin{multline*}
+  f \in \mathcal{C} \Leftrightarrow \exists (\lambda, \mu) \in \R^2 \text{ tq } \\
+  f(t) =
+  \left\lbrace
+  \begin{aligned}
+    (\lambda + \arctan t)t &\text{ si } x \leq 0 \\
+    (\mu + \arctan t)t &\text{ si } x \geq 0
+  \end{aligned}
+  \right. 
+\end{multline*}
+\[
+  f \in \mathcal{D} \Leftrightarrow \exists \lambda \in \R \text{ tq }
+  f(t) = (\lambda + \arctan t)t.  
+\]
+\'Equation (2) : $\mathcal{Z} = \left\lbrace -1, 0, 1 \right\rbrace$.
+Dans chacun des trois intervalles, les solutions sont les
+\[
+  t \mapsto \frac{t^2}{t^2 - 1}\left(\ln|t| + \lambda\right).
+\]
+En $0$, ces fonctions sont des $o(t)$. On peut prolonger par continuité en $0$ avec la valeur $0$ et la fonction ainsi prolongée est dérivable de nombre dérivé $0$ en $0$.\newline
+On forme des développements asymptotiques en $1$.
+\[
+  \frac{t^2}{t^2 - 1} = \frac{1}{2(t-1)} + \frac{3}{4} + \frac{1}{8}(t-1) + o(t-1).
+\]
+\[
+  \frac{t^2}{t^2 - 1}\ln|t| = 1 + (t-1) + o(t-1).
+\]
+La convergence en $1$ se réalise si et seulement si $\lambda=0$. Par parité, la situation est analogue en $-1$. On en déduit
+\[
+  \mathcal{C} = \mathcal{D} = \left\lbrace t \mapsto \frac{t^2}{t^2 - 1} \ln|t|\right\rbrace.
+\]
+La dérivabilité en $1$ vient du développement limité à l'ordre $1$.\newline
+\'Equation (3) : $\mathcal{Z} = \left\lbrace -1, 1 \right\rbrace$.
+\begin{multline*}
+  f \in \mathcal{C} \Leftrightarrow \exists (\lambda_-, \lambda, \lambda_+) \in \R^3 \text{ tq } \\
+  f(t) =
+  \left\lbrace
+  \begin{aligned}
+    2(t^2-1)+ \lambda_-\sqrt{t^2 - 1} &\text{ si } x \leq -1 \\
+    2(t^2-1)+ \lambda \sqrt{t^2 - 1} &\text{ si } -1 < x \leq 1 \\
+    2(t^2-1)+ \lambda_+\sqrt{t^2 - 1} &\text{ si } -1 < x \leq 1 
+  \end{aligned}
+  \right. .
+\end{multline*}
+Comme la racine carrée n'est pas dérivable en $0$,
+\[
+  \mathcal{D} 
+  = \left\lbrace t \mapsto 2(t^2-1)\right\rbrace.
+\]
+\'Equation (4) : $\mathcal{Z} = \left\lbrace 0 \right\rbrace$.
+\[
+  f \in \mathcal{C} \Leftrightarrow \exists (\lambda,\mu)^2 \text{ tq }
+  f(t) =
+  \left\lbrace
+  \begin{aligned}
+    1 + \lambda t &\text{ si } t \leq 0 \\
+    1 + \mu t &\text{ si } 0 \leq t 
+  \end{aligned}
+\right. .
+\]
+\[
+  \mathcal{D} = \left\lbrace t \mapsto 1 + \lambda t , \lambda \in \R\right\rbrace .
+\]

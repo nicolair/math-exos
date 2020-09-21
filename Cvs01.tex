@@ -1,0 +1,35 @@
+\begin{tiny}(Cvs01)\end{tiny}
+Il est bien évident que
+\begin{displaymath}
+  B = C \Rightarrow 
+  \left\lbrace 
+  \begin{aligned}
+    A \cap B &= A \cap C \\ A\cup B &= A\cup C
+  \end{aligned}
+\right. 
+\end{displaymath}
+Réciproquement, on veut montrer
+\begin{displaymath}
+  \left\lbrace 
+  \begin{aligned}
+    A \cap B &= A \cap C \\ A\cup B &= A\cup C
+  \end{aligned}
+\right. 
+ \Rightarrow  B = C
+\end{displaymath}
+On veut donc montrer une égalité ensembliste $B=C$ en utilisant certaines hypothèses.\newline
+On peut raisonner avec des éléments en prouvant deux inclusions.\newline
+Pour montrer $B\subset C$, on commence le raisonnement par un \og Quelque soit $b\in B$\fg.\newline
+Pour tout $b\in B$, on veut montrer que $b\in C$.
+Comme $B\subset A\cup B = A\cup C$ par hypothèse, $b\in A\cup C$. Donc $b$ est soit dans $A$, soit dans $C$ soit dans les deux. S'il est dans $A$, il est dans $A\cap B = A\cap C$, il est donc forcément dans $C$. On en déduit $B\subset C$.\newline
+Comme $B$ et $C$ jouent des rôles symétriques, l'autre inclusion se démontre de la même manière d'où $B=C$.
+On peut aussi prouver ce résultat en \og calculant\fg~ avec les relations
+\begin{align*}
+  X\cap(Y\cup Z) &= (X\cap Y) \cup (X\cap Z)\\  X\cup(Y\cap Z) &= (X\cup Y) \cap (X\cup Z)
+\end{align*}
+En effet:
+\begin{multline*}
+B = B\cap(A\cup B)\hspace{0.3cm}\text{ car }B\subset A\cup B\\
+ = B\cap(A\cup C) = (B\cap A) \cup (B\cap C) \\
+ = (C\cap A) \cup (B\cap C) = C\cap(A\cup B) = C\cap(A\cup C) = C
+\end{multline*}

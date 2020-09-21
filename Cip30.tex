@@ -1,0 +1,22 @@
+\begin{tiny}(Cip30)\end{tiny} Définissons la fonction $G$ dans $[a,b]$ par:
+\begin{displaymath}
+ G(x)=\int_a^xg(t)\,dt
+\end{displaymath}
+C'est la primitive de $g$ nulle en $a$. On peut intégrer par parties:
+\begin{displaymath}
+ \int_a^bf(t)g(t)\,dt = \left[fG \right]_a^b-\int_a^bf'(t)G(t)\,dt 
+\end{displaymath}
+Comme $f'(t)\geq0$,
+\begin{multline*}
+ (f(b)-f(a))\min_{[a,b]}G\leq\int_a^bf'(t)G(t)\,dt \\
+\leq (f(b)-f(a))\max_{[a,b]}G
+\end{multline*}
+D'après le théorème des valeurs intermédiaires appliqué à $G$, il existe $x\in[a,b]$ tel que
+\begin{displaymath}
+ \int_a^bf'(t)G(t)\,dt = (f(b)-f(a))G(x)
+\end{displaymath}
+Comme $G(a)=0$, on en déduit:
+\begin{multline*}
+\int_a^bf(t)g(t)\,dt = f(b)(G(b)-G(x)) +f(a)G(x) \\
+= f(b)\int_x^bg(t)\,dt + f(a)\int_a^xg(t)\,dt
+\end{multline*}

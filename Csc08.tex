@@ -1,0 +1,119 @@
+\begin{tiny}(Csc08)\end{tiny}
+\begin{enumerate}
+ \item Supposons d'abord $x_n \geq0$ pour tous les $n$.\newline
+ Une inégalité \emph{à la Cesaro} est obtenue en coupant arbitrairement une somme \index{inégalité à la Cesaro}.\newline
+ Soit $m \in \N^*$, pour tout $n\geq m$:
+\begin{multline*}
+ 0 \leq y_n = \frac{1}{n}(x_1 + \cdots +x_m) + \frac{1}{n}(x_{m+1} + \cdots + x_n) \\
+ \leq \frac{1}{n}(x_1 + \cdots +x_m) + \frac{n-m}{n}\max(x_{m+1}, \cdots, x_n).
+\end{multline*}
+Il est important de comprendre que l'on ne peut pas conclure que la suite converge vers 0 en utilisant les théorèmes habituels (encadrement ou passage à la limite dans une inégalité). Il est impératif d'utiliser la définition de la convergence et des justifications soigneusement ordonnées.\newline
+Pour tout $\varepsilon >0$.
+\begin{itemize}
+ \item [1.] Comme $\left( x_n \right)_{n \in \N^*} \rightarrow 0$, il existe $m$ tel que 
+ \[
+  k > m \Rightarrow x_k \leq \frac{\varepsilon}{2}
+ \]
+Donc, pour $n >m$, $\max(x_{m+1}, \cdots, x_n)\leq \frac{\varepsilon}{2}$.
+ \item [2.] Pour le $m$ fixé en 1.,  
+\[
+ \left( \frac{x_1 + \cdots + x_m}{n} \right)_{n \in \N^*} \rightarrow 0
+\]
+Il existe donc $N_\varepsilon > m$ tel que
+\[
+ n \geq N_\varepsilon \Rightarrow
+ \frac{x_1 + \cdots + x_m}{n} \leq \frac{\varepsilon}{2}.
+\]
+\end{itemize}
+Comme $\frac{n-m}{n}\leq 1$, l'inégalité de Cesaro conduit à 
+\[
+ n \geq N_{\varepsilon} \Rightarrow 0 \leq y_n \leq \frac{\varepsilon}{2} + \frac{\varepsilon}{2} = \varepsilon
+\]
+ce qui permet de conclure.\newline
+Pour une suite qui n'est pas positive, on applique le résultat que l'on vient de montrer à la suite des valeurs absolues et on conclut par encadrement avec
+\[
+ |y_n| \leq \frac{|x_1| + \cdots + |x_n|}{n}.
+\]
+
+ \item Dans le cas où $(x_n)_{n\in \N} \rightarrow + \infty$, on écrit une autre inégalité à la Cesaro:
+\[
+ y_n \geq \frac{x_1 + \cdots + x_m}{n} + \frac{n-m}{n}\min(x_{m+1}, \cdots x_n).
+\]
+Soit $A$ un réel quelconque.
+\begin{itemize}
+ \item [1.] Il existe $m$ tel que 
+\[
+  x_1 + \cdots + x_m \geq 0 \text{ et }  \left(k >m \Rightarrow x_k > 2A\right).
+\]
+Pour un tel $m$:
+\[
+  n \geq m \Rightarrow y_n \geq \frac{n-m}{m}\,2A.
+\]
+
+ \item [2.] Comme la suite $\left( \frac{n-m}{n} \right)_{n \in \N^*}$ converge vers $1$, il existe $N_A$ tel que 
+\[
+ n \geq N_A 
+ \Rightarrow \frac{n - m}{n} \geq \frac{1}{2}.
+\]
+\end{itemize}
+L'inégalité de Cesaro conduit à
+\begin{multline*}
+ n \geq \max(N_{A},m) \\
+ \Rightarrow y_n \geq  \frac{n-m}{m}\,2A \geq \frac{1}{2}\, 2A =A.
+\end{multline*}
+ce qui permet de conclure.
+
+ \item Pour montrer la croissance, considérons $y_{n+1} - y_n$ en supposant $\left( x_n \right)_{n \in \N^*}$ croissante.
+\begin{multline*}
+ y_{n+1} - y_n 
+ = (\frac{1}{n+1} - \frac{1}{n})(x_1 + \cdots +x_n) + \frac{1}{n+1}x_{n+1} \\
+ = -\frac{1}{n(n+1)}(\underset{\leq n x_n}{\underbrace{x_1 + \cdots +x_n}}) + \frac{1}{n+1}x_{n+1}\\
+ \geq \frac{x_{n+1} - x_n}{n+1} \geq 0.
+\end{multline*}
+
+ \item Si $\left( x_n \right)_{n \in \N^*} \rightarrow x$, appliquons le résultat de a. à la suite $\left( x_n -x \right)_{n \in \N^*}$ qui converge vers 0. Or
+\[
+ \frac{(x_1-x) + \cdots + (x_n-x)}{n} = \frac{x_1 +\cdots + x_n}{n}- x.
+\]
+Donc,
+\begin{multline*}
+ \left( \frac{(x_1-x) + \cdots + (x_n-x)}{n} \right)_{n \in \N^*} \rightarrow 0 \\
+ \Rightarrow \left( \frac{x_1 + \cdots + x_n}{n} \right)_{n \in \N^*} \rightarrow x.
+\end{multline*}
+
+ \item On applique le résultat de la question d. à la suite $\left( x_{n+1} - x_n \right)_{n \in \N^*}$. 
+ \item On applique le résultat de la question e. à la suite $\left( \ln u_n \right)_{n \in \N^*}$ car
+\[
+ \frac{u_{n+1}}{u_n} \rightarrow l> 0 \Rightarrow \ln u_{n+1} - \ln u_n \rightarrow \ln l
+\]
+(continuité de $\ln$). On termine avec la continuité de $exp$:
+\[
+ \frac{1}{n}\ln u_n \rightarrow l \Rightarrow u_n^{\frac{1}{n}} \rightarrow e^{l}.
+\]
+Contre exemple de l'énoncé pour la réciproque:\newline
+La suite $u_n\frac{1}{n}$ converge car 
+\[
+ u_{2p}^{\frac{1}{2p}} = \sqrt{\frac{2}{3}} \; 
+\text{ 
+et }
+ u_{2p+1}^{\frac{1}{2p+1}} = \sqrt{\frac{2}{3}} 2^{\frac{1}{2p+1}} \rightarrow \sqrt{\frac{2}{3}} 
+\]
+mais
+\[
+ \frac{u_{2p+1}}{u_{2p}} = 2 \rightarrow 2.
+\]
+
+ \item Toutes les suites sont de la forme $u_n^{\frac{1}{n}}$. On utilise systématiquement le résultat de la question f. en présentant les résultats dans un tableau
+\begin{center}
+\renewcommand{\arraystretch}{2.6}
+\begin{tabular}{|c|c|c|} \hline
+$u_n$ & $\frac{u_{n+1}}{u_n}$ & limite\\ \hline
+$\binom{2n}{n}$ & $2\,\frac{2n+1}{n+1}$ & $4$ \\ \hline
+$\dfrac{1\, 3\, \cdots\, (2n-1)}{n^{n}}$ & $\frac{2n+1}{n+1}(\frac{n}{n+1})^n$ & $\dfrac{2}{e}$ \\ \hline
+$\dfrac{n\, (n+1)\, \cdots\, (2n)}{n^{n}}$ & $2\,\frac{2n+1}{n}(\frac{n}{n+1})^{n+1}$ & $\dfrac{4}{e}$ \\ \hline
+$\dfrac{n^{n}}{n!}$ & $(\frac{n + 1}{n})^{n}$ &  $e$ \\ \hline
+\end{tabular}
+\bigskip
+\end{center}
+
+\end{enumerate}

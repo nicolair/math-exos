@@ -1,0 +1,64 @@
+\begin{tiny}(Cgc13)\end{tiny}
+\begin{enumerate}
+ \item De la croissance des fonctions partie entière et racine carrée, on déduit
+\begin{displaymath}
+  \lfloor \sqrt{\lfloor x \rfloor} \rfloor \leq \lfloor \sqrt{x} \rfloor
+\end{displaymath}
+Notons 
+\begin{displaymath}
+  m_x = \lfloor \sqrt{\lfloor x \rfloor} \rfloor \in \N
+\end{displaymath}
+On a donc $m_x \leq \lfloor \sqrt{x} \rfloor$ d'où $m_x\leq \sqrt{x}$. On veut montrer que $m_x = \lfloor \sqrt{x} \rfloor$ c'est à dire, par définition de la partie entière, que $\sqrt{x} < m_x +1$.
+On raisonne par l'absurde:
+\begin{multline*}
+\sqrt{x}\geq m_x + 1 \Rightarrow x \geq (m_x+1)^2 \in \N \\
+\Rightarrow \lfloor x \rfloor \geq (m_x+1)^2
+\Rightarrow \sqrt{\lfloor x \rfloor} \geq m_x + 1 \in \N \\
+\Rightarrow m_x = \lfloor \sqrt{\lfloor x \rfloor} \rfloor \geq m_x + 1
+\end{multline*}
+Absurde
+ 
+ \item  Montrons d'abord que $(1)$ entraine $(2)$.\newline
+On commence par reformuler $(1)$.\newline
+Pour tout $x$ de $I$ notons
+\begin{displaymath}
+ m_x = \lfloor f(\lfloor x \rfloor)\rfloor
+\end{displaymath}
+Comme la fonction $f$ est croissante, on a toujours
+\begin{displaymath}
+ f(\lfloor x \rfloor) \leq f(x)
+\end{displaymath}
+La condition $(1)$ se traduit donc par :
+\begin{displaymath}
+ \forall x\in I : m_x\leq f(\lfloor x \rfloor) \leq f(x) < m_x +1
+\end{displaymath}
+Cette condition entraine l'implication $(2)$. En effet, lorsque $f(x)\in \Z$, $f(x)=m_x$ et l'encadrement précédent devient :
+\begin{displaymath}
+ f(x)\leq f(\lfloor x \rfloor) \leq f(x) < f(x) +1
+\end{displaymath}
+Cela entraine $f(x)=f(\lfloor x \rfloor)$ qui ne se produit (croissance stricte) que si $x=\lfloor x \rfloor$ c'est à dire si $x$ est entier.\newline
+Remarquons que la continuité de $f$ n'est pas intervenue dans ce raisonnement.
+
+Montrons que $(2)$ entraine $(1)$. Exprimons une conséquence de $(2)$ et de la continuité de $f$.
+\begin{quote}
+ L'image par $f$ d'un intervalle ne contenant qu'un seul entier est un intervalle contenant \emph{au plus} un entier.
+\end{quote} 
+En particulier, lorsque $a\in \Z$
+\begin{align*}
+ f(a)\in \Z &\Rightarrow f(a+1)\leq f(a)+1 \\
+ f(a)\not \in \Z &\Rightarrow f(a+1) \leq \lfloor f(a)\rfloor +1
+\end{align*}
+Cela entraine dans les deux cas :
+\begin{displaymath}
+ \lfloor f(a)\rfloor \leq f(a+1) \leq \lfloor f(a)\rfloor +1
+\end{displaymath}
+Lorsque $a=\lfloor x \rfloor$, cette inégalité s'écrit (avec la notation $m_x$):
+\begin{displaymath}
+ m_x \leq f(\lfloor x \rfloor +1) \leq m_x +1
+\end{displaymath}
+Or $x < \lfloor x \rfloor +1$, donc $f(x)<f(\lfloor x \rfloor +1)$ et on a bien l'encadrement caractéristique de $(1)$ :
+\begin{displaymath}
+ \forall x\in I : m_x\leq f(\lfloor x \rfloor) \leq f(x) < m_x +1
+\end{displaymath}
+\end{enumerate}
+

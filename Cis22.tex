@@ -1,0 +1,28 @@
+\begin{tiny}(Cis22)\end{tiny} D'après la définition de l'uniforme continuité avec $\varepsilon=1$, il existe un $\alpha>0$ tel que 
+\begin{displaymath}
+|x-y|\leq \alpha \Rightarrow  |f(x)-f(y)|\leq 1 
+\end{displaymath}
+Considérons les $x_k = k\alpha$ pour $k\in\N$. Alors 
+\begin{displaymath}
+ |f(x_{k+1})-f(x_k)|\leq 1 
+ \Rightarrow
+|f(x_{k+1})| \leq 1 + |f(x_k)| 
+\end{displaymath}
+En sommant, on obtient
+\begin{displaymath}
+ |f(x_k)|\leq |f(0)| + k = |f(0)| + \frac{1}{\alpha}\, x_k
+\end{displaymath}
+Pour tout $x$ dans $I$, introduisons $q= \lfloor \frac{x}{\alpha} \rfloor$ de sorte que
+\begin{multline*}
+q\alpha \leq x < q\alpha+ \alpha 
+\Rightarrow
+ |f(x)|\leq |f(x)-f(x_q)|+|f(x_q)|\\
+ \leq |f(x_0)| + q + 1 
+\leq |f(x_0)|  + 1 + \frac{x}{\alpha}
+\end{multline*}
+On peut donc choisir
+\begin{displaymath}
+a = |f(0)| +1, \hspace{0.5cm} b=\frac{1}{\alpha}
+\end{displaymath}
+Rien ne change si on se limite à un intervalle borné $[0,m[$.\newline
+Sur un tel intervalle, une fonction continue qui n'est pas bornée (tend vers $+\infty$ en $m$ par exemple) n'est pas uniformément continue.

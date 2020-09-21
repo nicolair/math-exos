@@ -1,0 +1,56 @@
+\begin{tiny}(Cmm20)\end{tiny}
+\begin{enumerate}
+  \item Il est évident que $I_2$ et $A$ commutent avec $A$ donc $\Vect(I_2,A)\subset\ker \Phi$.
+  \item Par le calcul:
+\begin{displaymath}
+M=
+\begin{pmatrix}
+x & y \\ z & t  
+\end{pmatrix}
+\Rightarrow 
+\Phi(M) = (t-x)\Delta + yT_s + zT_i 
+\end{displaymath}
+On en déduit $\Im \Phi \subset \Vect(\Delta,T_i,T_s)$.
+
+  \item Si $A\notin \Vect(I_2)$ alors $(A,I_2)$ libre et 
+\begin{displaymath}
+\Vect(I_2,A)\subset \ker \Phi \Rightarrow 2\leq \dim(\ker \Phi)
+\Rightarrow \rg(\Phi) \leq 2
+\end{displaymath}
+On en déduit que la famille de trois vecteurs $(\Delta,T_i,T_s)$ est liée. On forme une relation linéaire en écrivant que $A\in \ker \Phi$ :
+\begin{displaymath}
+ (d-a)\Delta + bT_s + cT_i = 0_{\mathcal{M}_2(\K)} 
+\end{displaymath}
+avec
+\begin{displaymath}
+(d-a,b,c)=(0,0,0)\Leftrightarrow A \in \Vect(I_2)  
+\end{displaymath}
+ \item Si $A\in \Vect(I_2)$ tout le monde commute avec $A$ donc $\Phi$ est identiquement nulle.\newline
+Si $A\notin \Vect(I_2)$, on a vu que $\rg(\Phi)\leq 2$ et 
+\begin{displaymath}
+(d-a,b,c)\neq(0,0,0)  
+\end{displaymath}
+et
+\begin{align*}
+d-a \neq 0 &\Rightarrow (T_s,T_i)\text{ libre } \\
+b \neq 0 &\Rightarrow (\Delta,T_i)\text{ libre } \\
+c \neq 0 &\Rightarrow (\Delta,T_s)\text{ libre } 
+\end{align*}
+Dans tous les cas le rang de la famille est supérieur ou égal à 2 donc le rang est 2.
+Supposons $(I_2,A,B)$ liée.
+\begin{itemize}
+  \item Si $(I_2,A)$ liée, tout le monde commute avec $A$, en particulier $B$.
+  \item Sinon $B\in \Vect(I_2,A)$ et il commute avec $A$.
+\end{itemize}
+Supposons que $B$ commute avec $A$.
+\begin{itemize}
+  \item Si $(I_2,A)$ liée, alors $(I_2,A,B)$ liée.
+  \item Sinon,
+\begin{multline*}
+\rg(\Phi)=2 \Rightarrow \ker \Phi = \Vect(I_2,A) \\
+\Rightarrow  B \in \Vect(I_2,A) \Rightarrow (I_2,A,B) \text{ liée }
+\end{multline*}
+\end{itemize}
+
+
+\end{enumerate}

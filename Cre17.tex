@@ -1,0 +1,16 @@
+\begin{tiny}(Cre17)\end{tiny} Par définition de la partie positive et de la partie négative d'un réel,
+\begin{multline*}
+  x_{k+1} - x_k = d_k = a_k - b_k \\
+  \Rightarrow
+  x_n = x_0 + \sum_{k=0}^{n-1}d_k 
+  = x_0 + A_n - B_n.
+\end{multline*}
+Les suites $(A_n)_{n\in \N}$ et $(B_n)_{n\in \N}$ sont croissantes car 
+\[
+  A_{n+1} - A_n = a_n \geq 0, \; B_{n+1} - B_n = b_n \geq 0.
+\]
+D'autre part 
+\[
+  |d_k| = a_k + b_k \Rightarrow D_n = A_n + B_n.
+\]
+Si la suite $(D_n)_{n\in \N}$ est croissante, elle est majorée. Soit $D$ un de ses majorants. C'est aussi un majorant des suites $(A_n)_{n\in \N}$ et $(B_n)_{n\in \N}$. Comme ces suites sont croissantes, elles convergent. La suite $(x_n)_{n\in \N}$ est la différence des deux donc elle converge aussi.

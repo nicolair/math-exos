@@ -1,0 +1,17 @@
+ \begin{tiny}(Cva17)\end{tiny} Notons $X_i$ la variable aléatoire de Bernouilli qui vaut $1$ si l'objet $i$ se trouve dans la case numéro $i$. En modélisant par des bijections, son paramètre est 
+ \[
+  \frac{(n-1)!}{n!} = \frac{1}{n}.
+ \]
+De plus
+ \begin{multline*}
+  R = X_1 + \cdots + X_n \\
+  \Rightarrow E(R) = E(X_1) + \cdots + E(X_n) = 1.
+ \end{multline*}
+\begin{multline*}
+ V(R) = V(X_1) + \cdots + V(X_n) + 2\sum_{i < j} \cov(X_i,X_j)\\
+ = n \frac{1}{n}(1-\frac{1}{n}) + n(n-1)\left( \frac{1}{n(n-1)} - \frac{1}{n^2}\right) = 1
+\end{multline*}
+car $X_iX_j$ est de Bernoulli de paramètre 
+\[
+ \frac{(n-2)!}{n!} =\frac{1}{n(n-1)}.
+\]

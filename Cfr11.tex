@@ -1,0 +1,33 @@
+\begin{tiny}(Cfr11)\end{tiny} On considère
+\begin{displaymath}
+  F = \frac{X^r}{(X-x_1)\cdots(X-x_n)}
+\end{displaymath}
+Comme les $x_i$ sont non nuls, ce sont les pôles de $F$ et ils sont simples. Décomposons: 
+\begin{displaymath}
+F = Q + \sum_{j=1}^n \frac{\lambda_j}{X-x_j}
+\end{displaymath}
+où $Q$ est la partie entière et 
+\begin{displaymath}
+  \lambda_j = \frac{x_j^r}{\prod_{k\neq j} (x_j - x_k)}
+\end{displaymath}
+\begin{itemize}
+  \item Si $r<n-1$, $Q=0$, $XF \rightarrow 0$ en l'infini donc
+  \begin{displaymath}
+    \sum_j \lambda_j = 0
+  \end{displaymath}
+  \item Si $r=n-1$, $Q=0$, $XF \rightarrow 1$ en l'infini donc
+  \begin{displaymath}
+    \sum_j \lambda_j = 1
+  \end{displaymath}
+  \item Si $r=n$, $Q=1$ et
+\begin{multline*}
+\sum_{j=1}^n \frac{\lambda_j}{X-x_j} = F -1 \\
+= \frac{X^n -(X-x_1)\cdots(X-x_n)}{(X-x_1)\cdots(X-x_n)}\\
+= \frac{(x_1+\cdots x_n)X^{n-1} + \cdots }{(X-x_1)\cdots(X-x_n)}
+\end{multline*}
+d'où en multipliant par $X$ et en allant à l'infini
+\begin{displaymath}
+  \sum_j \lambda_j = x_1+\cdots x_n
+\end{displaymath}
+
+\end{itemize}

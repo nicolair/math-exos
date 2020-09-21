@@ -1,0 +1,70 @@
+\begin{tiny}(Caz02)\end{tiny} 
+\begin{enumerate}
+ \item Si $u$ divise $v$ alors $u \wedge v = u$ et $u \vee v = v$. Ici $a$ divise $a\vee b$ donc 
+$a\wedge(b \vee a) = a$. De même $b\wedge a$ divise $a$ donc $a \vee (b \wedge a) = a$.
+
+  \item Pour $a, b, \cdots$ naturels non nuls, on notera $\alpha, \beta$ les valuations $p$-adiques c'est à dire que, pour tout nombre premier $p$, l'exposant de $p$ dans la décomposition de $a$ en facteurs premiers est $\alpha(p)$. Celui de $b$ est $\beta(p)$. Le résultat fondamental utilisé ici est
+\begin{itemize}
+ \item la valuation $p$-adique de $a\wedge b$ est $\min(\alpha(p), \beta(p))$,
+ \item la valuation $p$-adique de $a\vee b$ est $\max(\alpha(p), \beta(p)$.
+\end{itemize}
+On note $x=\alpha(p), y = \beta(p), \cdots$ et on présente dans un tableau les relations justifiant les formules demandées.
+
+\begin{center}
+\renewcommand{\arraystretch}{1.3}
+\begin{tabular}{|l|l|} \hline
+ $xy = 0$ & $a\wedge b  = 1$ \\ \hline
+ $\min(x, y + z) = \min(x,z)$ & $a\wedge(bc) = a \wedge c$ \\ \hline
+ $\max(x, y + z) = y + \max(x,z)$ & $a\vee(bc) = a \vee c$ \\ \hline
+\end{tabular} 
+\end{center}
+
+ \item On suppose que $a$ divise $b$. Par linéarité puis associativité du pgcd:
+\begin{multline*}
+ (a\wedge c)\left[ \frac{c}{a\wedge c} \wedge \frac{b}{a}\right]
+ = c \wedge \left( (a\wedge c)\frac{b}{a}\right) \\
+ = c \wedge \left( b \wedge \frac{bc}{a}\right)
+ = \left( c \wedge \frac{b}{a}c\right)  \wedge b = c \wedge b.
+\end{multline*}
+Utilisons la propriété $(u \wedge v) (u \vee v) = uv$.\newline 
+On déduit de la relation précédente
+\begin{multline*}
+\frac{ac}{a\vee c}\left[ \frac{c}{a\wedge c} \wedge \frac{b}{a}\right] 
+ = \frac{cb}{ c \vee b}\\
+ \Rightarrow 
+(c \vee b) \left[ \frac{c}{a\wedge c} \wedge \frac{b}{a}\right] 
+ = \frac{cb}{ac }(a\vee c) = \frac{b}{a}(a\vee c).
+\end{multline*}
+
+ \item On utilise encore le produit du pgcd et du ppcm.
+\begin{multline*}
+ \Z \ni \frac{c \vee a}{c \vee(a \wedge b)}
+ = \frac{ca(a \wedge b \wedge c)}{(c \wedge a) c(a\wedge b)}
+ = \frac{\frac{a}{a\wedge b}}{\frac{a \wedge c}{a\wedge b \wedge c}}\\
+ \Rightarrow 
+ \frac{c \vee a}{c \vee(a \wedge b)} \text{ divise }\frac{a}{a\wedge b}.
+\end{multline*}
+De même
+\[
+ \frac{c \vee b}{c \vee(a \wedge b)}
+ = \frac{\frac{b}{a\wedge b}}{\frac{b \wedge c}{a\wedge b \wedge c}}
+ \Rightarrow 
+ \frac{c \vee b}{c \vee(a \wedge b)} \text{ divise }\frac{b}{a\wedge b}.
+\]
+Comme $\frac{a}{a\wedge b}$ et $\frac{b}{a\wedge b}$ sont premiers entre eux, leurs diviseurs aussi.\newline
+En multipliant par $c\vee(a\wedge b)$ et par linéarité du pgcd:
+\begin{multline*}
+ \left( \frac{c \vee a}{c\vee(a \wedge b)}\right) \wedge \left( \frac{c \vee b}{c\vee(a \wedge b)}\right) = 1 \\
+ \Rightarrow (c\vee a)\wedge (c \vee b)= c\vee(a\wedge b).
+\end{multline*}
+
+ \item On utilise les relations précédentes
+\begin{multline*}
+ (c\wedge a)\vee (c \wedge b) 
+ = \left[ (c \wedge a)\vee c\right] \wedge \left[ (c \wedge a)\vee b\right] \text{ (distr.)} \\
+ = c \wedge \left[ (c \vee b) \wedge (a \vee b) \right] \text{ (distr.)} \\
+ = \left[ c \wedge (c \vee b) \right] \wedge (a \vee b) 
+ = c \wedge (a \vee b).
+\end{multline*}
+
+\end{enumerate}

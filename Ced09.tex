@@ -1,0 +1,46 @@
+\begin{tiny}(Ced09)\end{tiny}
+\begin{enumerate}
+  \item Il s'agit d'un simple calcul de dérivée d'une fonction composée. 
+  \item Calcul trigonométrique:
+\[
+\sqrt{\frac{1 + \cos(2t)}{1 - \cos(2t)}}
+= \sqrt{\frac{1 + (2\cos^2 t -1)}{1 - (1-2\sin^2t)}}
+= \cotan t
+\]
+car $\sin t$ et $\cos t$ sont positifs dans l'intervalle.
+
+  \item D'après les questions a. et b. 
+ \begin{center}
+ \renewcommand{\arraystretch}{1.2}
+\begin{tabular}{|l|c|c|} \hline
+équation  & (2)              & (3)\\ \hline
+solutions & $\lambda \cotan$ & $\lambda \tan$ \\ \hline
+ \end{tabular}
+ \end{center}
+
+  \item Dérivons $uv = 1$
+\[
+\begin{aligned}
+  uv                   &= 1 &\times& -16 = -8 +-8 \\
+  u'v + uv'            &= 0 &\times& 2\sin(4t) \\
+  u''v + uv'' + 2 u'v' &= 0 &\times& 1 - \cos(4t) \\ \hline
+  0 + 0 + 2(1-4 \cos t) u'v' &= 16 &  &
+\end{aligned}
+\]
+car $u$ et $v$ sont solutions. On en déduit
+\[
+  u'v'\sin^2(2t) = -4 .
+\]
+Utilisons $v = \frac{1}{u}$ pour former une équation dont $u$ est solution.
+\begin{multline*}
+\left.
+\begin{aligned}
+  v' = -\frac{u'}{u^2} \\ u'v'\sin^2(2t) = -4  
+\end{aligned}
+\right\rbrace 
+\Rightarrow \left( \frac{u'}{u} \right)^2 = \frac{4}{\sin^2(2t)}\\
+\Rightarrow 
+u \text{ solution  de $(2)$ ou $(3)$}.
+\end{multline*}
+Remarque. Un argument de continuité du type théorème de la valeur intermédiaire est nécessaire pour assurer que l'égalité à $\frac{2}{\sin(2t)}$ ou $-\frac{2}{\sin(2t)}$ est la même dans tout l'intervalle.
+\end{enumerate}

@@ -1,0 +1,45 @@
+  'al'  , groupes anneaux corps
+  'am'  , avec maple
+  'ao'  , automorphismes orthogonaux
+  'ap'  ," approximations (zéros, intégrales, nbs réels)"
+  'ar'  , arithmétique dans Z et K[X]
+  'ce'  , (courbes euclidiennes) étude métrique des courbes
+  'cg'  , (continuité géométrique) Fonction d'une variable géométrique : continuité
+  'cm'  , calcul matriciel
+  'co'  , coniques
+  'cp'  , nombres complexes
+  'cr'  , courbes para
+  'cu'  , calculs usuels
+  'de'  , développements (locaux) limités et asymptotiques
+  'dg'  , (différentiabilité géométrique) Calcul différentiel
+  'di'  , dimension des espaces vectoriels
+  'dt'  , déterminant
+  'ed'  , équations différentielles
+  'ee'  , espaces euclidiens
+  'el'  , systèmes d'équations linéaires
+  'en'  , entiers naturels dénombrement
+  'ev'  , espaces vectoriels (sans dimension)
+  'fc'  , fonctions convexes
+  'fr'  , fractions rationnelles
+  'fu'  ," fonctions usuelles, trigonométrie"
+  'ga'  , géométrie affine
+  'gc'  , propriétés globales fonctions continues
+  'gd'  , propriétés globales des dérivées
+  'ge'  , géo espace
+  'gp'  , géométrie plane élémentaire
+  'gs'  , groupe symétrique
+  'ig'  , (intégration géométrique) FVG : calcul intégral
+  'ip'  , intégrales et primitives
+  'is'  , intégration sur un segment
+  'li'  , limites etc
+  'mf'  , matrices de familles et d'applications
+  'mm'  , les matrices pour elles mêmes
+  'mo'  ," rangs, opérations, systèmes"
+  'po'  , polynômes
+  're'  ," corps des réels, suites"
+  'sc'  ," suites de réels, convergence, comparaison"
+  'sr'  , suites définies par récurrence
+  'tl'  , formules de Taylor
+  'tr'  , (transverses) Cours MPSI B
+  'vc'  , suites et fonctions à valeurs complexes
+  'vs'  , vocabulaire ensembles opérations

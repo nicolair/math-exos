@@ -1,0 +1,208 @@
+\begin{tiny}(Cmo17)\end{tiny} Diagonalisation de 
+\[
+  \begin{pmatrix}
+  -2 & -1 & 0 \\ -1 & 0 & 1 \\ 0 & 1 & 2
+\end{pmatrix},
+\]
+à compléter\newline
+
+Diagonalisation de
+\[
+\begin{pmatrix}
+  0 & 1 & 1 & 1 \\ 1 & 0 & -1 & -1\\ 1 & -1 & 0 & -1 \\ 1 & -1 & -1 & 0
+\end{pmatrix}
+\]
+Calcul du polynôme caractéristique $P$
+\begin{align*}
+&\begin{pmatrix}
+  -\lambda & 1 & 1 & 1 \\ 1 & -\lambda & -1 & -1\\ 1 & -1 & -\lambda & -1 \\ 1 & -1 & -1 & -\lambda
+\end{pmatrix}& \\
+&\begin{pmatrix}
+  1 & -1 & -1 & -\lambda \\
+  1 & -\lambda & -1 & -1\\
+  1 & -1 & -\lambda & -1 \\
+  -\lambda & 1 & 1 & 1
+\end{pmatrix}&
+\begin{aligned}
+  \leftarrow L_4 \\  \\  \\ \leftarrow L_1
+\end{aligned}
+\\
+&\begin{pmatrix}
+  1 & -1        & -1        & -\lambda     \\
+  0 & 1-\lambda & 0         & -1 + \lambda \\
+  0 & 0         & 1-\lambda & -1+\lambda   \\
+  0 & 1-\lambda & 1-\lambda & 1-\lambda^2
+\end{pmatrix}&
+\begin{aligned}
+ \leftarrow  \\ \leftarrow L_2 - L_1\\ \leftarrow L_3 - L_1 \\ \leftarrow L_4 + \lambda L_1
+\end{aligned}
+\\
+&\begin{pmatrix}
+  1 & -1        & -1        & -\lambda     \\
+  0 & 1-\lambda & 0         & -1 + \lambda \\
+  0 & 0         & 1-\lambda & -1+\lambda   \\
+  0 & 0         & 0         & 3-\lambda^2 -2 \lambda
+\end{pmatrix}&
+\begin{aligned}
+ \leftarrow  \\ \leftarrow \\ \leftarrow  \\ \leftarrow L_4 - \lambda L_2 - L_3
+\end{aligned}
+\\
+\end{align*}
+\[
+  P = (1-X)^2(-X^2- 2X +3) 
+  = (1-X)^3(3+X)
+\]
+Les valeurs propres sont $1$ et $-3$.\newline
+Recherche du noyau de $A - I_4$:
+\begin{align*}
+  &\left\lbrace
+  \begin{aligned}
+    -x_1 + x_2 + x_3 + x_4 &= 0\\
+    x_1 - x_2 - x_3 - x_4 &= 0\\
+    x_1 - x_2 - x_3 - x_4 &= 0\\
+    x_1 - x_2 - x_3 - x_4 &= 0
+  \end{aligned}
+  \right. \\
+  \Leftrightarrow
+  &    x_1 - x_2 - x_3 - x_4 = 0
+  \\
+  \Leftrightarrow
+  &
+  \begin{pmatrix}
+    x_1 \\ x_2 \\ x_3 \\ x_4 
+  \end{pmatrix}
+  =
+  x_2
+  \begin{pmatrix}
+    1 \\ 1 \\ 0 \\ 0
+  \end{pmatrix}
+  + x_3
+  \begin{pmatrix}
+    1 \\ 0 \\ 1 \\ 0
+  \end{pmatrix}
+  + x_4
+  \begin{pmatrix}
+    1 \\ 0 \\ 0 \\ 1
+  \end{pmatrix}
+\end{align*}
+
+Recherche du noyau de $A + 3I_4$:
+\begin{align*}
+  &\left\lbrace
+  \begin{aligned}
+    3x_1 + x_2 + x_3 + x_4 &= 0\\
+    x_1 + 3x_2 - x_3 - x_4 &= 0\\
+    x_1 - x_2 + 3x_3 - x_4 &= 0\\
+    x_1 - x_2 - x_3 + 3x_4 &= 0
+  \end{aligned}
+  \right. \\
+  \Leftrightarrow
+  &\left\lbrace
+  \begin{aligned}
+    x_1 - x_2 - x_3 + 3x_4 &= 0\\
+    x_1 + 3x_2 - x_3 - x_4 &= 0\\
+    x_1 - x_2 + 3x_3 - x_4 &= 0\\
+    3x_1 + x_2 + x_3 + x_4 &= 0
+  \end{aligned}
+  \right. 
+  &\begin{aligned}
+     L_1 \leftarrow L_4 \\
+     L_4 \leftarrow L_1 
+   \end{aligned}
+\\
+  \Leftrightarrow
+  &\left\lbrace
+  \begin{aligned}
+    x_1 - x_2 - x_3 + 3x_4 &= 0\\
+         4x_2       - 4x_4 &= 0\\
+               4x_3 - 4x_4 &= 0\\
+         4x_2 + 4x_3 - 8x_4 &= 0
+  \end{aligned}
+  \right. 
+  &\begin{aligned}
+     L_2 \leftarrow L_2 -L_1 \\
+     L_3 \leftarrow L_3 -L_1 \\
+     L_4 \leftarrow L_4 - 3L_1
+   \end{aligned}
+\\
+  \Leftrightarrow
+  &\left\lbrace
+  \begin{aligned}
+    x_1 - x_2 - x_3 + 3x_4 &= 0\\
+          x_2        - x_4 &= 0\\
+                x_3  - x_4 &= 0\\
+          x_2  + x_3 - 2x_4 &= 0
+  \end{aligned}
+  \right. &\begin{aligned}
+     L_2 \leftarrow \frac{1}{4}L_2 \\
+     L_3 \leftarrow \frac{1}{4}L_3 \\
+     L_4 \leftarrow \frac{1}{4}L_4 
+   \end{aligned}
+\\
+  \Leftrightarrow
+  &\left\lbrace
+  \begin{aligned}
+    x_1       + x_4 &= 0\\
+       x_2    - x_4 &= 0\\
+          x_3 - x_4 &= 0 \\
+                 0  &= 0
+  \end{aligned}
+  \right.   &\begin{aligned}
+     L_1 \leftarrow L_1 + L_2 + L_3 \\
+     L_4 \leftarrow L_4 - L_2 -L_3 
+   \end{aligned}\\
+ \Leftrightarrow
+  &\begin{pmatrix}
+    x_1 \\ x_2 \\ x_3 \\ x_4 
+  \end{pmatrix}
+  = x_4
+  \begin{pmatrix}
+    -1 \\ 1 \\ 1 \\ 1
+  \end{pmatrix}
+\
+\end{align*}
+On en déduit
+\[
+  D=
+  \begin{pmatrix}
+    1 & 0 & 0 & 0\\ 0 & 1 & 0 & 0 \\ 0 & 0 & 1 & 0 \\ 0 & 0 & 0 & -3 
+  \end{pmatrix}\hspace{0.5cm}
+P = \begin{pmatrix}
+       1 & 1 & 1 & -1\\ 1 & 0 & 0 & 1 \\ 0 & 1 & 0 & 1 \\ 0 & 0 & 1 & 1
+    \end{pmatrix}.
+\]
+
+Diagonalisation de
+\[
+\begin{pmatrix}
+ 1 & 2 & 3 \\  1 & 2 & 3 \\  1 & 2 & 3 
+\end{pmatrix}  
+\]
+Les deux dernières colonnes sont colinéaires à la première. Le rang est 1 donc $0$ est une valeur propre dont l'espace propre est le noyau qui est de dimension $2$ et d'équation $x_1 + 2x_2 + 3x_3 = 0$. Une base du noyau est 
+\[
+  (\begin{pmatrix}
+    -2 \\ 1 \\ 0
+  \end{pmatrix}, \;
+  \begin{pmatrix}
+    -3 \\ 0 \\ 1
+  \end{pmatrix} )
+\]
+Comme le rang est $1$, les colonnes non nulles de l'image sont propres, en particulier,
+\[
+  \begin{pmatrix}
+    1 \\ 1 \\ 1
+  \end{pmatrix}
+\text{ colonne propre de valeur propre } 6.
+\]
+On en déduit
+\[
+  D =
+  \begin{pmatrix}
+    0 & 0 & 0\\ 0 & 0 & 0\\ 0 & 0 & 6 
+  \end{pmatrix},\hspace{0.5cm}
+  P=
+  \begin{pmatrix}
+    -2 & -3 & 1 \\ 1 & 0 & 1 \\ 0 & 1 & 1
+  \end{pmatrix}.
+\]
+

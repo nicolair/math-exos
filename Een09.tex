@@ -1,0 +1,34 @@
+\begin{tiny}(Een09)\end{tiny} 
+Soit $p_1,\cdots,p_k$ des entiers naturels tels que
+\begin{displaymath}
+ p_1+p_2+\cdots+p_k = n
+\end{displaymath}
+On désigne par $c(n,p_1,\cdots,p_k)$ le nombre de $k$-uplets $(A_1,\cdots,A_k)$ de parties d'un ensemble $E$ à $n$ éléments telles que :
+\begin{align*}
+ & & A_1 \cup \cdots \cup A_k = \llbracket 1,n \rrbracket \\
+ &\forall (i,j)\in \{1,\cdots,k\}^2 &: i\neq j \Rightarrow A_i \cap A_j = \emptyset \\
+ &\forall i\in \{1,\cdots,k\} &: \sharp A_i = p_i
+\end{align*}
+\begin{enumerate}
+ \item Que vaut $c(n,p,n-p)$?
+\item Trouver une relation entre 
+\begin{displaymath}
+c(n,p_1,\cdots,p_k) \text{ et } c(n-p_k,p_1,\cdots,p_{k-1})
+\end{displaymath}
+En déduire
+\begin{displaymath}
+ c(n,p_1,\cdots,p_k) = \dfrac{n!}{p_1!\,p_2!\,\cdots\,p_k!}
+\end{displaymath}
+\item Montrer la \emph{formule du multinôme}
+\begin{multline*}
+ (x_1+\cdots+x_k)^n \\
+= \sum_{
+\begin{aligned}
+ (p_1,\cdots,p_k)\in\N^k \\
+ p_1+\cdots +p_k =n
+\end{aligned}
+}
+\dfrac{n!}{p_1!\,p_2!\,\cdots\,p_k!} x_1^{p_1} \cdots x_k^{p_k}
+\end{multline*}
+
+\end{enumerate}

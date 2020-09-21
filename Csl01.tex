@@ -1,0 +1,42 @@
+\begin{tiny}(Csl01)\end{tiny} En présence d'un paramètre, la multiplication d'une équation par une expression contenant le paramètre n'est pas une opération élémentaire et ne conserve pas l'ensemble des solutions. On ne doit pas utiliser ce genre de transformation.\newline
+Système (1).\newline
+En utilisant $L_3 \leftarrow L_3 - \overline{m}L_2$, $L_2 \leftarrow L_2 - \overline{m} L_1$, on obtient un système triangulaire équivalent
+\[
+\left\lbrace 
+\begin{alignedat}{4}
+ x &+ my        &+ m^2z        &= 0\\
+   & (1-|m|^2)y &+ m(1-|m|^2)z &= 0\\
+   &            &(1-|m|^2) z   &= 0
+\end{alignedat}
+\right.  
+\]
+Si $|m| \neq 1$, le système admet une unique solution. Si $|m|=1$, le système est équivalent àla seule équation
+\[
+  x + my + m^2 z = 0.
+\]
+
+Système (2).\newline
+En utilisant $L_3 \leftarrow L_3 -L_2$, $L_2 \leftarrow L_2 - m L_1$, $L_2 \leftrightarrow L_3$, on obtient un système triangulaire équivalent
+\[
+  \left\lbrace 
+  \begin{aligned}
+    &x - &my +        &m^2z      &=2m\\
+    &     &(1+m^2)y - &m^2(1+m)z &= 1 - m -2 m^2\\
+    &     &           &(m-m^3)z  &= 2m-2m^2
+  \end{aligned}
+  \right.
+\]
+On présente les ensembles de solutions dans les différents cas après calculs.\newline
+Si $m \notin \left\lbrace  i, - i, 0, 1, -1\right\rbrace$,
+\[
+  \left\lbrace  \left( \frac{m(3+m^2)}{(1+m^2)(1+m)}, \frac{1-m}{1+m^2}, \frac{2}{1+m}\right)\right\rbrace.
+\]
+Si $m = 0$.
+\[
+  \left\lbrace  \left( 0,1,t\right), t\in \C \right\rbrace.
+\]
+Si $m = 1$.
+\[
+  \left\lbrace  \left( 1,t-1,t\right), t\in \C \right\rbrace.
+\]
+Si $m \in \left\lbrace  i, - i -1\right\rbrace$, pas de solution.
