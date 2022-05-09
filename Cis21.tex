@@ -7,6 +7,7 @@ et exprimons la avec des intégrales:
  T = \sum_{k=a+1}^b\left( f(k)-\int_{k-1}^kf(t)\right) \,dt\\
 = \sum_{k=a+1}^b \int_{k-1}^k \left( f(k) - f(t)\right) \,dt
 \end{multline*}
+
 Comme $f$ est croissante et $t$ entre $k-1$ et $k$:
 \begin{displaymath}
  0\leq \int_{k-1}^k \left( f(k) - f(t)\right) \,dt
@@ -18,6 +19,7 @@ d'où
  \Rightarrow \exists \theta \in \left[0,1 \right] \text{ tq }
  T = \left|f(b) - f(a)\right| \theta. 
 \end{multline*}
+
 On applique le résultat précédent avec $a=1$, $b=n$ et $f(t)=\ln t$. Il existe $\theta_n$ entre $0$ et $1$ tel que
 \begin{multline*}
  \ln(n!)=\int_1^n\ln t\,dt + \theta_n \ln n

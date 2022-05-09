@@ -11,11 +11,13 @@
   = \sum_{k=0}^{n-1}(x_{k+1} - x_k)f(x_k) + \frac{1}{2n}\;
 \text{ avec } f(x) = \frac{1}{x+1}. 
 \end{multline*}
+
 On en déduit $(a_n)_{n\in \N} \rightarrow \int_0^1 f(x)\,dx = \ln 2$.
 \begin{multline*}
  b_n = \sum_{k=0}^{n} \frac{1}{(k + n)^2} = \sum_{k=0}^{n-1} \frac{1}{n^2}\frac{1}{(\frac{k}{n} + 1)^2} + \frac{1}{4n^2}\\
   = \frac{1}{n}\sum_{k=0}^{n-1}(x_{k+1} - x_k)g(x_k) + \frac{1}{4n^2}
 \end{multline*}
+
 avec $g(x) = \frac{1}{(x+1)^2}$. On en déduit 
 \[
 (b_n)_{n\in \N}\sim \frac{1}{n} \int_0^1 g(x)\,dx \rightarrow 0.  

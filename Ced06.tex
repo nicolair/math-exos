@@ -23,6 +23,7 @@ est
   x\mapsto F(x) = \ln |x+i| - i \arctan x \\
   = \frac{1}{2}\ln(x^2+1) -i\arctan x
 \end{multline*}
+
 D'après le cours, une solution fondamentale de l'équation homogène (1) est 
 \begin{displaymath}
 e^{-F(x)}=  \frac{1}{\sqrt{x^2+1}}\,e^{i\arctan x} = \frac{1}{x + i}
@@ -43,12 +44,14 @@ On retrouve le résultat de la question précédente c'est à dire que $z_0$ est
 \Leftrightarrow
 \lambda'(x) = 1 + 2x\arctan x
 \end{multline*}
+
 Pour calculer une primitive, on utilise une expression intégrale et une intégration par parties:
 \begin{multline*}
 \int_0^x 2t\arctan t\, dt \\
 = \left[ t^2 \arctan t\right]_{0}^{x} - \int_0^x t^2\,\frac{1}{1+t^2}\, dt  \\
 = x^2 \arctan x - x + \arctan x
 \end{multline*}
+
 On en déduit 
 \begin{displaymath}
 z(x) = \frac{(x^2+1)\arctan x}{x+i} = (x-i)\arctan x   

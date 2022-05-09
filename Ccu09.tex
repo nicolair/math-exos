@@ -3,17 +3,20 @@ Pour $n=2$, après développement, l'inégalité est équivalente à $a_1a_2+1-a
 \begin{multline*}
  a_1a_2+1-a_1-a_2 = a_1(a_2 -1) + 1-a_2 \\ = (a_2-1)(a_1-1)\geq 0
 \end{multline*}
+
 Montrons que l'inégalité au rang $n-1$ entraîne celle au rang $n$.
 \begin{multline*}
 (a_1)\cdots (a_n) \leq 2^{n-2}(a_1\cdots a_{n-1} + 1)(a_n+1)\\
 \leq 2^{n-2}\left( (a_1\cdots a_{n} + 1) + (a_1\cdots a_{n-1} + a_n)\right) 
 \end{multline*}
+
 Or:
 \begin{multline*}
 (a_1\cdots a_{n} + 1) - (a_1\cdots a_{n-1} + a_n)\\
 = a_1\cdots a_{n-1}(a_n -1) + (1-a_n) \\
 = (a_1\cdots a_{n-1} -1)(a_n -1)\geq 0
 \end{multline*}
+
 On en conclut
 \begin{displaymath}
 (a_1)\cdots (a_n) \leq 2^{n-1}(a_1\cdots a_{n} + 1)  

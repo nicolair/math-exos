@@ -1,10 +1,15 @@
-\documentclass[a4paper,twocolumn]{article}
-\usepackage[hmargin={1.1cm,1.1cm},vmargin={2.2cm,2cm}]{geometry}
+% make4ht
+%\documentclass[a4paper,twocolumn]{article}
+\documentclass{article}
+% make4ht
+%\usepackage[hmargin={1.1cm,1.1cm},vmargin={2.2cm,2cm}]{geometry}
 %       includehead,     scale=0.85,centering,hoffset=-0.1cm,voffset=-0.5cm]{geometry} headheight=13.1pt ,portrait
 
 %\usepackage[a4paper,portrait,twocolumn,includeheadfoot,
 %            scale=0.85,centering,hoffset=-1cm]{geometry}
-\usepackage[pdftex]{graphicx,color}
+% make4ht
+%\usepackage[pdftex]{graphicx,color}
+\usepackage{graphicx}
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage{stmaryrd}
@@ -15,7 +20,8 @@
 \usepackage{ucs}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
-\usepackage[pdftex,colorlinks={true},urlcolor={blue},pdfauthor={remy Nicolai}]{hyperref}
+% make4ht
+%\usepackage[pdftex,colorlinks={true},urlcolor={blue},pdfauthor={remy Nicolai}]{hyperref}
 \usepackage{makeidx}
 
 
@@ -35,8 +41,8 @@
 \makeatother
 
 % indication de licence CC
-\usepackage{ hyperref, hyperxmp} % hyperref est déjà présent plus haut
-\usepackage[type={CC}, modifier={by-sa}, version={4.0}]{doclicense}
+%\usepackage{ hyperref, hyperxmp} % hyperref est déjà présent plus haut
+%\usepackage[type={CC}, modifier={by-sa}, version={4.0}]{doclicense}
 
 
 %dimension des pages, en-t{\^e}te et bas de page
@@ -51,26 +57,26 @@
 % \columnseprule=0.5pt
 %\columnseprule=0.5pt
 %En tete et pied de page
-\pagestyle{fancy}
-\lhead{MPSI maths exercices}
-\rhead{\tiny{\jobname .pdf du \today}}
+%\pagestyle{fancy}
+%\lhead{MPSI maths exercices}
+%\rhead{\tiny{\jobname pdf du \today}}
 %\rhead{}
 %\rhead{25/11/05}
 %\lfoot{\tiny{Cette création est mise à disposition selon le Contrat\\ Paternité-Partage des Conditions Initiales à l'Identique 2.0 France\\ disponible en ligne http://creativecommons.org/licenses/by-sa/2.0/fr/
 %} }
 
-\rfoot{\tiny{\doclicenseText}}
+%\rfoot{\tiny{\doclicenseText}}
 
-\lfoot{\doclicenseImage[imagewidth=1.5cm]\tiny{ Rémy Nicolai pour maquisdoc}}
+%\lfoot{\doclicenseImage[imagewidth=1.5cm]\tiny{ Rémy Nicolai pour maquisdoc}}
 
 %\pagestyle{fancy}
 %\lhead{MPSI B}
 %\rhead{\today}
 %\rfoot{\small{\jobname}}
-\newcommand{\baseurl}{http://back.maquisdoc.net/data/}
-\newcommand{\textesurl}{http://back.maquisdoc.net/data/devoirs_nicolair/}
-\newcommand{\exosurl}{http://back.maquisdoc.net/data/exos_nicolair/}
-\newcommand{\coursurl}{http://back.maquisdoc.net/data/cours_nicolair/}
+\newcommand{\baseurl}{http://81.28.96.244/data/}
+\newcommand{\textesurl}{http://81.28.96.244/data/devoirs_nicolair/}
+\newcommand{\exosurl}{http://81.28.96.244/data/exos_nicolair/}
+\newcommand{\coursurl}{http://81.28.96.244/data/cours_nicolair/}
 
 \newcommand{\N}{\mathbb{N}}
 \newcommand{\Z}{\mathbb{Z}}
@@ -119,4 +125,6 @@
 \newcommand{\ie}{\leq}
 \newcommand{\serie}[1]{\left( \sum {#1}_n \right)_{n\in\N}}
 
-\batchmode
+\newcommand{\href}[2]{#2 (#1)}
+
+%\batchmode

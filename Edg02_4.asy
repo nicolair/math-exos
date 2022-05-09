@@ -1,4 +1,5 @@
 import graph3;
+settings.outformat = "pdf";
 
 size(4cm);
 currentprojection=perspective(2,6,4); //defaut (5,4,2)
@@ -12,9 +13,9 @@ real f(pair z){
   return v;
 }
 
-surface s = surface(f,(-1,-1),(1,1));
+//surface s = surface(f,(-1,-1),(1,1));
 
-draw(s,lightgreen);
+//draw(s,lightgreen);
 
 
-axes3("$x$","$y$","$z$",(-1.5,-1.5,0),(1.5,1.5,1),Arrow3);
+//axes3("$x$","$y$","$z$",(-1.5,-1.5,0),(1.5,1.5,1),Arrow3);

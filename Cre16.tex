@@ -6,6 +6,7 @@
 \Rightarrow - \lceil -x \rceil \leq \lfloor x \rfloor\\
 \Rightarrow - \lfloor x \rfloor \leq \lceil -x \rceil
 \end{multline*}
+
 De manière analogue,
 \begin{displaymath}
 \lfloor x \rfloor \leq x \Rightarrow  -x\leq - \lfloor x \rfloor 
@@ -18,12 +19,14 @@ De manière analogue,
 \Rightarrow \frac{1}{n} \lfloor nx \rfloor = \lfloor x \rfloor + \underset{\in [0,1[}{\frac{1}{n}\lfloor n\{x\}\rfloor}\\
 \Rightarrow \lfloor \frac{1}{n} \lfloor nx \rfloor \rfloor = \lfloor x \rfloor
 \end{multline*}
+
 \item Notons que $0< x+\frac{k}{n}<2$, sa partie entière ne peut prendre que les valeurs $0$ ou $1$. La somme proposée est donc égale au nombre de $k$ pour lesquels la partie entière vaut $1$. Or
 \begin{multline*}
  \lfloor x+\frac{k}{n} \rfloor =1
 \Leftrightarrow 1\leq x+\frac{k}{n} \\
 \Leftrightarrow n(1-x)\leq k \Leftrightarrow \lceil n(1-x) \rceil \leq k 
 \end{multline*}
+
 On en déduit que la somme cherchée vaut
 \begin{multline*}
  \sharp \llbracket \lceil n(1-x) \rceil , n-1 \rrbracket
@@ -31,5 +34,6 @@ On en déduit que la somme cherchée vaut
 = n - \lceil n -nx \rceil
 = - \lceil -nx \rceil = \lfloor nx \rfloor
 \end{multline*}
+
 en utilisant le a. et le fait que $\lceil y+m \rceil = m+\lceil y \rceil$ pour $y$ réel et $m$ entier. En utilisant une formle analogue pour la partie entière, on étend facilement la relation dans $\R$ à l'aide de la première formule de la question b.
 \end{enumerate}

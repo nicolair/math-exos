@@ -11,6 +11,7 @@ Ce nombre est le même pour toutes les parties $A$ à $k$ éléments. On peut do
   s(n,p) = \sum_{k=1}^{n-p+1}\binom{n}{k}s(n-k,p-1) \\
   = \sum_{k=p-1}^{n-1}\binom{n}{k}s(k,p-1)
 \end{multline*}
+
 en numérotant avec $n-k$.
   \item Soit $a \in E$ fixé. On classe les surjections suivant l'image de $a$. On note $S_y$ l'ensemble des $f$ surjectives telles que $f(a) = y$. Les $S_y$, pour $y\in F$, forment une partition de l'ensemble des surjections. Que vaut $\sharp S_y$?\medskip \newline
   On classe les $f \in S_y$ selon que $a$ soit le seul antécédent de $y$ ou non. On note $S_{y,1}$ et $S_{y,2}$ les parties de $S_y$ associées.\newline
@@ -29,6 +30,7 @@ en numérotant avec $n-k$.
   \end{aligned}
    \right.
 \end{multline*}
+
 sont des bijections. On en déduit 
 \begin{multline*}
   \sharp S_y = s(n-1,p-1) + s(n-1,p)\\

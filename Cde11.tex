@@ -7,6 +7,7 @@ D'après le développement en $0$ de l'exponentielle à l'ordre $101$:
  f(x)=\ln\left(e^x -\frac{x^{100}}{100!}-\frac{x^{101}}{101!} +o(x^{101})\right) \\
 = x+\ln\left(1 -e^{-x}\frac{x^{100}}{100!}-e^{-x}\frac{x^{101}}{101!} +o(x^{101})\right)
 \end{multline*}
+
 car $e^{-x}\rightarrow 1$ entraîne $o(e^{-x}x^{101})=o(x^{101})$. De plus,
 \begin{align*}
  e^{-x}\frac{x^{101}}{101!}&= \frac{x^{101}}{101!} +o(x^{101})\\
@@ -17,3 +18,4 @@ On en déduit
  f(x)=x+\ln\left(1- \frac{x^{100}}{100!}+\frac{100\,x^{101}}{101!}+o(x^{101})\right)\\
  = x - \frac{x^{100}}{100!}+\frac{100\,x^{101}}{101!}+o(x^{101})
 \end{multline*}
+

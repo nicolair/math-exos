@@ -5,6 +5,7 @@ Soit $\mathcal{S}=(x_0,\cdots,x_n)$ une subdivision de $[0,1]$ adaptée à $f$. 
 \leq  \sum_{i=0}^{n-1}(x_{i+1}-x_i)g(v_i)
 = \int_{[0,1]}g\circ f
 \end{multline*}
+
  où $g\circ f$ est encore en escalier.\newline
 L'extension au cas où $f$ est continu repose sur le théorème d'approximation d'une fonction continue par une fonction en escalier et sur le théorème de Heine.\newline
 Soit $\varepsilon>0$ arbitraire. D'après le théorème de Heine (appliqué à $g$), il existe un $\alpha>0$ tel que 
@@ -21,6 +22,7 @@ Comme les deux intégrales sont dans $I$ (intervalle), on peut en déduire
  \left|\int_{[0,1]}f - \int_{[0,1]}\varphi \right|\leq \alpha \\
 \Rightarrow g\left( \int_{[0,1]}f\right) \leq  g\left( \int_{[0,1]}\varphi\right) + \frac{\varepsilon}{2}
 \end{multline*}
+
 On applique alors la propriété dans le cas des fonctions en escalier qui donne
 \begin{displaymath}
  g\left( \int_{[0,1]}f\right) \leq \int_{[0,1]}g\circ \varphi + \frac{\varepsilon}{2}

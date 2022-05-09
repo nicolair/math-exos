@@ -24,6 +24,7 @@ où $n_z$ est un entier qui est le produit de $q-2$ entiers consécutifs. Introd
   v((q-2)!) + v(P(z)) = v(n_z) \text{ avec }  \\
   v((q-2)!) = v(2) + v(3) + \cdots + v(q-2).
 \end{multline*}
+
 D'après la question a., on peut évaluer $v(n_z)$ en considérant les $z\geq q$ modulo $q$.
 
 Si $z\equiv 0 \mod q$:
@@ -39,12 +40,14 @@ Si $z\equiv 1 \mod q$:
 \begin{multline*}
   v(n_z) = v(q-1) + v(q-2) + \cdots + v(2)\\ = v((q-2)!)
 \end{multline*}
+
 avec $v(q-1)=0$ car $p$ ne divise pas $q-1$. On en tire $v(P(z))=0$ donc $P(z) \not\equiv 0 \mod p$.
 
 Si $z\equiv 2 \mod q$:
 \begin{multline*}
   v(n_z) = v(q) + v(q-1) + \cdots + v(3)\\ = m + v((q-2)!) - v(3)
 \end{multline*}
+
 avec $v(q)=m$. On en tire $v(P(z))>0$ car $v(3)<m$ donc $P(z) \equiv 0 \mod p$.
 
 Si $z\equiv i \mod q$ avec $1<i<q-1$:
@@ -53,6 +56,7 @@ Si $z\equiv i \mod q$ avec $1<i<q-1$:
 = v(i-2) + \cdots + v(1) + v(q) + v(q-1) + \cdots v(i+1)\\
 = m +v((q-2)!) - v(i) - v(i-1) > v((q-2)!)
 \end{multline*}
+
 car un seul des $v(i)$ et $v(i-1)$ est non nul. On en tire $v(P(z))>0$ donc $P(z) \equiv 0 \mod p$.
 
 \end{enumerate}

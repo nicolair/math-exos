@@ -8,6 +8,7 @@ f(x) =
 + \left( f(x-(n-1))-f(x-n)\right)
 + f(x-n)
 \end{multline*}
+
 avec 
 \begin{displaymath}
   x-n-1< y \leq x - n \Rightarrow n = \lfloor x-y \rfloor
@@ -22,6 +23,7 @@ De plus, $n\leq x$ et
   \Rightarrow |f(x-n)|\leq M_y = \sup_{[y,y+1]}|f| \\
   \Rightarrow 0 \leq |\phi(x)| \leq \sup_{[y,+\infty[}|g| + \frac{M_y}{x}
 \end{multline*}
+
 On peut alors traiter un $\varepsilon>0$ quelconque exactement comme dans l'exercice sur la convergence de Cesaro en fixant d'abord un bon $y$ pour que $\sup_{[y,+\infty[}|g|\leq \frac{\varepsilon}{2}$.\newline
 Considérons la fonction $1$-périodique $f$ définie par
 \begin{displaymath}

@@ -6,6 +6,7 @@ Les polynomes de degré 2 se factorisent facilement.
   H = (X-e^a)(X-e^{-a}), \hspace{0.2cm} C = (X-e^{ia})(X-e^{-ia}), \\
   P = (X-1)(X-2).
 \end{multline*}
+
 En substituant respectivement les racines au $X$ de $H_n$, $C_n$, $P_n$, on trouve à chaque fois $0$ ce qui assure (cours) que les restes sont nuls.
 
   \item Quotient pour $H_n$.\newline
@@ -53,16 +54,19 @@ Cette fois, on réussit à factoriser directement avec des sommes en progression
   (X-1)^n - 1 =   \left((X -1) - 1 \right) \\ 
   \left( (X-1)^{n-1} +  \cdots + (X-1) + 1\right)
 \end{multline*}
+
 Donc
 \begin{multline*}
   P_n = (X-2)( \underbrace{(X-2)^{2n-1} +1} + (X-1) + \\
   \cdots + (X-1)^{n-1}).
 \end{multline*}
+
 De même
 \begin{multline*}
   (X-2)^{2n-1} +1 = 1 - (2-X)^{2n-1} \\
   = (1-2 + X)\left(1 + (2-X) + \cdots +(2-X)^{2n-2}\right).
 \end{multline*}
+
 Finalement, le quotient est
 \begin{multline*}
   1 + (2-X) + \cdots +(2-X)^{2n-2} \\

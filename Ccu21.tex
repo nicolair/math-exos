@@ -13,6 +13,7 @@ alors, d'après $(\mathcal{P}_n)$,
 x_1\cdots x_{n-1}=\frac{1}{x_n}x_1\cdots x_n \\
 \leq \frac{1}{x_n} \left(\frac{x_1+\cdots+x_{n}}{n} \right)^n 
 \end{multline*}
+
 Or
 \begin{displaymath}
 x_1+\cdots +x_n =\frac{n}{n-1}(x_1+\cdots+x_{n-1})
@@ -22,12 +23,14 @@ d'où
 x_1\cdots x_{n-1}\leq \frac{1}{x_n} \left(\frac{x_1+\cdots+x_{n-1}}{n-1} \right)^n \\
 = \left(\frac{x_1+\cdots+x_{n-1}}{n-1} \right)^{n-1}
 \end{multline*}
+
 \item Dans la racine du produit, regroupons les termes deux par deux et utilisons $(\mathcal{P}_n)$ puis $n$ fois $(\mathcal{P}_2)$ :
 \begin{multline*}
 \sqrt{x_1\cdots x_{2n}} = \sqrt{(x_1 x_2)(x_2 x_3)\cdots (x_{2n-1}x_{2n})} \\
 \leq \left(\frac{\sqrt{x_1x_2}+\cdots+\sqrt{x_{2n-1}x_{2n}}}{n} \right)^n \leq \\ \left(\frac{(\sqrt{x_1}+\sqrt{x_2})^2+\cdots+(\sqrt{x_{2n-1}}+\sqrt{x_{2n}})^2}{2n} \right)^n \\
 \leq \left( \frac{x_1+x_2 + \cdots +x_{2n-1} +x_{2n}}{2n}\right)^n 
 \end{multline*}
+
 car les termes croisés des développement des carrés sont positifs. On en déduit l'inégalité $(\mathcal{P}_{2n})$ en prenant le carré.
 
 \item En utilisant la question précédente, on montre par récurrence que $(\mathcal{P}_{n^k})$ est vraie pour tous les entiers $k$. Pour n'inporte quel entier $n$, il existe un $k$ tel que $n\leq 2^k$, la question b. entraine alors (par récurrence encore) $(\mathcal{P}_n)$.

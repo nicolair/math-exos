@@ -17,12 +17,14 @@ D'après le cours, une primitive de cette fonction est
  \sum _{z\in \mathcal{P}_r}\lambda(z) \ln|t-z| \\
 + \sum _{z\in \mathcal{P}_c}\lambda(z)\left(  \ln|t-z|+i\arctan\frac{t-\Re(z)}{\Im(z)}\right) 
 \end{multline*}
+
 Chacune des parties en $\arctan$ converge en $+\infty$ vers $\frac{\pi}{2}$. Pour montrer la convergence des parties logarithmiques, il faut les considérer toutes à la fois. Mélangeons tous les pôles, réels ou non:
 \begin{multline*}
  \sum_{k=0}^{p}\lambda_k\ln|t-z_k| \\
 = \left( \sum_{k=0}^{p}\lambda_k\right) \ln|t|
 + \sum_{k=0}^{p}\lambda_k\ln|1-\frac{z_k}{t}|
 \end{multline*}
+
 La somme des résidus est nulle car la fraction est de degré $\leq 2$. On le montre en multipliant par $t$ et en faisant tendre $t$ vers $0$. On en déduit la convergence des primitives car les autres termes de la décomposition en éléments simples conduisent à des fractions de degré négatifs.
  \item
  \item 

@@ -1,45 +1,52 @@
-  'al'  , groupes anneaux corps
-  'am'  , avec maple
-  'ao'  , automorphismes orthogonaux
-  'ap'  ," approximations (zéros, intégrales, nbs réels)"
-  'ar'  , arithmétique dans Z et K[X]
-  'ce'  , (courbes euclidiennes) étude métrique des courbes
-  'cg'  , (continuité géométrique) Fonction d'une variable géométrique : continuité
-  'cm'  , calcul matriciel
-  'co'  , coniques
-  'cp'  , nombres complexes
-  'cr'  , courbes para
-  'cu'  , calculs usuels
-  'de'  , développements (locaux) limités et asymptotiques
-  'dg'  , (différentiabilité géométrique) Calcul différentiel
-  'di'  , dimension des espaces vectoriels
-  'dt'  , déterminant
-  'ed'  , équations différentielles
-  'ee'  , espaces euclidiens
-  'el'  , systèmes d'équations linéaires
-  'en'  , entiers naturels dénombrement
-  'ev'  , espaces vectoriels (sans dimension)
-  'fc'  , fonctions convexes
-  'fr'  , fractions rationnelles
-  'fu'  ," fonctions usuelles, trigonométrie"
-  'ga'  , géométrie affine
-  'gc'  , propriétés globales fonctions continues
-  'gd'  , propriétés globales des dérivées
-  'ge'  , géo espace
-  'gp'  , géométrie plane élémentaire
-  'gs'  , groupe symétrique
-  'ig'  , (intégration géométrique) FVG : calcul intégral
-  'ip'  , intégrales et primitives
-  'is'  , intégration sur un segment
-  'li'  , limites etc
-  'mf'  , matrices de familles et d'applications
-  'mm'  , les matrices pour elles mêmes
-  'mo'  ," rangs, opérations, systèmes"
-  'po'  , polynômes
-  're'  ," corps des réels, suites"
-  'sc'  ," suites de réels, convergence, comparaison"
-  'sr'  , suites définies par récurrence
-  'tl'  , formules de Taylor
-  'tr'  , (transverses) Cours MPSI B
-  'vc'  , suites et fonctions à valeurs complexes
-  'vs'  , vocabulaire ensembles opérations
+codetheme;description
+al;groupes anneaux corps
+am;avec maple
+ao;automorphismes orthogonaux
+ap;approximations (zéros, intégrales, nombres réels)
+ar;arithmétique dans K[X]
+az;arithmétique dans Z
+ce;(courbes euclidiennes) étude métrique des courbes
+cg;Fonctions d’une Variable Géométrique : continuité
+co;coniques
+cp;nombres complexes
+cr;courbes paramétrées
+cu;calculs usuels
+de;développements (locaux) limités et asymptotiques
+dg;Fonctions d’une Variable Géométrique : calcul différentiel
+di;applications linéaires (dimension finie)
+dt;déterminant
+ed;équations différentielles
+ee;espaces euclidiens
+ef;espaces vectoriels (dimension finie)
+en;entiers naturels dénombrement
+ev;espaces vectoriels (sans dimension)
+fc;fonctions convexes
+fr;fractions rationnelles
+fu;fonctions usuelles, trigonométrie
+ga;géométrie affine
+gc;propriétés globales fonctions continues
+gd;propriétés globales des dérivées
+ge;géométrie dans l’espace
+gp;géométrie plane élémentaire
+gs;groupe symétrique
+ig;Fonctions d’une Variable Géométrique : calcul intégral
+ip;intégrales et primitives
+is;intégration sur un segment
+li;limites etc
+mf;matrices de familles et d’applications
+ml;applications linéaires (sans dimension)
+mm;les matrices pour elles mêmes
+mo;rangs, opérations, systèmes
+pb;espaces probabilisés finis
+po;polynômes
+re;corps des réels, suites
+sc;suites de réels, convergence, comparaison
+sf;suites de fonctions
+sl;systèmes d’équations linéaires
+sn;séries numériques
+sr;suites définies par récurrence
+tl;formules de Taylor
+tr;(transverses) Cours MPSI B
+va;variables aléatoires
+vc;suites et fonctions à valeurs complexes
+vs;vocabulaire ensembles opérations

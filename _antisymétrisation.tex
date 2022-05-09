@@ -9,6 +9,7 @@ Pour tout $\sigma \in \mathfrak{S}_n$ et tout $\omega\in \mathcal{M}$, on défin
  \forall (x_1,\cdots,x_n)\in E^n, \\
  \sigma^*\omega(x_1,\cdots,x_n) = \omega(x_{\sigma(1)},\cdots,x_{\sigma(n)}).
 \end{multline*}
+
 On vérifie facilement:
 
 \begin{multline} \label{sigma*}
@@ -49,6 +50,7 @@ Considérons \emph{les classes à droite} modulo $G_p$:
  \Leftrightarrow \exists \theta \in G_p \text{ tq } \sigma' = \sigma \circ \theta \\
  \Leftrightarrow \sigma'(\llbracket 1,p \rrbracket) = \sigma(\llbracket 1,p \rrbracket).
 \end{multline*}
+
 Comme chaque classe contient $p!\,q!$ éléments, il existe $\binom{n}{p}$ classes distinctes. Elles sont clairement en relation avec les parties à $p$ éléments de $\llbracket 1,n \rrbracket$.\newline
 Précisons cette relation. Pour chaque partie $A$ à $p$ éléments, on peut écrire de manière unique
 \[
@@ -87,6 +89,7 @@ Notons $\mathcal{P}_p$ l'ensemble des parties à $p$ éléments de $\llbracket 1
  \omega^a = \sum_{A \in \mathcal{P}_p} \varepsilon(\sigma_A)\,{\sigma_A}^*\left( \sum_{\theta \in G_p}\varepsilon(\theta)\,\underset{=\varepsilon(\theta)\,\omega}{\underbrace{\theta^* \omega}}\right) \\
  = p!\,q!\,\sum_{A \in \mathcal{P}_p} \varepsilon(\sigma_A)\,{\sigma_A}^*\omega.
 \end{multline*}
+
 On en déduit que 
 \[
  \sum_{A \in \mathcal{P}_p} \varepsilon(\sigma_A)\,{\sigma_A}^*\omega
@@ -105,5 +108,6 @@ Que donne l'antisymétrisation d'une telle application ?
  = \underset{ = 0}{\underbrace{\left( \sum_{\theta_1 \in \mathfrak{S}_p} \varepsilon(\theta_1)\right)}}q!\,\sum_{A \in \mathcal{P}_p} \varepsilon(\sigma_A)\,{\sigma_A}^* \omega
  = 0.
 \end{multline*}
+
 La somme étant nulle car il existe autant de permutations indirectes que directes.
 \end{document}
