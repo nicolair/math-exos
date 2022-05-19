@@ -1,6 +1,6 @@
 \begin{tiny}(Ega05)\end{tiny} Cet exercice généralise ga04 en dimension $n$. Dans un espace affine de dimension $n$, on se donne $n+1$ points $A_1, A_2, \cdots, A_{n+1}$ qui ne sont pas dans un même hyperplan. On définit les points $B_1,\cdots,B_{n+1}$ par :
  \begin{align*}
-  \forall i \in \{1,\cdots,n\} : \overrightarrow{B_iA_i} =& \lambda_i \overrightarrow{B_iA_{i+1}}\\
+  \forall i \in \llbracket 1,n\rrbracket : \overrightarrow{B_iA_i} =& \lambda_i \overrightarrow{B_iA_{i+1}}\\
 \overrightarrow{B_{n+1}A_{n+1}} =& \lambda_{n+1} \overrightarrow{B_nA_{1}}
  \end{align*}
 Les $\lambda_i$ sont des réels différents de $0$ et de $1$.
@@ -9,7 +9,7 @@ Les $\lambda_i$ sont des réels différents de $0$ et de $1$.
 \begin{displaymath}
  \lambda_1\lambda_2\cdots \lambda_{n+1}=1
 \end{displaymath}
-\item On va retrouver le résultat précédent par une voie très différente.\newline
+\item On retrouve autrement le résultat précédent.\newline
 Montrer que le centre de la composée de plusieurs homothéties (lorsqu'il existe) est un barycentre des centres des homothéties qui interviennent dans la composition.\newline
 Pour $i$ entre $1$ et $n+1$, on désigne par $h_i$ l'homothétie de centre $B_i$ et de rapport $\lambda_i$.\newline
 Préciser $h_1\circ h_2\circ\cdots\circ h_{n+1}(A_1)$. Considérer de même $h_{n+1}\circ h_1\circ\cdots\circ h_{n}$ et ainsi de suite ... En déduire que si les $B_i$ sont dans un même hyperplan, le produit des $\lambda_i$ doit obligatoirement valoir $1$.

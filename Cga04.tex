@@ -1,0 +1,78 @@
+\begin{tiny}(Cga04)\end{tiny}
+Dans cet exercice, on utilise les conditions d'alignement ou de concours trouvées dans l'exercice ga01. 
+\begin{enumerate}
+  \item D'après l'expression barycentrique de la condition d'alignement, les points $L$, $M$, $N$ sont alignés si et seulement si
+\begin{displaymath}
+  \begin{vmatrix}
+    0      & 1       & -\alpha \\
+    -\beta & 0       & 1       \\
+    1      & -\gamma & 0
+  \end{vmatrix}
+=0.
+\end{displaymath}
+Ce déterminant est égal à $1 - \alpha \beta \gamma$.\newline
+En projetant sur un vecteur unitaire de la droite $(BC)$, on passe de la définition du barycentre à une expression de $\alpha$ comme quotient de valeurs algébriques:
+\begin{displaymath}
+  \overrightarrow{LB} - \alpha \overrightarrow{LC}= \overrightarrow{0}
+  \Rightarrow
+  \overline{LB} - \alpha \overline{LC}= 0.
+\end{displaymath}
+On en déduit la condition demandée.
+  \item On utilise cette fois la condition de concours de trois droites exprimée comme la nullité d'un déterminant formé à partir des équations des droites. On forme les équations des droites dans le repère $(A,\overrightarrow{AB},,\overrightarrow{AC})$:
+\begin{align*}
+  (AL) &:& \alpha x + y = 0 \\
+  (BM) &:& x + (1-\beta)y - 1 = 0 \\
+  (CN) &:& (1-\gamma)x - \gamma y + \gamma = 0
+\end{align*}
+La condition demandée (théorème de Ceva) vient du calcul du déterminant
+\begin{displaymath}
+  \begin{vmatrix}
+    \alpha   & 1       & 0 \\
+    1        & 1-\beta & -1 \\
+    1-\gamma & -\gamma & \gamma 
+  \end{vmatrix}
+= - 1 - \alpha \beta \gamma.
+\end{displaymath}
+
+  \item Pour caractériser l'alignement des milieux, on utilise encore la condition avec les coordonnées barycentriques. Il faut faire attention à prendre la même masse pour obtenir les coordonnées barycentrique d'un milieu. Par exemple, les coordonnées du milieu de $AL$ sont
+\begin{displaymath}
+  A (1-\alpha,0,0) + L(0,1,-\alpha) \rightarrow (1-\alpha, 1, -\alpha)
+\end{displaymath}
+De même pour les autres points. On conclut avec un calcul de déterminant
+\begin{displaymath}
+\begin{vmatrix}
+  1- \alpha & 1       & -\alpha \\
+  -\beta    & 1-\beta & 1 \\
+  1         & -\gamma & 1-\gamma
+\end{vmatrix}
+= \cdots = 2(1-\alpha \beta \gamma).
+\end{displaymath}
+
+Chaque condition d'alignement se traduit par la nullité d'un déterminant
+\begin{align*}
+  L, M, N \text{ alignés } &\Leftrightarrow D = 0 \\
+  L', M', N' \text{ alignés } &\Leftrightarrow  D' = 0
+\end{align*}
+avec
+\begin{displaymath}
+  D = 
+\begin{vmatrix}
+  0      & 1       & - \alpha \\
+  -\beta & 0       & 1 \\
+  1      & -\gamma & 0
+\end{vmatrix}
+\end{displaymath}
+\begin{displaymath}
+  D' = 
+\begin{vmatrix}
+  0       & - \alpha & 1  \\
+  1       & 0       & -\beta \\
+  -\gamma & 1 & 0
+\end{vmatrix}
+\end{displaymath}
+En développant, on trouve 
+\begin{displaymath}
+  D = D' = 1 - \alpha \beta \gamma
+\end{displaymath}
+ce qui assure l'équivalence des alignements.
+\end{enumerate}

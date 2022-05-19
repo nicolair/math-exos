@@ -1,0 +1,74 @@
+\begin{tiny}(Cgp11)\end{tiny} 
+\begin{enumerate}
+  \item Comme $M'$ et $N'$ sont distincts, le vecteur $\overrightarrow{M'N'}$ est, comme $\overrightarrow{u}$, une base de la direction de $\mathcal{D}$ avec $\overline{M'N'} \neq 0$ et :
+\begin{displaymath}
+  \overrightarrow{M'N'} = \overline{M'N'}\, \overrightarrow{u}
+  \Rightarrow
+  \overrightarrow{u} = \frac{1}{\overline{M'N'}} \overrightarrow{M'N'}.
+\end{displaymath}
+En remplaçant dans l'expression de $\overrightarrow{MN}$:
+\begin{displaymath}
+  \overrightarrow{MN} = \overline{MN}\, \overrightarrow{u}
+   = \frac{\overline{MN}}{\overline{M'N'}}\, \overrightarrow{M'N'}.
+\end{displaymath}
+
+  \item Expression des coordonnées
+\begin{center}
+\renewcommand{\arraystretch}{1.3}
+\begin{tabular}{|c|c|c|}
+\hline
+$A$ & $B$ & $C$ \\ \hline
+$(0,0)$ & $(\overline{AB},0)$ & $(0,\overline{AC})$ \\ \hline 
+\end{tabular}   
+\end{center}
+
+Utilisons la première question pour exprimer les coordonnées de $\overrightarrow{k}$.
+\begin{displaymath}
+  \overrightarrow{BC} = \overrightarrow{AC} - \overrightarrow{AB}
+  = \overline{AC}\, \overrightarrow{j} - \overline{AB}\, \overrightarrow{i}
+  =\overline{BC}\, \overrightarrow{k}.
+\end{displaymath}
+On en déduit
+\begin{displaymath}
+  \overrightarrow{k} = - \frac{\overline{AB}}{\overline{BC}}\overrightarrow{i}
+  +\frac{\overline{AC}}{\overline{BC}}\overrightarrow{j}.
+\end{displaymath}
+On remplace dans
+\begin{displaymath}
+  \overrightarrow{AA'} = \overrightarrow{AB} + \overrightarrow{BA'}
+  = \overline{AB}\overrightarrow{i} + \overline{BA'}\overrightarrow{k}
+\end{displaymath}
+D'où
+\begin{displaymath}
+  \overrightarrow{AA'} = \left( \overline{AB} - \overline{BA'}\,\frac{\overline{AB}}{\overline{BC}}\right)\overrightarrow{i}
+  + \overline{BA'}\,\frac{\overline{AC}}{\overline{BC}}\overrightarrow{j}
+\end{displaymath}
+
+\begin{center}
+\renewcommand{\arraystretch}{1.5}
+\begin{tabular}{|c|c|c|}
+\hline
+$A'$ & $B'$ & $C'$ \\ \hline
+$(\overline{A'C}\,\frac{\overline{AB}}{\overline{BC}},-\overline{A'B}\,\frac{\overline{AC}}{\overline{BC}})$ 
+& $(0,\overline{AB'})$ 
+& $(\overline{AC'},0)$ \\ \hline 
+\end{tabular} 
+\end{center}
+La condition d'alignement exprimée avec les coordonnées s'écrit comme la nullité du déterminant
+\begin{displaymath}
+  \begin{vmatrix}
+    \overline{A'C} \,\overline{AB} & -\overline{A'B}\,\overline{AC} & \overline{BC} \\
+    0 & \overline{AB'} & 1 \\
+    \overline{AC'} & 0 & 1
+  \end{vmatrix}
+= 0
+\end{displaymath}
+Elle est équivalente à
+\begin{displaymath}
+  -\overline{A'C}\,\overline{B'A}\,\overline{AB}
+  +\overline{A'B}\,\overline{AC}\,\overline{C'A}
+  -\overline{B'A}\,\overline{C'A}\,\overline{BC} = 0
+\end{displaymath}
+On obtient la condition demandée en introduisant $C'$ dans $\overline{AB}$, $B'$ dans $\overline{AC}$, $A'$ dans $\overline{BC}$.\newline
+La condition est indépendante des vecteurs unitaires car c'est un produit de 3 fractions. Pour chacune, le numérateur et le dénominateur sont multipliés par le même nombre lors d'un changement de vecteur unitaire.
+\end{enumerate}

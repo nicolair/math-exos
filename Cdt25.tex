@@ -1,0 +1,20 @@
+\begin{tiny}(Cdt25)\end{tiny} Le déterminant cherché est
+\begin{displaymath}
+  1 - \lambda_1 \lambda_2 \cdots \lambda_{n+1}.
+\end{displaymath}
+En développant suivant la dernière ligne, on doit calculer deux déterminants d'ordre $n$. Tous les deux sont triangulaires mais un triangulaire inférieur avec des $-\lambda_i$ sur la diagonale et l'autre triangulaire supérieur avec des $1$ sur la diagonale.\newline
+On peut aussi utiliser des opérations élémentaires sur les colonnes. On procède de gauche à droite pour transformer en une matrice  triangulaire inférieure avec des 1 sur la diagonale:
+\begin{multline*}
+  C_2\leftarrow C_2 + \lambda_1 C_1,
+  C_3\leftarrow C_3 + \lambda_2 C_2,\\
+  \cdots, 
+  C_{n+1}\leftarrow C_{n+1} + \lambda_n C_n,
+\end{multline*}
+La dernière ligne devient
+\begin{displaymath}
+  \begin{pmatrix}
+-\lambda_{n+1} & -\lambda_1\lambda_{n+1} & \cdots & -\lambda_1\cdots \lambda_{n-1}\lambda_{n+1} 
+& T     
+  \end{pmatrix}
+\end{displaymath}
+avec $T=1 -\lambda_1\cdots \lambda_{n}\lambda_{n+1}$.
