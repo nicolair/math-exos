@@ -1,0 +1,34 @@
+\begin{tiny}(Edt26)\end{tiny} L'objet de cet exercice est de calculer un déterminant formé à partir de deux matrices de permutations. Ces matrices et leurs notations sont présentées dans l'exercice gs06 de la feuille sur le groupe symétrique.\newline
+Soit $p\geq 2$ un naturel, $\sigma \in \mathfrak{S}_k$ et $(a_1, \cdots, a_p)$ des complexes non nuls.\newline
+On définit $P_\sigma (a_1,\cdots,a_k)\in \mathcal M_p(\K)$ par : pour tout $\forall (i,j)\in \llbracket 1,p \rrbracket^2$,
+\begin{displaymath}
+\text{ terme $i,j$ de } P_\sigma(a_1,\cdots,a_k) = a_j \delta_{i \sigma(j)}
+\end{displaymath}
+où $\delta_{u,v}$ est le symbole de Kronecker qui vaut $1$ si $u=v$ et $0$ sinon.
+\begin{enumerate}
+  \item Soit $k = 3$ et $\sigma = (1 \, 2 \, 3)$ un cycle de longeur 3. Former la matrice $P_\sigma(a_1,a_2,a_3)$.
+  \item On revient au cas général. Montrer que
+\begin{displaymath}
+  \det P_\sigma(a_1,\cdots,a_k) = \varepsilon(\sigma)\, a_1\cdots a_k.
+\end{displaymath}
+  \item Soit $c$ un cycle de longueur $k$ et $J$ une partie non vide $\llbracket 1,k \rrbracket$. Montrer que
+\begin{displaymath}
+  J \text{ stable par } c \Rightarrow J = \llbracket 1,k \rrbracket
+\end{displaymath}
+et que 
+\begin{multline*}
+  \det( D + P_c(a_1,\cdots,a_k) \\
+  = \det(D) + \det P_c(a_1,\cdots,a_k).
+\end{multline*}
+lorsque $D$ est une matrice diagonale.
+  \item Soit $\sigma$ et $\sigma'$ deux permutations telles que $\sigma^{-1} \sigma'$ soit un cycle de longueur $k$. Montrer que
+\begin{multline*}
+  \det\left( P_\sigma(a_1,\cdots,a_k) + P_\sigma'(a'_1,\cdots,a'_k)\right) \\
+  = 
+  \det\left( P_\sigma(a_1,\cdots,a_k) \right)
+  +\det\left( P_\sigma'(a'_1,\cdots,a'_k)\right).
+\end{multline*}
+
+\end{enumerate}
+
+

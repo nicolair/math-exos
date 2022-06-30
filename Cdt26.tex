@@ -1,0 +1,35 @@
+\begin{tiny}(Cdt26)\end{tiny}
+\begin{enumerate}
+  \item La matrice demandée est
+\begin{displaymath}
+  \begin{pmatrix}
+    0   & 0   & a_3 \\
+    a_1 & 0   & 0 \\
+    0   & a_2 & 0
+  \end{pmatrix}.
+\end{displaymath}
+
+  \item Notons $M = P_\sigma(a_1,\cdots,a_k)$. Chaque colonne $j$ de $M$ contient un seul terme non nul, celui de la ligne $\sigma(j)$ qui vaut $a_j$. Dans l'expression
+\begin{displaymath}
+  \det M =
+\sum_{\theta \in \mathfrak{S}_k} \varepsilon(\theta) m_{\theta(1)\, 1} \cdots m_{\theta(k)\, k}
+\end{displaymath}
+la seule permutation $\theta$ dont la contribution est non nulle est donc $\theta = \sigma$. On en déduit l'expression demandée.
+  \item Soit $I$ une partie non vide de $\llbracket 1,k \rrbracket$ stable par $c$.\newline
+  Soit $j \in I$, alors $J$ doit contenir tous les $c^i(j)$ donc $\llbracket 1,k \rrbracket$ tout entier car $c$ est un cycle de longueur $k$.\newline
+  Chaque colonne $j$ de la matrice proposée est la somme de 2 colonnes associées respectivement à la matrice diagonale et à la matrice de permutation.\newline
+  Le développement de ce déterminant par multilinéarité est une somme de $2^k$ déterminants obtenus en choisissant pour chaque colonne celle de la matrice diagonale ou celle de la permutation. On indexe ces déterminants par les parties $J$ de $\llbracket 1, k \rrbracket$ formées par $j$ pour lesquels on choisit la permutation.\newline
+  Ainsi $J= \emptyset$ correspond au déterminant de lamatrice diagonale et $J= \llbracket 1, k \rrbracket$ correspond au déterminant de la matrice de permutation. Le déterminant cherché s'écrit
+  \begin{displaymath}
+    \sum_{J \in \mathcal{P}(\llbracket 1,k \rrbracket} \det(M_J)
+  \end{displaymath}
+Si $j \in J$, $C_j(M_j)$ est la colonne $j$ de la matrice de permutation, sinon c'est la colonne $j$ de $D$.\newline
+  Il s'agit de montrer que pour les parties $J$ autres que $\emptyset$ et $\llbracket 1,k \rrbracket$, le déterminant associé est nul.\newline
+  Notons $I$ la partie complémentaire de $J$ (les deux sont non vides).\newline
+  Comme $J$ n'est pas stable par $c$, il existe un indice $j\in J$ tel que $i=c(j) \in I$. Alors
+  \begin{displaymath}
+    C_j(M_j) = a_j C_i(I) ,\; C_i(M_j) = C_i(D) = d_i C_i(I).
+  \end{displaymath}
+La matrice $M_j$ contient deux colonnes colinéaires, son déterminant est nul.
+  \item On se ramène au cas précédent en factorisant par $P_\sigma$.
+\end{enumerate}
