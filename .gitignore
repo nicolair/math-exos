@@ -1,0 +1,14 @@
+auxdir/
+htmldir/
+pdfdir/
+
+Aexo_*
+
+*.log
+*.png
+*-eps-converted-to.pdf
+*.aux
+*.out
+*.synctex.gz
+
+A_co.pdf

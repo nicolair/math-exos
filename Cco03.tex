@@ -1,0 +1,15 @@
+Calculons la dérivée en introduisant $\frac{\theta}{2}$:
+\begin{multline*}
+ \overrightarrow{M'}(\theta) = \frac{p\sin \theta}{(1 + \cos \theta)^2} \overrightarrow{e_\theta}
+ + \frac{p}{(1 + \cos \theta)} \overrightarrow{e_{\theta + \frac{\pi}{2}}} \\
+ = \frac{p}{(1 + \cos \theta)^2} \left( \sin \theta \overrightarrow{e_\theta} + (1+\cos \theta) \overrightarrow{e_{\theta + \frac{\pi}{2}}} \right)\\
+ = \frac{2 p \cos \frac{\theta}{2}}{(1 + \cos \theta)^2} \left( \sin \frac{\theta}{2} \overrightarrow{e_\theta} + \cos \frac{\theta}{2} \overrightarrow{e_{\theta + \frac{\pi}{2}}} \right)\\
+ = \frac{2 p \cos \frac{\theta}{2}}{(1 + \cos \theta)^2} \left( \cos \frac{\pi - \theta}{2} \overrightarrow{e_\theta} + \sin \frac{\pi - \theta}{2} \overrightarrow{e_{\theta + \frac{\pi}{2}}} \right)\\
+ = \frac{2 p \cos \frac{\theta}{2}}{(1 + \cos \theta)^2} \overrightarrow{e_{\frac{\pi + \theta}{2}}}.
+\end{multline*}
+On en déduit
+\begin{displaymath}
+ \lambda(\theta) = \frac{2 p \cos \frac{\theta}{2}}{(1 + \cos \theta)^2}, \;\;
+ \varphi(\theta) = \frac{\pi + \theta}{2}.
+\end{displaymath}
+
